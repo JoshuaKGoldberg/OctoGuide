@@ -39,7 +39,7 @@
 		"@github/markdownlint-github": "^0.8.0",
 		"@octokit/plugin-rest-endpoint-methods": "^16.0.0",
 		"conventional-commit-types": "^3.0.0",
-		"conventional-commits-parser": "^6.1.0",
+		"conventional-commits-parser": "^7.0.0",
 		"is-comment-meaningless": "^0.2.0",
 		"lodash": "^4.17.21",
 		"markdown-it": "^14.1.1",
