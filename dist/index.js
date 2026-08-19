@@ -2,7 +2,7 @@ globalThis.require = __WEBPACK_EXTERNAL_createRequire(import.meta.dirname);
 import { createRequire as __WEBPACK_EXTERNAL_createRequire } from "module";
 /******/ var __webpack_modules__ = ({
 
-/***/ 2965:
+/***/ 4647:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
 
@@ -55,9 +55,9 @@ exports.getProxyUrl = getProxyUrl;
 exports.isHttps = isHttps;
 const http = __importStar(__nccwpck_require__(8611));
 const https = __importStar(__nccwpck_require__(5692));
-const pm = __importStar(__nccwpck_require__(8093));
-const tunnel = __importStar(__nccwpck_require__(6124));
-const undici_1 = __nccwpck_require__(1103);
+const pm = __importStar(__nccwpck_require__(8835));
+const tunnel = __importStar(__nccwpck_require__(1410));
+const undici_1 = __nccwpck_require__(5065);
 var HttpCodes;
 (function (HttpCodes) {
     HttpCodes[HttpCodes["OK"] = 200] = "OK";
@@ -745,7 +745,7 @@ const lowercaseKeys = (obj) => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCa
 
 /***/ }),
 
-/***/ 8093:
+/***/ 8835:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -845,7 +845,7 @@ class DecodedURL extends URL {
 
 /***/ }),
 
-/***/ 7447:
+/***/ 6297:
 /***/ (function(module) {
 
 /**
@@ -2375,7 +2375,7 @@ class DecodedURL extends URL {
 
 /***/ }),
 
-/***/ 2594:
+/***/ 7132:
 /***/ (function(module, exports, __nccwpck_require__) {
 
 /* module decorator */ module = __nccwpck_require__.nmd(module);
@@ -19592,7 +19592,7 @@ class DecodedURL extends URL {
 
 /***/ }),
 
-/***/ 8468:
+/***/ 1754:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /*!
@@ -19748,7 +19748,7 @@ module.exports = function parseGithubUrl(str) {
 
 /***/ }),
 
-/***/ 223:
+/***/ 6637:
 /***/ ((module) => {
 
 
@@ -20198,15 +20198,15 @@ module.exports = punycode;
 
 /***/ }),
 
-/***/ 6124:
+/***/ 1410:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-module.exports = __nccwpck_require__(3660);
+module.exports = __nccwpck_require__(1578);
 
 
 /***/ }),
 
-/***/ 3660:
+/***/ 1578:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
@@ -20477,33 +20477,33 @@ exports.debug = debug; // for test
 
 /***/ }),
 
-/***/ 1103:
+/***/ 5065:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Client = __nccwpck_require__(2602)
-const Dispatcher = __nccwpck_require__(584)
-const Pool = __nccwpck_require__(4231)
-const BalancedPool = __nccwpck_require__(5884)
-const Agent = __nccwpck_require__(12)
-const ProxyAgent = __nccwpck_require__(717)
-const EnvHttpProxyAgent = __nccwpck_require__(1230)
-const RetryAgent = __nccwpck_require__(4883)
-const errors = __nccwpck_require__(8472)
-const util = __nccwpck_require__(6303)
+const Client = __nccwpck_require__(2440)
+const Dispatcher = __nccwpck_require__(9906)
+const Pool = __nccwpck_require__(5685)
+const BalancedPool = __nccwpck_require__(4634)
+const Agent = __nccwpck_require__(8374)
+const ProxyAgent = __nccwpck_require__(8575)
+const EnvHttpProxyAgent = __nccwpck_require__(6916)
+const RetryAgent = __nccwpck_require__(5733)
+const errors = __nccwpck_require__(4826)
+const util = __nccwpck_require__(6133)
 const { InvalidArgumentError } = errors
-const api = __nccwpck_require__(1220)
-const buildConnector = __nccwpck_require__(5229)
-const MockClient = __nccwpck_require__(6600)
-const MockAgent = __nccwpck_require__(4278)
-const MockPool = __nccwpck_require__(4405)
-const mockErrors = __nccwpck_require__(104)
-const RetryHandler = __nccwpck_require__(695)
-const { getGlobalDispatcher, setGlobalDispatcher } = __nccwpck_require__(9072)
-const DecoratorHandler = __nccwpck_require__(4988)
-const RedirectHandler = __nccwpck_require__(9431)
-const createRedirectInterceptor = __nccwpck_require__(2753)
+const api = __nccwpck_require__(6018)
+const buildConnector = __nccwpck_require__(6355)
+const MockClient = __nccwpck_require__(1094)
+const MockAgent = __nccwpck_require__(2384)
+const MockPool = __nccwpck_require__(7419)
+const mockErrors = __nccwpck_require__(8386)
+const RetryHandler = __nccwpck_require__(1433)
+const { getGlobalDispatcher, setGlobalDispatcher } = __nccwpck_require__(6046)
+const DecoratorHandler = __nccwpck_require__(4698)
+const RedirectHandler = __nccwpck_require__(3025)
+const createRedirectInterceptor = __nccwpck_require__(3899)
 
 Object.assign(Dispatcher.prototype, api)
 
@@ -20521,10 +20521,10 @@ module.exports.DecoratorHandler = DecoratorHandler
 module.exports.RedirectHandler = RedirectHandler
 module.exports.createRedirectInterceptor = createRedirectInterceptor
 module.exports.interceptors = {
-  redirect: __nccwpck_require__(7791),
-  retry: __nccwpck_require__(9301),
-  dump: __nccwpck_require__(465),
-  dns: __nccwpck_require__(4908)
+  redirect: __nccwpck_require__(9429),
+  retry: __nccwpck_require__(8851),
+  dump: __nccwpck_require__(5547),
+  dns: __nccwpck_require__(8314)
 }
 
 module.exports.buildConnector = buildConnector
@@ -20586,7 +20586,7 @@ function makeDispatcher (fn) {
 module.exports.setGlobalDispatcher = setGlobalDispatcher
 module.exports.getGlobalDispatcher = getGlobalDispatcher
 
-const fetchImpl = (__nccwpck_require__(7249).fetch)
+const fetchImpl = (__nccwpck_require__(5291).fetch)
 module.exports.fetch = async function fetch (init, options = undefined) {
   try {
     return await fetchImpl(init, options)
@@ -20598,39 +20598,39 @@ module.exports.fetch = async function fetch (init, options = undefined) {
     throw err
   }
 }
-module.exports.Headers = __nccwpck_require__(6599).Headers
-module.exports.Response = __nccwpck_require__(4150).Response
-module.exports.Request = __nccwpck_require__(4452).Request
-module.exports.FormData = __nccwpck_require__(7259).FormData
+module.exports.Headers = __nccwpck_require__(6861).Headers
+module.exports.Response = __nccwpck_require__(4132).Response
+module.exports.Request = __nccwpck_require__(7066).Request
+module.exports.FormData = __nccwpck_require__(9121).FormData
 module.exports.File = globalThis.File ?? (__nccwpck_require__(4573).File)
-module.exports.FileReader = __nccwpck_require__(9062).FileReader
+module.exports.FileReader = __nccwpck_require__(1376).FileReader
 
-const { setGlobalOrigin, getGlobalOrigin } = __nccwpck_require__(4046)
+const { setGlobalOrigin, getGlobalOrigin } = __nccwpck_require__(1772)
 
 module.exports.setGlobalOrigin = setGlobalOrigin
 module.exports.getGlobalOrigin = getGlobalOrigin
 
-const { CacheStorage } = __nccwpck_require__(152)
-const { kConstruct } = __nccwpck_require__(8306)
+const { CacheStorage } = __nccwpck_require__(9042)
+const { kConstruct } = __nccwpck_require__(5880)
 
 // Cache & CacheStorage are tightly coupled with fetch. Even if it may run
 // in an older version of Node, it doesn't have any use without fetch.
 module.exports.caches = new CacheStorage(kConstruct)
 
-const { deleteCookie, getCookies, getSetCookies, setCookie } = __nccwpck_require__(8090)
+const { deleteCookie, getCookies, getSetCookies, setCookie } = __nccwpck_require__(2032)
 
 module.exports.deleteCookie = deleteCookie
 module.exports.getCookies = getCookies
 module.exports.getSetCookies = getSetCookies
 module.exports.setCookie = setCookie
 
-const { parseMIMEType, serializeAMimeType } = __nccwpck_require__(8937)
+const { parseMIMEType, serializeAMimeType } = __nccwpck_require__(1079)
 
 module.exports.parseMIMEType = parseMIMEType
 module.exports.serializeAMimeType = serializeAMimeType
 
-const { CloseEvent, ErrorEvent, MessageEvent } = __nccwpck_require__(6577)
-module.exports.WebSocket = __nccwpck_require__(2405).WebSocket
+const { CloseEvent, ErrorEvent, MessageEvent } = __nccwpck_require__(543)
+module.exports.WebSocket = __nccwpck_require__(4835).WebSocket
 module.exports.CloseEvent = CloseEvent
 module.exports.ErrorEvent = ErrorEvent
 module.exports.MessageEvent = MessageEvent
@@ -20646,18 +20646,18 @@ module.exports.MockPool = MockPool
 module.exports.MockAgent = MockAgent
 module.exports.mockErrors = mockErrors
 
-const { EventSource } = __nccwpck_require__(2309)
+const { EventSource } = __nccwpck_require__(7435)
 
 module.exports.EventSource = EventSource
 
 
 /***/ }),
 
-/***/ 5067:
+/***/ 761:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const { addAbortListener } = __nccwpck_require__(6303)
-const { RequestAbortedError } = __nccwpck_require__(8472)
+const { addAbortListener } = __nccwpck_require__(6133)
+const { RequestAbortedError } = __nccwpck_require__(4826)
 
 const kListener = Symbol('kListener')
 const kSignal = Symbol('kSignal')
@@ -20717,16 +20717,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5575:
+/***/ 4853:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
 const { AsyncResource } = __nccwpck_require__(6698)
-const { InvalidArgumentError, SocketError } = __nccwpck_require__(8472)
-const util = __nccwpck_require__(6303)
-const { addSignal, removeSignal } = __nccwpck_require__(5067)
+const { InvalidArgumentError, SocketError } = __nccwpck_require__(4826)
+const util = __nccwpck_require__(6133)
+const { addSignal, removeSignal } = __nccwpck_require__(761)
 
 class ConnectHandler extends AsyncResource {
   constructor (opts, callback) {
@@ -20832,7 +20832,7 @@ module.exports = connect
 
 /***/ }),
 
-/***/ 923:
+/***/ 4269:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -20846,10 +20846,10 @@ const {
   InvalidArgumentError,
   InvalidReturnValueError,
   RequestAbortedError
-} = __nccwpck_require__(8472)
-const util = __nccwpck_require__(6303)
+} = __nccwpck_require__(4826)
+const util = __nccwpck_require__(6133)
 const { AsyncResource } = __nccwpck_require__(6698)
-const { addSignal, removeSignal } = __nccwpck_require__(5067)
+const { addSignal, removeSignal } = __nccwpck_require__(761)
 const assert = __nccwpck_require__(4589)
 
 const kResume = Symbol('resume')
@@ -21090,16 +21090,16 @@ module.exports = pipeline
 
 /***/ }),
 
-/***/ 4588:
+/***/ 9470:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
-const { Readable } = __nccwpck_require__(4026)
-const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(8472)
-const util = __nccwpck_require__(6303)
-const { getResolveErrorBodyCallback } = __nccwpck_require__(6406)
+const { Readable } = __nccwpck_require__(7512)
+const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(4826)
+const util = __nccwpck_require__(6133)
+const { getResolveErrorBodyCallback } = __nccwpck_require__(988)
 const { AsyncResource } = __nccwpck_require__(6698)
 
 class RequestHandler extends AsyncResource {
@@ -21311,18 +21311,18 @@ module.exports.RequestHandler = RequestHandler
 
 /***/ }),
 
-/***/ 4189:
+/***/ 7715:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
 const { finished, PassThrough } = __nccwpck_require__(7075)
-const { InvalidArgumentError, InvalidReturnValueError } = __nccwpck_require__(8472)
-const util = __nccwpck_require__(6303)
-const { getResolveErrorBodyCallback } = __nccwpck_require__(6406)
+const { InvalidArgumentError, InvalidReturnValueError } = __nccwpck_require__(4826)
+const util = __nccwpck_require__(6133)
+const { getResolveErrorBodyCallback } = __nccwpck_require__(988)
 const { AsyncResource } = __nccwpck_require__(6698)
-const { addSignal, removeSignal } = __nccwpck_require__(5067)
+const { addSignal, removeSignal } = __nccwpck_require__(761)
 
 class StreamHandler extends AsyncResource {
   constructor (opts, factory, callback) {
@@ -21538,15 +21538,15 @@ module.exports = stream
 
 /***/ }),
 
-/***/ 3869:
+/***/ 2663:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { InvalidArgumentError, SocketError } = __nccwpck_require__(8472)
+const { InvalidArgumentError, SocketError } = __nccwpck_require__(4826)
 const { AsyncResource } = __nccwpck_require__(6698)
-const util = __nccwpck_require__(6303)
-const { addSignal, removeSignal } = __nccwpck_require__(5067)
+const util = __nccwpck_require__(6133)
+const { addSignal, removeSignal } = __nccwpck_require__(761)
 const assert = __nccwpck_require__(4589)
 
 class UpgradeHandler extends AsyncResource {
@@ -21653,21 +21653,21 @@ module.exports = upgrade
 
 /***/ }),
 
-/***/ 1220:
+/***/ 6018:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-module.exports.request = __nccwpck_require__(4588)
-module.exports.stream = __nccwpck_require__(4189)
-module.exports.pipeline = __nccwpck_require__(923)
-module.exports.upgrade = __nccwpck_require__(3869)
-module.exports.connect = __nccwpck_require__(5575)
+module.exports.request = __nccwpck_require__(9470)
+module.exports.stream = __nccwpck_require__(7715)
+module.exports.pipeline = __nccwpck_require__(4269)
+module.exports.upgrade = __nccwpck_require__(2663)
+module.exports.connect = __nccwpck_require__(4853)
 
 
 /***/ }),
 
-/***/ 4026:
+/***/ 7512:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // Ported from https://github.com/nodejs/undici/pull/907
@@ -21676,9 +21676,9 @@ module.exports.connect = __nccwpck_require__(5575)
 
 const assert = __nccwpck_require__(4589)
 const { Readable } = __nccwpck_require__(7075)
-const { RequestAbortedError, NotSupportedError, InvalidArgumentError, AbortError } = __nccwpck_require__(8472)
-const util = __nccwpck_require__(6303)
-const { ReadableStreamFrom } = __nccwpck_require__(6303)
+const { RequestAbortedError, NotSupportedError, InvalidArgumentError, AbortError } = __nccwpck_require__(4826)
+const util = __nccwpck_require__(6133)
+const { ReadableStreamFrom } = __nccwpck_require__(6133)
 
 const kConsume = Symbol('kConsume')
 const kReading = Symbol('kReading')
@@ -22059,15 +22059,15 @@ module.exports = { Readable: BodyReadable, chunksDecode }
 
 /***/ }),
 
-/***/ 6406:
+/***/ 988:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 const assert = __nccwpck_require__(4589)
 const {
   ResponseStatusCodeError
-} = __nccwpck_require__(8472)
+} = __nccwpck_require__(4826)
 
-const { chunksDecode } = __nccwpck_require__(4026)
+const { chunksDecode } = __nccwpck_require__(7512)
 const CHUNK_LIMIT = 128 * 1024
 
 async function getResolveErrorBodyCallback ({ callback, body, contentType, statusCode, statusMessage, headers }) {
@@ -22159,16 +22159,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5229:
+/***/ 6355:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const net = __nccwpck_require__(7030)
 const assert = __nccwpck_require__(4589)
-const util = __nccwpck_require__(6303)
-const { InvalidArgumentError, ConnectTimeoutError } = __nccwpck_require__(8472)
-const timers = __nccwpck_require__(5720)
+const util = __nccwpck_require__(6133)
+const { InvalidArgumentError, ConnectTimeoutError } = __nccwpck_require__(4826)
+const timers = __nccwpck_require__(6482)
 
 function noop () {}
 
@@ -22406,7 +22406,7 @@ module.exports = buildConnector
 
 /***/ }),
 
-/***/ 9874:
+/***/ 2604:
 /***/ ((module) => {
 
 
@@ -22531,7 +22531,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6551:
+/***/ 1233:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -22740,7 +22740,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8472:
+/***/ 4826:
 /***/ ((module) => {
 
 
@@ -23153,7 +23153,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 582:
+/***/ 6928:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -23161,7 +23161,7 @@ module.exports = {
 const {
   InvalidArgumentError,
   NotSupportedError
-} = __nccwpck_require__(8472)
+} = __nccwpck_require__(4826)
 const assert = __nccwpck_require__(4589)
 const {
   isValidHTTPToken,
@@ -23176,9 +23176,9 @@ const {
   validateHandler,
   getServerName,
   normalizedMethodRecords
-} = __nccwpck_require__(6303)
-const { channels } = __nccwpck_require__(6551)
-const { headerNameLowerCasedRecord } = __nccwpck_require__(9874)
+} = __nccwpck_require__(6133)
+const { channels } = __nccwpck_require__(1233)
+const { headerNameLowerCasedRecord } = __nccwpck_require__(2604)
 
 // Verifies that a given path is valid does not contain control chars \x00 to \x20
 const invalidPathRegex = /[^\u0021-\u00ff]/
@@ -23555,7 +23555,7 @@ module.exports = Request
 
 /***/ }),
 
-/***/ 8914:
+/***/ 7884:
 /***/ ((module) => {
 
 module.exports = {
@@ -23629,7 +23629,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5027:
+/***/ 2765:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -23637,7 +23637,7 @@ module.exports = {
 const {
   wellknownHeaderNames,
   headerNameLowerCasedRecord
-} = __nccwpck_require__(9874)
+} = __nccwpck_require__(2604)
 
 class TstNode {
   /** @type {any} */
@@ -23788,13 +23788,13 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6303:
+/***/ 6133:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
-const { kDestroyed, kBodyUsed, kListeners, kBody } = __nccwpck_require__(8914)
+const { kDestroyed, kBodyUsed, kListeners, kBody } = __nccwpck_require__(7884)
 const { IncomingMessage } = __nccwpck_require__(7067)
 const stream = __nccwpck_require__(7075)
 const net = __nccwpck_require__(7030)
@@ -23802,9 +23802,9 @@ const { Blob } = __nccwpck_require__(4573)
 const nodeUtil = __nccwpck_require__(7975)
 const { stringify } = __nccwpck_require__(1792)
 const { EventEmitter: EE } = __nccwpck_require__(8474)
-const { InvalidArgumentError } = __nccwpck_require__(8472)
-const { headerNameLowerCasedRecord } = __nccwpck_require__(9874)
-const { tree } = __nccwpck_require__(5027)
+const { InvalidArgumentError } = __nccwpck_require__(4826)
+const { headerNameLowerCasedRecord } = __nccwpck_require__(2604)
+const { tree } = __nccwpck_require__(2765)
 
 const [nodeMajor, nodeMinor] = process.versions.node.split('.').map(v => Number(v))
 
@@ -24514,18 +24514,18 @@ module.exports = {
 
 /***/ }),
 
-/***/ 12:
+/***/ 8374:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { InvalidArgumentError } = __nccwpck_require__(8472)
-const { kClients, kRunning, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(8914)
-const DispatcherBase = __nccwpck_require__(2220)
-const Pool = __nccwpck_require__(4231)
-const Client = __nccwpck_require__(2602)
-const util = __nccwpck_require__(6303)
-const createRedirectInterceptor = __nccwpck_require__(2753)
+const { InvalidArgumentError } = __nccwpck_require__(4826)
+const { kClients, kRunning, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(7884)
+const DispatcherBase = __nccwpck_require__(1354)
+const Pool = __nccwpck_require__(5685)
+const Client = __nccwpck_require__(2440)
+const util = __nccwpck_require__(6133)
+const createRedirectInterceptor = __nccwpck_require__(3899)
 
 const kOnConnect = Symbol('onConnect')
 const kOnDisconnect = Symbol('onDisconnect')
@@ -24650,7 +24650,7 @@ module.exports = Agent
 
 /***/ }),
 
-/***/ 5884:
+/***/ 4634:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -24658,7 +24658,7 @@ module.exports = Agent
 const {
   BalancedPoolMissingUpstreamError,
   InvalidArgumentError
-} = __nccwpck_require__(8472)
+} = __nccwpck_require__(4826)
 const {
   PoolBase,
   kClients,
@@ -24666,10 +24666,10 @@ const {
   kAddClient,
   kRemoveClient,
   kGetDispatcher
-} = __nccwpck_require__(1949)
-const Pool = __nccwpck_require__(4231)
-const { kUrl, kInterceptors } = __nccwpck_require__(8914)
-const { parseOrigin } = __nccwpck_require__(6303)
+} = __nccwpck_require__(1911)
+const Pool = __nccwpck_require__(5685)
+const { kUrl, kInterceptors } = __nccwpck_require__(7884)
+const { parseOrigin } = __nccwpck_require__(6133)
 const kFactory = Symbol('factory')
 
 const kOptions = Symbol('options')
@@ -24866,7 +24866,7 @@ module.exports = BalancedPool
 
 /***/ }),
 
-/***/ 2204:
+/***/ 4006:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -24874,9 +24874,9 @@ module.exports = BalancedPool
 /* global WebAssembly */
 
 const assert = __nccwpck_require__(4589)
-const util = __nccwpck_require__(6303)
-const { channels } = __nccwpck_require__(6551)
-const timers = __nccwpck_require__(5720)
+const util = __nccwpck_require__(6133)
+const { channels } = __nccwpck_require__(1233)
+const timers = __nccwpck_require__(6482)
 const {
   RequestContentLengthMismatchError,
   ResponseContentLengthMismatchError,
@@ -24888,7 +24888,7 @@ const {
   BodyTimeoutError,
   HTTPParserError,
   ResponseExceededMaxSizeError
-} = __nccwpck_require__(8472)
+} = __nccwpck_require__(4826)
 const {
   kUrl,
   kReset,
@@ -24921,9 +24921,9 @@ const {
   kOnError,
   kResume,
   kHTTPContext
-} = __nccwpck_require__(8914)
+} = __nccwpck_require__(7884)
 
-const constants = __nccwpck_require__(9073)
+const constants = __nccwpck_require__(2151)
 const EMPTY_BUF = Buffer.alloc(0)
 const FastBuffer = Buffer[Symbol.species]
 const addListener = util.addListener
@@ -24932,11 +24932,11 @@ const removeAllListeners = util.removeAllListeners
 let extractBody
 
 async function lazyllhttp () {
-  const llhttpWasmData = process.env.JEST_WORKER_ID ? __nccwpck_require__(3043) : undefined
+  const llhttpWasmData = process.env.JEST_WORKER_ID ? __nccwpck_require__(7409) : undefined
 
   let mod
   try {
-    mod = await WebAssembly.compile(__nccwpck_require__(5497))
+    mod = await WebAssembly.compile(__nccwpck_require__(8051))
   } catch (e) {
     /* istanbul ignore next */
 
@@ -24944,7 +24944,7 @@ async function lazyllhttp () {
     // being enabled, but the occurring of this other error
     // * https://github.com/emscripten-core/emscripten/issues/11495
     // got me to remove that check to avoid breaking Node 12.
-    mod = await WebAssembly.compile(llhttpWasmData || __nccwpck_require__(3043))
+    mod = await WebAssembly.compile(llhttpWasmData || __nccwpck_require__(7409))
   }
 
   return await WebAssembly.instantiate(mod, {
@@ -25739,7 +25739,7 @@ function writeH1 (client, request) {
 
   if (util.isFormDataLike(body)) {
     if (!extractBody) {
-      extractBody = (__nccwpck_require__(5713).extractBody)
+      extractBody = (__nccwpck_require__(1707).extractBody)
     }
 
     const [bodyStream, contentType] = extractBody(body)
@@ -26243,20 +26243,20 @@ module.exports = connectH1
 
 /***/ }),
 
-/***/ 2981:
+/***/ 7827:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
 const { pipeline } = __nccwpck_require__(7075)
-const util = __nccwpck_require__(6303)
+const util = __nccwpck_require__(6133)
 const {
   RequestContentLengthMismatchError,
   RequestAbortedError,
   SocketError,
   InformationalError
-} = __nccwpck_require__(8472)
+} = __nccwpck_require__(4826)
 const {
   kUrl,
   kReset,
@@ -26275,7 +26275,7 @@ const {
   kResume,
   kSize,
   kHTTPContext
-} = __nccwpck_require__(8914)
+} = __nccwpck_require__(7884)
 
 const kOpenStreams = Symbol('open streams')
 
@@ -26634,7 +26634,7 @@ function writeH2 (client, request) {
   let contentLength = util.bodyLength(body)
 
   if (util.isFormDataLike(body)) {
-    extractBody ??= (__nccwpck_require__(5713).extractBody)
+    extractBody ??= (__nccwpck_require__(1707).extractBody)
 
     const [bodyStream, contentType] = extractBody(body)
     headers['content-type'] = contentType
@@ -26994,7 +26994,7 @@ module.exports = connectH2
 
 /***/ }),
 
-/***/ 2602:
+/***/ 2440:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // @ts-check
@@ -27004,16 +27004,16 @@ module.exports = connectH2
 const assert = __nccwpck_require__(4589)
 const net = __nccwpck_require__(7030)
 const http = __nccwpck_require__(7067)
-const util = __nccwpck_require__(6303)
-const { channels } = __nccwpck_require__(6551)
-const Request = __nccwpck_require__(582)
-const DispatcherBase = __nccwpck_require__(2220)
+const util = __nccwpck_require__(6133)
+const { channels } = __nccwpck_require__(1233)
+const Request = __nccwpck_require__(6928)
+const DispatcherBase = __nccwpck_require__(1354)
 const {
   InvalidArgumentError,
   InformationalError,
   ClientDestroyedError
-} = __nccwpck_require__(8472)
-const buildConnector = __nccwpck_require__(5229)
+} = __nccwpck_require__(4826)
+const buildConnector = __nccwpck_require__(6355)
 const {
   kUrl,
   kServerName,
@@ -27055,9 +27055,9 @@ const {
   kHTTPContext,
   kMaxConcurrentStreams,
   kResume
-} = __nccwpck_require__(8914)
-const connectH1 = __nccwpck_require__(2204)
-const connectH2 = __nccwpck_require__(2981)
+} = __nccwpck_require__(7884)
+const connectH1 = __nccwpck_require__(4006)
+const connectH2 = __nccwpck_require__(7827)
 let deprecatedInterceptorWarned = false
 
 const kClosedResolve = Symbol('kClosedResolve')
@@ -27363,7 +27363,7 @@ class Client extends DispatcherBase {
   }
 }
 
-const createRedirectInterceptor = __nccwpck_require__(2753)
+const createRedirectInterceptor = __nccwpck_require__(3899)
 
 function onError (client, err) {
   if (
@@ -27623,18 +27623,18 @@ module.exports = Client
 
 /***/ }),
 
-/***/ 2220:
+/***/ 1354:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Dispatcher = __nccwpck_require__(584)
+const Dispatcher = __nccwpck_require__(9906)
 const {
   ClientDestroyedError,
   ClientClosedError,
   InvalidArgumentError
-} = __nccwpck_require__(8472)
-const { kDestroy, kClose, kClosed, kDestroyed, kDispatch, kInterceptors } = __nccwpck_require__(8914)
+} = __nccwpck_require__(4826)
+const { kDestroy, kClose, kClosed, kDestroyed, kDispatch, kInterceptors } = __nccwpck_require__(7884)
 
 const kOnDestroyed = Symbol('onDestroyed')
 const kOnClosed = Symbol('onClosed')
@@ -27820,7 +27820,7 @@ module.exports = DispatcherBase
 
 /***/ }),
 
-/***/ 584:
+/***/ 9906:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -27892,15 +27892,15 @@ module.exports = Dispatcher
 
 /***/ }),
 
-/***/ 1230:
+/***/ 6916:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const DispatcherBase = __nccwpck_require__(2220)
-const { kClose, kDestroy, kClosed, kDestroyed, kDispatch, kNoProxyAgent, kHttpProxyAgent, kHttpsProxyAgent } = __nccwpck_require__(8914)
-const ProxyAgent = __nccwpck_require__(717)
-const Agent = __nccwpck_require__(12)
+const DispatcherBase = __nccwpck_require__(1354)
+const { kClose, kDestroy, kClosed, kDestroyed, kDispatch, kNoProxyAgent, kHttpProxyAgent, kHttpsProxyAgent } = __nccwpck_require__(7884)
+const ProxyAgent = __nccwpck_require__(8575)
+const Agent = __nccwpck_require__(8374)
 
 const DEFAULT_PORTS = {
   'http:': 80,
@@ -28059,7 +28059,7 @@ module.exports = EnvHttpProxyAgent
 
 /***/ }),
 
-/***/ 4221:
+/***/ 1411:
 /***/ ((module) => {
 
 /* eslint-disable */
@@ -28183,15 +28183,15 @@ module.exports = class FixedQueue {
 
 /***/ }),
 
-/***/ 1949:
+/***/ 1911:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const DispatcherBase = __nccwpck_require__(2220)
-const FixedQueue = __nccwpck_require__(4221)
-const { kConnected, kSize, kRunning, kPending, kQueued, kBusy, kFree, kUrl, kClose, kDestroy, kDispatch } = __nccwpck_require__(8914)
-const PoolStats = __nccwpck_require__(1021)
+const DispatcherBase = __nccwpck_require__(1354)
+const FixedQueue = __nccwpck_require__(1411)
+const { kConnected, kSize, kRunning, kPending, kQueued, kBusy, kFree, kUrl, kClose, kDestroy, kDispatch } = __nccwpck_require__(7884)
+const PoolStats = __nccwpck_require__(9331)
 
 const kClients = Symbol('clients')
 const kNeedDrain = Symbol('needDrain')
@@ -28384,10 +28384,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1021:
+/***/ 9331:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const { kFree, kConnected, kPending, kQueued, kRunning, kSize } = __nccwpck_require__(8914)
+const { kFree, kConnected, kPending, kQueued, kRunning, kSize } = __nccwpck_require__(7884)
 const kPool = Symbol('pool')
 
 class PoolStats {
@@ -28425,7 +28425,7 @@ module.exports = PoolStats
 
 /***/ }),
 
-/***/ 4231:
+/***/ 5685:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -28436,14 +28436,14 @@ const {
   kNeedDrain,
   kAddClient,
   kGetDispatcher
-} = __nccwpck_require__(1949)
-const Client = __nccwpck_require__(2602)
+} = __nccwpck_require__(1911)
+const Client = __nccwpck_require__(2440)
 const {
   InvalidArgumentError
-} = __nccwpck_require__(8472)
-const util = __nccwpck_require__(6303)
-const { kUrl, kInterceptors } = __nccwpck_require__(8914)
-const buildConnector = __nccwpck_require__(5229)
+} = __nccwpck_require__(4826)
+const util = __nccwpck_require__(6133)
+const { kUrl, kInterceptors } = __nccwpck_require__(7884)
+const buildConnector = __nccwpck_require__(6355)
 
 const kOptions = Symbol('options')
 const kConnections = Symbol('connections')
@@ -28539,19 +28539,19 @@ module.exports = Pool
 
 /***/ }),
 
-/***/ 717:
+/***/ 8575:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kProxy, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(8914)
+const { kProxy, kClose, kDestroy, kDispatch, kInterceptors } = __nccwpck_require__(7884)
 const { URL } = __nccwpck_require__(3136)
-const Agent = __nccwpck_require__(12)
-const Pool = __nccwpck_require__(4231)
-const DispatcherBase = __nccwpck_require__(2220)
-const { InvalidArgumentError, RequestAbortedError, SecureProxyConnectionError } = __nccwpck_require__(8472)
-const buildConnector = __nccwpck_require__(5229)
-const Client = __nccwpck_require__(2602)
+const Agent = __nccwpck_require__(8374)
+const Pool = __nccwpck_require__(5685)
+const DispatcherBase = __nccwpck_require__(1354)
+const { InvalidArgumentError, RequestAbortedError, SecureProxyConnectionError } = __nccwpck_require__(4826)
+const buildConnector = __nccwpck_require__(6355)
+const Client = __nccwpck_require__(2440)
 
 const kAgent = Symbol('proxy agent')
 const kClient = Symbol('proxy client')
@@ -28820,13 +28820,13 @@ module.exports = ProxyAgent
 
 /***/ }),
 
-/***/ 4883:
+/***/ 5733:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const Dispatcher = __nccwpck_require__(584)
-const RetryHandler = __nccwpck_require__(695)
+const Dispatcher = __nccwpck_require__(9906)
+const RetryHandler = __nccwpck_require__(1433)
 
 class RetryAgent extends Dispatcher {
   #agent = null
@@ -28862,7 +28862,7 @@ module.exports = RetryAgent
 
 /***/ }),
 
-/***/ 9072:
+/***/ 6046:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -28870,8 +28870,8 @@ module.exports = RetryAgent
 // We include a version number for the Dispatcher API. In case of breaking changes,
 // this version number must be increased to avoid conflicts.
 const globalDispatcher = Symbol.for('undici.globalDispatcher.1')
-const { InvalidArgumentError } = __nccwpck_require__(8472)
-const Agent = __nccwpck_require__(12)
+const { InvalidArgumentError } = __nccwpck_require__(4826)
+const Agent = __nccwpck_require__(8374)
 
 if (getGlobalDispatcher() === undefined) {
   setGlobalDispatcher(new Agent())
@@ -28901,7 +28901,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4988:
+/***/ 4698:
 /***/ ((module) => {
 
 
@@ -28952,15 +28952,15 @@ module.exports = class DecoratorHandler {
 
 /***/ }),
 
-/***/ 9431:
+/***/ 3025:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const util = __nccwpck_require__(6303)
-const { kBodyUsed } = __nccwpck_require__(8914)
+const util = __nccwpck_require__(6133)
+const { kBodyUsed } = __nccwpck_require__(7884)
 const assert = __nccwpck_require__(4589)
-const { InvalidArgumentError } = __nccwpck_require__(8472)
+const { InvalidArgumentError } = __nccwpck_require__(4826)
 const EE = __nccwpck_require__(8474)
 
 const redirectableStatusCodes = [300, 301, 302, 303, 307, 308]
@@ -29191,20 +29191,20 @@ module.exports = RedirectHandler
 
 /***/ }),
 
-/***/ 695:
+/***/ 1433:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 const assert = __nccwpck_require__(4589)
 
-const { kRetryHandlerDefaultRetry } = __nccwpck_require__(8914)
-const { RequestRetryError } = __nccwpck_require__(8472)
+const { kRetryHandlerDefaultRetry } = __nccwpck_require__(7884)
+const { RequestRetryError } = __nccwpck_require__(4826)
 const {
   isDisturbed,
   parseHeaders,
   parseRangeHeader,
   wrapRequestBody
-} = __nccwpck_require__(6303)
+} = __nccwpck_require__(6133)
 
 function calculateRetryAfterHeader (retryAfter) {
   const current = Date.now()
@@ -29572,14 +29572,14 @@ module.exports = RetryHandler
 
 /***/ }),
 
-/***/ 4908:
+/***/ 8314:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 const { isIP } = __nccwpck_require__(7030)
 const { lookup } = __nccwpck_require__(610)
-const DecoratorHandler = __nccwpck_require__(4988)
-const { InvalidArgumentError, InformationalError } = __nccwpck_require__(8472)
+const DecoratorHandler = __nccwpck_require__(4698)
+const { InvalidArgumentError, InformationalError } = __nccwpck_require__(4826)
 const maxInt = Math.pow(2, 31) - 1
 
 class DNSInstance {
@@ -29954,14 +29954,14 @@ module.exports = interceptorOpts => {
 
 /***/ }),
 
-/***/ 465:
+/***/ 5547:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const util = __nccwpck_require__(6303)
-const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(8472)
-const DecoratorHandler = __nccwpck_require__(4988)
+const util = __nccwpck_require__(6133)
+const { InvalidArgumentError, RequestAbortedError } = __nccwpck_require__(4826)
+const DecoratorHandler = __nccwpck_require__(4698)
 
 class DumpHandler extends DecoratorHandler {
   #maxSize = 1024 * 1024
@@ -30084,12 +30084,12 @@ module.exports = createDumpInterceptor
 
 /***/ }),
 
-/***/ 2753:
+/***/ 3899:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const RedirectHandler = __nccwpck_require__(9431)
+const RedirectHandler = __nccwpck_require__(3025)
 
 function createRedirectInterceptor ({ maxRedirections: defaultMaxRedirections }) {
   return (dispatch) => {
@@ -30112,11 +30112,11 @@ module.exports = createRedirectInterceptor
 
 /***/ }),
 
-/***/ 7791:
+/***/ 9429:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
-const RedirectHandler = __nccwpck_require__(9431)
+const RedirectHandler = __nccwpck_require__(3025)
 
 module.exports = opts => {
   const globalMaxRedirections = opts?.maxRedirections
@@ -30143,11 +30143,11 @@ module.exports = opts => {
 
 /***/ }),
 
-/***/ 9301:
+/***/ 8851:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
-const RetryHandler = __nccwpck_require__(695)
+const RetryHandler = __nccwpck_require__(1433)
 
 module.exports = globalOpts => {
   return dispatch => {
@@ -30169,13 +30169,13 @@ module.exports = globalOpts => {
 
 /***/ }),
 
-/***/ 9073:
+/***/ 2151:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SPECIAL_HEADERS = exports.HEADER_STATE = exports.MINOR = exports.MAJOR = exports.CONNECTION_TOKEN_CHARS = exports.HEADER_CHARS = exports.TOKEN = exports.STRICT_TOKEN = exports.HEX = exports.URL_CHAR = exports.STRICT_URL_CHAR = exports.USERINFO_CHARS = exports.MARK = exports.ALPHANUM = exports.NUM = exports.HEX_MAP = exports.NUM_MAP = exports.ALPHA = exports.FINISH = exports.H_METHOD_MAP = exports.METHOD_MAP = exports.METHODS_RTSP = exports.METHODS_ICE = exports.METHODS_HTTP = exports.METHODS = exports.LENIENT_FLAGS = exports.FLAGS = exports.TYPE = exports.ERROR = void 0;
-const utils_1 = __nccwpck_require__(101);
+const utils_1 = __nccwpck_require__(7991);
 // C headers
 var ERROR;
 (function (ERROR) {
@@ -30453,7 +30453,7 @@ exports.SPECIAL_HEADERS = {
 
 /***/ }),
 
-/***/ 3043:
+/***/ 7409:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -30465,7 +30465,7 @@ module.exports = Buffer.from('AGFzbQEAAAABJwdgAX8Bf2ADf39/AX9gAX8AYAJ/fwBgBH9/f3
 
 /***/ }),
 
-/***/ 5497:
+/***/ 8051:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -30477,7 +30477,7 @@ module.exports = Buffer.from('AGFzbQEAAAABJwdgAX8Bf2ADf39/AX9gAX8AYAJ/fwBgBH9/f3
 
 /***/ }),
 
-/***/ 101:
+/***/ 7991:
 /***/ ((__unused_webpack_module, exports) => {
 
 
@@ -30498,13 +30498,13 @@ exports.enumToMap = enumToMap;
 
 /***/ }),
 
-/***/ 4278:
+/***/ 2384:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kClients } = __nccwpck_require__(8914)
-const Agent = __nccwpck_require__(12)
+const { kClients } = __nccwpck_require__(7884)
+const Agent = __nccwpck_require__(8374)
 const {
   kAgent,
   kMockAgentSet,
@@ -30515,14 +30515,14 @@ const {
   kGetNetConnect,
   kOptions,
   kFactory
-} = __nccwpck_require__(8994)
-const MockClient = __nccwpck_require__(6600)
-const MockPool = __nccwpck_require__(4405)
-const { matchValue, buildMockOptions } = __nccwpck_require__(5338)
-const { InvalidArgumentError, UndiciError } = __nccwpck_require__(8472)
-const Dispatcher = __nccwpck_require__(584)
-const Pluralizer = __nccwpck_require__(5486)
-const PendingInterceptorsFormatter = __nccwpck_require__(9133)
+} = __nccwpck_require__(756)
+const MockClient = __nccwpck_require__(1094)
+const MockPool = __nccwpck_require__(7419)
+const { matchValue, buildMockOptions } = __nccwpck_require__(4360)
+const { InvalidArgumentError, UndiciError } = __nccwpck_require__(4826)
+const Dispatcher = __nccwpck_require__(9906)
+const Pluralizer = __nccwpck_require__(5640)
+const PendingInterceptorsFormatter = __nccwpck_require__(5999)
 
 class MockAgent extends Dispatcher {
   constructor (opts) {
@@ -30665,14 +30665,14 @@ module.exports = MockAgent
 
 /***/ }),
 
-/***/ 6600:
+/***/ 1094:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { promisify } = __nccwpck_require__(7975)
-const Client = __nccwpck_require__(2602)
-const { buildMockDispatch } = __nccwpck_require__(5338)
+const Client = __nccwpck_require__(2440)
+const { buildMockDispatch } = __nccwpck_require__(4360)
 const {
   kDispatches,
   kMockAgent,
@@ -30681,10 +30681,10 @@ const {
   kOrigin,
   kOriginalDispatch,
   kConnected
-} = __nccwpck_require__(8994)
-const { MockInterceptor } = __nccwpck_require__(7380)
-const Symbols = __nccwpck_require__(8914)
-const { InvalidArgumentError } = __nccwpck_require__(8472)
+} = __nccwpck_require__(756)
+const { MockInterceptor } = __nccwpck_require__(9466)
+const Symbols = __nccwpck_require__(7884)
+const { InvalidArgumentError } = __nccwpck_require__(4826)
 
 /**
  * MockClient provides an API that extends the Client to influence the mockDispatches.
@@ -30731,12 +30731,12 @@ module.exports = MockClient
 
 /***/ }),
 
-/***/ 104:
+/***/ 8386:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { UndiciError } = __nccwpck_require__(8472)
+const { UndiciError } = __nccwpck_require__(4826)
 
 const kMockNotMatchedError = Symbol.for('undici.error.UND_MOCK_ERR_MOCK_NOT_MATCHED')
 
@@ -30766,12 +30766,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7380:
+/***/ 9466:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { getResponseData, buildKey, addMockDispatch } = __nccwpck_require__(5338)
+const { getResponseData, buildKey, addMockDispatch } = __nccwpck_require__(4360)
 const {
   kDispatches,
   kDispatchKey,
@@ -30779,9 +30779,9 @@ const {
   kDefaultTrailers,
   kContentLength,
   kMockDispatch
-} = __nccwpck_require__(8994)
-const { InvalidArgumentError } = __nccwpck_require__(8472)
-const { buildURL } = __nccwpck_require__(6303)
+} = __nccwpck_require__(756)
+const { InvalidArgumentError } = __nccwpck_require__(4826)
+const { buildURL } = __nccwpck_require__(6133)
 
 /**
  * Defines the scope API for an interceptor reply
@@ -30980,14 +30980,14 @@ module.exports.MockScope = MockScope
 
 /***/ }),
 
-/***/ 4405:
+/***/ 7419:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { promisify } = __nccwpck_require__(7975)
-const Pool = __nccwpck_require__(4231)
-const { buildMockDispatch } = __nccwpck_require__(5338)
+const Pool = __nccwpck_require__(5685)
+const { buildMockDispatch } = __nccwpck_require__(4360)
 const {
   kDispatches,
   kMockAgent,
@@ -30996,10 +30996,10 @@ const {
   kOrigin,
   kOriginalDispatch,
   kConnected
-} = __nccwpck_require__(8994)
-const { MockInterceptor } = __nccwpck_require__(7380)
-const Symbols = __nccwpck_require__(8914)
-const { InvalidArgumentError } = __nccwpck_require__(8472)
+} = __nccwpck_require__(756)
+const { MockInterceptor } = __nccwpck_require__(9466)
+const Symbols = __nccwpck_require__(7884)
+const { InvalidArgumentError } = __nccwpck_require__(4826)
 
 /**
  * MockPool provides an API that extends the Pool to influence the mockDispatches.
@@ -31046,7 +31046,7 @@ module.exports = MockPool
 
 /***/ }),
 
-/***/ 8994:
+/***/ 756:
 /***/ ((module) => {
 
 
@@ -31076,20 +31076,20 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5338:
+/***/ 4360:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { MockNotMatchedError } = __nccwpck_require__(104)
+const { MockNotMatchedError } = __nccwpck_require__(8386)
 const {
   kDispatches,
   kMockAgent,
   kOriginalDispatch,
   kOrigin,
   kGetNetConnect
-} = __nccwpck_require__(8994)
-const { buildURL } = __nccwpck_require__(6303)
+} = __nccwpck_require__(756)
+const { buildURL } = __nccwpck_require__(6133)
 const { STATUS_CODES } = __nccwpck_require__(7067)
 const {
   types: {
@@ -31450,7 +31450,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9133:
+/***/ 5999:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -31500,7 +31500,7 @@ module.exports = class PendingInterceptorsFormatter {
 
 /***/ }),
 
-/***/ 5486:
+/***/ 5640:
 /***/ ((module) => {
 
 
@@ -31536,7 +31536,7 @@ module.exports = class Pluralizer {
 
 /***/ }),
 
-/***/ 5720:
+/***/ 6482:
 /***/ ((module) => {
 
 
@@ -31966,20 +31966,20 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4345:
+/***/ 111:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kConstruct } = __nccwpck_require__(8306)
-const { urlEquals, getFieldValues } = __nccwpck_require__(2175)
-const { kEnumerableProperty, isDisturbed } = __nccwpck_require__(6303)
-const { webidl } = __nccwpck_require__(8748)
-const { Response, cloneResponse, fromInnerResponse } = __nccwpck_require__(4150)
-const { Request, fromInnerRequest } = __nccwpck_require__(4452)
-const { kState } = __nccwpck_require__(3096)
-const { fetching } = __nccwpck_require__(7249)
-const { urlIsHttpHttpsScheme, createDeferredPromise, readAllBytes } = __nccwpck_require__(8201)
+const { kConstruct } = __nccwpck_require__(5880)
+const { urlEquals, getFieldValues } = __nccwpck_require__(409)
+const { kEnumerableProperty, isDisturbed } = __nccwpck_require__(6133)
+const { webidl } = __nccwpck_require__(1214)
+const { Response, cloneResponse, fromInnerResponse } = __nccwpck_require__(4132)
+const { Request, fromInnerRequest } = __nccwpck_require__(7066)
+const { kState } = __nccwpck_require__(2686)
+const { fetching } = __nccwpck_require__(5291)
+const { urlIsHttpHttpsScheme, createDeferredPromise, readAllBytes } = __nccwpck_require__(2787)
 const assert = __nccwpck_require__(4589)
 
 /**
@@ -32832,15 +32832,15 @@ module.exports = {
 
 /***/ }),
 
-/***/ 152:
+/***/ 9042:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kConstruct } = __nccwpck_require__(8306)
-const { Cache } = __nccwpck_require__(4345)
-const { webidl } = __nccwpck_require__(8748)
-const { kEnumerableProperty } = __nccwpck_require__(6303)
+const { kConstruct } = __nccwpck_require__(5880)
+const { Cache } = __nccwpck_require__(111)
+const { webidl } = __nccwpck_require__(1214)
+const { kEnumerableProperty } = __nccwpck_require__(6133)
 
 class CacheStorage {
   /**
@@ -32991,26 +32991,26 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8306:
+/***/ 5880:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 module.exports = {
-  kConstruct: (__nccwpck_require__(8914).kConstruct)
+  kConstruct: (__nccwpck_require__(7884).kConstruct)
 }
 
 
 /***/ }),
 
-/***/ 2175:
+/***/ 409:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const assert = __nccwpck_require__(4589)
-const { URLSerializer } = __nccwpck_require__(8937)
-const { isValidHeaderName } = __nccwpck_require__(8201)
+const { URLSerializer } = __nccwpck_require__(1079)
+const { isValidHeaderName } = __nccwpck_require__(2787)
 
 /**
  * @see https://url.spec.whatwg.org/#concept-url-equals
@@ -33055,7 +33055,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9707:
+/***/ 85:
 /***/ ((module) => {
 
 
@@ -33074,15 +33074,15 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8090:
+/***/ 2032:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { parseSetCookie } = __nccwpck_require__(8889)
-const { stringify } = __nccwpck_require__(196)
-const { webidl } = __nccwpck_require__(8748)
-const { Headers } = __nccwpck_require__(6599)
+const { parseSetCookie } = __nccwpck_require__(9923)
+const { stringify } = __nccwpck_require__(4074)
+const { webidl } = __nccwpck_require__(1214)
+const { Headers } = __nccwpck_require__(6861)
 
 /**
  * @typedef {Object} Cookie
@@ -33265,14 +33265,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8889:
+/***/ 9923:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { maxNameValuePairSize, maxAttributeValueSize } = __nccwpck_require__(9707)
-const { isCTLExcludingHtab } = __nccwpck_require__(196)
-const { collectASequenceOfCodePointsFast } = __nccwpck_require__(8937)
+const { maxNameValuePairSize, maxAttributeValueSize } = __nccwpck_require__(85)
+const { isCTLExcludingHtab } = __nccwpck_require__(4074)
+const { collectASequenceOfCodePointsFast } = __nccwpck_require__(1079)
 const assert = __nccwpck_require__(4589)
 
 /**
@@ -33589,7 +33589,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 196:
+/***/ 4074:
 /***/ ((module) => {
 
 
@@ -33878,12 +33878,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1878:
+/***/ 4384:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 const { Transform } = __nccwpck_require__(7075)
-const { isASCIINumber, isValidLastEventId } = __nccwpck_require__(5530)
+const { isASCIINumber, isValidLastEventId } = __nccwpck_require__(8076)
 
 /**
  * @type {number[]} BOM
@@ -34283,22 +34283,22 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2309:
+/***/ 7435:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { pipeline } = __nccwpck_require__(7075)
-const { fetching } = __nccwpck_require__(7249)
-const { makeRequest } = __nccwpck_require__(4452)
-const { webidl } = __nccwpck_require__(8748)
-const { EventSourceStream } = __nccwpck_require__(1878)
-const { parseMIMEType } = __nccwpck_require__(8937)
-const { createFastMessageEvent } = __nccwpck_require__(6577)
-const { isNetworkError } = __nccwpck_require__(4150)
-const { delay } = __nccwpck_require__(5530)
-const { kEnumerableProperty } = __nccwpck_require__(6303)
-const { environmentSettingsObject } = __nccwpck_require__(8201)
+const { fetching } = __nccwpck_require__(5291)
+const { makeRequest } = __nccwpck_require__(7066)
+const { webidl } = __nccwpck_require__(1214)
+const { EventSourceStream } = __nccwpck_require__(4384)
+const { parseMIMEType } = __nccwpck_require__(1079)
+const { createFastMessageEvent } = __nccwpck_require__(543)
+const { isNetworkError } = __nccwpck_require__(4132)
+const { delay } = __nccwpck_require__(8076)
+const { kEnumerableProperty } = __nccwpck_require__(6133)
+const { environmentSettingsObject } = __nccwpck_require__(2787)
 
 let experimentalWarned = false
 
@@ -34770,7 +34770,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5530:
+/***/ 8076:
 /***/ ((module) => {
 
 
@@ -34814,12 +34814,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5713:
+/***/ 1707:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const util = __nccwpck_require__(6303)
+const util = __nccwpck_require__(6133)
 const {
   ReadableStreamFrom,
   isBlobLike,
@@ -34829,16 +34829,16 @@ const {
   fullyReadBody,
   extractMimeType,
   utf8DecodeBytes
-} = __nccwpck_require__(8201)
-const { FormData } = __nccwpck_require__(7259)
-const { kState } = __nccwpck_require__(3096)
-const { webidl } = __nccwpck_require__(8748)
+} = __nccwpck_require__(2787)
+const { FormData } = __nccwpck_require__(9121)
+const { kState } = __nccwpck_require__(2686)
+const { webidl } = __nccwpck_require__(1214)
 const { Blob } = __nccwpck_require__(4573)
 const assert = __nccwpck_require__(4589)
 const { isErrored, isDisturbed } = __nccwpck_require__(7075)
 const { isArrayBuffer } = __nccwpck_require__(3429)
-const { serializeAMimeType } = __nccwpck_require__(8937)
-const { multipartFormDataParser } = __nccwpck_require__(9539)
+const { serializeAMimeType } = __nccwpck_require__(1079)
+const { multipartFormDataParser } = __nccwpck_require__(1505)
 let random
 
 try {
@@ -35350,7 +35350,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1464:
+/***/ 7518:
 /***/ ((module) => {
 
 
@@ -35481,7 +35481,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8937:
+/***/ 1079:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -36232,12 +36232,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8880:
+/***/ 3062:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kConnected, kSize } = __nccwpck_require__(8914)
+const { kConnected, kSize } = __nccwpck_require__(7884)
 
 class CompatWeakRef {
   constructor (value) {
@@ -36285,14 +36285,14 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ 1683:
+/***/ 273:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { Blob, File } = __nccwpck_require__(4573)
-const { kState } = __nccwpck_require__(3096)
-const { webidl } = __nccwpck_require__(8748)
+const { kState } = __nccwpck_require__(2686)
+const { webidl } = __nccwpck_require__(1214)
 
 // TODO(@KhafraDev): remove
 class FileLike {
@@ -36418,16 +36418,16 @@ module.exports = { FileLike, isFileLike }
 
 /***/ }),
 
-/***/ 9539:
+/***/ 1505:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { isUSVString, bufferToLowerCasedHeaderName } = __nccwpck_require__(6303)
-const { utf8DecodeBytes } = __nccwpck_require__(8201)
-const { HTTP_TOKEN_CODEPOINTS, isomorphicDecode } = __nccwpck_require__(8937)
-const { isFileLike } = __nccwpck_require__(1683)
-const { makeEntry } = __nccwpck_require__(7259)
+const { isUSVString, bufferToLowerCasedHeaderName } = __nccwpck_require__(6133)
+const { utf8DecodeBytes } = __nccwpck_require__(2787)
+const { HTTP_TOKEN_CODEPOINTS, isomorphicDecode } = __nccwpck_require__(1079)
+const { isFileLike } = __nccwpck_require__(273)
+const { makeEntry } = __nccwpck_require__(9121)
 const assert = __nccwpck_require__(4589)
 const { File: NodeFile } = __nccwpck_require__(4573)
 
@@ -36899,16 +36899,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7259:
+/***/ 9121:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { isBlobLike, iteratorMixin } = __nccwpck_require__(8201)
-const { kState } = __nccwpck_require__(3096)
-const { kEnumerableProperty } = __nccwpck_require__(6303)
-const { FileLike, isFileLike } = __nccwpck_require__(1683)
-const { webidl } = __nccwpck_require__(8748)
+const { isBlobLike, iteratorMixin } = __nccwpck_require__(2787)
+const { kState } = __nccwpck_require__(2686)
+const { kEnumerableProperty } = __nccwpck_require__(6133)
+const { FileLike, isFileLike } = __nccwpck_require__(273)
+const { webidl } = __nccwpck_require__(1214)
 const { File: NativeFile } = __nccwpck_require__(4573)
 const nodeUtil = __nccwpck_require__(7975)
 
@@ -37158,7 +37158,7 @@ module.exports = { FormData, makeEntry }
 
 /***/ }),
 
-/***/ 4046:
+/***/ 1772:
 /***/ ((module) => {
 
 
@@ -37205,21 +37205,21 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6599:
+/***/ 6861:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // https://github.com/Ethan-Arrowood/undici-fetch
 
 
 
-const { kConstruct } = __nccwpck_require__(8914)
-const { kEnumerableProperty } = __nccwpck_require__(6303)
+const { kConstruct } = __nccwpck_require__(7884)
+const { kEnumerableProperty } = __nccwpck_require__(6133)
 const {
   iteratorMixin,
   isValidHeaderName,
   isValidHeaderValue
-} = __nccwpck_require__(8201)
-const { webidl } = __nccwpck_require__(8748)
+} = __nccwpck_require__(2787)
+const { webidl } = __nccwpck_require__(1214)
 const assert = __nccwpck_require__(4589)
 const util = __nccwpck_require__(7975)
 
@@ -37899,7 +37899,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7249:
+/***/ 5291:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // https://github.com/Ethan-Arrowood/undici-fetch
@@ -37912,9 +37912,9 @@ const {
   filterResponse,
   makeResponse,
   fromInnerResponse
-} = __nccwpck_require__(4150)
-const { HeadersList } = __nccwpck_require__(6599)
-const { Request, cloneRequest } = __nccwpck_require__(4452)
+} = __nccwpck_require__(4132)
+const { HeadersList } = __nccwpck_require__(6861)
+const { Request, cloneRequest } = __nccwpck_require__(7066)
 const zlib = __nccwpck_require__(8522)
 const {
   bytesMatch,
@@ -37950,23 +37950,23 @@ const {
   buildContentRange,
   createInflate,
   extractMimeType
-} = __nccwpck_require__(8201)
-const { kState, kDispatcher } = __nccwpck_require__(3096)
+} = __nccwpck_require__(2787)
+const { kState, kDispatcher } = __nccwpck_require__(2686)
 const assert = __nccwpck_require__(4589)
-const { safelyExtractBody, extractBody } = __nccwpck_require__(5713)
+const { safelyExtractBody, extractBody } = __nccwpck_require__(1707)
 const {
   redirectStatusSet,
   nullBodyStatus,
   safeMethodsSet,
   requestBodyHeader,
   subresourceSet
-} = __nccwpck_require__(1464)
+} = __nccwpck_require__(7518)
 const EE = __nccwpck_require__(8474)
 const { Readable, pipeline, finished } = __nccwpck_require__(7075)
-const { addAbortListener, isErrored, isReadable, bufferToLowerCasedHeaderName } = __nccwpck_require__(6303)
-const { dataURLProcessor, serializeAMimeType, minimizeSupportedMimeType } = __nccwpck_require__(8937)
-const { getGlobalDispatcher } = __nccwpck_require__(9072)
-const { webidl } = __nccwpck_require__(8748)
+const { addAbortListener, isErrored, isReadable, bufferToLowerCasedHeaderName } = __nccwpck_require__(6133)
+const { dataURLProcessor, serializeAMimeType, minimizeSupportedMimeType } = __nccwpck_require__(1079)
+const { getGlobalDispatcher } = __nccwpck_require__(6046)
+const { webidl } = __nccwpck_require__(1214)
 const { STATUS_CODES } = __nccwpck_require__(7067)
 const GET_OR_HEAD = ['GET', 'HEAD']
 
@@ -40178,23 +40178,23 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4452:
+/***/ 7066:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /* globals AbortController */
 
 
 
-const { extractBody, mixinBody, cloneBody, bodyUnusable } = __nccwpck_require__(5713)
-const { Headers, fill: fillHeaders, HeadersList, setHeadersGuard, getHeadersGuard, setHeadersList, getHeadersList } = __nccwpck_require__(6599)
-const { FinalizationRegistry } = __nccwpck_require__(8880)()
-const util = __nccwpck_require__(6303)
+const { extractBody, mixinBody, cloneBody, bodyUnusable } = __nccwpck_require__(1707)
+const { Headers, fill: fillHeaders, HeadersList, setHeadersGuard, getHeadersGuard, setHeadersList, getHeadersList } = __nccwpck_require__(6861)
+const { FinalizationRegistry } = __nccwpck_require__(3062)()
+const util = __nccwpck_require__(6133)
 const nodeUtil = __nccwpck_require__(7975)
 const {
   isValidHTTPToken,
   sameOrigin,
   environmentSettingsObject
-} = __nccwpck_require__(8201)
+} = __nccwpck_require__(2787)
 const {
   forbiddenMethodsSet,
   corsSafeListedMethodsSet,
@@ -40204,12 +40204,12 @@ const {
   requestCredentials,
   requestCache,
   requestDuplex
-} = __nccwpck_require__(1464)
+} = __nccwpck_require__(7518)
 const { kEnumerableProperty, normalizedMethodRecordsBase, normalizedMethodRecords } = util
-const { kHeaders, kSignal, kState, kDispatcher } = __nccwpck_require__(3096)
-const { webidl } = __nccwpck_require__(8748)
-const { URLSerializer } = __nccwpck_require__(8937)
-const { kConstruct } = __nccwpck_require__(8914)
+const { kHeaders, kSignal, kState, kDispatcher } = __nccwpck_require__(2686)
+const { webidl } = __nccwpck_require__(1214)
+const { URLSerializer } = __nccwpck_require__(1079)
+const { kConstruct } = __nccwpck_require__(7884)
 const assert = __nccwpck_require__(4589)
 const { getMaxListeners, setMaxListeners, getEventListeners, defaultMaxListeners } = __nccwpck_require__(8474)
 
@@ -41222,14 +41222,14 @@ module.exports = { Request, makeRequest, fromInnerRequest, cloneRequest }
 
 /***/ }),
 
-/***/ 4150:
+/***/ 4132:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { Headers, HeadersList, fill, getHeadersGuard, setHeadersGuard, setHeadersList } = __nccwpck_require__(6599)
-const { extractBody, cloneBody, mixinBody, hasFinalizationRegistry, streamRegistry, bodyUnusable } = __nccwpck_require__(5713)
-const util = __nccwpck_require__(6303)
+const { Headers, HeadersList, fill, getHeadersGuard, setHeadersGuard, setHeadersList } = __nccwpck_require__(6861)
+const { extractBody, cloneBody, mixinBody, hasFinalizationRegistry, streamRegistry, bodyUnusable } = __nccwpck_require__(1707)
+const util = __nccwpck_require__(6133)
 const nodeUtil = __nccwpck_require__(7975)
 const { kEnumerableProperty } = util
 const {
@@ -41241,16 +41241,16 @@ const {
   isErrorLike,
   isomorphicEncode,
   environmentSettingsObject: relevantRealm
-} = __nccwpck_require__(8201)
+} = __nccwpck_require__(2787)
 const {
   redirectStatusSet,
   nullBodyStatus
-} = __nccwpck_require__(1464)
-const { kState, kHeaders } = __nccwpck_require__(3096)
-const { webidl } = __nccwpck_require__(8748)
-const { FormData } = __nccwpck_require__(7259)
-const { URLSerializer } = __nccwpck_require__(8937)
-const { kConstruct } = __nccwpck_require__(8914)
+} = __nccwpck_require__(7518)
+const { kState, kHeaders } = __nccwpck_require__(2686)
+const { webidl } = __nccwpck_require__(1214)
+const { FormData } = __nccwpck_require__(9121)
+const { URLSerializer } = __nccwpck_require__(1079)
+const { kConstruct } = __nccwpck_require__(7884)
 const assert = __nccwpck_require__(4589)
 const { types } = __nccwpck_require__(7975)
 
@@ -41839,7 +41839,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3096:
+/***/ 2686:
 /***/ ((module) => {
 
 
@@ -41855,21 +41855,21 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8201:
+/***/ 2787:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { Transform } = __nccwpck_require__(7075)
 const zlib = __nccwpck_require__(8522)
-const { redirectStatusSet, referrerPolicySet: referrerPolicyTokens, badPortsSet } = __nccwpck_require__(1464)
-const { getGlobalOrigin } = __nccwpck_require__(4046)
-const { collectASequenceOfCodePoints, collectAnHTTPQuotedString, removeChars, parseMIMEType } = __nccwpck_require__(8937)
+const { redirectStatusSet, referrerPolicySet: referrerPolicyTokens, badPortsSet } = __nccwpck_require__(7518)
+const { getGlobalOrigin } = __nccwpck_require__(1772)
+const { collectASequenceOfCodePoints, collectAnHTTPQuotedString, removeChars, parseMIMEType } = __nccwpck_require__(1079)
 const { performance } = __nccwpck_require__(643)
-const { isBlobLike, ReadableStreamFrom, isValidHTTPToken, normalizedMethodRecordsBase } = __nccwpck_require__(6303)
+const { isBlobLike, ReadableStreamFrom, isValidHTTPToken, normalizedMethodRecordsBase } = __nccwpck_require__(6133)
 const assert = __nccwpck_require__(4589)
 const { isUint8Array } = __nccwpck_require__(3429)
-const { webidl } = __nccwpck_require__(8748)
+const { webidl } = __nccwpck_require__(1214)
 
 let supportedHashes = []
 
@@ -43494,14 +43494,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8748:
+/***/ 1214:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { types, inspect } = __nccwpck_require__(7975)
 const { markAsUncloneable } = __nccwpck_require__(5919)
-const { toUSVString } = __nccwpck_require__(6303)
+const { toUSVString } = __nccwpck_require__(6133)
 
 /** @type {import('../../../types/webidl').Webidl} */
 const webidl = {}
@@ -44196,7 +44196,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7810:
+/***/ 3196:
 /***/ ((module) => {
 
 
@@ -44493,7 +44493,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9062:
+/***/ 1376:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -44502,16 +44502,16 @@ const {
   staticPropertyDescriptors,
   readOperation,
   fireAProgressEvent
-} = __nccwpck_require__(999)
+} = __nccwpck_require__(581)
 const {
   kState,
   kError,
   kResult,
   kEvents,
   kAborted
-} = __nccwpck_require__(9290)
-const { webidl } = __nccwpck_require__(8748)
-const { kEnumerableProperty } = __nccwpck_require__(6303)
+} = __nccwpck_require__(8812)
+const { webidl } = __nccwpck_require__(1214)
+const { kEnumerableProperty } = __nccwpck_require__(6133)
 
 class FileReader extends EventTarget {
   constructor () {
@@ -44844,12 +44844,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4206:
+/***/ 1160:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { webidl } = __nccwpck_require__(8748)
+const { webidl } = __nccwpck_require__(1214)
 
 const kState = Symbol('ProgressEvent state')
 
@@ -44929,7 +44929,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9290:
+/***/ 8812:
 /***/ ((module) => {
 
 
@@ -44946,7 +44946,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 999:
+/***/ 581:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -44957,10 +44957,10 @@ const {
   kResult,
   kAborted,
   kLastProgressEventFired
-} = __nccwpck_require__(9290)
-const { ProgressEvent } = __nccwpck_require__(4206)
-const { getEncoding } = __nccwpck_require__(7810)
-const { serializeAMimeType, parseMIMEType } = __nccwpck_require__(8937)
+} = __nccwpck_require__(8812)
+const { ProgressEvent } = __nccwpck_require__(1160)
+const { getEncoding } = __nccwpck_require__(3196)
+const { serializeAMimeType, parseMIMEType } = __nccwpck_require__(1079)
 const { types } = __nccwpck_require__(7975)
 const { StringDecoder } = __nccwpck_require__(3193)
 const { btoa } = __nccwpck_require__(4573)
@@ -45344,27 +45344,27 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6344:
+/***/ 7046:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { uid, states, sentCloseFrameState, emptyBuffer, opcodes } = __nccwpck_require__(6379)
+const { uid, states, sentCloseFrameState, emptyBuffer, opcodes } = __nccwpck_require__(1705)
 const {
   kReadyState,
   kSentClose,
   kByteParser,
   kReceivedClose,
   kResponse
-} = __nccwpck_require__(8151)
-const { fireEvent, failWebsocketConnection, isClosing, isClosed, isEstablished, parseExtensions } = __nccwpck_require__(7876)
-const { channels } = __nccwpck_require__(6551)
-const { CloseEvent } = __nccwpck_require__(6577)
-const { makeRequest } = __nccwpck_require__(4452)
-const { fetching } = __nccwpck_require__(7249)
-const { Headers, getHeadersList } = __nccwpck_require__(6599)
-const { getDecodeSplit } = __nccwpck_require__(8201)
-const { WebsocketFrameSend } = __nccwpck_require__(1151)
+} = __nccwpck_require__(2373)
+const { fireEvent, failWebsocketConnection, isClosing, isClosed, isEstablished, parseExtensions } = __nccwpck_require__(3670)
+const { channels } = __nccwpck_require__(1233)
+const { CloseEvent } = __nccwpck_require__(543)
+const { makeRequest } = __nccwpck_require__(7066)
+const { fetching } = __nccwpck_require__(5291)
+const { Headers, getHeadersList } = __nccwpck_require__(6861)
+const { getDecodeSplit } = __nccwpck_require__(2787)
+const { WebsocketFrameSend } = __nccwpck_require__(7893)
 
 /** @type {import('crypto')} */
 let crypto
@@ -45722,7 +45722,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6379:
+/***/ 1705:
 /***/ ((module) => {
 
 
@@ -45795,14 +45795,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6577:
+/***/ 543:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { webidl } = __nccwpck_require__(8748)
-const { kEnumerableProperty } = __nccwpck_require__(6303)
-const { kConstruct } = __nccwpck_require__(8914)
+const { webidl } = __nccwpck_require__(1214)
+const { kEnumerableProperty } = __nccwpck_require__(6133)
+const { kConstruct } = __nccwpck_require__(7884)
 const { MessagePort } = __nccwpck_require__(5919)
 
 /**
@@ -46131,12 +46131,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1151:
+/***/ 7893:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { maxUnsigned16Bit } = __nccwpck_require__(6379)
+const { maxUnsigned16Bit } = __nccwpck_require__(1705)
 
 const BUFFER_SIZE = 16386
 
@@ -46234,13 +46234,13 @@ module.exports = {
 
 /***/ }),
 
-/***/ 9108:
+/***/ 4666:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { createInflateRaw, Z_DEFAULT_WINDOWBITS } = __nccwpck_require__(8522)
-const { isValidClientWindowBits } = __nccwpck_require__(7876)
+const { isValidClientWindowBits } = __nccwpck_require__(3670)
 
 const tail = Buffer.from([0x00, 0x00, 0xff, 0xff])
 const kBuffer = Symbol('kBuffer')
@@ -46311,16 +46311,16 @@ module.exports = { PerMessageDeflate }
 
 /***/ }),
 
-/***/ 7129:
+/***/ 4963:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
 const { Writable } = __nccwpck_require__(7075)
 const assert = __nccwpck_require__(4589)
-const { parserStates, opcodes, states, emptyBuffer, sentCloseFrameState } = __nccwpck_require__(6379)
-const { kReadyState, kSentClose, kResponse, kReceivedClose } = __nccwpck_require__(8151)
-const { channels } = __nccwpck_require__(6551)
+const { parserStates, opcodes, states, emptyBuffer, sentCloseFrameState } = __nccwpck_require__(1705)
+const { kReadyState, kSentClose, kResponse, kReceivedClose } = __nccwpck_require__(2373)
+const { channels } = __nccwpck_require__(1233)
 const {
   isValidStatusCode,
   isValidOpcode,
@@ -46330,10 +46330,10 @@ const {
   isControlFrame,
   isTextBinaryFrame,
   isContinuationFrame
-} = __nccwpck_require__(7876)
-const { WebsocketFrameSend } = __nccwpck_require__(1151)
-const { closeWebSocketConnection } = __nccwpck_require__(6344)
-const { PerMessageDeflate } = __nccwpck_require__(9108)
+} = __nccwpck_require__(3670)
+const { WebsocketFrameSend } = __nccwpck_require__(7893)
+const { closeWebSocketConnection } = __nccwpck_require__(7046)
+const { PerMessageDeflate } = __nccwpck_require__(4666)
 
 // This code was influenced by ws released under the MIT license.
 // Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>
@@ -46742,14 +46742,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3577:
+/***/ 47:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { WebsocketFrameSend } = __nccwpck_require__(1151)
-const { opcodes, sendHints } = __nccwpck_require__(6379)
-const FixedQueue = __nccwpck_require__(4221)
+const { WebsocketFrameSend } = __nccwpck_require__(7893)
+const { opcodes, sendHints } = __nccwpck_require__(1705)
+const FixedQueue = __nccwpck_require__(1411)
 
 /** @type {typeof Uint8Array} */
 const FastBuffer = Buffer[Symbol.species]
@@ -46853,7 +46853,7 @@ module.exports = { SendQueue }
 
 /***/ }),
 
-/***/ 8151:
+/***/ 2373:
 /***/ ((module) => {
 
 
@@ -46872,16 +46872,16 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7876:
+/***/ 3670:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { kReadyState, kController, kResponse, kBinaryType, kWebSocketURL } = __nccwpck_require__(8151)
-const { states, opcodes } = __nccwpck_require__(6379)
-const { ErrorEvent, createFastMessageEvent } = __nccwpck_require__(6577)
+const { kReadyState, kController, kResponse, kBinaryType, kWebSocketURL } = __nccwpck_require__(2373)
+const { states, opcodes } = __nccwpck_require__(1705)
+const { ErrorEvent, createFastMessageEvent } = __nccwpck_require__(543)
 const { isUtf8 } = __nccwpck_require__(4573)
-const { collectASequenceOfCodePointsFast, removeHTTPWhitespace } = __nccwpck_require__(8937)
+const { collectASequenceOfCodePointsFast, removeHTTPWhitespace } = __nccwpck_require__(1079)
 
 /* globals Blob */
 
@@ -47193,15 +47193,15 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2405:
+/***/ 4835:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
 
-const { webidl } = __nccwpck_require__(8748)
-const { URLSerializer } = __nccwpck_require__(8937)
-const { environmentSettingsObject } = __nccwpck_require__(8201)
-const { staticPropertyDescriptors, states, sentCloseFrameState, sendHints } = __nccwpck_require__(6379)
+const { webidl } = __nccwpck_require__(1214)
+const { URLSerializer } = __nccwpck_require__(1079)
+const { environmentSettingsObject } = __nccwpck_require__(2787)
+const { staticPropertyDescriptors, states, sentCloseFrameState, sendHints } = __nccwpck_require__(1705)
 const {
   kWebSocketURL,
   kReadyState,
@@ -47210,21 +47210,21 @@ const {
   kResponse,
   kSentClose,
   kByteParser
-} = __nccwpck_require__(8151)
+} = __nccwpck_require__(2373)
 const {
   isConnecting,
   isEstablished,
   isClosing,
   isValidSubprotocol,
   fireEvent
-} = __nccwpck_require__(7876)
-const { establishWebSocketConnection, closeWebSocketConnection } = __nccwpck_require__(6344)
-const { ByteParser } = __nccwpck_require__(7129)
-const { kEnumerableProperty, isBlobLike } = __nccwpck_require__(6303)
-const { getGlobalDispatcher } = __nccwpck_require__(9072)
+} = __nccwpck_require__(3670)
+const { establishWebSocketConnection, closeWebSocketConnection } = __nccwpck_require__(7046)
+const { ByteParser } = __nccwpck_require__(4963)
+const { kEnumerableProperty, isBlobLike } = __nccwpck_require__(6133)
+const { getGlobalDispatcher } = __nccwpck_require__(6046)
 const { types } = __nccwpck_require__(7975)
-const { ErrorEvent, CloseEvent } = __nccwpck_require__(6577)
-const { SendQueue } = __nccwpck_require__(3577)
+const { ErrorEvent, CloseEvent } = __nccwpck_require__(543)
+const { SendQueue } = __nccwpck_require__(47)
 
 // https://websockets.spec.whatwg.org/#interface-definition
 class WebSocket extends EventTarget {
@@ -47788,12 +47788,12 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2548:
+/***/ 6250:
 /***/ ((module, __unused_webpack___webpack_exports__, __nccwpck_require__) => {
 
 __nccwpck_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(369);
-/* harmony import */ var _runOctoGuideAction_js__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(230);
+/* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(2439);
+/* harmony import */ var _runOctoGuideAction_js__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(9613);
 
 
 await (0,_runOctoGuideAction_js__WEBPACK_IMPORTED_MODULE_1__/* .runOctoGuideAction */ .t)(_actions_github__WEBPACK_IMPORTED_MODULE_0__/* .context */ ._);
@@ -47803,7 +47803,7 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 230:
+/***/ 9613:
 /***/ ((__unused_webpack_module, __webpack_exports__, __nccwpck_require__) => {
 
 
@@ -47834,11 +47834,12 @@ __nccwpck_require__.d(uc_micro_namespaceObject, {
   Z: () => (Z_regex)
 });
 
-// NAMESPACE OBJECT: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/common/utils.mjs
+// NAMESPACE OBJECT: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/common/utils.mjs
 var common_utils_namespaceObject = {};
 __nccwpck_require__.r(common_utils_namespaceObject);
 __nccwpck_require__.d(common_utils_namespaceObject, {
   arrayReplaceAt: () => (arrayReplaceAt),
+  asciiTrim: () => (asciiTrim),
   assign: () => (utils_assign),
   escapeHtml: () => (escapeHtml),
   escapeRE: () => (escapeRE),
@@ -47846,6 +47847,7 @@ __nccwpck_require__.d(common_utils_namespaceObject, {
   has: () => (has),
   isMdAsciiPunct: () => (isMdAsciiPunct),
   isPunctChar: () => (isPunctChar),
+  isPunctCharCode: () => (isPunctCharCode),
   isSpace: () => (isSpace),
   isString: () => (isString),
   isValidEntityCode: () => (isValidEntityCode),
@@ -47856,7 +47858,7 @@ __nccwpck_require__.d(common_utils_namespaceObject, {
   unescapeMd: () => (unescapeMd)
 });
 
-// NAMESPACE OBJECT: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/helpers/index.mjs
+// NAMESPACE OBJECT: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/helpers/index.mjs
 var helpers_namespaceObject = {};
 __nccwpck_require__.r(helpers_namespaceObject);
 __nccwpck_require__.d(helpers_namespaceObject, {
@@ -48147,9 +48149,9 @@ class DecodedURL extends URL {
 }
 //# sourceMappingURL=proxy.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/tunnel@0.0.6/node_modules/tunnel/index.js
-var node_modules_tunnel = __nccwpck_require__(6124);
+var node_modules_tunnel = __nccwpck_require__(1410);
 // EXTERNAL MODULE: ./node_modules/.pnpm/undici@6.23.0/node_modules/undici/index.js
-var undici = __nccwpck_require__(1103);
+var undici = __nccwpck_require__(5065);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.0/node_modules/@actions/http-client/lib/index.js
 /* eslint-disable @typescript-eslint/no-explicit-any */
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -50825,816 +50827,6 @@ function getIDToken(aud) {
  */
 
 //# sourceMappingURL=core.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/ansi-styles/index.js
-const ANSI_BACKGROUND_OFFSET = 10;
-
-const wrapAnsi16 = (offset = 0) => code => `\u001B[${code + offset}m`;
-
-const wrapAnsi256 = (offset = 0) => code => `\u001B[${38 + offset};5;${code}m`;
-
-const wrapAnsi16m = (offset = 0) => (red, green, blue) => `\u001B[${38 + offset};2;${red};${green};${blue}m`;
-
-const styles = {
-	modifier: {
-		reset: [0, 0],
-		// 21 isn't widely supported and 22 does the same thing
-		bold: [1, 22],
-		dim: [2, 22],
-		italic: [3, 23],
-		underline: [4, 24],
-		overline: [53, 55],
-		inverse: [7, 27],
-		hidden: [8, 28],
-		strikethrough: [9, 29],
-	},
-	color: {
-		black: [30, 39],
-		red: [31, 39],
-		green: [32, 39],
-		yellow: [33, 39],
-		blue: [34, 39],
-		magenta: [35, 39],
-		cyan: [36, 39],
-		white: [37, 39],
-
-		// Bright color
-		blackBright: [90, 39],
-		gray: [90, 39], // Alias of `blackBright`
-		grey: [90, 39], // Alias of `blackBright`
-		redBright: [91, 39],
-		greenBright: [92, 39],
-		yellowBright: [93, 39],
-		blueBright: [94, 39],
-		magentaBright: [95, 39],
-		cyanBright: [96, 39],
-		whiteBright: [97, 39],
-	},
-	bgColor: {
-		bgBlack: [40, 49],
-		bgRed: [41, 49],
-		bgGreen: [42, 49],
-		bgYellow: [43, 49],
-		bgBlue: [44, 49],
-		bgMagenta: [45, 49],
-		bgCyan: [46, 49],
-		bgWhite: [47, 49],
-
-		// Bright color
-		bgBlackBright: [100, 49],
-		bgGray: [100, 49], // Alias of `bgBlackBright`
-		bgGrey: [100, 49], // Alias of `bgBlackBright`
-		bgRedBright: [101, 49],
-		bgGreenBright: [102, 49],
-		bgYellowBright: [103, 49],
-		bgBlueBright: [104, 49],
-		bgMagentaBright: [105, 49],
-		bgCyanBright: [106, 49],
-		bgWhiteBright: [107, 49],
-	},
-};
-
-const modifierNames = Object.keys(styles.modifier);
-const foregroundColorNames = Object.keys(styles.color);
-const backgroundColorNames = Object.keys(styles.bgColor);
-const colorNames = [...foregroundColorNames, ...backgroundColorNames];
-
-function assembleStyles() {
-	const codes = new Map();
-
-	for (const [groupName, group] of Object.entries(styles)) {
-		for (const [styleName, style] of Object.entries(group)) {
-			styles[styleName] = {
-				open: `\u001B[${style[0]}m`,
-				close: `\u001B[${style[1]}m`,
-			};
-
-			group[styleName] = styles[styleName];
-
-			codes.set(style[0], style[1]);
-		}
-
-		Object.defineProperty(styles, groupName, {
-			value: group,
-			enumerable: false,
-		});
-	}
-
-	Object.defineProperty(styles, 'codes', {
-		value: codes,
-		enumerable: false,
-	});
-
-	styles.color.close = '\u001B[39m';
-	styles.bgColor.close = '\u001B[49m';
-
-	styles.color.ansi = wrapAnsi16();
-	styles.color.ansi256 = wrapAnsi256();
-	styles.color.ansi16m = wrapAnsi16m();
-	styles.bgColor.ansi = wrapAnsi16(ANSI_BACKGROUND_OFFSET);
-	styles.bgColor.ansi256 = wrapAnsi256(ANSI_BACKGROUND_OFFSET);
-	styles.bgColor.ansi16m = wrapAnsi16m(ANSI_BACKGROUND_OFFSET);
-
-	// From https://github.com/Qix-/color-convert/blob/3f0e0d4e92e235796ccb17f6e85c72094a651f49/conversions.js
-	Object.defineProperties(styles, {
-		rgbToAnsi256: {
-			value(red, green, blue) {
-				// We use the extended greyscale palette here, with the exception of
-				// black and white. normal palette only has 4 greyscale shades.
-				if (red === green && green === blue) {
-					if (red < 8) {
-						return 16;
-					}
-
-					if (red > 248) {
-						return 231;
-					}
-
-					return Math.round(((red - 8) / 247) * 24) + 232;
-				}
-
-				return 16
-					+ (36 * Math.round(red / 255 * 5))
-					+ (6 * Math.round(green / 255 * 5))
-					+ Math.round(blue / 255 * 5);
-			},
-			enumerable: false,
-		},
-		hexToRgb: {
-			value(hex) {
-				const matches = /[a-f\d]{6}|[a-f\d]{3}/i.exec(hex.toString(16));
-				if (!matches) {
-					return [0, 0, 0];
-				}
-
-				let [colorString] = matches;
-
-				if (colorString.length === 3) {
-					colorString = [...colorString].map(character => character + character).join('');
-				}
-
-				const integer = Number.parseInt(colorString, 16);
-
-				return [
-					/* eslint-disable no-bitwise */
-					(integer >> 16) & 0xFF,
-					(integer >> 8) & 0xFF,
-					integer & 0xFF,
-					/* eslint-enable no-bitwise */
-				];
-			},
-			enumerable: false,
-		},
-		hexToAnsi256: {
-			value: hex => styles.rgbToAnsi256(...styles.hexToRgb(hex)),
-			enumerable: false,
-		},
-		ansi256ToAnsi: {
-			value(code) {
-				if (code < 8) {
-					return 30 + code;
-				}
-
-				if (code < 16) {
-					return 90 + (code - 8);
-				}
-
-				let red;
-				let green;
-				let blue;
-
-				if (code >= 232) {
-					red = (((code - 232) * 10) + 8) / 255;
-					green = red;
-					blue = red;
-				} else {
-					code -= 16;
-
-					const remainder = code % 36;
-
-					red = Math.floor(code / 36) / 5;
-					green = Math.floor(remainder / 6) / 5;
-					blue = (remainder % 6) / 5;
-				}
-
-				const value = Math.max(red, green, blue) * 2;
-
-				if (value === 0) {
-					return 30;
-				}
-
-				// eslint-disable-next-line no-bitwise
-				let result = 30 + ((Math.round(blue) << 2) | (Math.round(green) << 1) | Math.round(red));
-
-				if (value === 2) {
-					result += 60;
-				}
-
-				return result;
-			},
-			enumerable: false,
-		},
-		rgbToAnsi: {
-			value: (red, green, blue) => styles.ansi256ToAnsi(styles.rgbToAnsi256(red, green, blue)),
-			enumerable: false,
-		},
-		hexToAnsi: {
-			value: hex => styles.ansi256ToAnsi(styles.hexToAnsi256(hex)),
-			enumerable: false,
-		},
-	});
-
-	return styles;
-}
-
-const ansiStyles = assembleStyles();
-
-/* harmony default export */ const ansi_styles = (ansiStyles);
-
-;// CONCATENATED MODULE: external "node:process"
-const external_node_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:process");
-;// CONCATENATED MODULE: external "node:os"
-const external_node_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:os");
-;// CONCATENATED MODULE: external "node:tty"
-const external_node_tty_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:tty");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/supports-color/index.js
-
-
-
-
-// From: https://github.com/sindresorhus/has-flag/blob/main/index.js
-/// function hasFlag(flag, argv = globalThis.Deno?.args ?? process.argv) {
-function hasFlag(flag, argv = globalThis.Deno ? globalThis.Deno.args : external_node_process_namespaceObject.argv) {
-	const prefix = flag.startsWith('-') ? '' : (flag.length === 1 ? '-' : '--');
-	const position = argv.indexOf(prefix + flag);
-	const terminatorPosition = argv.indexOf('--');
-	return position !== -1 && (terminatorPosition === -1 || position < terminatorPosition);
-}
-
-const {env} = external_node_process_namespaceObject;
-
-let flagForceColor;
-if (
-	hasFlag('no-color')
-	|| hasFlag('no-colors')
-	|| hasFlag('color=false')
-	|| hasFlag('color=never')
-) {
-	flagForceColor = 0;
-} else if (
-	hasFlag('color')
-	|| hasFlag('colors')
-	|| hasFlag('color=true')
-	|| hasFlag('color=always')
-) {
-	flagForceColor = 1;
-}
-
-function envForceColor() {
-	if ('FORCE_COLOR' in env) {
-		if (env.FORCE_COLOR === 'true') {
-			return 1;
-		}
-
-		if (env.FORCE_COLOR === 'false') {
-			return 0;
-		}
-
-		return env.FORCE_COLOR.length === 0 ? 1 : Math.min(Number.parseInt(env.FORCE_COLOR, 10), 3);
-	}
-}
-
-function translateLevel(level) {
-	if (level === 0) {
-		return false;
-	}
-
-	return {
-		level,
-		hasBasic: true,
-		has256: level >= 2,
-		has16m: level >= 3,
-	};
-}
-
-function _supportsColor(haveStream, {streamIsTTY, sniffFlags = true} = {}) {
-	const noFlagForceColor = envForceColor();
-	if (noFlagForceColor !== undefined) {
-		flagForceColor = noFlagForceColor;
-	}
-
-	const forceColor = sniffFlags ? flagForceColor : noFlagForceColor;
-
-	if (forceColor === 0) {
-		return 0;
-	}
-
-	if (sniffFlags) {
-		if (hasFlag('color=16m')
-			|| hasFlag('color=full')
-			|| hasFlag('color=truecolor')) {
-			return 3;
-		}
-
-		if (hasFlag('color=256')) {
-			return 2;
-		}
-	}
-
-	// Check for Azure DevOps pipelines.
-	// Has to be above the `!streamIsTTY` check.
-	if ('TF_BUILD' in env && 'AGENT_NAME' in env) {
-		return 1;
-	}
-
-	if (haveStream && !streamIsTTY && forceColor === undefined) {
-		return 0;
-	}
-
-	const min = forceColor || 0;
-
-	if (env.TERM === 'dumb') {
-		return min;
-	}
-
-	if (external_node_process_namespaceObject.platform === 'win32') {
-		// Windows 10 build 10586 is the first Windows release that supports 256 colors.
-		// Windows 10 build 14931 is the first release that supports 16m/TrueColor.
-		const osRelease = external_node_os_namespaceObject.release().split('.');
-		if (
-			Number(osRelease[0]) >= 10
-			&& Number(osRelease[2]) >= 10_586
-		) {
-			return Number(osRelease[2]) >= 14_931 ? 3 : 2;
-		}
-
-		return 1;
-	}
-
-	if ('CI' in env) {
-		if (['GITHUB_ACTIONS', 'GITEA_ACTIONS', 'CIRCLECI'].some(key => key in env)) {
-			return 3;
-		}
-
-		if (['TRAVIS', 'APPVEYOR', 'GITLAB_CI', 'BUILDKITE', 'DRONE'].some(sign => sign in env) || env.CI_NAME === 'codeship') {
-			return 1;
-		}
-
-		return min;
-	}
-
-	if ('TEAMCITY_VERSION' in env) {
-		return /^(9\.(0*[1-9]\d*)\.|\d{2,}\.)/.test(env.TEAMCITY_VERSION) ? 1 : 0;
-	}
-
-	if (env.COLORTERM === 'truecolor') {
-		return 3;
-	}
-
-	if (env.TERM === 'xterm-kitty') {
-		return 3;
-	}
-
-	if (env.TERM === 'xterm-ghostty') {
-		return 3;
-	}
-
-	if (env.TERM === 'wezterm') {
-		return 3;
-	}
-
-	if ('TERM_PROGRAM' in env) {
-		const version = Number.parseInt((env.TERM_PROGRAM_VERSION || '').split('.')[0], 10);
-
-		switch (env.TERM_PROGRAM) {
-			case 'iTerm.app': {
-				return version >= 3 ? 3 : 2;
-			}
-
-			case 'Apple_Terminal': {
-				return 2;
-			}
-			// No default
-		}
-	}
-
-	if (/-256(color)?$/i.test(env.TERM)) {
-		return 2;
-	}
-
-	if (/^screen|^xterm|^vt100|^vt220|^rxvt|color|ansi|cygwin|linux/i.test(env.TERM)) {
-		return 1;
-	}
-
-	if ('COLORTERM' in env) {
-		return 1;
-	}
-
-	return min;
-}
-
-function createSupportsColor(stream, options = {}) {
-	const level = _supportsColor(stream, {
-		streamIsTTY: stream && stream.isTTY,
-		...options,
-	});
-
-	return translateLevel(level);
-}
-
-const supportsColor = {
-	stdout: createSupportsColor({isTTY: external_node_tty_namespaceObject.isatty(1)}),
-	stderr: createSupportsColor({isTTY: external_node_tty_namespaceObject.isatty(2)}),
-};
-
-/* harmony default export */ const supports_color = (supportsColor);
-
-;// CONCATENATED MODULE: ./node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/utilities.js
-// TODO: When targeting Node.js 16, use `String.prototype.replaceAll`.
-function stringReplaceAll(string, substring, replacer) {
-	let index = string.indexOf(substring);
-	if (index === -1) {
-		return string;
-	}
-
-	const substringLength = substring.length;
-	let endIndex = 0;
-	let returnValue = '';
-	do {
-		returnValue += string.slice(endIndex, index) + substring + replacer;
-		endIndex = index + substringLength;
-		index = string.indexOf(substring, endIndex);
-	} while (index !== -1);
-
-	returnValue += string.slice(endIndex);
-	return returnValue;
-}
-
-function stringEncaseCRLFWithFirstIndex(string, prefix, postfix, index) {
-	let endIndex = 0;
-	let returnValue = '';
-	do {
-		const gotCR = string[index - 1] === '\r';
-		returnValue += string.slice(endIndex, (gotCR ? index - 1 : index)) + prefix + (gotCR ? '\r\n' : '\n') + postfix;
-		endIndex = index + 1;
-		index = string.indexOf('\n', endIndex);
-	} while (index !== -1);
-
-	returnValue += string.slice(endIndex);
-	return returnValue;
-}
-
-;// CONCATENATED MODULE: ./node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js
-
-
-
-
-const {stdout: stdoutColor, stderr: stderrColor} = supports_color;
-
-const GENERATOR = Symbol('GENERATOR');
-const STYLER = Symbol('STYLER');
-const IS_EMPTY = Symbol('IS_EMPTY');
-
-// `supportsColor.level` → `ansiStyles.color[name]` mapping
-const levelMapping = [
-	'ansi',
-	'ansi',
-	'ansi256',
-	'ansi16m',
-];
-
-const source_styles = Object.create(null);
-
-const applyOptions = (object, options = {}) => {
-	if (options.level && !(Number.isInteger(options.level) && options.level >= 0 && options.level <= 3)) {
-		throw new Error('The `level` option should be an integer from 0 to 3');
-	}
-
-	// Detect level if not set manually
-	const colorLevel = stdoutColor ? stdoutColor.level : 0;
-	object.level = options.level === undefined ? colorLevel : options.level;
-};
-
-class Chalk {
-	constructor(options) {
-		// eslint-disable-next-line no-constructor-return
-		return chalkFactory(options);
-	}
-}
-
-const chalkFactory = options => {
-	const chalk = (...strings) => strings.join(' ');
-	applyOptions(chalk, options);
-
-	Object.setPrototypeOf(chalk, createChalk.prototype);
-
-	return chalk;
-};
-
-function createChalk(options) {
-	return chalkFactory(options);
-}
-
-Object.setPrototypeOf(createChalk.prototype, Function.prototype);
-
-for (const [styleName, style] of Object.entries(ansi_styles)) {
-	source_styles[styleName] = {
-		get() {
-			const builder = createBuilder(this, createStyler(style.open, style.close, this[STYLER]), this[IS_EMPTY]);
-			Object.defineProperty(this, styleName, {value: builder});
-			return builder;
-		},
-	};
-}
-
-source_styles.visible = {
-	get() {
-		const builder = createBuilder(this, this[STYLER], true);
-		Object.defineProperty(this, 'visible', {value: builder});
-		return builder;
-	},
-};
-
-const getModelAnsi = (model, level, type, ...arguments_) => {
-	if (model === 'rgb') {
-		if (level === 'ansi16m') {
-			return ansi_styles[type].ansi16m(...arguments_);
-		}
-
-		if (level === 'ansi256') {
-			return ansi_styles[type].ansi256(ansi_styles.rgbToAnsi256(...arguments_));
-		}
-
-		return ansi_styles[type].ansi(ansi_styles.rgbToAnsi(...arguments_));
-	}
-
-	if (model === 'hex') {
-		return getModelAnsi('rgb', level, type, ...ansi_styles.hexToRgb(...arguments_));
-	}
-
-	return ansi_styles[type][model](...arguments_);
-};
-
-const usedModels = ['rgb', 'hex', 'ansi256'];
-
-for (const model of usedModels) {
-	source_styles[model] = {
-		get() {
-			const {level} = this;
-			return function (...arguments_) {
-				const styler = createStyler(getModelAnsi(model, levelMapping[level], 'color', ...arguments_), ansi_styles.color.close, this[STYLER]);
-				return createBuilder(this, styler, this[IS_EMPTY]);
-			};
-		},
-	};
-
-	const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);
-	source_styles[bgModel] = {
-		get() {
-			const {level} = this;
-			return function (...arguments_) {
-				const styler = createStyler(getModelAnsi(model, levelMapping[level], 'bgColor', ...arguments_), ansi_styles.bgColor.close, this[STYLER]);
-				return createBuilder(this, styler, this[IS_EMPTY]);
-			};
-		},
-	};
-}
-
-const proto = Object.defineProperties(() => {}, {
-	...source_styles,
-	level: {
-		enumerable: true,
-		get() {
-			return this[GENERATOR].level;
-		},
-		set(level) {
-			this[GENERATOR].level = level;
-		},
-	},
-});
-
-const createStyler = (open, close, parent) => {
-	let openAll;
-	let closeAll;
-	if (parent === undefined) {
-		openAll = open;
-		closeAll = close;
-	} else {
-		openAll = parent.openAll + open;
-		closeAll = close + parent.closeAll;
-	}
-
-	return {
-		open,
-		close,
-		openAll,
-		closeAll,
-		parent,
-	};
-};
-
-const createBuilder = (self, _styler, _isEmpty) => {
-	// Single argument is hot path, implicit coercion is faster than anything
-	// eslint-disable-next-line no-implicit-coercion
-	const builder = (...arguments_) => applyStyle(builder, (arguments_.length === 1) ? ('' + arguments_[0]) : arguments_.join(' '));
-
-	// We alter the prototype because we must return a function, but there is
-	// no way to create a function with a different prototype
-	Object.setPrototypeOf(builder, proto);
-
-	builder[GENERATOR] = self;
-	builder[STYLER] = _styler;
-	builder[IS_EMPTY] = _isEmpty;
-
-	return builder;
-};
-
-const applyStyle = (self, string) => {
-	if (self.level <= 0 || !string) {
-		return self[IS_EMPTY] ? '' : string;
-	}
-
-	let styler = self[STYLER];
-
-	if (styler === undefined) {
-		return string;
-	}
-
-	const {openAll, closeAll} = styler;
-	if (string.includes('\u001B')) {
-		while (styler !== undefined) {
-			// Replace any instances already present with a re-opening code
-			// otherwise only the part of the string until said closing code
-			// will be colored, and the rest will simply be 'plain'.
-			string = stringReplaceAll(string, styler.close, styler.open);
-
-			styler = styler.parent;
-		}
-	}
-
-	// We can move both next actions out of loop, because remaining actions in loop won't have
-	// any/visible effect on parts we add here. Close the styling before a linebreak and reopen
-	// after next line to fix a bleed issue on macOS: https://github.com/chalk/chalk/pull/92
-	const lfIndex = string.indexOf('\n');
-	if (lfIndex !== -1) {
-		string = stringEncaseCRLFWithFirstIndex(string, closeAll, openAll, lfIndex);
-	}
-
-	return openAll + string + closeAll;
-};
-
-Object.defineProperties(createChalk.prototype, source_styles);
-
-const chalk = createChalk();
-const chalkStderr = createChalk({level: stderrColor ? stderrColor.level : 0});
-
-
-
-
-
-/* harmony default export */ const source = (chalk);
-
-// EXTERNAL MODULE: ./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js
-var lodash = __nccwpck_require__(2594);
-var lodash_default = /*#__PURE__*/__nccwpck_require__.n(lodash);
-;// CONCATENATED MODULE: ./src/action/groupBy.ts
-
-// I promise this works.
-// eslint-disable-next-line @typescript-eslint/unbound-method
-const { groupBy } = (lodash_default());
-
-
-;// CONCATENATED MODULE: ./src/reporters/formatReportAsMarkdown.ts
-function formatReportAsMarkdown(report, explanation) {
-    const secondaryLines = (report.data.secondary ?? []).flatMap((line) => line.split("\n"));
-    const middle = secondaryLines.length
-        ? [
-            /^\w/.test(secondaryLines[0]) ? " " : "\n\n",
-            secondaryLines.join("\n"),
-            /^\w/.test(secondaryLines[secondaryLines.length - 1]) ? " " : "\n\n",
-        ]
-        : [" "];
-    const suffix = [
-        explanation ? `${explanation.join(" ")} ` : "",
-        report.data.suggestion.join("\n"),
-    ];
-    return [report.data.primary, ...middle, ...suffix].join("");
-}
-
-;// CONCATENATED MODULE: ./src/reporters/cliReporter.ts
-
-
-
-/**
- * Formats a rule report as used by the standalone CLI.
- *
- * If reports is empty, it will log a happy message.
- * Otherwise it will pretty-print the reports, grouped by rule.
- * @param reports Rule reports as returned by `runOctoGuideRules`
- * @returns Formatted string for CLI output
- * @example
- * import { cliReporter, runOctoGuideRules } from "octoguide";
- *
- * const { reports } = await runOctoGuideRules({
- *   entity: "https://github.com/OctoGuide/bot/issues/19",
- * });
- *
- * console.log(cliReporter(reports));
- */
-function cliReporter(reports) {
-    if (!reports.length) {
-        return `Found ${source.green("0")} reports. Great! ✅`;
-    }
-    const byRule = groupBy(reports, (report) => report.about.name);
-    const lines = [""];
-    for (const ruleReports of Object.values(byRule)) {
-        const { about } = ruleReports[0];
-        lines.push([
-            source.blue("["),
-            source.cyanBright(about.name),
-            source.blue("] "),
-            source.yellow(about.description),
-        ].join(""));
-        if (ruleReports.length > 1) {
-            lines.push([
-                about.explanation.join(" "),
-                "\n\n",
-                ruleReports
-                    .map((report) => formatReportAsMarkdown(report))
-                    .join("\n\n"),
-            ].join(""));
-        }
-        else {
-            lines.push([
-                ruleReports
-                    .map((report) => formatReportAsMarkdown(report, about.explanation))
-                    .join("\n\n"),
-            ].join(""));
-        }
-        lines.push("");
-    }
-    lines.push(`Found ${source.red(reports.length)} issue${reports.length > 1 ? "s" : ""}.\n`);
-    return lines.join("\n");
-}
-
-;// CONCATENATED MODULE: ./src/constants.ts
-const RESOLVED_BY_OCTOGUIDE = "<!-- resolved-by: OctoGuide -->";
-
-;// CONCATENATED MODULE: ./src/reporters/markdownReporter.ts
-
-
-
-/**
- * Message displayed when all reports are resolved.
- * @internal
- */
-const markdownReportPassMessage = `All reports are resolved now. Thanks! ✅\n\n${RESOLVED_BY_OCTOGUIDE}`;
-/**
- * Formats a rule report as used by the GitHub Actions Workflow.
- *
- * If reports is empty, it will return a happy message.
- * Otherwise it will pretty-print the reports, grouped by rule.
- * @param headline Headline text for the report (typically entity information)
- * @param reports Rule reports as returned by `runOctoGuideRules`
- * @returns Formatted markdown string for GitHub comment
- * @example
- * import { markdownReporter, runOctoGuideRules } from "octoguide";
- *
- * const { entity, reports } = await runOctoGuideRules({
- *   entity: "https://github.com/OctoGuide/bot/issues/19",
- * });
- *
- * console.log(markdownReporter(entity.data.html_url, reports));
- */
-function markdownReporter(headline, reports) {
-    if (!reports.length) {
-        return markdownReportPassMessage;
-    }
-    const byRule = groupBy(reports, (report) => report.about.name);
-    const printedReports = Object.values(byRule).map((ruleReports) => {
-        const { about } = ruleReports[0];
-        const start = `[[**${about.name}**](${about.url})]`;
-        if (ruleReports.length > 1) {
-            return [
-                start,
-                " ",
-                about.explanation.join(" "),
-                "\n\n",
-                ruleReports
-                    .map((report) => formatReportAsMarkdown(report))
-                    .join("\n\n"),
-            ].join("");
-        }
-        return [
-            start,
-            " ",
-            ruleReports
-                .map((report) => formatReportAsMarkdown(report, about.explanation))
-                .join("\n\n"),
-        ].join("");
-    });
-    return [headline, "\n\n", printedReports.join("\n\n")].join("");
-}
-
 ;// CONCATENATED MODULE: external "node:child_process"
 const external_node_child_process_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:child_process");
 // EXTERNAL MODULE: external "node:util"
@@ -51670,7 +50862,7 @@ async function getGitHubAuthToken_getGitHubAuthToken() {
 
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/universal-user-agent@7.0.2/node_modules/universal-user-agent/index.js
-var universal_user_agent = __nccwpck_require__(1542);
+var universal_user_agent = __nccwpck_require__(7515);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/before-after-hook@3.0.2/node_modules/before-after-hook/lib/register.js
 // @ts-check
 
@@ -52163,7 +51355,7 @@ var endpoint = withDefaults(null, DEFAULTS);
 
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/fast-content-type-parse@2.0.1/node_modules/fast-content-type-parse/index.js
-var fast_content_type_parse = __nccwpck_require__(654);
+var fast_content_type_parse = __nccwpck_require__(8388);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/@octokit+request-error@6.1.8/node_modules/@octokit/request-error/dist-src/index.js
 class RequestError extends Error {
   name;
@@ -55541,7 +54733,7 @@ legacyRestEndpointMethods.VERSION = dist_src_version_VERSION;
 //# sourceMappingURL=index.js.map
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/bottleneck@2.19.5/node_modules/bottleneck/light.js
-var light = __nccwpck_require__(7447);
+var light = __nccwpck_require__(6297);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/@octokit+plugin-retry@7.2.1_@octokit+core@6.1.5/node_modules/@octokit/plugin-retry/dist-bundle/index.js
 // pkg/dist-src/version.js
 var plugin_retry_dist_bundle_VERSION = "0.0.0-development";
@@ -60377,6 +59569,9 @@ class EntityActorBase {
         this.locator = locator;
         this.octokit = octokit;
     }
+    closeEntity() {
+        return Promise.reject(new Error("closeEntity is not yet implemented for this actor type."));
+    }
     /**
      * Minimizes a comment using GitHub's GraphQL API.
      * @param nodeId The GraphQL node ID of the comment to minimize
@@ -60556,6 +59751,21 @@ class DiscussionCommentActor extends DiscussionActorBase {
 ;// CONCATENATED MODULE: ./src/actors/IssueLikeActorBase.ts
 
 class IssueLikeActorBase extends EntityActorBase {
+    /**
+     * @remarks `state_reason` is intentionally omitted at this time. The closed
+     * entity may still represent planned work. It is being closed because the
+     * contribution itself is not acceptable (e.g. AI-generated) as stated in the
+     * corresponding report comment, not because the underlying task is unplanned
+     * or irrelevant.
+     */
+    async closeEntity() {
+        await this.octokit.rest.issues.update({
+            issue_number: this.entityNumber,
+            owner: this.locator.owner,
+            repo: this.locator.repository,
+            state: "closed",
+        });
+    }
     async createComment(body) {
         const response = await this.octokit.rest.issues.createComment({
             body,
@@ -60651,7 +59861,7 @@ function parseCommentId(url) {
 }
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/parse-github-url@1.0.3/node_modules/parse-github-url/index.js
-var parse_github_url = __nccwpck_require__(8468);
+var parse_github_url = __nccwpck_require__(1754);
 var parse_github_url_default = /*#__PURE__*/__nccwpck_require__.n(parse_github_url);
 ;// CONCATENATED MODULE: ./src/actors/parseLocator.ts
 
@@ -60903,6 +60113,50 @@ const commentMeaningful = defineRule({
                 `To resolve this report:`,
                 `* If you have new information that'll help the discussion, edit it into the comment`,
                 `* Otherwise, delete the comment and emoji react to the ${entity.parentType}`,
+            ],
+        });
+    },
+});
+
+;// CONCATENATED MODULE: ./src/rules/prAutomationDetected.ts
+
+const AUTOMATION_LABEL_TARGETS = new Set([
+    "ai-slop",
+    "ai slop",
+    "automation-signal",
+    "automation signal",
+]);
+const prAutomationDetected = defineRule({
+    about: {
+        config: "recommended",
+        defaultOptions: {
+            "include-bots": true,
+        },
+        description: "PRs labeled as automated or AI-generated should be closed.",
+        explanation: [
+            'Pull requests labeled as automated (e.g. "automation-signal")or AI-generated (e.g. "ai slop") indicate contributions that were not meaningfully authored by a human.',
+            "These contributions are often low-quality, miss project context, and create unnecessary review burden for maintainers.",
+        ],
+        name: "pr-automation-detected",
+    },
+    pullRequest(context, entity) {
+        if (entity.data.state !== "open") {
+            return;
+        }
+        const hasTargetLabel = entity.data.labels.some((label) => AUTOMATION_LABEL_TARGETS.has(label.name.toLowerCase()));
+        if (!hasTargetLabel) {
+            return;
+        }
+        const { owner, repository } = context.locator;
+        const contributingUrl = `https://github.com/${owner}/${repository}/blob/HEAD/.github/CONTRIBUTING.md`;
+        context.report({
+            action: "close",
+            primary: "This pull request has been labeled as automated or AI-generated and will be closed.",
+            secondary: [
+                "These types of automated contributions often lack the understanding and context that maintainers need to review and maintain code.",
+            ],
+            suggestion: [
+                `Please review the repository's [contributing guidelines](${contributingUrl}) before submitting.`,
             ],
         });
     },
@@ -61186,19 +60440,22 @@ function normalizeWhitespace(text) {
 
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commit-types@3.0.0/node_modules/conventional-commit-types/index.json
 const conventional_commit_types_namespaceObject = /*#__PURE__*/JSON.parse('{"g":{"feat":{"description":"A new feature","title":"Features"},"fix":{"description":"A bug fix","title":"Bug Fixes"},"docs":{"description":"Documentation only changes","title":"Documentation"},"style":{"description":"Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)","title":"Styles"},"refactor":{"description":"A code change that neither fixes a bug nor adds a feature","title":"Code Refactoring"},"perf":{"description":"A code change that improves performance","title":"Performance Improvements"},"test":{"description":"Adding missing tests or correcting existing tests","title":"Tests"},"build":{"description":"Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)","title":"Builds"},"ci":{"description":"Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)","title":"Continuous Integrations"},"chore":{"description":"Other changes that don\'t modify src or test files","title":"Chores"},"revert":{"description":"Reverts a previous commit","title":"Reverts"}}}');
-;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@6.2.1/node_modules/conventional-commits-parser/dist/regex.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@7.0.0/node_modules/conventional-commits-parser/dist/regex.js
 const nomatchRegex = /(?!.*)/;
-function join(parts, joiner) {
+function regex_escape(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+function joinOr(parts) {
     return parts
-        .map(val => val.trim())
+        .map(val => (typeof val === 'string' ? regex_escape(val.trim()) : val.source))
         .filter(Boolean)
-        .join(joiner);
+        .join('|');
 }
 function getNotesRegex(noteKeywords, notesPattern) {
     if (!noteKeywords) {
         return nomatchRegex;
     }
-    const noteKeywordsSelection = join(noteKeywords, '|');
+    const noteKeywordsSelection = joinOr(noteKeywords);
     if (!notesPattern) {
         return new RegExp(`^[\\s|*]*(${noteKeywordsSelection})[:\\s]+(.*)`, 'i');
     }
@@ -61209,15 +60466,21 @@ function getReferencePartsRegex(issuePrefixes, issuePrefixesCaseSensitive) {
         return nomatchRegex;
     }
     const flags = issuePrefixesCaseSensitive ? 'g' : 'gi';
-    return new RegExp(`(?:.*?)??\\s*([\\w-\\.\\/]*?)??(${join(issuePrefixes, '|')})([\\w-]+)(?=\\s|$|[,;)\\]])`, flags);
+    return new RegExp(`(?:.*?)??\\s*([\\w-\\.\\/]*?)??(${joinOr(issuePrefixes)})([\\w-]+)(?=\\s|$|[,;.)\\]])`, flags);
 }
 function getReferencesRegex(referenceActions) {
     if (!referenceActions) {
         // matches everything
         return /()(.+)/gi;
     }
-    const joinedKeywords = join(referenceActions, '|');
+    const joinedKeywords = joinOr(referenceActions);
     return new RegExp(`(${joinedKeywords})(?:\\s+(.*?))(?=(?:${joinedKeywords})|$)`, 'gi');
+}
+function getFooterTokenRegex(issuePrefixes) {
+    const issuePrefixSeparator = issuePrefixes
+        ? `|\\s+(?:${joinOr(issuePrefixes)})`
+        : '';
+    return new RegExp(`^\\s*(?:BREAKING CHANGE|[\\w-]+)(?::\\s+${issuePrefixSeparator}).+`, 'i');
 }
 /**
  * Make the regexes used to parse a commit.
@@ -61228,16 +60491,18 @@ function getParserRegexes(options = {}) {
     const notes = getNotesRegex(options.noteKeywords, options.notesPattern);
     const referenceParts = getReferencePartsRegex(options.issuePrefixes, options.issuePrefixesCaseSensitive);
     const references = getReferencesRegex(options.referenceActions);
+    const footerToken = getFooterTokenRegex(options.issuePrefixes);
     return {
         notes,
         referenceParts,
         references,
+        footerToken,
         mentions: /@([\w-]+)/g,
         url: /\b(?:https?):\/\/(?:www\.)?([-a-zA-Z0-9@:%_+.~#?&//=])+\b/
     };
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVnZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvcmVnZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0EsTUFBTSxZQUFZLEdBQUcsUUFBUSxDQUFBO0FBRTdCLFNBQVMsSUFBSSxDQUFDLEtBQWUsRUFBRSxNQUFjO0lBQzNDLE9BQU8sS0FBSztTQUNULEdBQUcsQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEdBQUcsQ0FBQyxJQUFJLEVBQUUsQ0FBQztTQUN0QixNQUFNLENBQUMsT0FBTyxDQUFDO1NBQ2YsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFBO0FBQ2pCLENBQUM7QUFFRCxTQUFTLGFBQWEsQ0FDcEIsWUFBa0MsRUFDbEMsWUFBb0Q7SUFFcEQsSUFBSSxDQUFDLFlBQVksRUFBRSxDQUFDO1FBQ2xCLE9BQU8sWUFBWSxDQUFBO0lBQ3JCLENBQUM7SUFFRCxNQUFNLHFCQUFxQixHQUFHLElBQUksQ0FBQyxZQUFZLEVBQUUsR0FBRyxDQUFDLENBQUE7SUFFckQsSUFBSSxDQUFDLFlBQVksRUFBRSxDQUFDO1FBQ2xCLE9BQU8sSUFBSSxNQUFNLENBQUMsYUFBYSxxQkFBcUIsY0FBYyxFQUFFLEdBQUcsQ0FBQyxDQUFBO0lBQzFFLENBQUM7SUFFRCxPQUFPLFlBQVksQ0FBQyxxQkFBcUIsQ0FBQyxDQUFBO0FBQzVDLENBQUM7QUFFRCxTQUFTLHNCQUFzQixDQUM3QixhQUFtQyxFQUNuQywwQkFBK0M7SUFFL0MsSUFBSSxDQUFDLGFBQWEsRUFBRSxDQUFDO1FBQ25CLE9BQU8sWUFBWSxDQUFBO0lBQ3JCLENBQUM7SUFFRCxNQUFNLEtBQUssR0FBRywwQkFBMEIsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUE7SUFFckQsT0FBTyxJQUFJLE1BQU0sQ0FBQyxtQ0FBbUMsSUFBSSxDQUFDLGFBQWEsRUFBRSxHQUFHLENBQUMsOEJBQThCLEVBQUUsS0FBSyxDQUFDLENBQUE7QUFDckgsQ0FBQztBQUVELFNBQVMsa0JBQWtCLENBQ3pCLGdCQUFzQztJQUV0QyxJQUFJLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztRQUN0QixxQkFBcUI7UUFDckIsT0FBTyxVQUFVLENBQUE7SUFDbkIsQ0FBQztJQUVELE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxnQkFBZ0IsRUFBRSxHQUFHLENBQUMsQ0FBQTtJQUVsRCxPQUFPLElBQUksTUFBTSxDQUFDLElBQUksY0FBYyx1QkFBdUIsY0FBYyxNQUFNLEVBQUUsSUFBSSxDQUFDLENBQUE7QUFDeEYsQ0FBQztBQUVEOzs7O0dBSUc7QUFDSCxNQUFNLFVBQVUsZ0JBQWdCLENBQzlCLFVBQXNJLEVBQUU7SUFFeEksTUFBTSxLQUFLLEdBQUcsYUFBYSxDQUFDLE9BQU8sQ0FBQyxZQUFZLEVBQUUsT0FBTyxDQUFDLFlBQVksQ0FBQyxDQUFBO0lBQ3ZFLE1BQU0sY0FBYyxHQUFHLHNCQUFzQixDQUFDLE9BQU8sQ0FBQyxhQUFhLEVBQUUsT0FBTyxDQUFDLDBCQUEwQixDQUFDLENBQUE7SUFDeEcsTUFBTSxVQUFVLEdBQUcsa0JBQWtCLENBQUMsT0FBTyxDQUFDLGdCQUFnQixDQUFDLENBQUE7SUFFL0QsT0FBTztRQUNMLEtBQUs7UUFDTCxjQUFjO1FBQ2QsVUFBVTtRQUNWLFFBQVEsRUFBRSxZQUFZO1FBQ3RCLEdBQUcsRUFBRSwyREFBMkQ7S0FDakUsQ0FBQTtBQUNILENBQUMifQ==
-;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@6.2.1/node_modules/conventional-commits-parser/dist/utils.js
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVnZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvcmVnZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0EsTUFBTSxZQUFZLEdBQUcsUUFBUSxDQUFBO0FBRTdCLFNBQVMsTUFBTSxDQUFDLE1BQWM7SUFDNUIsT0FBTyxNQUFNLENBQUMsT0FBTyxDQUFDLHFCQUFxQixFQUFFLE1BQU0sQ0FBQyxDQUFBO0FBQ3RELENBQUM7QUFFRCxTQUFTLE1BQU0sQ0FBQyxLQUEwQjtJQUN4QyxPQUFPLEtBQUs7U0FDVCxHQUFHLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxDQUFDLE9BQU8sR0FBRyxLQUFLLFFBQVEsQ0FBQyxDQUFDLENBQUMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUM7U0FDdkUsTUFBTSxDQUFDLE9BQU8sQ0FBQztTQUNmLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQTtBQUNkLENBQUM7QUFFRCxTQUFTLGFBQWEsQ0FDcEIsWUFBNkMsRUFDN0MsWUFBb0Q7SUFFcEQsSUFBSSxDQUFDLFlBQVksRUFBRSxDQUFDO1FBQ2xCLE9BQU8sWUFBWSxDQUFBO0lBQ3JCLENBQUM7SUFFRCxNQUFNLHFCQUFxQixHQUFHLE1BQU0sQ0FBQyxZQUFZLENBQUMsQ0FBQTtJQUVsRCxJQUFJLENBQUMsWUFBWSxFQUFFLENBQUM7UUFDbEIsT0FBTyxJQUFJLE1BQU0sQ0FBQyxhQUFhLHFCQUFxQixjQUFjLEVBQUUsR0FBRyxDQUFDLENBQUE7SUFDMUUsQ0FBQztJQUVELE9BQU8sWUFBWSxDQUFDLHFCQUFxQixDQUFDLENBQUE7QUFDNUMsQ0FBQztBQUVELFNBQVMsc0JBQXNCLENBQzdCLGFBQThDLEVBQzlDLDBCQUErQztJQUUvQyxJQUFJLENBQUMsYUFBYSxFQUFFLENBQUM7UUFDbkIsT0FBTyxZQUFZLENBQUE7SUFDckIsQ0FBQztJQUVELE1BQU0sS0FBSyxHQUFHLDBCQUEwQixDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQTtJQUVyRCxPQUFPLElBQUksTUFBTSxDQUFDLG1DQUFtQyxNQUFNLENBQUMsYUFBYSxDQUFDLCtCQUErQixFQUFFLEtBQUssQ0FBQyxDQUFBO0FBQ25ILENBQUM7QUFFRCxTQUFTLGtCQUFrQixDQUN6QixnQkFBaUQ7SUFFakQsSUFBSSxDQUFDLGdCQUFnQixFQUFFLENBQUM7UUFDdEIscUJBQXFCO1FBQ3JCLE9BQU8sVUFBVSxDQUFBO0lBQ25CLENBQUM7SUFFRCxNQUFNLGNBQWMsR0FBRyxNQUFNLENBQUMsZ0JBQWdCLENBQUMsQ0FBQTtJQUUvQyxPQUFPLElBQUksTUFBTSxDQUFDLElBQUksY0FBYyx1QkFBdUIsY0FBYyxNQUFNLEVBQUUsSUFBSSxDQUFDLENBQUE7QUFDeEYsQ0FBQztBQUVELFNBQVMsbUJBQW1CLENBQzFCLGFBQThDO0lBRTlDLE1BQU0sb0JBQW9CLEdBQUcsYUFBYTtRQUN4QyxDQUFDLENBQUMsV0FBVyxNQUFNLENBQUMsYUFBYSxDQUFDLEdBQUc7UUFDckMsQ0FBQyxDQUFDLEVBQUUsQ0FBQTtJQUVOLE9BQU8sSUFBSSxNQUFNLENBQUMsMkNBQTJDLG9CQUFvQixLQUFLLEVBQUUsR0FBRyxDQUFDLENBQUE7QUFDOUYsQ0FBQztBQUVEOzs7O0dBSUc7QUFDSCxNQUFNLFVBQVUsZ0JBQWdCLENBQzlCLE9BQU8sR0FBK0gsRUFBRTtJQUV4SSxNQUFNLEtBQUssR0FBRyxhQUFhLENBQUMsT0FBTyxDQUFDLFlBQVksRUFBRSxPQUFPLENBQUMsWUFBWSxDQUFDLENBQUE7SUFDdkUsTUFBTSxjQUFjLEdBQUcsc0JBQXNCLENBQUMsT0FBTyxDQUFDLGFBQWEsRUFBRSxPQUFPLENBQUMsMEJBQTBCLENBQUMsQ0FBQTtJQUN4RyxNQUFNLFVBQVUsR0FBRyxrQkFBa0IsQ0FBQyxPQUFPLENBQUMsZ0JBQWdCLENBQUMsQ0FBQTtJQUMvRCxNQUFNLFdBQVcsR0FBRyxtQkFBbUIsQ0FBQyxPQUFPLENBQUMsYUFBYSxDQUFDLENBQUE7SUFFOUQsT0FBTztRQUNMLEtBQUs7UUFDTCxjQUFjO1FBQ2QsVUFBVTtRQUNWLFdBQVc7UUFDWCxRQUFRLEVBQUUsWUFBWTtRQUN0QixHQUFHLEVBQUUsMkRBQTJEO0tBQ2pFLENBQUE7QUFDSCxDQUFDIn0=
+;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@7.0.0/node_modules/conventional-commits-parser/dist/utils.js
 const SCISSOR = '------------------------ >8 ------------------------';
 /**
  * Remove leading and trailing newlines.
@@ -61313,7 +60578,7 @@ function assignMatchedCorrespondence(target, matches, correspondence) {
     return target;
 }
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvdXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxPQUFPLEdBQUcsc0RBQXNELENBQUE7QUFFdEU7Ozs7R0FJRztBQUNILE1BQU0sVUFBVSxZQUFZLENBQUMsS0FBYTtJQUN4Qyw4REFBOEQ7SUFFOUQsTUFBTSxPQUFPLEdBQUcsS0FBSyxDQUFDLEtBQUssQ0FBQyxTQUFTLENBQUMsQ0FBQTtJQUV0QyxJQUFJLE9BQU8sT0FBTyxFQUFFLEtBQUssS0FBSyxRQUFRLEVBQUUsQ0FBQztRQUN2QyxPQUFPLEVBQUUsQ0FBQTtJQUNYLENBQUM7SUFFRCxNQUFNLFVBQVUsR0FBRyxPQUFPLENBQUMsS0FBSyxDQUFBO0lBQ2hDLElBQUksU0FBUyxHQUFHLEtBQUssQ0FBQyxNQUFNLEdBQUcsQ0FBQyxDQUFBO0lBRWhDLE9BQU8sS0FBSyxDQUFDLFNBQVMsQ0FBQyxLQUFLLElBQUksSUFBSSxLQUFLLENBQUMsU0FBUyxDQUFDLEtBQUssSUFBSSxFQUFFLENBQUM7UUFDOUQsU0FBUyxFQUFFLENBQUE7SUFDYixDQUFDO0lBRUQsT0FBTyxLQUFLLENBQUMsU0FBUyxDQUFDLFVBQVUsRUFBRSxTQUFTLEdBQUcsQ0FBQyxDQUFDLENBQUE7QUFDbkQsQ0FBQztBQUVEOzs7OztHQUtHO0FBQ0gsTUFBTSxVQUFVLFVBQVUsQ0FBQyxHQUFrQixFQUFFLElBQXdCO0lBQ3JFLE9BQU8sR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLEdBQUcsS0FBSyxJQUFJLElBQUksRUFBRSxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUksSUFBSSxFQUFFLENBQUE7QUFDbkQsQ0FBQztBQUVEOzs7O0dBSUc7QUFDSCxNQUFNLFVBQVUsZ0JBQWdCLENBQUMsSUFBd0I7SUFDdkQsT0FBTyxJQUFJO1FBQ1QsQ0FBQyxDQUFDLENBQUMsSUFBWSxFQUFFLEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDO1FBQzFDLENBQUMsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxJQUFJLENBQUE7QUFDaEIsQ0FBQztBQUVEOzs7OztHQUtHO0FBQ0gsTUFBTSxVQUFVLGlCQUFpQixDQUMvQixLQUFlLEVBQ2YsV0FBbUI7SUFFbkIsTUFBTSxZQUFZLEdBQUcsS0FBSyxDQUFDLE9BQU8sQ0FBQyxHQUFHLFdBQVcsSUFBSSxPQUFPLEVBQUUsQ0FBQyxDQUFBO0lBRS9ELElBQUksWUFBWSxLQUFLLENBQUMsQ0FBQyxFQUFFLENBQUM7UUFDeEIsT0FBTyxLQUFLLENBQUE7SUFDZCxDQUFDO0lBRUQsT0FBTyxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUMsRUFBRSxZQUFZLENBQUMsQ0FBQTtBQUNyQyxDQUFDO0FBRUQ7Ozs7R0FJRztBQUNILE1BQU0sVUFBVSxTQUFTLENBQUMsSUFBWTtJQUNwQyxPQUFPLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUMsQ0FBQTtBQUNoQyxDQUFDO0FBRUQ7Ozs7OztHQU1HO0FBQ0gsTUFBTSxVQUFVLDJCQUEyQixDQUN6QyxNQUFxQyxFQUNyQyxPQUF5QixFQUN6QixjQUF3QjtJQUV4QixNQUFNLEVBQUUsTUFBTSxFQUFFLEdBQUcsT0FBTyxDQUFBO0lBRTFCLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLEdBQUcsR0FBRyxjQUFjLENBQUMsTUFBTSxFQUFFLEdBQUcsRUFBRSxDQUFDLEdBQUcsR0FBRyxFQUFFLENBQUMsRUFBRSxFQUFFLENBQUM7UUFDL0QsR0FBRyxHQUFHLGNBQWMsQ0FBQyxDQUFDLENBQUMsQ0FBQTtRQUN2QixNQUFNLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsT0FBTyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxJQUFJLElBQUksQ0FBQTtJQUMvRCxDQUFDO0lBRUQsT0FBTyxNQUFNLENBQUE7QUFDZixDQUFDIn0=
-;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@6.2.1/node_modules/conventional-commits-parser/dist/options.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@7.0.0/node_modules/conventional-commits-parser/dist/options.js
 const defaultOptions = {
     noteKeywords: ['BREAKING CHANGE', 'BREAKING-CHANGE'],
     issuePrefixes: ['#'],
@@ -61334,12 +60599,12 @@ const defaultOptions = {
         'scope',
         'subject'
     ],
-    revertPattern: /^Revert\s"([\s\S]*)"\s*This reverts commit (\w*)\./,
+    revertPattern: /^Revert\s"([\s\S]*)"\s*This reverts commit (\w*)\.?/,
     revertCorrespondence: ['header', 'hash'],
     fieldPattern: /^-(.*?)-$/
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib3B0aW9ucy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9vcHRpb25zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLE1BQU0sQ0FBQyxNQUFNLGNBQWMsR0FBa0I7SUFDM0MsWUFBWSxFQUFFLENBQUMsaUJBQWlCLEVBQUUsaUJBQWlCLENBQUM7SUFDcEQsYUFBYSxFQUFFLENBQUMsR0FBRyxDQUFDO0lBQ3BCLGdCQUFnQixFQUFFO1FBQ2hCLE9BQU87UUFDUCxRQUFRO1FBQ1IsUUFBUTtRQUNSLEtBQUs7UUFDTCxPQUFPO1FBQ1AsT0FBTztRQUNQLFNBQVM7UUFDVCxVQUFVO1FBQ1YsVUFBVTtLQUNYO0lBQ0QsYUFBYSxFQUFFLHVDQUF1QztJQUN0RCxvQkFBb0IsRUFBRTtRQUNwQixNQUFNO1FBQ04sT0FBTztRQUNQLFNBQVM7S0FDVjtJQUNELGFBQWEsRUFBRSxvREFBb0Q7SUFDbkUsb0JBQW9CLEVBQUUsQ0FBQyxRQUFRLEVBQUUsTUFBTSxDQUFDO0lBQ3hDLFlBQVksRUFBRSxXQUFXO0NBQzFCLENBQUEifQ==
-;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@6.2.1/node_modules/conventional-commits-parser/dist/CommitParser.js
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib3B0aW9ucy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9vcHRpb25zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLE1BQU0sQ0FBQyxNQUFNLGNBQWMsR0FBa0I7SUFDM0MsWUFBWSxFQUFFLENBQUMsaUJBQWlCLEVBQUUsaUJBQWlCLENBQUM7SUFDcEQsYUFBYSxFQUFFLENBQUMsR0FBRyxDQUFDO0lBQ3BCLGdCQUFnQixFQUFFO1FBQ2hCLE9BQU87UUFDUCxRQUFRO1FBQ1IsUUFBUTtRQUNSLEtBQUs7UUFDTCxPQUFPO1FBQ1AsT0FBTztRQUNQLFNBQVM7UUFDVCxVQUFVO1FBQ1YsVUFBVTtLQUNYO0lBQ0QsYUFBYSxFQUFFLHVDQUF1QztJQUN0RCxvQkFBb0IsRUFBRTtRQUNwQixNQUFNO1FBQ04sT0FBTztRQUNQLFNBQVM7S0FDVjtJQUNELGFBQWEsRUFBRSxxREFBcUQ7SUFDcEUsb0JBQW9CLEVBQUUsQ0FBQyxRQUFRLEVBQUUsTUFBTSxDQUFDO0lBQ3hDLFlBQVksRUFBRSxXQUFXO0NBQzFCLENBQUEifQ==
+;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@7.0.0/node_modules/conventional-commits-parser/dist/CommitParser.js
 
 
 
@@ -61518,7 +60783,7 @@ class CommitParser_CommitParser {
             return false;
         }
         const matches = this.currentLine().match(regexes.notes);
-        let references = [];
+        let isFooterToken;
         if (matches) {
             const note = {
                 title: matches[1],
@@ -61534,16 +60799,14 @@ class CommitParser_CommitParser {
                 if (this.parseNotes()) {
                     return true;
                 }
-                references = this.parseReferences(this.currentLine());
-                if (references.length) {
-                    commit.references.push(...references);
-                }
-                else {
+                isFooterToken = regexes.footerToken.test(this.currentLine());
+                commit.references.push(...this.parseReferences(this.currentLine()));
+                if (!isFooterToken) {
                     note.text = appendLine(note.text, this.currentLine());
                 }
                 commit.footer = appendLine(commit.footer, this.currentLine());
                 this.nextLine();
-                if (references.length) {
+                if (isFooterToken) {
                     break;
                 }
             }
@@ -61552,17 +60815,17 @@ class CommitParser_CommitParser {
         return false;
     }
     parseBodyAndFooter(isBody) {
-        const { commit } = this;
+        const { commit, regexes } = this;
         if (!this.isLineAvailable()) {
             return isBody;
         }
-        const references = this.parseReferences(this.currentLine());
-        const isStillBody = !references.length && isBody;
+        const isFooterToken = regexes.footerToken.test(this.currentLine());
+        const isStillBody = !isFooterToken && isBody;
+        commit.references.push(...this.parseReferences(this.currentLine()));
         if (isStillBody) {
             commit.body = appendLine(commit.body, this.currentLine());
         }
         else {
-            commit.references.push(...references);
             commit.footer = appendLine(commit.footer, this.currentLine());
         }
         this.nextLine();
@@ -61604,14 +60867,19 @@ class CommitParser_CommitParser {
     }
     cleanupCommit() {
         const { commit } = this;
-        if (commit.body) {
-            commit.body = trimNewLines(commit.body);
-        }
-        if (commit.footer) {
-            commit.footer = trimNewLines(commit.footer);
-        }
+        commit.body &&= trimNewLines(commit.body);
+        commit.footer &&= trimNewLines(commit.footer);
         commit.notes.forEach((note) => {
             note.text = trimNewLines(note.text);
+        });
+        const referencesSet = new Set();
+        commit.references = commit.references.filter((reference) => {
+            const uid = `${reference.action} ${reference.raw}`.toLocaleLowerCase();
+            const ok = !referencesSet.has(uid);
+            if (ok) {
+                referencesSet.add(uid);
+            }
+            return ok;
         });
     }
     /**
@@ -61655,10 +60923,10 @@ class CommitParser_CommitParser {
         return commit;
     }
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29tbWl0UGFyc2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL0NvbW1pdFBhcnNlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPQSxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxZQUFZLENBQUE7QUFDN0MsT0FBTyxFQUNMLFlBQVksRUFDWixVQUFVLEVBQ1YsZ0JBQWdCLEVBQ2hCLFNBQVMsRUFDVCxpQkFBaUIsRUFDakIsMkJBQTJCLEVBQzVCLE1BQU0sWUFBWSxDQUFBO0FBQ25CLE9BQU8sRUFBRSxjQUFjLEVBQUUsTUFBTSxjQUFjLENBQUE7QUFFN0M7Ozs7R0FJRztBQUNILE1BQU0sVUFBVSxrQkFBa0IsQ0FBQyxjQUErQixFQUFFO0lBQ2xFLGtKQUFrSjtJQUNsSixPQUFPO1FBQ0wsS0FBSyxFQUFFLElBQUk7UUFDWCxNQUFNLEVBQUUsSUFBSTtRQUNaLE1BQU0sRUFBRSxJQUFJO1FBQ1osSUFBSSxFQUFFLElBQUk7UUFDVixNQUFNLEVBQUUsSUFBSTtRQUNaLEtBQUssRUFBRSxFQUFFO1FBQ1QsUUFBUSxFQUFFLEVBQUU7UUFDWixVQUFVLEVBQUUsRUFBRTtRQUNkLEdBQUcsV0FBVztLQUNmLENBQUE7QUFDSCxDQUFDO0FBRUQ7O0dBRUc7QUFDSCxNQUFNLE9BQU8sWUFBWTtJQUNOLE9BQU8sQ0FBZTtJQUN0QixPQUFPLENBQWU7SUFDL0IsS0FBSyxHQUFhLEVBQUUsQ0FBQTtJQUNwQixTQUFTLEdBQUcsQ0FBQyxDQUFBO0lBQ2IsTUFBTSxHQUFHLGtCQUFrQixFQUFFLENBQUE7SUFFckMsWUFBWSxVQUF5QixFQUFFO1FBQ3JDLElBQUksQ0FBQyxPQUFPLEdBQUc7WUFDYixHQUFHLGNBQWM7WUFDakIsR0FBRyxPQUFPO1NBQ1gsQ0FBQTtRQUNELElBQUksQ0FBQyxPQUFPLEdBQUcsZ0JBQWdCLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFBO0lBQy9DLENBQUM7SUFFTyxXQUFXO1FBQ2pCLE9BQU8sSUFB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
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29tbWl0UGFyc2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL0NvbW1pdFBhcnNlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPQSxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxZQUFZLENBQUE7QUFDN0MsT0FBTyxFQUNMLFlBQVksRUFDWixVQUFVLEVBQ1YsZ0JBQWdCLEVBQ2hCLFNBQVMsRUFDVCxpQkFBaUIsRUFDakIsMkJBQTJCLEVBQzVCLE1BQU0sWUFBWSxDQUFBO0FBQ25CLE9BQU8sRUFBRSxjQUFjLEVBQUUsTUFBTSxjQUFjLENBQUE7QUFFN0M7Ozs7R0FJRztBQUNILE1BQU0sVUFBVSxrQkFBa0IsQ0FBQyxXQUFXLEdBQW9CLEVBQUU7SUFDbEUsa0pBQWtKO0lBQ2xKLE9BQU87UUFDTCxLQUFLLEVBQUUsSUFBSTtRQUNYLE1BQU0sRUFBRSxJQUFJO1FBQ1osTUFBTSxFQUFFLElBQUk7UUFDWixJQUFJLEVBQUUsSUFBSTtRQUNWLE1BQU0sRUFBRSxJQUFJO1FBQ1osS0FBSyxFQUFFLEVBQUU7UUFDVCxRQUFRLEVBQUUsRUFBRTtRQUNaLFVBQVUsRUFBRSxFQUFFO1FBQ2QsR0FBRyxXQUFXO0tBQ2YsQ0FBQTtBQUNILENBQUM7QUFFRDs7R0FFRztBQUNILE1BQU0sT0FBTyxZQUFZO0lBQ04sT0FBTyxDQUFlO0lBQ3RCLE9BQU8sQ0FBZTtJQUMvQixLQUFLLEdBQWEsRUFBRSxDQUFBO0lBQ3BCLFNBQVMsR0FBRyxDQUFDLENBQUE7SUFDYixNQUFNLEdBQUcsa0JBQWtCLEVBQUUsQ0FBQTtJQUVyQyxZQUFZLE9BQU8sR0FBa0IsRUFBRTtRQUNyQyxJQUFJLENBQUMsT0FBTyxHQUFHO1lBQ2IsR0FBRyxjQUFjO1lBQ2pCLEdBQUcsT0FBTztTQUNYLENBQUE7UUFDRCxJQUFJLENBQUMsT0FBTyxHQUFHLGdCQUFnQixDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQTtJQUMvQyxDQUFDO0lBRU8sV0FBVztRQUNqQixPQUFPLElBQUksQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFBO0lBQ25DLENBQUM7SUFFTyxRQUFRO1FBQ2QsT0FBTyxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxTQUFTLEVBQUUsQ0FBQyxDQUFBO0lBQ3JDLENBQUM7SUFFTyxlQUFlO1FBQ3JCLE9BQU8sSUFBSSxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQTtJQUMzQyxDQUFDO0lBRU8sY0FBYyxDQUNwQixLQUFhLEVBQ2IsTUFBcUI7UUFFckIsTUFBTSxFQUFFLE9BQU8sRUFBRSxHQUFHLElBQUksQ0FBQTtRQUV4QixJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxFQUFFLENBQUM7WUFDNUIsT0FBTyxJQUFJLENBQUE7UUFDYixDQUFDO1FBRUQsTUFBTSxPQUFPLEdBQUcsT0FBTyxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUE7UUFFbEQsSUFBSSxDQUFDLE9BQU8sRUFBRSxDQUFDO1lBQ2IsT0FBTyxJQUFJLENBQUE7UUFDYixDQUFDO1FBRUQsSUFBSSxDQUNGLEdBQUcsRUFDSCxVQUFVLEdBQUcsSUFBSSxFQUNqQixNQUFNLEVBQ04sS0FBSyxDQUNOLEdBQUcsT0FBTyxDQUFBO1FBQ1gsSUFBSSxLQUFLLEdBQWtCLElBQUksQ0FBQTtRQUUvQixJQUFJLFVBQVUsRUFBRSxDQUFDO1lBQ2YsTUFBTSxVQUFVLEdBQUcsVUFBVSxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQTtZQUUxQyxJQUFJLFVBQVUsS0FBSyxDQUFDLENBQUMsRUFBRSxDQUFDO2dCQUN0QixLQUFLLEdBQUcsVUFBVSxDQUFDLEtBQUssQ0FBQyxDQUFDLEVBQUUsVUFBVSxDQUFDLENBQUE7Z0JBQ3ZDLFVBQVUsR0FBRyxVQUFVLENBQUMsS0FBSyxDQUFDLFVBQVUsR0FBRyxDQUFDLENBQUMsQ0FBQTtZQUMvQyxDQUFDO1FBQ0gsQ0FBQztRQUVELE9BQU87WUFDTCxHQUFHO1lBQ0gsTUFBTTtZQUNOLEtBQUs7WUFDTCxVQUFVO1lBQ1YsTUFBTTtZQUNOLEtBQUs7U0FDTixDQUFBO0lBQ0gsQ0FBQztJQUVPLGVBQWUsQ0FDckIsS0FBYTtRQUViLE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUE7UUFDeEIsTUFBTSxLQUFLLEdBQUcsS0FBSyxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsVUFBVSxDQUFDO1lBQzNDLENBQUMsQ0FBQyxPQUFPLENBQUMsVUFBVTtZQUNwQixDQUFDLENBQUMsVUFBVSxDQUFBO1FBQ2QsTUFBTSxVQUFVLEdBQXNCLEVBQUUsQ0FBQTtRQUN4QyxJQUFJLE9BQStCLENBQUE7UUFDbkMsSUFBSSxNQUFxQixDQUFBO1FBQ3pCLElBQUksUUFBZ0IsQ0FBQTtRQUNwQixJQUFJLFNBQWlDLENBQUE7UUFFckMsT0FBTyxJQUFJLEVBQUUsQ0FBQztZQUNaLE9BQU8sR0FBRyxLQUFLLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxDQUFBO1lBRTNCLElBQUksQ0FBQyxPQUFPLEVBQUUsQ0FBQztnQkFDYixNQUFLO1lBQ1AsQ0FBQztZQUVELE1BQU0sR0FBRyxPQUFPLENBQUMsQ0FBQyxDQUFDLElBQUksSUFBSSxDQUFBO1lBQzNCLFFBQVEsR0FBRyxPQUFPLENBQUMsQ0FBQyxDQUFDLElBQUksRUFBRSxDQUFBO1lBRTNCLE9BQU8sSUFBSSxFQUFFLENBQUM7Z0JBQ1osU0FBUyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUMsUUFBUSxFQUFFLE1BQU0sQ0FBQyxDQUFBO2dCQUVqRCxJQUFJLENBQUMsU0FBUyxFQUFFLENBQUM7b0JBQ2YsTUFBSztnQkFDUCxDQUFDO2dCQUVELFVBQVUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLENBQUE7WUFDNUIsQ0FBQztRQUNILENBQUM7UUFFRCxPQUFPLFVBQVUsQ0FBQTtJQUNuQixDQUFDO0lBRU8sY0FBYztRQUNwQixJQUFJLElBQUksR0FBRyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUE7UUFFN0IsT0FBTyxJQUFJLEtBQUssU0FBUyxJQUFJLENBQUMsSUFBSSxDQUFDLElBQUksRUFBRSxFQUFFLENBQUM7WUFDMUMsSUFBSSxDQUFDLFFBQVEsRUFBRSxDQUFBO1lBQ2YsSUFBSSxHQUFHLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQTtRQUMzQixDQUFDO0lBQ0gsQ0FBQztJQUVPLFVBQVU7UUFDaEIsTUFBTSxFQUFFLE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUE7UUFDaEMsTUFBTSxjQUFjLEdBQUcsT0FBTyxDQUFDLG1CQUFtQixJQUFJLEVBQUUsQ0FBQTtRQUN4RCxNQUFNLEtBQUssR0FBRyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUE7UUFDaEMsTUFBTSxPQUFPLEdBQUcsS0FBSyxJQUFJLE9BQU8sQ0FBQyxZQUFZO1lBQzNDLENBQUMsQ0FBQyxLQUFLLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxZQUFZLENBQUM7WUFDbkMsQ0FBQyxDQUFDLElBQUksQ0FBQTtRQUVSLElBQUksT0FBTyxFQUFFLENBQUM7WUFDWixJQUFJLENBQUMsUUFBUSxFQUFFLENBQUE7WUFFZixNQUFNLENBQUMsS0FBSyxHQUFHLE9BQU8sQ0FBQyxDQUFDLENBQUMsSUFBSSxJQUFJLENBQUE7WUFFakMsMkJBQTJCLENBQUMsTUFBTSxFQUFFLE9BQU8sRUFBRSxjQUFjLENBQUMsQ0FBQTtZQUU1RCxPQUFPLElBQUksQ0FBQTtRQUNiLENBQUM7UUFFRCxPQUFPLEtBQUssQ0FBQTtJQUNkLENBQUM7SUFFTyxXQUFXLENBQUMsYUFBc0I7UUFDeEMsSUFBSSxhQUFhLEVBQUUsQ0FBQztZQUNsQixJQUFJLENBQUMsY0FBYyxFQUFFLENBQUE7UUFDdkIsQ0FBQztRQUVELE1BQU0sRUFBRSxNQUFNLEVBQUUsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFBO1FBQ2hDLE1BQU0sY0FBYyxHQUFHLE9BQU8sQ0FBQyxvQkFBb0IsSUFBSSxFQUFFLENBQUE7UUFDekQsTUFBTSxNQUFNLEdBQUcsTUFBTSxDQUFDLE1BQU0sSUFBSSxJQUFJLENBQUMsUUFBUSxFQUFFLENBQUE7UUFDL0MsSUFBSSxPQUFPLEdBQTRCLElBQUksQ0FBQTtRQUUzQyxJQUFJLE1BQU0sRUFBRSxDQUFDO1lBQ1gsSUFBSSxPQUFPLENBQUMscUJBQXFCLEVBQUUsQ0FBQztnQkFDbEMsT0FBTyxHQUFHLE1BQU0sQ0FBQyxLQUFLLENBQUMsT0FBTyxDQUFDLHFCQUFxQixDQUFDLENBQUE7WUFDdkQsQ0FBQztZQUVELElBQUksQ0FBQyxPQUFPLElBQUksT0FBTyxDQUFDLGFBQWEsRUFBRSxDQUFDO2dCQUN0QyxPQUFPLEdBQUcsTUFBTSxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsYUFBYSxDQUFDLENBQUE7WUFDL0MsQ0FBQztRQUNILENBQUM7UUFFRCxJQUFJLE1BQU0sRUFBRSxDQUFDO1lBQ1gsTUFBTSxDQUFDLE1BQU0sR0FBRyxNQUFNLENBQUE7UUFDeEIsQ0FBQztRQUVELElBQUksT0FBTyxFQUFFLENBQUM7WUFDWiwyQkFBMkIsQ0FBQyxNQUFNLEVBQUUsT0FBTyxFQUFFLGNBQWMsQ0FBQyxDQUFBO1FBQzlELENBQUM7SUFDSCxDQUFDO0lBRU8sU0FBUztRQUNmLE1BQU0sRUFDSixPQUFPLEVBQ1AsTUFBTSxFQUNQLEdBQUcsSUFBSSxDQUFBO1FBRVIsSUFBSSxDQUFDLE9BQU8sQ0FBQyxZQUFZLElBQUksQ0FBQyxJQUFJLENBQUMsZUFBZSxFQUFFLEVBQUUsQ0FBQztZQUNyRCxPQUFPLEtBQUssQ0FBQTtRQUNkLENBQUM7UUFFRCxJQUFJLE9BQWdDLENBQUE7UUFDcEMsSUFBSSxLQUFLLEdBQWtCLElBQUksQ0FBQTtRQUMvQixJQUFJLE1BQU0sR0FBRyxLQUFLLENBQUE7UUFFbEIsT0FBTyxJQUFJLENBQUMsZUFBZSxFQUFFLEVBQUUsQ0FBQztZQUM5QixPQUFPLEdBQUcsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsWUFBWSxDQUFDLENBQUE7WUFFeEQsSUFBSSxPQUFPLEVBQUUsQ0FBQztnQkFDWixLQUFLLEdBQUcsT0FBTyxDQUFDLENBQUMsQ0FBQyxJQUFJLElBQUksQ0FBQTtnQkFDMUIsSUFBSSxDQUFDLFFBQVEsRUFBRSxDQUFBO2dCQUNmLFNBQVE7WUFDVixDQUFDO1lBRUQsSUFBSSxLQUFLLEVBQUUsQ0FBQztnQkFDVixNQUFNLEdBQUcsSUFBSSxDQUFBO2dCQUNiLE1BQU0sQ0FBQyxLQUFLLENBQUMsR0FBRyxVQUFVLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQyxFQUFFLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQyxDQUFBO2dCQUM3RCxJQUFJLENBQUMsUUFBUSxFQUFFLENBQUE7WUFDakIsQ0FBQztpQkFBTSxDQUFDO2dCQUNOLE1BQUs7WUFDUCxDQUFDO1FBQ0gsQ0FBQztRQUVELE9BQU8sTUFBTSxDQUFBO0lBQ2YsQ0FBQztJQUVPLFVBQVU7UUFDaEIsTUFBTSxFQUNKLE9BQU8sRUFDUCxNQUFNLEVBQ1AsR0FBRyxJQUFJLENBQUE7UUFFUixJQUFJLENBQUMsSUFBSSxDQUFDLGVBQWUsRUFBRSxFQUFFLENBQUM7WUFDNUIsT0FBTyxLQUFLLENBQUE7UUFDZCxDQUFDO1FBRUQsTUFBTSxPQUFPLEdBQUcsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDLENBQUE7UUFDdkQsSUFBSSxhQUFzQixDQUFBO1FBRTFCLElBQUksT0FBTyxFQUFFLENBQUM7WUFDWixNQUFNLElBQUksR0FBZTtnQkFDdkIsS0FBSyxFQUFFLE9BQU8sQ0FBQyxDQUFDLENBQUM7Z0JBQ2pCLElBQUksRUFBRSxPQUFPLENBQUMsQ0FBQyxDQUFDO2FBQ2pCLENBQUE7WUFFRCxNQUFNLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsQ0FBQTtZQUN2QixNQUFNLENBQUMsTUFBTSxHQUFHLFVBQVUsQ0FBQyxNQUFNLENBQUMsTUFBTSxFQUFFLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQyxDQUFBO1lBQzdELElBQUksQ0FBQyxRQUFRLEVBQUUsQ0FBQTtZQUVmLE9BQU8sSUFBSSxDQUFDLGVBQWUsRUFBRSxFQUFFLENBQUM7Z0JBQzlCLElBQUksSUFBSSxDQUFDLFNBQVMsRUFBRSxFQUFFLENBQUM7b0JBQ3JCLE9BQU8sSUFBSSxDQUFBO2dCQUNiLENBQUM7Z0JBRUQsSUFBSSxJQUFJLENBQUMsVUFBVSxFQUFFLEVBQUUsQ0FBQztvQkFDdEIsT0FBTyxJQUFJLENBQUE7Z0JBQ2IsQ0FBQztnQkFFRCxhQUFhLEdBQUcsT0FBTyxDQUFDLFdBQVcsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUE7Z0JBRTVELE1BQU0sQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUNwQixHQUFHLElBQUksQ0FBQyxlQUFlLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQzVDLENBQUE7Z0JBRUQsSUFBSSxDQUFDLGFBQWEsRUFBRSxDQUFDO29CQUNuQixJQUFJLENBQUMsSUFBSSxHQUFHLFVBQVUsQ0FBQyxJQUFJLENBQUMsSUFBSSxFQUFFLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQyxDQUFBO2dCQUN2RCxDQUFDO2dCQUVELE1BQU0sQ0FBQyxNQUFNLEdBQUcsVUFBVSxDQUFDLE1BQU0sQ0FBQyxNQUFNLEVBQUUsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUE7Z0JBQzdELElBQUksQ0FBQyxRQUFRLEVBQUUsQ0FBQTtnQkFFZixJQUFJLGFBQWEsRUFBRSxDQUFDO29CQUNsQixNQUFLO2dCQUNQLENBQUM7WUFDSCxDQUFDO1lBRUQsT0FBTyxJQUFJLENBQUE7UUFDYixDQUFDO1FBRUQsT0FBTyxLQUFLLENBQUE7SUFDZCxDQUFDO0lBRU8sa0JBQWtCLENBQUMsTUFBZTtRQUN4QyxNQUFNLEVBQ0osTUFBTSxFQUNOLE9BQU8sRUFDUixHQUFHLElBQUksQ0FBQTtRQUVSLElBQUksQ0FBQyxJQUFJLENBQUMsZUFBZSxFQUFFLEVBQUUsQ0FBQztZQUM1QixPQUFPLE1BQU0sQ0FBQTtRQUNmLENBQUM7UUFFRCxNQUFNLGFBQWEsR0FBRyxPQUFPLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FBQTtRQUNsRSxNQUFNLFdBQVcsR0FBRyxDQUFDLGFBQWEsSUFBSSxNQUFNLENBQUE7UUFFNUMsTUFBTSxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQ3BCLEdBQUcsSUFBSSxDQUFDLGVBQWUsQ0FBQyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FDNUMsQ0FBQTtRQUVELElBQUksV0FBVyxFQUFFLENBQUM7WUFDaEIsTUFBTSxDQUFDLElBQUksR0FBRyxVQUFVLENBQUMsTUFBTSxDQUFDLElBQUksRUFBRSxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUMsQ0FBQTtRQUMzRCxDQUFDO2FBQU0sQ0FBQztZQUNOLE1BQU0sQ0FBQyxNQUFNLEdBQUcsVUFBVSxDQUFDLE1BQU0sQ0FBQyxNQUFNLEVBQUUsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDLENBQUE7UUFDL0QsQ0FBQztRQUVELElBQUksQ0FBQyxRQUFRLEVBQUUsQ0FBQTtRQUVmLE9BQU8sV0FBVyxDQUFBO0lBQ3BCLENBQUM7SUFFTyxtQkFBbUI7UUFDekIsTUFBTSxFQUNKLE1BQU0sRUFDTixPQUFPLEVBQ1IsR0FBRyxJQUFJLENBQUE7UUFFUixJQUFJLENBQUMsT0FBTyxDQUFDLHFCQUFxQixJQUFJLE1BQU0sQ0FBQyxLQUFLLENBQUMsTUFBTSxJQUFJLENBQUMsTUFBTSxDQUFDLE1BQU0sRUFBRSxDQUFDO1lBQzVFLE9BQU07UUFDUixDQUFDO1FBRUQsTUFBTSxPQUFPLEdBQUcsTUFBTSxDQUFDLE1BQU0sQ0FBQyxLQUFLLENBQUMsT0FBTyxDQUFDLHFCQUFxQixDQUFDLENBQUE7UUFFbEUsSUFBSSxPQUFPLEVBQUUsQ0FBQztZQUNaLE1BQU0sQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDO2dCQUNoQixLQUFLLEVBQUUsaUJBQWlCO2dCQUN4QixJQUFJLEVBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQzthQUNqQixDQUFDLENBQUE7UUFDSixDQUFDO0lBQ0gsQ0FBQztJQUVPLGFBQWEsQ0FBQyxLQUFhO1FBQ2pDLE1BQU0sRUFDSixNQUFNLEVBQ04sT0FBTyxFQUNSLEdBQUcsSUFBSSxDQUFBO1FBQ1IsSUFBSSxPQUErQixDQUFBO1FBRW5DLFNBQVMsQ0FBQztZQUNSLE9BQU8sR0FBRyxPQUFPLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsQ0FBQTtZQUV0QyxJQUFJLENBQUMsT0FBTyxFQUFFLENBQUM7Z0JBQ2IsTUFBSztZQUNQLENBQUM7WUFFRCxNQUFNLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQTtRQUNsQyxDQUFDO0lBQ0gsQ0FBQztJQUVPLFdBQVcsQ0FBQyxLQUFhO1FBQy9CLE1BQU0sRUFDSixNQUFNLEVBQ04sT0FBTyxFQUNSLEdBQUcsSUFBSSxDQUFBO1FBQ1IsTUFBTSxjQUFjLEdBQUcsT0FBTyxDQUFDLG9CQUFvQixJQUFJLEVBQUUsQ0FBQTtRQUN6RCxNQUFNLE9BQU8sR0FBRyxPQUFPLENBQUMsYUFBYTtZQUNuQyxDQUFDLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsYUFBYSxDQUFDO1lBQ3BDLENBQUMsQ0FBQyxJQUFJLENBQUE7UUFFUixJQUFJLE9BQU8sRUFBRSxDQUFDO1lBQ1osTUFBTSxDQUFDLE1BQU0sR0FBRywyQkFBMkIsQ0FBQyxFQUFFLEVBQUUsT0FBTyxFQUFFLGNBQWMsQ0FBQyxDQUFBO1FBQzFFLENBQUM7SUFDSCxDQUFDO0lBRU8sYUFBYTtRQUNuQixNQUFNLEVBQUUsTUFBTSxFQUFFLEdBQUcsSUFBSSxDQUFBO1FBRXZCLE1BQU0sQ0FBQyxJQUFJLEtBQUssWUFBWSxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsQ0FBQTtRQUN6QyxNQUFNLENBQUMsTUFBTSxLQUFLLFlBQVksQ0FBQyxNQUFNLENBQUMsTUFBTSxDQUFDLENBQUE7UUFFN0MsTUFBTSxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsQ0FBQyxJQUFJLEVBQUUsRUFBRTtZQUM1QixJQUFJLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUE7UUFDckMsQ0FBQyxDQUFDLENBQUE7UUFFRixNQUFNLGFBQWEsR0FBRyxJQUFJLEdBQUcsRUFBVSxDQUFBO1FBRXZDLE1BQU0sQ0FBQyxVQUFVLEdBQUcsTUFBTSxDQUFDLFVBQVUsQ0FBQyxNQUFNLENBQUMsQ0FBQyxTQUFTLEVBQUUsRUFBRTtZQUN6RCxNQUFNLEdBQUcsR0FBRyxHQUFHLFNBQVMsQ0FBQyxNQUFNLElBQUksU0FBUyxDQUFDLEdBQUcsRUFBRSxDQUFDLGlCQUFpQixFQUFFLENBQUE7WUFDdEUsTUFBTSxFQUFFLEdBQUcsQ0FBQyxhQUFhLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFBO1lBRWxDLElBQUksRUFBRSxFQUFFLENBQUM7Z0JBQ1AsYUFBYSxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQTtZQUN4QixDQUFDO1lBRUQsT0FBTyxFQUFFLENBQUE7UUFDWCxDQUFDLENBQUMsQ0FBQTtJQUNKLENBQUM7SUFFRDs7OztPQUlHO0lBQ0gsS0FBSyxDQUFDLEtBQWE7UUFDakIsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDO1lBQ2xCLE1BQU0sSUFBSSxTQUFTLENBQUMsdUJBQXVCLENBQUMsQ0FBQTtRQUM5QyxDQUFDO1FBRUQsTUFBTSxFQUFFLFdBQVcsRUFBRSxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUE7UUFDcEMsTUFBTSxhQUFhLEdBQUcsZ0JBQWdCLENBQUMsV0FBVyxDQUFDLENBQUE7UUFDbkQsTUFBTSxRQUFRLEdBQUcsWUFBWSxDQUFDLEtBQUssQ0FBQyxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsQ0FBQTtRQUNuRCxNQUFNLEtBQUssR0FBRyxXQUFXO1lBQ3ZCLENBQUMsQ0FBQyxpQkFBaUIsQ0FBQyxRQUFRLEVBQUUsV0FBVyxDQUFDLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxFQUFFLENBQUMsYUFBYSxDQUFDLElBQUksQ0FBQyxJQUFJLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQztZQUNqRyxDQUFDLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFBO1FBQzVDLE1BQU0sTUFBTSxHQUFHLGtCQUFrQixFQUFFLENBQUE7UUFFbkMsSUFBSSxDQUFDLEtBQUssR0FBRyxLQUFLLENBQUE7UUFDbEIsSUFBSSxDQUFDLFNBQVMsR0FBRyxDQUFDLENBQUE7UUFDbEIsSUFBSSxDQUFDLE1BQU0sR0FBRyxNQUFNLENBQUE7UUFFcEIsTUFBTSxhQUFhLEdBQUcsSUFBSSxDQUFDLFVBQVUsRUFBRSxDQUFBO1FBRXZDLElBQUksQ0FBQyxXQUFXLENBQUMsYUFBYSxDQUFDLENBQUE7UUFFL0IsSUFBSSxNQUFNLENBQUMsTUFBTSxFQUFFLENBQUM7WUFDbEIsTUFBTSxDQUFDLFVBQVUsR0FBRyxJQUFJLENBQUMsZUFBZSxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUMsQ0FBQTtRQUN6RCxDQUFDO1FBRUQsSUFBSSxNQUFNLEdBQUcsSUFBSSxDQUFBO1FBRWpCLE9BQU8sSUFBSSxDQUFDLGVBQWUsRUFBRSxFQUFFLENBQUM7WUFDOUIsSUFBSSxDQUFDLFNBQVMsRUFBRSxDQUFBO1lBRWhCLElBQUksSUFBSSxDQUFDLFVBQVUsRUFBRSxFQUFFLENBQUM7Z0JBQ3RCLE1BQU0sR0FBRyxLQUFLLENBQUE7WUFDaEIsQ0FBQztZQUVELElBQUksQ0FBQyxJQUFJLENBQUMsa0JBQWtCLENBQUMsTUFBTSxDQUFDLEVBQUUsQ0FBQztnQkFDckMsTUFBTSxHQUFHLEtBQUssQ0FBQTtZQUNoQixDQUFDO1FBQ0gsQ0FBQztRQUVELElBQUksQ0FBQyxtQkFBbUIsRUFBRSxDQUFBO1FBQzFCLElBQUksQ0FBQyxhQUFhLENBQUMsS0FBSyxDQUFDLENBQUE7UUFDekIsSUFBSSxDQUFDLFdBQVcsQ0FBQyxLQUFLLENBQUMsQ0FBQTtRQUN2QixJQUFJLENBQUMsYUFBYSxFQUFFLENBQUE7UUFFcEIsT0FBTyxNQUFNLENBQUE7SUFDZixDQUFDO0NBQ0YifQ==
 ;// CONCATENATED MODULE: external "stream"
 const external_stream_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("stream");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@6.2.1/node_modules/conventional-commits-parser/dist/stream.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@7.0.0/node_modules/conventional-commits-parser/dist/stream.js
 
 
 /**
@@ -61696,12 +60964,11 @@ function parseCommits(options = {}) {
 function parseCommitsStream(options = {}) {
     return Transform.from(parseCommits(options));
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RyZWFtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL3N0cmVhbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sUUFBUSxDQUFBO0FBRWxDLE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxtQkFBbUIsQ0FBQTtBQUVoRDs7OztHQUlHO0FBQ0gsTUFBTSxVQUFVLFlBQVksQ0FDMUIsVUFBK0IsRUFBRTtJQUVqQyxNQUFNLFVBQVUsR0FBRyxPQUFPLENBQUMsSUFBSSxDQUFBO0lBQy9CLE1BQU0sSUFBSSxHQUFHLFVBQVUsS0FBSyxJQUFJO1FBQzlCLENBQUMsQ0FBQyxDQUFDLEdBQVUsRUFBRSxFQUFFO1lBQ2YsTUFBTSxHQUFHLENBQUE7UUFDWCxDQUFDO1FBQ0QsQ0FBQyxDQUFDLFVBQVU7WUFDVixDQUFDLENBQUMsQ0FBQyxHQUFVLEVBQUUsRUFBRSxDQUFDLFVBQVUsQ0FBQyxHQUFHLENBQUMsUUFBUSxFQUFFLENBQUM7WUFDNUMsQ0FBQyxDQUFDLEdBQUcsRUFBRSxHQUFjLENBQUMsQ0FBQTtJQUUxQixPQUFPLEtBQUssU0FBUyxDQUFDLENBQUMsS0FBSyxDQUMxQixVQUFzRTtRQUV0RSxNQUFNLE1BQU0sR0FBRyxJQUFJLFlBQVksQ0FBQyxPQUFPLENBQUMsQ0FBQTtRQUN4QyxJQUFJLFNBQTBCLENBQUE7UUFFOUIsSUFBSSxLQUFLLEVBQUUsU0FBUyxJQUFJLFVBQVUsRUFBRSxDQUFDO1lBQ25DLElBQUksQ0FBQztnQkFDSCxNQUFNLE1BQU0sQ0FBQyxLQUFLLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRSxDQUFDLENBQUE7WUFDMUMsQ0FBQztZQUFDLE9BQU8sR0FBRyxFQUFFLENBQUM7Z0JBQ2IsSUFBSSxDQUFDLEdBQVksQ0FBQyxDQUFBO1lBQ3BCLENBQUM7UUFDSCxDQUFDO0lBQ0gsQ0FBQyxDQUFBO0FBQ0gsQ0FBQztBQUVEOzs7O0dBSUc7QUFDSCxNQUFNLFVBQVUsa0JBQWtCLENBQUMsVUFBK0IsRUFBRTtJQUNsRSxPQUFPLFNBQVMsQ0FBQyxJQUFJLENBQUMsWUFBWSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUE7QUFDOUMsQ0FBQyJ9
-;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@6.2.1/node_modules/conventional-commits-parser/dist/index.js
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RyZWFtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL3N0cmVhbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sUUFBUSxDQUFBO0FBRWxDLE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxtQkFBbUIsQ0FBQTtBQUVoRDs7OztHQUlHO0FBQ0gsTUFBTSxVQUFVLFlBQVksQ0FDMUIsT0FBTyxHQUF3QixFQUFFO0lBRWpDLE1BQU0sVUFBVSxHQUFHLE9BQU8sQ0FBQyxJQUFJLENBQUE7SUFDL0IsTUFBTSxJQUFJLEdBQUcsVUFBVSxLQUFLLElBQUk7UUFDOUIsQ0FBQyxDQUFDLENBQUMsR0FBVSxFQUFFLEVBQUU7WUFDZixNQUFNLEdBQUcsQ0FBQTtRQUNYLENBQUM7UUFDRCxDQUFDLENBQUMsVUFBVTtZQUNWLENBQUMsQ0FBQyxDQUFDLEdBQVUsRUFBRSxFQUFFLENBQUMsVUFBVSxDQUFDLEdBQUcsQ0FBQyxRQUFRLEVBQUUsQ0FBQztZQUM1QyxDQUFDLENBQUMsR0FBRyxFQUFFLEdBQWMsQ0FBQyxDQUFBO0lBRTFCLE9BQU8sS0FBSyxTQUFTLENBQUMsQ0FBQyxLQUFLLENBQzFCLFVBQXNFO1FBRXRFLE1BQU0sTUFBTSxHQUFHLElBQUksWUFBWSxDQUFDLE9BQU8sQ0FBQyxDQUFBO1FBQ3hDLElBQUksU0FBMEIsQ0FBQTtRQUU5QixJQUFJLEtBQUssRUFBRSxTQUFTLElBQUksVUFBVSxFQUFFLENBQUM7WUFDbkMsSUFBSSxDQUFDO2dCQUNILE1BQU0sTUFBTSxDQUFDLEtBQUssQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFFLENBQUMsQ0FBQTtZQUMxQyxDQUFDO1lBQUMsT0FBTyxHQUFHLEVBQUUsQ0FBQztnQkFDYixJQUFJLENBQUMsR0FBWSxDQUFDLENBQUE7WUFDcEIsQ0FBQztRQUNILENBQUM7SUFDSCxDQUFDLENBQUE7QUFDSCxDQUFDO0FBRUQ7Ozs7R0FJRztBQUNILE1BQU0sVUFBVSxrQkFBa0IsQ0FBQyxPQUFPLEdBQXdCLEVBQUU7SUFDbEUsT0FBTyxTQUFTLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFBO0FBQzlDLENBQUMifQ==
+;// CONCATENATED MODULE: ./node_modules/.pnpm/conventional-commits-parser@7.0.0/node_modules/conventional-commits-parser/dist/index.js
 
 
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsY0FBYyxZQUFZLENBQUE7QUFDMUIsY0FBYyxtQkFBbUIsQ0FBQTtBQUNqQyxjQUFjLGFBQWEsQ0FBQSJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsY0FBYyxtQkFBbUIsQ0FBQTtBQUNqQyxjQUFjLGFBQWEsQ0FBQSJ9
 ;// CONCATENATED MODULE: ./src/rules/prTitleConventional.ts
 // Code inspired by pr-compliance-action:
 // https://github.com/mtfoley/pr-compliance-action/blob/bcb6dbea496e44a980f8d6d77af91b67f1eea68d/src/checks.ts
@@ -63462,7 +62729,7 @@ function esm_encode(data, options = EntityLevel.XML) {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/common/utils.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/common/utils.mjs
 // Utilities
 //
 
@@ -63644,6 +62911,10 @@ function isPunctChar (ch) {
   return P_regex.test(ch) || S_regex.test(ch)
 }
 
+function isPunctCharCode (code) {
+  return isPunctChar(utils_fromCodePoint(code))
+}
+
 // Markdown ASCII punctuation characters.
 //
 // !, ", #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, @, [, \, ], ^, _, `, {, |, }, or ~
@@ -63705,6 +62976,7 @@ function normalizeReference (str) {
   // (remove this when node v10 is no longer supported).
   //
   if ('ẞ'.toLowerCase() === 'Ṿ') {
+    /* c8 ignore next 2 */
     str = str.replace(/ẞ/g, 'ß')
   }
 
@@ -63743,6 +63015,28 @@ function normalizeReference (str) {
   return str.toLowerCase().toUpperCase()
 }
 
+function isAsciiTrimmable (c) {
+  return c === 0x20 || c === 0x09 || c === 0x0a || c === 0x0d
+}
+
+// "Light" .trim() for blocks (headers, paragraphs), where unicode spaces
+// should be preserved.
+function asciiTrim (str) {
+  let start = 0
+  for (; start < str.length; start++) {
+    if (!isAsciiTrimmable(str.charCodeAt(start))) {
+      break
+    }
+  }
+  let end = str.length - 1
+  for (; end >= start; end--) {
+    if (!isAsciiTrimmable(str.charCodeAt(end))) {
+      break
+    }
+  }
+  return str.slice(start, end + 1)
+}
+
 // Re-export libraries commonly used in both markdown-it and its plugins,
 // so plugins won't have to depend on them explicitly, which reduces their
 // bundled size (e.g. a browser build).
@@ -63751,7 +63045,7 @@ const lib = { mdurl: mdurl_namespaceObject, ucmicro: uc_micro_namespaceObject }
 
 
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/helpers/parse_link_label.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/helpers/parse_link_label.mjs
 // Parse link label
 //
 // this function assumes that first character ("[") already matches;
@@ -63802,7 +63096,7 @@ function parseLinkLabel (state, start, disableNested) {
   return labelEnd
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/helpers/parse_link_destination.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/helpers/parse_link_destination.mjs
 // Parse link destination
 //
 
@@ -63881,7 +63175,7 @@ function parseLinkDestination (str, start, max) {
   return result
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/helpers/parse_link_title.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/helpers/parse_link_title.mjs
 // Parse link title
 //
 
@@ -63949,7 +63243,7 @@ function parseLinkTitle (str, start, max, prev_state) {
   return state
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/helpers/index.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/helpers/index.mjs
 // Just a shortcut for bulk export
 
 
@@ -63958,7 +63252,7 @@ function parseLinkTitle (str, start, max, prev_state) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/renderer.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/renderer.mjs
 /**
  * class Renderer
  *
@@ -64282,7 +63576,7 @@ Renderer.prototype.render = function (tokens, options, env) {
 
 /* harmony default export */ const renderer = (Renderer);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/ruler.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/ruler.mjs
 /**
  * class Ruler
  *
@@ -64624,7 +63918,7 @@ Ruler.prototype.getRules = function (chainName) {
 
 /* harmony default export */ const ruler = (Ruler);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/token.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/token.mjs
 // Token class
 
 /**
@@ -64817,7 +64111,7 @@ Token.prototype.attrJoin = function attrJoin (name, value) {
 
 /* harmony default export */ const lib_token = (Token);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/state_core.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/state_core.mjs
 // Core state object
 //
 
@@ -64836,7 +64130,7 @@ StateCore.prototype.Token = lib_token
 
 /* harmony default export */ const state_core = (StateCore);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/normalize.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/normalize.mjs
 // Normalize input string
 
 // https://spec.commonmark.org/0.29/#line-ending
@@ -64855,7 +64149,7 @@ function normalize (state) {
   state.src = str
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/block.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/block.mjs
 function block (state) {
   let token
 
@@ -64870,7 +64164,7 @@ function block (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/inline.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/inline.mjs
 function inline (state) {
   const tokens = state.tokens
 
@@ -64883,7 +64177,7 @@ function inline (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/linkify.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/linkify.mjs
 // Replace link-like texts with link nodes.
 //
 // Currently restricted by `md.validateLink()` to http/https/ftp
@@ -65019,7 +64313,7 @@ function linkify (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/replacements.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/replacements.mjs
 // Simple typographic replacements
 //
 // (c) (C) → ©
@@ -65122,7 +64416,7 @@ function replace (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/smartquotes.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/smartquotes.mjs
 // Convert straight quotation marks to typographic ones
 //
 
@@ -65132,14 +64426,36 @@ const QUOTE_TEST_RE = /['"]/
 const QUOTE_RE = /['"]/g
 const APOSTROPHE = '\u2019' /* ’ */
 
-function replaceAt (str, index, ch) {
-  return str.slice(0, index) + ch + str.slice(index + 1)
+function addReplacement (replacements, tokenIdx, pos, ch) {
+  if (!replacements[tokenIdx]) {
+    replacements[tokenIdx] = []
+  }
+
+  replacements[tokenIdx].push({ pos, ch })
+}
+
+function applyReplacements (str, replacements) {
+  let result = ''
+  let lastPos = 0
+
+  replacements.sort((a, b) => a.pos - b.pos)
+
+  for (let i = 0; i < replacements.length; i++) {
+    const replacement = replacements[i]
+
+    result += str.slice(lastPos, replacement.pos) + replacement.ch
+    lastPos = replacement.pos + 1
+  }
+
+  return result + str.slice(lastPos)
 }
 
 function process_inlines (tokens, state) {
   let j
 
   const stack = []
+  // token index -> list of replacements in the original token content
+  const replacements = {}
 
   for (let i = 0; i < tokens.length; i++) {
     const token = tokens[i]
@@ -65153,9 +64469,9 @@ function process_inlines (tokens, state) {
 
     if (token.type !== 'text') { continue }
 
-    let text = token.content
+    const text = token.content
     let pos = 0
-    let max = text.length
+    const max = text.length
 
     /* eslint no-labels:0,block-scoped-var:0 */
     OUTER:
@@ -65203,8 +64519,8 @@ function process_inlines (tokens, state) {
         }
       }
 
-      const isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctChar(String.fromCharCode(lastChar))
-      const isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctChar(String.fromCharCode(nextChar))
+      const isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctCharCode(lastChar)
+      const isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctCharCode(nextChar)
 
       const isLastWhiteSpace = isWhiteSpace(lastChar)
       const isNextWhiteSpace = isWhiteSpace(nextChar)
@@ -65247,7 +64563,7 @@ function process_inlines (tokens, state) {
       if (!canOpen && !canClose) {
         // middle of word
         if (isSingle) {
-          token.content = replaceAt(token.content, t.index, APOSTROPHE)
+          addReplacement(replacements, i, t.index, APOSTROPHE)
         }
         continue
       }
@@ -65270,18 +64586,8 @@ function process_inlines (tokens, state) {
               closeQuote = state.md.options.quotes[1]
             }
 
-            // replace token.content *before* tokens[item.token].content,
-            // because, if they are pointing at the same token, replaceAt
-            // could mess up indices when quote length != 1
-            token.content = replaceAt(token.content, t.index, closeQuote)
-            tokens[item.token].content = replaceAt(
-              tokens[item.token].content, item.pos, openQuote)
-
-            pos += closeQuote.length - 1
-            if (item.token === i) { pos += openQuote.length - 1 }
-
-            text = token.content
-            max = text.length
+            addReplacement(replacements, i, t.index, closeQuote)
+            addReplacement(replacements, item.token, item.pos, openQuote)
 
             stack.length = j
             continue OUTER
@@ -65297,10 +64603,14 @@ function process_inlines (tokens, state) {
           level: thisLevel
         })
       } else if (canClose && isSingle) {
-        token.content = replaceAt(token.content, t.index, APOSTROPHE)
+        addReplacement(replacements, i, t.index, APOSTROPHE)
       }
     }
   }
+
+  Object.keys(replacements).forEach(function (tokenIdx) {
+    tokens[tokenIdx].content = applyReplacements(tokens[tokenIdx].content, replacements[tokenIdx])
+  })
 }
 
 function smartquotes (state) {
@@ -65317,7 +64627,7 @@ function smartquotes (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_core/text_join.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_core/text_join.mjs
 // Join raw text tokens with the rest of the text
 //
 // This is set as a separate rule to provide an opportunity for plugins
@@ -65362,7 +64672,7 @@ function text_join (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/parser_core.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/parser_core.mjs
 /** internal
  * class Core
  *
@@ -65426,7 +64736,7 @@ Core.prototype.State = state_core
 
 /* harmony default export */ const parser_core = (Core);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/state_block.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/state_block.mjs
 // Parser state class
 
 
@@ -65648,7 +64958,7 @@ StateBlock.prototype.Token = lib_token
 
 /* harmony default export */ const state_block = (StateBlock);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/table.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/table.mjs
 // GFM table, https://github.github.com/gfm/#tables-extension-
 
 
@@ -65878,7 +65188,7 @@ function table (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/code.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/code.mjs
 // Code block (4 spaces padded)
 
 function code (state, startLine, endLine/*, silent */) {
@@ -65910,7 +65220,7 @@ function code (state, startLine, endLine/*, silent */) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/fence.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/fence.mjs
 // fences (``` lang, ~~~ lang)
 
 function fence (state, startLine, endLine, silent) {
@@ -66006,7 +65316,7 @@ function fence (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/blockquote.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/blockquote.mjs
 // Block quotes
 
 
@@ -66217,7 +65527,7 @@ function blockquote (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/hr.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/hr.mjs
 // Horizontal rule
 
 
@@ -66259,7 +65569,7 @@ function hr (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/list.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/list.mjs
 // Lists
 
 
@@ -66592,7 +65902,7 @@ function list (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/reference.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/reference.mjs
 
 
 function reference (state, startLine, _endLine, silent) {
@@ -66806,7 +66116,7 @@ function reference (state, startLine, _endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/common/html_blocks.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/common/html_blocks.mjs
 // List of valid html blocks names, according to commonmark spec
 // https://spec.commonmark.org/0.30/#html-blocks
 
@@ -66875,7 +66185,7 @@ function reference (state, startLine, _endLine, silent) {
   'ul'
 ]);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/common/html_re.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/common/html_re.mjs
 // Regexps to match html elements
 
 const attr_name     = '[a-zA-Z_:][a-zA-Z0-9:._-]*'
@@ -66902,7 +66212,7 @@ const HTML_OPEN_CLOSE_TAG_RE = new RegExp('^(?:' + open_tag + '|' + close_tag + 
 
 
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/html_block.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/html_block.mjs
 // HTML block
 
 
@@ -66947,11 +66257,22 @@ function html_block (state, startLine, endLine, silent) {
 
   let nextLine = startLine + 1
 
+  // Block types 6 and 7 (the only ones whose end condition is a blank line)
+  // have `/^$/` as their closing regexp. For all other types (1-5, e.g.
+  // `<!--` comments), a blank line is regular content and must not terminate
+  // the block - it ends only when its closing sequence is found.
+  const endsOnBlankLine = HTML_SEQUENCES[i][1].test('')
+
   // If we are here - we detected HTML block.
   // Let's roll down till block end.
   if (!HTML_SEQUENCES[i][1].test(lineText)) {
     for (; nextLine < endLine; nextLine++) {
-      if (state.sCount[nextLine] < state.blkIndent) { break }
+      if (state.sCount[nextLine] < state.blkIndent) {
+        // An outdented blank line shouldn't end a block that doesn't end on a
+        // blank line (e.g. a `<!--` comment inside a list item). Such blocks
+        // must continue until their closing sequence regardless of indent.
+        if (endsOnBlankLine || !state.isEmpty(nextLine)) { break }
+      }
 
       pos = state.bMarks[nextLine] + state.tShift[nextLine]
       max = state.eMarks[nextLine]
@@ -66973,7 +66294,7 @@ function html_block (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/heading.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/heading.mjs
 // heading (#, ##, ...)
 
 
@@ -67016,7 +66337,7 @@ function heading (state, startLine, endLine, silent) {
   token_o.map    = [startLine, state.line]
 
   const token_i    = state.push('inline', '', 0)
-  token_i.content  = state.src.slice(pos, max).trim()
+  token_i.content  = asciiTrim(state.src.slice(pos, max))
   token_i.map      = [startLine, state.line]
   token_i.children = []
 
@@ -67026,8 +66347,10 @@ function heading (state, startLine, endLine, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/lheading.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/lheading.mjs
 // lheading (---, ===)
+
+
 
 function lheading (state, startLine, endLine/*, silent */) {
   const terminatorRules = state.md.block.ruler.getRules('paragraph')
@@ -67086,10 +66409,11 @@ function lheading (state, startLine, endLine/*, silent */) {
 
   if (!level) {
     // Didn't find valid underline
+    state.parentType = oldParentType
     return false
   }
 
-  const content = state.getLines(startLine, nextLine, state.blkIndent, false).trim()
+  const content = asciiTrim(state.getLines(startLine, nextLine, state.blkIndent, false))
 
   state.line = nextLine + 1
 
@@ -67110,8 +66434,10 @@ function lheading (state, startLine, endLine/*, silent */) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_block/paragraph.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_block/paragraph.mjs
 // Paragraph
+
+
 
 function paragraph (state, startLine, endLine) {
   const terminatorRules = state.md.block.ruler.getRules('paragraph')
@@ -67139,7 +66465,7 @@ function paragraph (state, startLine, endLine) {
     if (terminate) { break }
   }
 
-  const content = state.getLines(startLine, nextLine, state.blkIndent, false).trim()
+  const content = asciiTrim(state.getLines(startLine, nextLine, state.blkIndent, false))
 
   state.line = nextLine
 
@@ -67158,7 +66484,7 @@ function paragraph (state, startLine, endLine) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/parser_block.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/parser_block.mjs
 /** internal
  * class ParserBlock
  *
@@ -67294,7 +66620,7 @@ ParserBlock.prototype.State = state_block
 
 /* harmony default export */ const parser_block = (ParserBlock);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/state_inline.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/state_inline.mjs
 // Inline parser state
 
 
@@ -67386,8 +66712,30 @@ StateInline.prototype.scanDelims = function (start, canSplitWord) {
   const max = this.posMax
   const marker = this.src.charCodeAt(start)
 
-  // treat beginning of the line as a whitespace
-  const lastChar = start > 0 ? this.src.charCodeAt(start - 1) : 0x20
+  // Astral characters below are combined manually, because .codePointAt()
+  // does not guarantee numeric type output. And we don't wish JIT cache issues.
+  // The broken surrogate pairs are evaluated as U+FFFD to prevent possible
+  // crashes.
+
+  let lastChar
+  if (start === 0) {
+    // treat beginning of the line as a whitespace
+    lastChar = 0x20
+  } else if (start === 1) {
+    lastChar = this.src.charCodeAt(0)
+    if ((lastChar & 0xF800) === 0xD800) { lastChar = 0xFFFD }
+  } else {
+    lastChar = this.src.charCodeAt(start - 1)
+    if ((lastChar & 0xFC00) === 0xDC00) {
+      // low surrogate => add high one, replace broken pair with U+FFFD
+      const highSurr = this.src.charCodeAt(start - 2)
+      lastChar = (highSurr & 0xFC00) === 0xD800
+        ? 0x10000 + ((highSurr - 0xD800) << 10) + (lastChar - 0xDC00)
+        : 0xFFFD
+    } else if ((lastChar & 0xFC00) === 0xD800) {
+      lastChar = 0xFFFD
+    }
+  }
 
   let pos = start
   while (pos < max && this.src.charCodeAt(pos) === marker) { pos++ }
@@ -67395,10 +66743,19 @@ StateInline.prototype.scanDelims = function (start, canSplitWord) {
   const count = pos - start
 
   // treat end of the line as a whitespace
-  const nextChar = pos < max ? this.src.charCodeAt(pos) : 0x20
+  let nextChar = pos < max ? this.src.charCodeAt(pos) : 0x20
+  if ((nextChar & 0xFC00) === 0xD800) {
+    // high surrogate => add low one, replace broken pair with U+FFFD
+    const lowSurr = this.src.charCodeAt(pos + 1)
+    nextChar = (lowSurr & 0xFC00) === 0xDC00
+      ? 0x10000 + ((nextChar - 0xD800) << 10) + (lowSurr - 0xDC00)
+      : 0xFFFD
+  } else if ((nextChar & 0xFC00) === 0xDC00) {
+    nextChar = 0xFFFD
+  }
 
-  const isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctChar(String.fromCharCode(lastChar))
-  const isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctChar(String.fromCharCode(nextChar))
+  const isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctCharCode(lastChar)
+  const isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctCharCode(nextChar)
 
   const isLastWhiteSpace = isWhiteSpace(lastChar)
   const isNextWhiteSpace = isWhiteSpace(nextChar)
@@ -67419,7 +66776,7 @@ StateInline.prototype.Token = lib_token
 
 /* harmony default export */ const state_inline = (StateInline);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/text.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/text.mjs
 // Skip text characters for text token, place those to pending buffer
 // and increment current pos
 
@@ -67507,7 +66864,7 @@ module.exports = function text(state, silent) {
   return true;
 }; */
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/linkify.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/linkify.mjs
 // Process links like https://example.org/
 
 // RFC3986: scheme = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
@@ -67572,7 +66929,7 @@ function linkify_linkify (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/newline.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/newline.mjs
 // Proceess '\n'
 
 
@@ -67616,7 +66973,7 @@ function newline (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/escape.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/escape.mjs
 // Process escaped chars and hardbreaks
 
 
@@ -67687,7 +67044,7 @@ function rules_inline_escape_escape (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/backticks.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/backticks.mjs
 // Parse backticks
 
 function backtick (state, silent) {
@@ -67749,7 +67106,7 @@ function backtick (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/strikethrough.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/strikethrough.mjs
 // ~~strike through~~
 //
 
@@ -67878,7 +67235,7 @@ function strikethrough_postProcess (state) {
   postProcess: strikethrough_postProcess
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/emphasis.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/emphasis.mjs
 // Process *this* and _that_
 //
 
@@ -68003,7 +67360,7 @@ function emphasis_post_process (state) {
   postProcess: emphasis_post_process
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/link.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/link.mjs
 // Process [link](<to> "stuff")
 
 
@@ -68144,7 +67501,7 @@ function link_link (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/image.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/image.mjs
 // Process ![image](<src> "title")
 
 
@@ -68284,7 +67641,7 @@ function image_image (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/autolink.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/autolink.mjs
 // Process autolinks '<protocol:...>'
 
 /* eslint max-len:0 */
@@ -68358,7 +67715,7 @@ function autolink (state, silent) {
   return false
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/html_inline.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/html_inline.mjs
 // Process html tags
 
 
@@ -68410,7 +67767,7 @@ function html_inline (state, silent) {
   return true
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/entity.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/entity.mjs
 // Process html entity - &#123;, &#xAF;, &quot;, ...
 
 
@@ -68446,7 +67803,7 @@ function entity (state, silent) {
   } else {
     const match = state.src.slice(pos).match(NAMED_RE)
     if (match) {
-      const decoded = decode_decodeHTML(match[0])
+      const decoded = decodeHTMLStrict(match[0])
       if (decoded !== match[0]) {
         if (!silent) {
           const token   = state.push('text_special', '', 0)
@@ -68463,7 +67820,7 @@ function entity (state, silent) {
   return false
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/balance_pairs.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/balance_pairs.mjs
 // For each opening emphasis-like marker find a matching closing one
 //
 
@@ -68589,7 +67946,7 @@ function link_pairs (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/rules_inline/fragments_join.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/rules_inline/fragments_join.mjs
 // Clean up tokens after emphasis and strikethrough postprocessing:
 // merge adjacent text nodes into one and re-calculate all token levels
 //
@@ -68629,7 +67986,7 @@ function fragments_join (state) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/parser_inline.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/parser_inline.mjs
 /** internal
  * class ParserInline
  *
@@ -68828,7 +68185,7 @@ ParserInline.prototype.State = state_inline
 
 /* harmony default export */ const parser_inline = (ParserInline);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/linkify-it@5.0.0/node_modules/linkify-it/lib/re.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/linkify-it@5.0.1/node_modules/linkify-it/lib/re.mjs
 
 
 /* harmony default export */ function lib_re(opts) {
@@ -69019,7 +68376,7 @@ ParserInline.prototype.State = state_inline
   return re
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/linkify-it@5.0.0/node_modules/linkify-it/index.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/linkify-it@5.0.1/node_modules/linkify-it/index.mjs
 
 
 //
@@ -69137,11 +68494,6 @@ const tlds_2ch_src_re = 'a[cdefgilmnoqrstuwxz]|b[abdefghijmnorstvwyz]|c[acdfghik
 // DON'T try to make PRs with changes. Extend TLDs with LinkifyIt.tlds() instead
 const tlds_default = 'biz|com|edu|gov|net|org|pro|web|xxx|aero|asia|coop|info|museum|name|shop|рф'.split('|')
 
-function resetScanCache (self) {
-  self.__index__ = -1
-  self.__text_cache__ = ''
-}
-
 function createValidator (re) {
   return function (text, pos) {
     const tail = text.slice(pos)
@@ -69180,8 +68532,11 @@ function compile (self) {
   function untpl (tpl) { return tpl.replace('%TLDS%', re.src_tlds) }
 
   re.email_fuzzy = RegExp(untpl(re.tpl_email_fuzzy), 'i')
+  re.email_fuzzy_global = RegExp(untpl(re.tpl_email_fuzzy), 'ig')
   re.link_fuzzy = RegExp(untpl(re.tpl_link_fuzzy), 'i')
+  re.link_fuzzy_global = RegExp(untpl(re.tpl_link_fuzzy), 'ig')
   re.link_no_ip_fuzzy = RegExp(untpl(re.tpl_link_no_ip_fuzzy), 'i')
+  re.link_no_ip_fuzzy_global = RegExp(untpl(re.tpl_link_no_ip_fuzzy), 'ig')
   re.host_fuzzy_test = RegExp(untpl(re.tpl_host_fuzzy_test), 'i')
 
   //
@@ -69275,12 +68630,6 @@ function compile (self) {
     '(' + self.re.schema_test.source + ')|(' + self.re.host_fuzzy_test.source + ')|@',
     'i'
   )
-
-  //
-  // Cleanup
-  //
-
-  resetScanCache(self)
 }
 
 /**
@@ -69288,55 +68637,45 @@ function compile (self) {
  *
  * Match result. Single element of array, returned by [[LinkifyIt#match]]
  **/
-function Match (self, shift) {
-  const start = self.__index__
-  const end = self.__last_index__
-  const text = self.__text_cache__.slice(start, end)
+function Match (text, schema, index, lastIndex) {
+  const raw = text.slice(index, lastIndex)
 
   /**
    * Match#schema -> String
    *
    * Prefix (protocol) for matched string.
    **/
-  this.schema = self.__schema__.toLowerCase()
+  this.schema = schema.toLowerCase()
   /**
    * Match#index -> Number
    *
    * First position of matched string.
    **/
-  this.index = start + shift
+  this.index = index
   /**
    * Match#lastIndex -> Number
    *
    * Next position after matched string.
    **/
-  this.lastIndex = end + shift
+  this.lastIndex = lastIndex
   /**
    * Match#raw -> String
    *
    * Matched string.
    **/
-  this.raw = text
+  this.raw = raw
   /**
    * Match#text -> String
    *
    * Notmalized text of matched string.
    **/
-  this.text = text
+  this.text = raw
   /**
    * Match#url -> String
    *
    * Normalized url of matched string.
    **/
-  this.url = text
-}
-
-function createMatch (self, shift) {
-  const match = new Match(self, shift)
-
-  self.__compiled__[match.schema].normalize(match, self)
-
-  return match
+  this.url = raw
 }
 
 /**
@@ -69391,12 +68730,6 @@ function LinkifyIt (schemas, options) {
 
   this.__opts__ = linkify_it_assign({}, linkify_it_defaultOptions, options)
 
-  // Cache last tested result. Used to skip repeating steps on next `match` call.
-  this.__index__ = -1
-  this.__last_index__ = -1 // Next scan position
-  this.__schema__ = ''
-  this.__text_cache__ = ''
-
   this.__schemas__ = linkify_it_assign({}, defaultSchemas, schemas)
   this.__compiled__ = {}
 
@@ -69438,69 +68771,38 @@ LinkifyIt.prototype.set = function set (options) {
  * Searches linkifiable pattern and returns `true` on success or `false` on fail.
  **/
 LinkifyIt.prototype.test = function test (text) {
-  // Reset scan cache
-  this.__text_cache__ = text
-  this.__index__ = -1
-
   if (!text.length) { return false }
 
-  let m, ml, me, len, shift, next, re, tld_pos, at_pos
+  let m, re
 
   // try to scan for link with schema - that's the most simple rule
   if (this.re.schema_test.test(text)) {
     re = this.re.schema_search
     re.lastIndex = 0
     while ((m = re.exec(text)) !== null) {
-      len = this.testSchemaAt(text, m[2], re.lastIndex)
-      if (len) {
-        this.__schema__ = m[2]
-        this.__index__ = m.index + m[1].length
-        this.__last_index__ = m.index + m[0].length + len
-        break
-      }
+      if (this.testSchemaAt(text, m[2], re.lastIndex)) { return true }
     }
   }
 
   if (this.__opts__.fuzzyLink && this.__compiled__['http:']) {
     // guess schemaless links
-    tld_pos = text.search(this.re.host_fuzzy_test)
-    if (tld_pos >= 0) {
-      // if tld is located after found link - no need to check fuzzy pattern
-      if (this.__index__ < 0 || tld_pos < this.__index__) {
-        if ((ml = text.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy)) !== null) {
-          shift = ml.index + ml[1].length
-
-          if (this.__index__ < 0 || shift < this.__index__) {
-            this.__schema__ = ''
-            this.__index__ = shift
-            this.__last_index__ = ml.index + ml[0].length
-          }
-        }
+    if (text.search(this.re.host_fuzzy_test) >= 0) {
+      if (text.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy) !== null) {
+        return true
       }
     }
   }
 
   if (this.__opts__.fuzzyEmail && this.__compiled__['mailto:']) {
     // guess schemaless emails
-    at_pos = text.indexOf('@')
-    if (at_pos >= 0) {
+    if (text.indexOf('@') >= 0) {
       // We can't skip this check, because this cases are possible:
       // 192.168.1.1@gmail.com, my.in@example.com
-      if ((me = text.match(this.re.email_fuzzy)) !== null) {
-        shift = me.index + me[1].length
-        next = me.index + me[0].length
-
-        if (this.__index__ < 0 || shift < this.__index__ ||
-            (shift === this.__index__ && next > this.__last_index__)) {
-          this.__schema__ = 'mailto:'
-          this.__index__ = shift
-          this.__last_index__ = next
-        }
-      }
+      if (text.match(this.re.email_fuzzy) !== null) { return true }
     }
   }
 
-  return this.__index__ >= 0
+  return false
 }
 
 /**
@@ -69549,23 +68851,88 @@ LinkifyIt.prototype.testSchemaAt = function testSchemaAt (text, schema, pos) {
  **/
 LinkifyIt.prototype.match = function match (text) {
   const result = []
-  let shift = 0
+  const type_schemed = []
+  const type_fuzzy_link = []
+  const type_fuzzy_email = []
+  let m, len, re
 
-  // Try to take previous element from cache, if .test() called before
-  if (this.__index__ >= 0 && this.__text_cache__ === text) {
-    result.push(createMatch(this, shift))
-    shift = this.__last_index__
+  function choose (a, b) {
+    if (!a) { return b }
+    if (!b) { return a }
+    if (a.index !== b.index) { return a.index < b.index ? a : b }
+    return a.lastIndex >= b.lastIndex ? a : b
   }
 
-  // Cut head if cache was used
-  let tail = shift ? text.slice(shift) : text
+  if (!text.length) { return null }
 
-  // Scan string until end reached
-  while (this.test(tail)) {
-    result.push(createMatch(this, shift))
+  // scan for links with schema
+  if (this.re.schema_test.test(text)) {
+    re = this.re.schema_search
+    re.lastIndex = 0
+    while ((m = re.exec(text)) !== null) {
+      len = this.testSchemaAt(text, m[2], re.lastIndex)
+      if (len) {
+        type_schemed.push({
+          schema: m[2],
+          index: m.index + m[1].length,
+          lastIndex: m.index + m[0].length + len
+        })
+      }
+    }
+  }
 
-    tail = tail.slice(this.__last_index__)
-    shift += this.__last_index__
+  if (this.__opts__.fuzzyLink && this.__compiled__['http:']) {
+    re = this.__opts__.fuzzyIP ? this.re.link_fuzzy_global : this.re.link_no_ip_fuzzy_global
+    re.lastIndex = 0
+    while ((m = re.exec(text)) !== null) {
+      type_fuzzy_link.push({
+        schema: '',
+        index: m.index + m[1].length,
+        lastIndex: m.index + m[0].length
+      })
+    }
+  }
+
+  if (this.__opts__.fuzzyEmail && this.__compiled__['mailto:']) {
+    re = this.re.email_fuzzy_global
+    re.lastIndex = 0
+    while ((m = re.exec(text)) !== null) {
+      type_fuzzy_email.push({
+        schema: 'mailto:',
+        index: m.index + m[1].length,
+        lastIndex: m.index + m[0].length
+      })
+    }
+  }
+
+  const indexes = [0, 0, 0]
+  let lastIndex = 0
+
+  for (;;) {
+    const candidates = [
+      type_schemed[indexes[0]],
+      type_fuzzy_email[indexes[1]],
+      type_fuzzy_link[indexes[2]]
+    ]
+
+    const candidate = choose(choose(candidates[0], candidates[1]), candidates[2])
+
+    if (!candidate) { break }
+
+    if (candidate === candidates[0]) {
+      indexes[0]++
+    } else if (candidate === candidates[1]) {
+      indexes[1]++
+    } else {
+      indexes[2]++
+    }
+
+    if (candidate.index < lastIndex) { continue }
+
+    const match = new Match(text, candidate.schema, candidate.index, candidate.lastIndex)
+    this.__compiled__[match.schema].normalize(match, this)
+    result.push(match)
+    lastIndex = candidate.lastIndex
   }
 
   if (result.length) {
@@ -69582,10 +68949,6 @@ LinkifyIt.prototype.match = function match (text) {
  * of the string, and null otherwise.
  **/
 LinkifyIt.prototype.matchAtStart = function matchAtStart (text) {
-  // Reset scan cache
-  this.__text_cache__ = text
-  this.__index__ = -1
-
   if (!text.length) return null
 
   const m = this.re.schema_at_start.exec(text)
@@ -69594,11 +68957,10 @@ LinkifyIt.prototype.matchAtStart = function matchAtStart (text) {
   const len = this.testSchemaAt(text, m[2], m[0].length)
   if (!len) return null
 
-  this.__schema__ = m[2]
-  this.__index__ = m.index + m[1].length
-  this.__last_index__ = m.index + m[0].length + len
+  const match = new Match(text, m[2], m.index + m[1].length, m.index + m[0].length + len)
 
-  return createMatch(this, 0)
+  this.__compiled__[match.schema].normalize(match, this)
+  return match
 }
 
 /** chainable
@@ -69664,8 +69026,8 @@ LinkifyIt.prototype.onCompile = function onCompile () {
 /* harmony default export */ const linkify_it = (LinkifyIt);
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/punycode.js@2.3.1/node_modules/punycode.js/punycode.js
-var punycode = __nccwpck_require__(223);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/presets/default.mjs
+var punycode = __nccwpck_require__(6637);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/presets/default.mjs
 // markdown-it default options
 
 /* harmony default export */ const presets_default = ({
@@ -69714,7 +69076,7 @@ var punycode = __nccwpck_require__(223);
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/presets/zero.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/presets/zero.mjs
 // "Zero" preset, with nothing enabled. Useful for manual configuring of simple
 // modes. For example, to parse bold/italic only.
 
@@ -69786,7 +69148,7 @@ var punycode = __nccwpck_require__(223);
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/presets/commonmark.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/presets/commonmark.mjs
 // Commonmark default options
 
 /* harmony default export */ const commonmark = ({
@@ -69876,7 +69238,7 @@ var punycode = __nccwpck_require__(223);
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/lib/index.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/lib/index.mjs
 // Main parser class
 
 
@@ -70231,7 +69593,7 @@ function MarkdownIt (presetName, options) {
  * ```javascript
  * var md = require('markdown-it')()
  *             .set({ html: true, breaks: true })
- *             .set({ typographer, true });
+ *             .set({ typographer: true });
  * ```
  *
  * __Note:__ To achieve the best possible performance, don't modify a
@@ -70443,14 +69805,16 @@ MarkdownIt.prototype.renderInline = function (src, env) {
 
 /* harmony default export */ const markdown_it_lib = (MarkdownIt);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.1.1/node_modules/markdown-it/index.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdown-it@14.2.0/node_modules/markdown-it/index.mjs
 
 
 ;// CONCATENATED MODULE: external "node:fs"
 const external_node_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs");
+;// CONCATENATED MODULE: external "node:os"
+const external_node_os_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:os");
 ;// CONCATENATED MODULE: external "node:path"
 const external_node_path_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:path");
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/node-imports-node.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/node-imports-node.mjs
 // @ts-check
 
 
@@ -70463,11 +69827,11 @@ const node_imports_node_os = { EOL: external_node_os_namespaceObject.EOL, homedi
 
 const node_imports_node_path = { dirname: external_node_path_namespaceObject.dirname, resolve: external_node_path_namespaceObject.resolve };
 
-// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/helpers/helpers.cjs
-var helpers_helpers = __nccwpck_require__(7620);
-// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/helpers/micromark-helpers.cjs
-var micromark_helpers = __nccwpck_require__(4204);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/cache.mjs
+// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/helpers/helpers.cjs
+var helpers_helpers = __nccwpck_require__(3303);
+// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/helpers/micromark-helpers.cjs
+var micromark_helpers = __nccwpck_require__(2943);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/cache.mjs
 // @ts-check
 
 
@@ -70545,11 +69909,11 @@ function getReferenceLinkImageData() {
   // @ts-ignore
   return getCached(
     getReferenceLinkImageData.name,
-    () => (0,helpers_helpers.getReferenceLinkImageData)(micromarkTokens())
+    () => (0,helpers_helpers/* getReferenceLinkImageData */.fL)(micromarkTokens())
   );
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/constants.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/constants.mjs
 // @ts-check
 
 /** @type {string[]} */
@@ -70560,16 +69924,16 @@ const fixableRuleNames = (/* unused pure expression or super */ null && ([
   "MD022", "MD023", "MD026", "MD027", "MD029", "MD030",
   "MD031", "MD032", "MD034", "MD037", "MD038", "MD039",
   "MD044", "MD047", "MD049", "MD050", "MD051", "MD053",
-  "MD054", "MD058"
+  "MD054", "MD058", "MD060"
 ]));
 const homepage = "https://github.com/DavidAnson/markdownlint";
-const constants_version = "0.40.0";
+const constants_version = "0.41.0";
 
-// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/defer-require.cjs
-var defer_require = __nccwpck_require__(2551);
-// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/resolve-module.cjs
-var resolve_module = __nccwpck_require__(8594);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md001.mjs
+// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/defer-require.cjs
+var defer_require = __nccwpck_require__(6592);
+// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/resolve-module.cjs
+var resolve_module = __nccwpck_require__(9067);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md001.mjs
 // @ts-check
 
 
@@ -70583,7 +69947,7 @@ var resolve_module = __nccwpck_require__(8594);
   "tags": [ "headings" ],
   "parser": "micromark",
   "function": function MD001(params, onError) {
-    const hasTitle = (0,helpers_helpers.frontMatterHasTitle)(
+    const hasTitle = (0,helpers_helpers/* frontMatterHasTitle */.Fl)(
       params.frontMatterLines,
       params.config.front_matter_title
     );
@@ -70591,7 +69955,7 @@ var resolve_module = __nccwpck_require__(8594);
     for (const heading of filterByTypesCached([ "atxHeading", "setextHeading" ])) {
       const level = (0,micromark_helpers.getHeadingLevel)(heading);
       if (level > prevLevel) {
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           heading.startLine,
           `h${prevLevel + 1}`,
@@ -70603,7 +69967,7 @@ var resolve_module = __nccwpck_require__(8594);
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md003.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md003.mjs
 // @ts-check
 
 
@@ -70640,7 +70004,7 @@ var resolve_module = __nccwpck_require__(8594);
           } else if (style === "setext_with_atx_closed") {
             expected = h12 ? "setext" : "atx_closed";
           }
-          (0,helpers_helpers.addErrorDetailIf)(
+          (0,helpers_helpers/* addErrorDetailIf */.qC)(
             onError,
             heading.startLine,
             expected,
@@ -70652,7 +70016,7 @@ var resolve_module = __nccwpck_require__(8594);
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md004.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md004.mjs
 // @ts-check
 
 
@@ -70707,7 +70071,7 @@ const validStyles = new Set([
         }
         const column = listItemMarker.startColumn;
         const length = listItemMarker.endColumn - listItemMarker.startColumn;
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           listItemMarker.startLine,
           expectedStyle,
@@ -70726,7 +70090,7 @@ const validStyles = new Set([
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md005.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md005.mjs
 // @ts-check
 
 
@@ -70750,7 +70114,7 @@ const validStyles = new Set([
         const actualIndent = listItemPrefix.startColumn - 1;
         const range = [ 1, listItemPrefix.endColumn - 1 ];
         if (list.type === "listUnordered") {
-          (0,helpers_helpers.addErrorDetailIf)(
+          (0,helpers_helpers/* addErrorDetailIf */.qC)(
             onError,
             lineNumber,
             expectedIndent,
@@ -70777,7 +70141,7 @@ const validStyles = new Set([
               const actual = endMatching ?
                 actualEnd - markerLength :
                 actualIndent;
-              (0,helpers_helpers.addError)(
+              (0,helpers_helpers/* addError */.CN)(
                 onError,
                 lineNumber,
                 detail,
@@ -70797,7 +70161,7 @@ const validStyles = new Set([
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md007.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md007.mjs
 // @ts-check
 
 
@@ -70867,7 +70231,7 @@ const unorderedParentTypes =
             "deleteCount": Math.max(actualIndent - expectedIndent, 0),
             "insertText": "".padEnd(Math.max(expectedIndent - actualIndent, 0))
           };
-          (0,helpers_helpers.addErrorDetailIf)(
+          (0,helpers_helpers/* addErrorDetailIf */.qC)(
             onError,
             startLine,
             expectedIndent,
@@ -70883,7 +70247,7 @@ const unorderedParentTypes =
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md009.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md009.mjs
 // @ts-check
 
 
@@ -70964,7 +70328,7 @@ const unorderedParentTypes =
         )
       ) {
         const column = line.length - trailingSpaces + 1;
-        (0,helpers_helpers.addError)(
+        (0,helpers_helpers/* addError */.CN)(
           onError,
           lineNumber,
           "Expected: " + (expected === 0 ? "" : "0 or ") +
@@ -70981,7 +70345,7 @@ const unorderedParentTypes =
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md010.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md010.mjs
 // @ts-check
 
 
@@ -71042,8 +70406,8 @@ const tabRe = /\t+/g;
         const length = match[0].length;
         /** @type {import("../helpers/helpers.cjs").FileRange} */
         const range = { "startLine": lineNumber, "startColumn": column, "endLine": lineNumber, "endColumn": column + length - 1 };
-        if (!codeRanges.some((codeRange) => (0,helpers_helpers.hasOverlap)(codeRange, range))) {
-          (0,helpers_helpers.addError)(
+        if (!codeRanges.some((codeRange) => (0,helpers_helpers/* hasOverlap */.UM)(codeRange, range))) {
+          (0,helpers_helpers/* addError */.CN)(
             onError,
             lineNumber,
             "Column: " + column,
@@ -71061,7 +70425,7 @@ const tabRe = /\t+/g;
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md011.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md011.mjs
 // @ts-check
 
 
@@ -71098,8 +70462,8 @@ const reversedLinkRe = /(^|[^\\])\(([^()]+)\)\[([^\]^][^\]]*)\](?!\()/g;
             const length = match[0].length - preChar.length;
             /** @type {import("../helpers/helpers.cjs").FileRange} */
             const range = { "startLine": lineNumber, "startColumn": column, "endLine": lineNumber, "endColumn": column + length - 1 };
-            if (!ignoreTexts.some((ignoreText) => (0,helpers_helpers.hasOverlap)(ignoreText, range))) {
-              (0,helpers_helpers.addError)(
+            if (!ignoreTexts.some((ignoreText) => (0,helpers_helpers/* hasOverlap */.UM)(ignoreText, range))) {
+              (0,helpers_helpers/* addError */.CN)(
                 onError,
                 lineNumber,
                 reversedLink.slice(preChar.length),
@@ -71119,7 +70483,7 @@ const reversedLinkRe = /(^|[^\\])\(([^()]+)\)\[([^\]^][^\]]*)\](?!\()/g;
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md012.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md012.mjs
 // @ts-check
 
 
@@ -71144,7 +70508,7 @@ const reversedLinkRe = /(^|[^\\])\(([^()]+)\)\[([^\]^][^\]]*)\](?!\()/g;
       const inCode = codeBlockLineNumbers.has(lineIndex + 1);
       count = (inCode || (line.trim().length > 0)) ? 0 : count + 1;
       if (maximum < count) {
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           lineIndex + 1,
           maximum,
@@ -71161,7 +70525,7 @@ const reversedLinkRe = /(^|[^\\])\(([^()]+)\)\[([^\]^][^\]]*)\](?!\()/g;
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md013.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md013.mjs
 // @ts-check
 
 
@@ -71240,7 +70604,7 @@ const notWrappableRe = /^(?:[#>\s]*\s)?\S*$/;
            (!(stern && notWrappableRe.test(line)) &&
             !linkOnlyLineNumbers.has(lineNumber))) &&
           (text.length > maxLength)) {
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           lineNumber,
           maxLength,
@@ -71254,7 +70618,7 @@ const notWrappableRe = /^(?:[#>\s]*\s)?\S*$/;
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md014.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md014.mjs
 // @ts-check
 
 
@@ -71285,7 +70649,7 @@ const dollarCommandRe = /^(\s*)(\$\s+)/;
           const column = dollarMatch.startColumn + dollarMatch.result[1].length;
           // @ts-ignore
           const length = dollarMatch.result[2].length;
-          (0,helpers_helpers.addErrorContext)(
+          (0,helpers_helpers/* addErrorContext */.Xr)(
             onError,
             dollarMatch.startLine,
             dollarMatch.text,
@@ -71303,7 +70667,7 @@ const dollarCommandRe = /^(\s*)(\$\s+)/;
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md018.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md018.mjs
 // @ts-check
 
 
@@ -71331,7 +70695,7 @@ const dollarCommandRe = /^(\s*)(\$\s+)/;
       ) {
         // @ts-ignore
         const hashCount = /^#+/.exec(line)[0].length;
-        (0,helpers_helpers.addErrorContext)(
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           lineIndex + 1,
           line.trim(),
@@ -71348,7 +70712,7 @@ const dollarCommandRe = /^(\s*)(\$\s+)/;
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md019-md021.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md019-md021.mjs
 // @ts-check
 
 
@@ -71381,7 +70745,7 @@ function validateHeadingSpaces(onError, heading, delta) {
   ) {
     const column = whitespace.startColumn + 1;
     const length = whitespace.endColumn - column;
-    (0,helpers_helpers.addErrorContext)(
+    (0,helpers_helpers/* addErrorContext */.Xr)(
       onError,
       startLine,
       text.trim(),
@@ -71427,7 +70791,7 @@ function validateHeadingSpaces(onError, heading, delta) {
   }
 ]);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md020.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md020.mjs
 // @ts-check
 
 
@@ -71476,7 +70840,7 @@ function validateHeadingSpaces(onError, heading, delta) {
                 line.length - trailSpaceLength - rightHashLength,
                 rightHashLength + 1
               ];
-            (0,helpers_helpers.addErrorContext)(
+            (0,helpers_helpers/* addErrorContext */.Xr)(
               onError,
               lineIndex + 1,
               line.trim(),
@@ -71497,7 +70861,7 @@ function validateHeadingSpaces(onError, heading, delta) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md022.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md022.mjs
 // @ts-check
 
 
@@ -71522,6 +70886,16 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   return () => lines;
 };
 
+const md022_getLine = (/** @type {readonly string[]} */ lines, /** @type {number} */ index, /** @type {readonly string[]} */ frontMatterLines, /** @type {boolean} */ includeFrontMatter) => {
+  if ((index >= 0) && (index < lines.length)) {
+    return lines[index];
+  }
+  if (includeFrontMatter && (frontMatterLines.length > 0) && (index < 0) && (index >= -frontMatterLines.length)) {
+    return frontMatterLines[frontMatterLines.length + index];
+  }
+  return "";
+};
+
 /** @type {import("markdownlint").Rule} */
 /* harmony default export */ const md022 = ({
   "names": [ "MD022", "blanks-around-headings" ],
@@ -71531,7 +70905,8 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   "function": function MD022(params, onError) {
     const getLinesAbove = getLinesFunction(params.config.lines_above);
     const getLinesBelow = getLinesFunction(params.config.lines_below);
-    const { lines } = params;
+    const includeFrontMatter = !!params.config.include_front_matter;
+    const { lines, frontMatterLines } = params;
     const blockQuotePrefixes = filterByTypesCached([ "blockQuotePrefix", "linePrefix" ]);
     for (const heading of filterByTypesCached([ "atxHeading", "setextHeading" ])) {
       const { startLine, endLine } = heading;
@@ -71541,14 +70916,10 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
       const linesAbove = getLinesAbove(heading);
       if (linesAbove >= 0) {
         let actualAbove = 0;
-        for (
-          let i = 0;
-          (i < linesAbove) && (0,helpers_helpers.isBlankLine)(lines[startLine - 2 - i]);
-          i++
-        ) {
+        for (let i = 0; (i < linesAbove) && (0,helpers_helpers/* isBlankLine */.pB)(md022_getLine(lines, startLine - 2 - i, frontMatterLines, includeFrontMatter)); i++) {
           actualAbove++;
         }
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           startLine,
           linesAbove,
@@ -71570,14 +70941,10 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
       const linesBelow = getLinesBelow(heading);
       if (linesBelow >= 0) {
         let actualBelow = 0;
-        for (
-          let i = 0;
-          (i < linesBelow) && (0,helpers_helpers.isBlankLine)(lines[endLine + i]);
-          i++
-        ) {
+        for (let i = 0; (i < linesBelow) && (0,helpers_helpers/* isBlankLine */.pB)(md022_getLine(lines, endLine + i, frontMatterLines, false)); i++) {
           actualBelow++;
         }
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           startLine,
           linesBelow,
@@ -71599,7 +70966,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md023.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md023.mjs
 // @ts-check
 
 
@@ -71621,7 +70988,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
       ) {
         const { endColumn, startColumn, startLine } = headings[i];
         const length = endColumn - startColumn;
-        (0,helpers_helpers.addErrorContext)(
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           startLine,
           params.lines[startLine - 1],
@@ -71638,7 +71005,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md024.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md024.mjs
 // @ts-check
 
 
@@ -71672,7 +71039,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
       }
       // @ts-ignore
       if (knownContent.includes(headingText)) {
-        (0,helpers_helpers.addErrorContext)(
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           heading.startLine,
           headingText.trim()
@@ -71685,7 +71052,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md025.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md025.mjs
 // @ts-check
 
 
@@ -71705,7 +71072,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
       .filter((heading) => (level === (0,micromark_helpers.getHeadingLevel)(heading)) && !(0,micromark_helpers.isDocfxTab)(heading));
     if (matchingHeadings.length > 0) {
       const foundFrontMatterTitle =
-        (0,helpers_helpers.frontMatterHasTitle)(
+        (0,helpers_helpers/* frontMatterHasTitle */.Fl)(
           params.frontMatterLines,
           params.config.front_matter_title
         );
@@ -71721,7 +71088,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
       if (hasTopLevelHeading) {
         // All other matching headings are violations
         for (const heading of matchingHeadings.slice(foundFrontMatterTitle ? 0 : 1)) {
-          (0,helpers_helpers.addErrorContext)(
+          (0,helpers_helpers/* addErrorContext */.Xr)(
             onError,
             heading.startLine,
             (0,micromark_helpers.getHeadingText)(heading)
@@ -71732,7 +71099,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md026.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md026.mjs
 // @ts-check
 
 
@@ -71747,23 +71114,23 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   "function": function MD026(params, onError) {
     let punctuation = params.config.punctuation;
     punctuation = String(
-      (punctuation === undefined) ? helpers_helpers.allPunctuationNoQuestion : punctuation
+      (punctuation === undefined) ? helpers_helpers/* allPunctuationNoQuestion */.f4 : punctuation
     );
     const trailingPunctuationRe =
-      new RegExp("\\s*[" + (0,helpers_helpers.escapeForRegExp)(punctuation) + "]+$");
+      new RegExp("\\s*[" + (0,helpers_helpers/* escapeForRegExp */.If)(punctuation) + "]+$");
     const headings = filterByTypesCached([ "atxHeadingText", "setextHeadingText" ]);
     for (const heading of headings) {
       const { endColumn, endLine, text } = heading;
       const match = trailingPunctuationRe.exec(text);
       if (
         match &&
-        !helpers_helpers.endOfLineHtmlEntityRe.test(text) &&
-        !helpers_helpers.endOfLineGemojiCodeRe.test(text)
+        !helpers_helpers/* endOfLineHtmlEntityRe */.oo.test(text) &&
+        !helpers_helpers/* endOfLineGemojiCodeRe */.Uj.test(text)
       ) {
         const fullMatch = match[0];
         const length = fullMatch.length;
         const column = endColumn - length;
-        (0,helpers_helpers.addError)(
+        (0,helpers_helpers/* addError */.CN)(
           onError,
           endLine,
           `Punctuation: '${fullMatch}'`,
@@ -71779,7 +71146,7 @@ const getLinesFunction = (/** @type {any} */ linesParam) => {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md027.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md027.mjs
 // @ts-check
 
 
@@ -71814,7 +71181,7 @@ const listTypes = [ "listOrdered", "listUnordered" ];
         const { startColumn, startLine, text } = token;
         const { length } = text;
         const line = params.lines[startLine - 1];
-        (0,helpers_helpers.addErrorContext)(
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           startLine,
           line,
@@ -71831,7 +71198,7 @@ const listTypes = [ "listOrdered", "listUnordered" ];
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md028.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md028.mjs
 // @ts-check
 
 
@@ -71860,7 +71227,7 @@ const ignoreTypes = new Set([ "lineEnding", "listItemIndent", "linePrefix" ]);
         } else if (type === "blockQuote") {
           // Blockquote followed by blockquote
           for (const lineNumber of errorLineNumbers) {
-            (0,helpers_helpers.addError)(onError, lineNumber);
+            (0,helpers_helpers/* addError */.CN)(onError, lineNumber);
           }
           break;
         } else {
@@ -71872,7 +71239,7 @@ const ignoreTypes = new Set([ "lineEnding", "listItemIndent", "linePrefix" ]);
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md029.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md029.mjs
 // @ts-check
 
 
@@ -71884,6 +71251,7 @@ const listStyleExamples = {
   "ordered": "1/2/3",
   "zero": "0/0/0"
 };
+const listStyles = Object.keys(listStyleExamples);
 
 /**
  * Gets the column and text of an ordered list item prefix token.
@@ -71923,9 +71291,7 @@ function getOrderedListItemValue(listItemPrefix) {
         }
       }
       // Determine effective style
-      const listStyle = ((style === "one") || (style === "ordered") || (style === "zero")) ?
-        style :
-        (incrementing ? "ordered" : "one");
+      const listStyle = listStyles.includes(style) ? style : (incrementing ? "ordered" : "one");
       if (listStyle === "zero") {
         expected = 0;
       } else if (listStyle === "one") {
@@ -71940,11 +71306,12 @@ function getOrderedListItemValue(listItemPrefix) {
           "deleteCount": orderedListItemValue.value.toString().length,
           "insertText": expected.toString()
         };
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           listItemPrefix.startLine,
           expected,
           actual,
+          // @ts-ignore
           "Style: " + listStyleExamples[listStyle],
           undefined,
           [ listItemPrefix.startColumn, listItemPrefix.endColumn - listItemPrefix.startColumn ],
@@ -71958,7 +71325,7 @@ function getOrderedListItemValue(listItemPrefix) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md030.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md030.mjs
 // @ts-check
 
 
@@ -72001,7 +71368,7 @@ function getOrderedListItemValue(listItemPrefix) {
             "deleteCount": actualSpaces,
             "insertText": "".padEnd(expectedSpaces)
           };
-          (0,helpers_helpers.addErrorDetailIf)(
+          (0,helpers_helpers/* addErrorDetailIf */.qC)(
             onError,
             startLine,
             expectedSpaces,
@@ -72017,7 +71384,7 @@ function getOrderedListItemValue(listItemPrefix) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md031.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md031.mjs
 // @ts-check
 
 
@@ -72046,7 +71413,7 @@ function addError(onError, lines, lineNumber, top) {
       "lineNumber": lineNumber + (top ? 0 : 1),
       "insertText": `${prefix.replace(/[^>]/g, " ").trim()}\n`
     };
-  (0,helpers_helpers.addErrorContext)(
+  (0,helpers_helpers/* addErrorContext */.Xr)(
     onError,
     lineNumber,
     line.trim(),
@@ -72069,10 +71436,10 @@ function addError(onError, lines, lineNumber, top) {
     const { lines } = params;
     for (const codeBlock of filterByTypesCached([ "codeFenced" ])) {
       if (includeListItems || !((0,micromark_helpers.getParentOfType)(codeBlock, [ "listOrdered", "listUnordered" ]))) {
-        if (!(0,helpers_helpers.isBlankLine)(lines[codeBlock.startLine - 2])) {
+        if (!(0,helpers_helpers/* isBlankLine */.pB)(lines[codeBlock.startLine - 2])) {
           addError(onError, lines, codeBlock.startLine, true);
         }
-        if (!(0,helpers_helpers.isBlankLine)(lines[codeBlock.endLine]) && !(0,helpers_helpers.isBlankLine)(lines[codeBlock.endLine - 1])) {
+        if (!(0,helpers_helpers/* isBlankLine */.pB)(lines[codeBlock.endLine]) && !(0,helpers_helpers/* isBlankLine */.pB)(lines[codeBlock.endLine - 1])) {
           addError(onError, lines, codeBlock.endLine, false);
         }
       }
@@ -72080,7 +71447,7 @@ function addError(onError, lines, lineNumber, top) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md032.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md032.mjs
 // @ts-check
 
 
@@ -72115,8 +71482,8 @@ const isList = (/** @type {MicromarkToken} */ token) => (
 
       // Look for a blank line above the list
       const firstLineNumber = list.startLine;
-      if (!(0,helpers_helpers.isBlankLine)(lines[firstLineNumber - 2])) {
-        (0,helpers_helpers.addErrorContext)(
+      if (!(0,helpers_helpers/* isBlankLine */.pB)(lines[firstLineNumber - 2])) {
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           firstLineNumber,
           lines[firstLineNumber - 1].trim(),
@@ -72142,8 +71509,8 @@ const isList = (/** @type {MicromarkToken} */ token) => (
 
       // Look for a blank line below the list
       const lastLineNumber = endLine;
-      if (!(0,helpers_helpers.isBlankLine)(lines[lastLineNumber])) {
-        (0,helpers_helpers.addErrorContext)(
+      if (!(0,helpers_helpers/* isBlankLine */.pB)(lines[lastLineNumber])) {
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           lastLineNumber,
           lines[lastLineNumber - 1].trim(),
@@ -72160,7 +71527,7 @@ const isList = (/** @type {MicromarkToken} */ token) => (
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md033.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md033.mjs
 // @ts-check
 
 
@@ -72193,9 +71560,9 @@ const toLowerCaseStringArray = (/** @type {any} */ arr) => Array.isArray(arr) ? 
         ) {
           const range = [
             token.startColumn,
-            token.text.replace(helpers_helpers.nextLinesRe, "").length
+            token.text.replace(helpers_helpers/* nextLinesRe */.gi, "").length
           ];
-          (0,helpers_helpers.addError)(
+          (0,helpers_helpers/* addError */.CN)(
             onError,
             token.startLine,
             "Element: " + htmlTagInfo.name,
@@ -72208,7 +71575,7 @@ const toLowerCaseStringArray = (/** @type {any} */ arr) => Array.isArray(arr) ? 
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md034.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md034.mjs
 // @ts-check
 
 
@@ -72289,7 +71656,7 @@ const toLowerCaseStringArray = (/** @type {any} */ arr) => Array.isArray(arr) ? 
         "deleteCount": range[1],
         "insertText": `<${token.text}>`
       };
-      (0,helpers_helpers.addErrorContext)(
+      (0,helpers_helpers/* addErrorContext */.Xr)(
         onError,
         token.startLine,
         token.text,
@@ -72302,7 +71669,7 @@ const toLowerCaseStringArray = (/** @type {any} */ arr) => Array.isArray(arr) ? 
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md035.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md035.mjs
 // @ts-check
 
 
@@ -72322,12 +71689,12 @@ const toLowerCaseStringArray = (/** @type {any} */ arr) => Array.isArray(arr) ? 
       if (style === "consistent") {
         style = text;
       }
-      (0,helpers_helpers.addErrorDetailIf)(onError, startLine, style, text);
+      (0,helpers_helpers/* addErrorDetailIf */.qC)(onError, startLine, style, text);
     }
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md036.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md036.mjs
 // @ts-check
 
 
@@ -72356,7 +71723,7 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
   "parser": "micromark",
   "function": function MD036(params, onError) {
     let punctuation = params.config.punctuation;
-    punctuation = String((punctuation === undefined) ? helpers_helpers.allPunctuation : punctuation);
+    punctuation = String((punctuation === undefined) ? helpers_helpers/* allPunctuation */.qA : punctuation);
     const punctuationRe = new RegExp("[" + punctuation + "]$");
     const paragraphTokens =
       filterByTypesCached([ "paragraph" ], true)
@@ -72373,17 +71740,18 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
       for (const textToken of textTokens) {
         if (
           (textToken.children.length === 1) &&
+          // eslint-disable-next-line unicorn/better-dom-traversing
           (textToken.children[0].type === "data") &&
           !punctuationRe.test(textToken.text)
         ) {
-          (0,helpers_helpers.addErrorContext)(onError, textToken.startLine, textToken.text);
+          (0,helpers_helpers/* addErrorContext */.Xr)(onError, textToken.startLine, textToken.text);
         }
       }
     }
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md037.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md037.mjs
 // @ts-check
 
 
@@ -72438,7 +71806,7 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
             const startContext = `${marker}${startSpaceCharacter}`;
             const column = startToken.endColumn;
             const count = startSpaceCharacter.length - 1;
-            (0,helpers_helpers.addError)(
+            (0,helpers_helpers/* addError */.CN)(
               onError,
               startToken.startLine,
               undefined,
@@ -72461,7 +71829,7 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
             const endContext = `${endSpaceCharacter}${marker}`;
             const column = endToken.startColumn - (endSpaceCharacter.length - 1);
             const count = endSpaceCharacter.length - 1;
-            (0,helpers_helpers.addError)(
+            (0,helpers_helpers/* addError */.CN)(
               onError,
               endToken.startLine,
               undefined,
@@ -72479,7 +71847,7 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md038.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md038.mjs
 // @ts-check
 
 
@@ -72519,7 +71887,7 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
         if (startSpaces) {
           const startColumn = (removePadding ? startPadding : startData).startColumn;
           const length = startCount + (removePadding ? startPadding.text.length : 0);
-          (0,helpers_helpers.addErrorContext)(
+          (0,helpers_helpers/* addErrorContext */.Xr)(
             onError,
             startData.startLine,
             context,
@@ -72536,7 +71904,7 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
         if (endSpaces) {
           const endColumn = (removePadding ? endPadding : endData).endColumn;
           const length = endCount + (removePadding ? endPadding.text.length : 0);
-          (0,helpers_helpers.addErrorContext)(
+          (0,helpers_helpers/* addErrorContext */.Xr)(
             onError,
             endData.endLine,
             context,
@@ -72554,7 +71922,7 @@ const isParagraphChildMeaningful = (/** @type {MicromarkToken} */ token) => !(
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md039.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md039.mjs
 // @ts-check
 
 
@@ -72576,7 +71944,7 @@ function addLabelSpaceError(onError, label, labelText, isStart) {
       match[0].length
     ] :
     undefined;
-  (0,helpers_helpers.addErrorContext)(
+  (0,helpers_helpers/* addErrorContext */.Xr)(
     onError,
     isStart ? (labelText.startLine + (match ? 0 : 1)) : (labelText.endLine - (match ? 0 : 1)),
     label.text.replace(/\s+/g, " "),
@@ -72615,7 +71983,7 @@ function addLabelSpaceError(onError, label, labelText, isStart) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md040.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md040.mjs
 // @ts-check
 
 
@@ -72638,18 +72006,18 @@ function addLabelSpaceError(onError, label, labelText, isStart) {
       const { startLine, text } = openingFence;
       const info = (0,micromark_helpers.getDescendantsByType)(openingFence, [ "codeFencedFenceInfo" ])[0]?.text;
       if (!info) {
-        (0,helpers_helpers.addErrorContext)(onError, startLine, text);
+        (0,helpers_helpers/* addErrorContext */.Xr)(onError, startLine, text);
       } else if ((allowed.length > 0) && !allowed.includes(info)) {
-        (0,helpers_helpers.addError)(onError, startLine, `"${info}" is not allowed`);
+        (0,helpers_helpers/* addError */.CN)(onError, startLine, `"${info}" is not allowed`);
       }
       if (languageOnly && (0,micromark_helpers.getDescendantsByType)(openingFence, [ "codeFencedFenceMeta" ]).length > 0) {
-        (0,helpers_helpers.addError)(onError, startLine, `Info string contains more than language: "${text}"`);
+        (0,helpers_helpers/* addError */.CN)(onError, startLine, `Info string contains more than language: "${text}"`);
       }
     }
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md041.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md041.mjs
 // @ts-check
 
 
@@ -72686,7 +72054,7 @@ function getHtmlFlowTagName(token) {
     const level = Number(params.config.level || 1);
     const { tokens } = params.parsers.micromark;
     if (
-      !(0,helpers_helpers.frontMatterHasTitle)(
+      !(0,helpers_helpers/* frontMatterHasTitle */.Fl)(
         params.frontMatterLines,
         params.config.front_matter_title
       )
@@ -72716,13 +72084,13 @@ function getHtmlFlowTagName(token) {
         }
       }
       if (errorLineNumber > 0) {
-        (0,helpers_helpers.addErrorContext)(onError, errorLineNumber, params.lines[errorLineNumber - 1]);
+        (0,helpers_helpers/* addErrorContext */.Xr)(onError, errorLineNumber, params.lines[errorLineNumber - 1]);
       }
     }
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md042.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md042.mjs
 // @ts-check
 
 
@@ -72769,7 +72137,7 @@ function getHtmlFlowTagName(token) {
         error = true;
       }
       if (error) {
-        (0,helpers_helpers.addErrorContext)(
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           link.startLine,
           link.text,
@@ -72782,7 +72150,7 @@ function getHtmlFlowTagName(token) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md043.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md043.mjs
 // @ts-check
 
 
@@ -72830,7 +72198,7 @@ function getHtmlFlowTagName(token) {
         } else if (matchAny) {
           i--;
         } else {
-          (0,helpers_helpers.addErrorDetailIf)(
+          (0,helpers_helpers/* addErrorDetailIf */.qC)(
             onError,
             heading.startLine,
             expected,
@@ -72847,7 +72215,7 @@ function getHtmlFlowTagName(token) {
         ((extraHeadings === 1) && (requiredHeadings[i] !== "*"))) &&
       (anyHeadings || !requiredHeadings.every((heading) => heading === "*"))
     ) {
-      (0,helpers_helpers.addErrorContext)(
+      (0,helpers_helpers/* addErrorContext */.Xr)(
         onError,
         params.lines.length,
         requiredHeadings[i]
@@ -87507,9 +86875,9 @@ function postprocess(events) {
   }
   return events;
 }
-// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/helpers/shared.cjs
-var shared = __nccwpck_require__(4782);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/micromark-parse.mjs
+// EXTERNAL MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/helpers/shared.cjs
+var shared = __nccwpck_require__(2235);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/micromark-parse.mjs
 // @ts-check
 
 
@@ -87525,12 +86893,27 @@ var shared = __nccwpck_require__(4782);
 
 
 /** @typedef {import("micromark-util-types").Event} Event */
+/** @typedef {import("micromark-util-types").Extension} Extension */
 /** @typedef {import("micromark-util-types").ParseOptions} MicromarkParseOptions */
 /** @typedef {import("micromark-util-types").State} State */
 /** @typedef {import("micromark-util-types").Token} Token */
 /** @typedef {import("micromark-util-types").Tokenizer} Tokenizer */
 /** @typedef {import("markdownlint").MicromarkToken} MicromarkToken */
 /** @typedef {import("./micromark-types.d.mts")} */
+
+/**
+ * Gets a modified micromark-extension-directive without support for inline directives.
+ *
+ * @see {@link https://github.com/DavidAnson/markdownlint/issues/2080}
+ * @returns {Extension} Modified implementation.
+ */
+function directiveNoInline() {
+  const extension = {
+    ...directive()
+  };
+  delete extension.text;
+  return extension;
+}
 
 /**
  * Gets the Markdown text for a Micromark token.
@@ -87563,7 +86946,7 @@ function getEvents(
 ) {
   // Customize extensions list to add useful extensions
   const extensions = [
-    directive(),
+    directiveNoInline(),
     gfmAutolinkLiteral(),
     gfmFootnote(),
     gfmTable(),
@@ -87578,7 +86961,7 @@ function getEvents(
 
   /** @type {Tokenizer} */
   function tokenizeShim(effects, okOriginal, nokOriginal) {
-    // eslint-disable-next-line consistent-this, unicorn/no-this-assignment, no-invalid-this
+    // eslint-disable-next-line consistent-this, no-invalid-this, unicorn/no-this-assignment, unicorn/no-this-outside-of-class
     const tokenizeContext = this;
     const events = tokenizeContext.events;
 
@@ -87781,7 +87164,7 @@ function parseInternal(
               }
             ]
           };
-          lines = markdown.split(shared.newLineRe);
+          lines = markdown.split(shared.newlineRe);
         }
         const reparseMarkdown = lines
           .slice(current.startLine - 1, current.endLine)
@@ -87833,7 +87216,7 @@ function micromark_parse_parse(markdown, parseOptions) {
   return parseInternal(markdown, parseOptions);
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md044.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md044.mjs
 // @ts-check
 
 
@@ -87885,7 +87268,7 @@ const ignoredChildTypes = new Set(
     const exclusions = [];
     const scannedTokens = new Set();
     for (const name of names) {
-      const escapedName = (0,helpers_helpers.escapeForRegExp)(name);
+      const escapedName = (0,helpers_helpers/* escapeForRegExp */.If)(name);
       const startNamePattern = /^\W/.test(name) ? "" : "\\b_*";
       const endNamePattern = /\W$/.test(name) ? "" : "_*\\b";
       const namePattern = `(${startNamePattern})(${escapedName})${endNamePattern}`;
@@ -87906,7 +87289,7 @@ const ignoredChildTypes = new Set(
           };
           if (
             !names.includes(nameMatch) &&
-            !exclusions.some((exclusion) => (0,helpers_helpers.hasOverlap)(exclusion, nameRange))
+            !exclusions.some((exclusion) => (0,helpers_helpers/* hasOverlap */.UM)(exclusion, nameRange))
           ) {
             /** @type {import("../helpers/helpers.cjs").FileRange[]} */
             let autolinkRanges = [];
@@ -87921,8 +87304,8 @@ const ignoredChildTypes = new Set(
               exclusions.push(...autolinkRanges);
               scannedTokens.add(token);
             }
-            if (!autolinkRanges.some((autolinkRange) => (0,helpers_helpers.hasOverlap)(autolinkRange, nameRange))) {
-              (0,helpers_helpers.addErrorDetailIf)(
+            if (!autolinkRanges.some((autolinkRange) => (0,helpers_helpers/* hasOverlap */.UM)(autolinkRange, nameRange))) {
+              (0,helpers_helpers/* addErrorDetailIf */.qC)(
                 onError,
                 token.startLine,
                 name,
@@ -87945,15 +87328,15 @@ const ignoredChildTypes = new Set(
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md045.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md045.mjs
 // @ts-check
 
 
 
 
 
-const altRe = (0,helpers_helpers.getHtmlAttributeRe)("alt");
-const ariaHiddenRe = (0,helpers_helpers.getHtmlAttributeRe)("aria-hidden");
+const altRe = (0,helpers_helpers/* getHtmlAttributeRe */.Xi)("alt");
+const ariaHiddenRe = (0,helpers_helpers/* getHtmlAttributeRe */.Xi)("aria-hidden");
 
 /** @type {import("markdownlint").Rule} */
 /* harmony default export */ const md045 = ({
@@ -87970,7 +87353,7 @@ const ariaHiddenRe = (0,helpers_helpers.getHtmlAttributeRe)("aria-hidden");
         const range = (image.startLine === image.endLine) ?
           [ image.startColumn, image.endColumn - image.startColumn ] :
           undefined;
-        (0,helpers_helpers.addError)(
+        (0,helpers_helpers/* addError */.CN)(
           onError,
           image.startLine,
           undefined,
@@ -87994,9 +87377,9 @@ const ariaHiddenRe = (0,helpers_helpers.getHtmlAttributeRe)("aria-hidden");
       ) {
         const range = [
           startColumn,
-          text.replace(helpers_helpers.nextLinesRe, "").length
+          text.replace(helpers_helpers/* nextLinesRe */.gi, "").length
         ];
-        (0,helpers_helpers.addError)(
+        (0,helpers_helpers/* addError */.CN)(
           onError,
           startLine,
           undefined,
@@ -88008,7 +87391,7 @@ const ariaHiddenRe = (0,helpers_helpers.getHtmlAttributeRe)("aria-hidden");
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md046.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md046.mjs
 // @ts-check
 
 
@@ -88031,7 +87414,7 @@ const tokenTypeToStyle = (/** @type {MicromarkTokenType} */ tokenType) => (token
       if (expectedStyle === "consistent") {
         expectedStyle = tokenTypeToStyle(type);
       }
-      (0,helpers_helpers.addErrorDetailIf)(
+      (0,helpers_helpers/* addErrorDetailIf */.qC)(
         onError,
         startLine,
         expectedStyle,
@@ -88041,7 +87424,7 @@ const tokenTypeToStyle = (/** @type {MicromarkTokenType} */ tokenType) => (token
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md047.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md047.mjs
 // @ts-check
 
 
@@ -88055,8 +87438,8 @@ const tokenTypeToStyle = (/** @type {MicromarkTokenType} */ tokenType) => (token
   "function": function MD047(params, onError) {
     const lastLineNumber = params.lines.length;
     const lastLine = params.lines[lastLineNumber - 1];
-    if (!(0,helpers_helpers.isBlankLine)(lastLine)) {
-      (0,helpers_helpers.addError)(
+    if (!(0,helpers_helpers/* isBlankLine */.pB)(lastLine)) {
+      (0,helpers_helpers/* addError */.CN)(
         onError,
         lastLineNumber,
         undefined,
@@ -88071,7 +87454,7 @@ const tokenTypeToStyle = (/** @type {MicromarkTokenType} */ tokenType) => (token
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md048.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md048.mjs
 // @ts-check
 
 
@@ -88110,7 +87493,7 @@ function fencedCodeBlockStyleFor(markup) {
       if (expectedStyle === "consistent") {
         expectedStyle = fencedCodeBlockStyleFor(text);
       }
-      (0,helpers_helpers.addErrorDetailIf)(
+      (0,helpers_helpers/* addErrorDetailIf */.qC)(
         onError,
         startLine,
         expectedStyle,
@@ -88120,7 +87503,7 @@ function fencedCodeBlockStyleFor(markup) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md049-md050.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md049-md050.mjs
 // @ts-check
 
 
@@ -88180,7 +87563,7 @@ const impl =
           );
           if (!underscoreIntraword) {
             for (const sequence of [ startSequence, endSequence ]) {
-              (0,helpers_helpers.addError)(
+              (0,helpers_helpers/* addError */.CN)(
                 onError,
                 sequence.startLine,
                 `Expected: ${style}; Actual: ${markupStyle}`,
@@ -88237,7 +87620,7 @@ const impl =
   }
 ]);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md051.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md051.mjs
 // @ts-check
 
 
@@ -88245,8 +87628,8 @@ const impl =
 
 
 // Regular expression for identifying HTML anchor names
-const idRe = (0,helpers_helpers.getHtmlAttributeRe)("id");
-const nameRe = (0,helpers_helpers.getHtmlAttributeRe)("name");
+const idRe = (0,helpers_helpers/* getHtmlAttributeRe */.Xi)("id");
+const nameRe = (0,helpers_helpers/* getHtmlAttributeRe */.Xi)("name");
 const anchorRe = /\{(#[a-z\d]+(?:[-_][a-z\d]+)*)\}/gu;
 const lineFragmentRe = /^#(?:L\d+(?:C\d+)?-L\d+(?:C\d+)?|L\d+)$/;
 
@@ -88283,6 +87666,7 @@ function convertHeadingToHTMLFragment(headingText) {
         ""
       )
       .replace(/ /gu, "-")
+      .toWellFormed()
   );
 }
 
@@ -88360,7 +87744,7 @@ function unescapeStringTokenText(token) {
           const { endColumn, startColumn } = definition;
           const text = unescapeStringTokenText(definition);
           const textSliceOne = text.slice(1);
-          const encodedText = `#${encodeURIComponent(textSliceOne)}`;
+          const encodedText = `#${encodeURIComponent(textSliceOne.toWellFormed())}`;
           if (
             (text.length > 1) &&
             text.startsWith("#") &&
@@ -88386,7 +87770,7 @@ function unescapeStringTokenText(token) {
               // @ts-ignore
               (fixInfo || {}).insertText = mixedCaseKey;
               if (!ignoreCase && (mixedCaseKey !== text)) {
-                (0,helpers_helpers.addError)(
+                (0,helpers_helpers/* addError */.CN)(
                   onError,
                   link.startLine,
                   `Expected: ${mixedCaseKey}; Actual: ${text}`,
@@ -88396,7 +87780,7 @@ function unescapeStringTokenText(token) {
                 );
               }
             } else {
-              (0,helpers_helpers.addError)(
+              (0,helpers_helpers/* addError */.CN)(
                 onError,
                 link.startLine,
                 undefined,
@@ -88411,7 +87795,7 @@ function unescapeStringTokenText(token) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md052.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md052.mjs
 // @ts-check
 
 
@@ -88440,7 +87824,7 @@ function unescapeStringTokenText(token) {
           const [ lineIndex, index, length ] = data;
           // Context will be incomplete if reporting for a multi-line link
           const context = lines[lineIndex].slice(index, index + length);
-          (0,helpers_helpers.addError)(
+          (0,helpers_helpers/* addError */.CN)(
             onError,
             lineIndex + 1,
             `Missing link or image reference definition: "${label}"`,
@@ -88453,7 +87837,7 @@ function unescapeStringTokenText(token) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md053.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md053.mjs
 // @ts-check
 
 
@@ -88487,11 +87871,11 @@ const linkReferenceDefinitionRe = /^ {0,3}\[([^\]]*[^\\])\]:/;
         !shortcuts.has(label)
       ) {
         const line = lines[lineIndex];
-        (0,helpers_helpers.addError)(
+        (0,helpers_helpers/* addError */.CN)(
           onError,
           lineIndex + 1,
           `Unused link or image reference definition: "${label}"`,
-          (0,helpers_helpers.ellipsify)(line),
+          (0,helpers_helpers/* ellipsify */.qq)(line),
           [ 1, line.length ],
           singleLineDefinition(line) ? deleteFixInfo : undefined
         );
@@ -88502,11 +87886,11 @@ const linkReferenceDefinitionRe = /^ {0,3}\[([^\]]*[^\\])\]:/;
       const [ label, lineIndex ] = duplicateDefinition;
       if (!ignored.has(label)) {
         const line = lines[lineIndex];
-        (0,helpers_helpers.addError)(
+        (0,helpers_helpers/* addError */.CN)(
           onError,
           lineIndex + 1,
           `Duplicate link or image reference definition: "${label}"`,
-          (0,helpers_helpers.ellipsify)(line),
+          (0,helpers_helpers/* ellipsify */.qq)(line),
           [ 1, line.length ],
           singleLineDefinition(line) ? deleteFixInfo : undefined
         );
@@ -88515,7 +87899,7 @@ const linkReferenceDefinitionRe = /^ {0,3}\[([^\]]*[^\\])\]:/;
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md054.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md054.mjs
 // @ts-check
 
 
@@ -88625,10 +88009,10 @@ const autolinkAble = (/** @type {string} */ destination) => {
             };
           }
         }
-        (0,helpers_helpers.addErrorContext)(
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           startLine,
-          text.replace(helpers_helpers.nextLinesRe, ""),
+          text.replace(helpers_helpers/* nextLinesRe */.gi, ""),
           undefined,
           undefined,
           range,
@@ -88639,7 +88023,7 @@ const autolinkAble = (/** @type {string} */ destination) => {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md055.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md055.mjs
 // @ts-check
 
 
@@ -88688,7 +88072,7 @@ const makeRange = (/** @type {number} */ start, /** @type {number} */ end) => [ 
         expectedTrailingPipe = actualTrailingPipe;
       }
       if (actualLeadingPipe !== expectedLeadingPipe) {
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           firstCell.startLine,
           expectedStyle,
@@ -88699,7 +88083,7 @@ const makeRange = (/** @type {number} */ start, /** @type {number} */ end) => [ 
         );
       }
       if (actualTrailingPipe !== expectedTrailingPipe) {
-        (0,helpers_helpers.addErrorDetailIf)(
+        (0,helpers_helpers/* addErrorDetailIf */.qC)(
           onError,
           lastCell.endLine,
           expectedStyle,
@@ -88713,7 +88097,7 @@ const makeRange = (/** @type {number} */ start, /** @type {number} */ end) => [ 
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md056.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md056.mjs
 // @ts-check
 
 
@@ -88752,7 +88136,7 @@ const md056_makeRange = (/** @type {number} */ start, /** @type {number} */ end)
         detail = "Too many cells, extra data will be missing";
         range = md056_makeRange(cells[expectedCount].startColumn, row.endColumn - 1);
       }
-      (0,helpers_helpers.addErrorDetailIf)(
+      (0,helpers_helpers/* addErrorDetailIf */.qC)(
         onError,
         row.endLine,
         expectedCount,
@@ -88765,7 +88149,7 @@ const md056_makeRange = (/** @type {number} */ start, /** @type {number} */ end)
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md058.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md058.mjs
 // @ts-check
 
 
@@ -88790,8 +88174,8 @@ const md056_makeRange = (/** @type {number} */ start, /** @type {number} */ end)
 
       // Look for a blank line above the table
       const firstLineNumber = table.startLine;
-      if (!(0,helpers_helpers.isBlankLine)(lines[firstLineNumber - 2])) {
-        (0,helpers_helpers.addErrorContext)(
+      if (!(0,helpers_helpers/* isBlankLine */.pB)(lines[firstLineNumber - 2])) {
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           firstLineNumber,
           lines[firstLineNumber - 1].trim(),
@@ -88806,8 +88190,8 @@ const md056_makeRange = (/** @type {number} */ start, /** @type {number} */ end)
 
       // Look for a blank line below the table
       const lastLineNumber = table.endLine;
-      if (!(0,helpers_helpers.isBlankLine)(lines[lastLineNumber])) {
-        (0,helpers_helpers.addErrorContext)(
+      if (!(0,helpers_helpers/* isBlankLine */.pB)(lines[lastLineNumber])) {
+        (0,helpers_helpers/* addErrorContext */.Xr)(
           onError,
           lastLineNumber,
           lines[lastLineNumber - 1].trim(),
@@ -88824,7 +88208,7 @@ const md056_makeRange = (/** @type {number} */ start, /** @type {number} */ end)
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md059.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md059.mjs
 // @ts-check
 
 
@@ -88881,7 +88265,7 @@ function md059_normalize(str) {
             const range = (startLine === endLine) ?
               [ startColumn, endColumn - startColumn ] :
               undefined;
-            (0,helpers_helpers.addErrorContext)(
+            (0,helpers_helpers/* addErrorContext */.Xr)(
               onError,
               startLine,
               // @ts-ignore
@@ -88929,412 +88313,176 @@ function stripAnsi(string) {
 	return string.replace(strip_ansi_regex, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/get-east-asian-width@1.3.0/node_modules/get-east-asian-width/lookup.js
-// Generated code.
+;// CONCATENATED MODULE: ./node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/lookup-data.js
+// Generated by scripts/build.js
 
-function isAmbiguous(x) {
-	return x === 0xA1
-		|| x === 0xA4
-		|| x === 0xA7
-		|| x === 0xA8
-		|| x === 0xAA
-		|| x === 0xAD
-		|| x === 0xAE
-		|| x >= 0xB0 && x <= 0xB4
-		|| x >= 0xB6 && x <= 0xBA
-		|| x >= 0xBC && x <= 0xBF
-		|| x === 0xC6
-		|| x === 0xD0
-		|| x === 0xD7
-		|| x === 0xD8
-		|| x >= 0xDE && x <= 0xE1
-		|| x === 0xE6
-		|| x >= 0xE8 && x <= 0xEA
-		|| x === 0xEC
-		|| x === 0xED
-		|| x === 0xF0
-		|| x === 0xF2
-		|| x === 0xF3
-		|| x >= 0xF7 && x <= 0xFA
-		|| x === 0xFC
-		|| x === 0xFE
-		|| x === 0x101
-		|| x === 0x111
-		|| x === 0x113
-		|| x === 0x11B
-		|| x === 0x126
-		|| x === 0x127
-		|| x === 0x12B
-		|| x >= 0x131 && x <= 0x133
-		|| x === 0x138
-		|| x >= 0x13F && x <= 0x142
-		|| x === 0x144
-		|| x >= 0x148 && x <= 0x14B
-		|| x === 0x14D
-		|| x === 0x152
-		|| x === 0x153
-		|| x === 0x166
-		|| x === 0x167
-		|| x === 0x16B
-		|| x === 0x1CE
-		|| x === 0x1D0
-		|| x === 0x1D2
-		|| x === 0x1D4
-		|| x === 0x1D6
-		|| x === 0x1D8
-		|| x === 0x1DA
-		|| x === 0x1DC
-		|| x === 0x251
-		|| x === 0x261
-		|| x === 0x2C4
-		|| x === 0x2C7
-		|| x >= 0x2C9 && x <= 0x2CB
-		|| x === 0x2CD
-		|| x === 0x2D0
-		|| x >= 0x2D8 && x <= 0x2DB
-		|| x === 0x2DD
-		|| x === 0x2DF
-		|| x >= 0x300 && x <= 0x36F
-		|| x >= 0x391 && x <= 0x3A1
-		|| x >= 0x3A3 && x <= 0x3A9
-		|| x >= 0x3B1 && x <= 0x3C1
-		|| x >= 0x3C3 && x <= 0x3C9
-		|| x === 0x401
-		|| x >= 0x410 && x <= 0x44F
-		|| x === 0x451
-		|| x === 0x2010
-		|| x >= 0x2013 && x <= 0x2016
-		|| x === 0x2018
-		|| x === 0x2019
-		|| x === 0x201C
-		|| x === 0x201D
-		|| x >= 0x2020 && x <= 0x2022
-		|| x >= 0x2024 && x <= 0x2027
-		|| x === 0x2030
-		|| x === 0x2032
-		|| x === 0x2033
-		|| x === 0x2035
-		|| x === 0x203B
-		|| x === 0x203E
-		|| x === 0x2074
-		|| x === 0x207F
-		|| x >= 0x2081 && x <= 0x2084
-		|| x === 0x20AC
-		|| x === 0x2103
-		|| x === 0x2105
-		|| x === 0x2109
-		|| x === 0x2113
-		|| x === 0x2116
-		|| x === 0x2121
-		|| x === 0x2122
-		|| x === 0x2126
-		|| x === 0x212B
-		|| x === 0x2153
-		|| x === 0x2154
-		|| x >= 0x215B && x <= 0x215E
-		|| x >= 0x2160 && x <= 0x216B
-		|| x >= 0x2170 && x <= 0x2179
-		|| x === 0x2189
-		|| x >= 0x2190 && x <= 0x2199
-		|| x === 0x21B8
-		|| x === 0x21B9
-		|| x === 0x21D2
-		|| x === 0x21D4
-		|| x === 0x21E7
-		|| x === 0x2200
-		|| x === 0x2202
-		|| x === 0x2203
-		|| x === 0x2207
-		|| x === 0x2208
-		|| x === 0x220B
-		|| x === 0x220F
-		|| x === 0x2211
-		|| x === 0x2215
-		|| x === 0x221A
-		|| x >= 0x221D && x <= 0x2220
-		|| x === 0x2223
-		|| x === 0x2225
-		|| x >= 0x2227 && x <= 0x222C
-		|| x === 0x222E
-		|| x >= 0x2234 && x <= 0x2237
-		|| x === 0x223C
-		|| x === 0x223D
-		|| x === 0x2248
-		|| x === 0x224C
-		|| x === 0x2252
-		|| x === 0x2260
-		|| x === 0x2261
-		|| x >= 0x2264 && x <= 0x2267
-		|| x === 0x226A
-		|| x === 0x226B
-		|| x === 0x226E
-		|| x === 0x226F
-		|| x === 0x2282
-		|| x === 0x2283
-		|| x === 0x2286
-		|| x === 0x2287
-		|| x === 0x2295
-		|| x === 0x2299
-		|| x === 0x22A5
-		|| x === 0x22BF
-		|| x === 0x2312
-		|| x >= 0x2460 && x <= 0x24E9
-		|| x >= 0x24EB && x <= 0x254B
-		|| x >= 0x2550 && x <= 0x2573
-		|| x >= 0x2580 && x <= 0x258F
-		|| x >= 0x2592 && x <= 0x2595
-		|| x === 0x25A0
-		|| x === 0x25A1
-		|| x >= 0x25A3 && x <= 0x25A9
-		|| x === 0x25B2
-		|| x === 0x25B3
-		|| x === 0x25B6
-		|| x === 0x25B7
-		|| x === 0x25BC
-		|| x === 0x25BD
-		|| x === 0x25C0
-		|| x === 0x25C1
-		|| x >= 0x25C6 && x <= 0x25C8
-		|| x === 0x25CB
-		|| x >= 0x25CE && x <= 0x25D1
-		|| x >= 0x25E2 && x <= 0x25E5
-		|| x === 0x25EF
-		|| x === 0x2605
-		|| x === 0x2606
-		|| x === 0x2609
-		|| x === 0x260E
-		|| x === 0x260F
-		|| x === 0x261C
-		|| x === 0x261E
-		|| x === 0x2640
-		|| x === 0x2642
-		|| x === 0x2660
-		|| x === 0x2661
-		|| x >= 0x2663 && x <= 0x2665
-		|| x >= 0x2667 && x <= 0x266A
-		|| x === 0x266C
-		|| x === 0x266D
-		|| x === 0x266F
-		|| x === 0x269E
-		|| x === 0x269F
-		|| x === 0x26BF
-		|| x >= 0x26C6 && x <= 0x26CD
-		|| x >= 0x26CF && x <= 0x26D3
-		|| x >= 0x26D5 && x <= 0x26E1
-		|| x === 0x26E3
-		|| x === 0x26E8
-		|| x === 0x26E9
-		|| x >= 0x26EB && x <= 0x26F1
-		|| x === 0x26F4
-		|| x >= 0x26F6 && x <= 0x26F9
-		|| x === 0x26FB
-		|| x === 0x26FC
-		|| x === 0x26FE
-		|| x === 0x26FF
-		|| x === 0x273D
-		|| x >= 0x2776 && x <= 0x277F
-		|| x >= 0x2B56 && x <= 0x2B59
-		|| x >= 0x3248 && x <= 0x324F
-		|| x >= 0xE000 && x <= 0xF8FF
-		|| x >= 0xFE00 && x <= 0xFE0F
-		|| x === 0xFFFD
-		|| x >= 0x1F100 && x <= 0x1F10A
-		|| x >= 0x1F110 && x <= 0x1F12D
-		|| x >= 0x1F130 && x <= 0x1F169
-		|| x >= 0x1F170 && x <= 0x1F18D
-		|| x === 0x1F18F
-		|| x === 0x1F190
-		|| x >= 0x1F19B && x <= 0x1F1AC
-		|| x >= 0xE0100 && x <= 0xE01EF
-		|| x >= 0xF0000 && x <= 0xFFFFD
-		|| x >= 0x100000 && x <= 0x10FFFD;
+const ambiguousMinimalCodePoint = 161;
+const ambiguousMaximumCodePoint = 1114109;
+const ambiguousRanges = [161, 161, 164, 164, 167, 168, 170, 170, 173, 174, 176, 180, 182, 186, 188, 191, 198, 198, 208, 208, 215, 216, 222, 225, 230, 230, 232, 234, 236, 237, 240, 240, 242, 243, 247, 250, 252, 252, 254, 254, 257, 257, 273, 273, 275, 275, 283, 283, 294, 295, 299, 299, 305, 307, 312, 312, 319, 322, 324, 324, 328, 331, 333, 333, 338, 339, 358, 359, 363, 363, 462, 462, 464, 464, 466, 466, 468, 468, 470, 470, 472, 472, 474, 474, 476, 476, 593, 593, 609, 609, 708, 708, 711, 711, 713, 715, 717, 717, 720, 720, 728, 731, 733, 733, 735, 735, 768, 879, 913, 929, 931, 937, 945, 961, 963, 969, 1025, 1025, 1040, 1103, 1105, 1105, 8208, 8208, 8211, 8214, 8216, 8217, 8220, 8221, 8224, 8226, 8228, 8231, 8240, 8240, 8242, 8243, 8245, 8245, 8251, 8251, 8254, 8254, 8308, 8308, 8319, 8319, 8321, 8324, 8364, 8364, 8451, 8451, 8453, 8453, 8457, 8457, 8467, 8467, 8470, 8470, 8481, 8482, 8486, 8486, 8491, 8491, 8531, 8532, 8539, 8542, 8544, 8555, 8560, 8569, 8585, 8585, 8592, 8601, 8632, 8633, 8658, 8658, 8660, 8660, 8679, 8679, 8704, 8704, 8706, 8707, 8711, 8712, 8715, 8715, 8719, 8719, 8721, 8721, 8725, 8725, 8730, 8730, 8733, 8736, 8739, 8739, 8741, 8741, 8743, 8748, 8750, 8750, 8756, 8759, 8764, 8765, 8776, 8776, 8780, 8780, 8786, 8786, 8800, 8801, 8804, 8807, 8810, 8811, 8814, 8815, 8834, 8835, 8838, 8839, 8853, 8853, 8857, 8857, 8869, 8869, 8895, 8895, 8978, 8978, 9312, 9449, 9451, 9547, 9552, 9587, 9600, 9615, 9618, 9621, 9632, 9633, 9635, 9641, 9650, 9651, 9654, 9655, 9660, 9661, 9664, 9665, 9670, 9672, 9675, 9675, 9678, 9681, 9698, 9701, 9711, 9711, 9733, 9734, 9737, 9737, 9742, 9743, 9756, 9756, 9758, 9758, 9792, 9792, 9794, 9794, 9824, 9825, 9827, 9829, 9831, 9834, 9836, 9837, 9839, 9839, 9886, 9887, 9919, 9919, 9926, 9933, 9935, 9939, 9941, 9953, 9955, 9955, 9960, 9961, 9963, 9969, 9972, 9972, 9974, 9977, 9979, 9980, 9982, 9983, 10045, 10045, 10102, 10111, 11094, 11097, 12872, 12879, 57344, 63743, 65024, 65039, 65533, 65533, 127232, 127242, 127248, 127277, 127280, 127337, 127344, 127373, 127375, 127376, 127387, 127404, 917760, 917999, 983040, 1048573, 1048576, 1114109];
+
+const fullwidthMinimalCodePoint = 12288;
+const fullwidthMaximumCodePoint = 65510;
+const fullwidthRanges = [12288, 12288, 65281, 65376, 65504, 65510];
+
+const lookup_data_halfwidthMinimalCodePoint = 8361;
+const lookup_data_halfwidthMaximumCodePoint = 65518;
+const lookup_data_halfwidthRanges = (/* unused pure expression or super */ null && ([8361, 8361, 65377, 65470, 65474, 65479, 65482, 65487, 65490, 65495, 65498, 65500, 65512, 65518]));
+
+const lookup_data_narrowMinimalCodePoint = 32;
+const lookup_data_narrowMaximumCodePoint = 10630;
+const lookup_data_narrowRanges = (/* unused pure expression or super */ null && ([32, 126, 162, 163, 165, 166, 172, 172, 175, 175, 10214, 10221, 10629, 10630]));
+
+const wideMinimalCodePoint = 4352;
+const wideMaximumCodePoint = 262141;
+const wideRanges = [4352, 4447, 8986, 8987, 9001, 9002, 9193, 9196, 9200, 9200, 9203, 9203, 9725, 9726, 9748, 9749, 9776, 9783, 9800, 9811, 9855, 9855, 9866, 9871, 9875, 9875, 9889, 9889, 9898, 9899, 9917, 9918, 9924, 9925, 9934, 9934, 9940, 9940, 9962, 9962, 9970, 9971, 9973, 9973, 9978, 9978, 9981, 9981, 9989, 9989, 9994, 9995, 10024, 10024, 10060, 10060, 10062, 10062, 10067, 10069, 10071, 10071, 10133, 10135, 10160, 10160, 10175, 10175, 11035, 11036, 11088, 11088, 11093, 11093, 11904, 11929, 11931, 12019, 12032, 12245, 12272, 12287, 12289, 12350, 12353, 12438, 12441, 12543, 12549, 12591, 12593, 12686, 12688, 12773, 12783, 12830, 12832, 12871, 12880, 42124, 42128, 42182, 43360, 43388, 44032, 55203, 63744, 64255, 65040, 65049, 65072, 65106, 65108, 65126, 65128, 65131, 94176, 94180, 94192, 94198, 94208, 101589, 101631, 101662, 101760, 101874, 110576, 110579, 110581, 110587, 110589, 110590, 110592, 110882, 110898, 110898, 110928, 110930, 110933, 110933, 110948, 110951, 110960, 111355, 119552, 119638, 119648, 119670, 126980, 126980, 127183, 127183, 127374, 127374, 127377, 127386, 127488, 127490, 127504, 127547, 127552, 127560, 127568, 127569, 127584, 127589, 127744, 127776, 127789, 127797, 127799, 127868, 127870, 127891, 127904, 127946, 127951, 127955, 127968, 127984, 127988, 127988, 127992, 128062, 128064, 128064, 128066, 128252, 128255, 128317, 128331, 128334, 128336, 128359, 128378, 128378, 128405, 128406, 128420, 128420, 128507, 128591, 128640, 128709, 128716, 128716, 128720, 128722, 128725, 128728, 128732, 128735, 128747, 128748, 128756, 128764, 128992, 129003, 129008, 129008, 129292, 129338, 129340, 129349, 129351, 129535, 129648, 129660, 129664, 129674, 129678, 129734, 129736, 129736, 129741, 129756, 129759, 129770, 129775, 129784, 131072, 196605, 196608, 262141];
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/utilities.js
+/**
+Binary search on a sorted flat array of [start, end] pairs.
+
+@param {number[]} ranges - Flat array of inclusive [start, end] range pairs, e.g. [0, 5, 10, 20].
+@param {number} codePoint - The value to search for.
+@returns {boolean} Whether the value falls within any of the ranges.
+*/
+const utilities_isInRange = (ranges, codePoint) => {
+	let low = 0;
+	let high = Math.floor(ranges.length / 2) - 1;
+	while (low <= high) {
+		const mid = Math.floor((low + high) / 2);
+		const i = mid * 2;
+		if (codePoint < ranges[i]) {
+			high = mid - 1;
+		} else if (codePoint > ranges[i + 1]) {
+			low = mid + 1;
+		} else {
+			return true;
+		}
+	}
+
+	return false;
+};
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/lookup.js
+
+
+
+const commonCjkCodePoint = 0x4E_00;
+const [wideFastPathStart, wideFastPathEnd] = /* #__PURE__ */ findWideFastPathRange(wideRanges);
+
+// Use a hot-path range so common `isWide` calls can skip binary search.
+// The range containing U+4E00 covers common CJK ideographs;
+// fallback to the largest range for resilience to Unicode table changes.
+function findWideFastPathRange(ranges) {
+	let fastPathStart = ranges[0];
+	let fastPathEnd = ranges[1];
+
+	for (let index = 0; index < ranges.length; index += 2) {
+		const start = ranges[index];
+		const end = ranges[index + 1];
+
+		if (
+			commonCjkCodePoint >= start
+			&& commonCjkCodePoint <= end
+		) {
+			return [start, end];
+		}
+
+		if ((end - start) > (fastPathEnd - fastPathStart)) {
+			fastPathStart = start;
+			fastPathEnd = end;
+		}
+	}
+
+	return [fastPathStart, fastPathEnd];
 }
 
-function lookup_isFullWidth(x) {
-	return x === 0x3000
-		|| x >= 0xFF01 && x <= 0xFF60
-		|| x >= 0xFFE0 && x <= 0xFFE6;
-}
+const isAmbiguous = codePoint => {
+	if (
+		codePoint < ambiguousMinimalCodePoint
+		|| codePoint > ambiguousMaximumCodePoint
+	) {
+		return false;
+	}
 
-function lookup_isWide(x) {
-	return x >= 0x1100 && x <= 0x115F
-		|| x === 0x231A
-		|| x === 0x231B
-		|| x === 0x2329
-		|| x === 0x232A
-		|| x >= 0x23E9 && x <= 0x23EC
-		|| x === 0x23F0
-		|| x === 0x23F3
-		|| x === 0x25FD
-		|| x === 0x25FE
-		|| x === 0x2614
-		|| x === 0x2615
-		|| x >= 0x2630 && x <= 0x2637
-		|| x >= 0x2648 && x <= 0x2653
-		|| x === 0x267F
-		|| x >= 0x268A && x <= 0x268F
-		|| x === 0x2693
-		|| x === 0x26A1
-		|| x === 0x26AA
-		|| x === 0x26AB
-		|| x === 0x26BD
-		|| x === 0x26BE
-		|| x === 0x26C4
-		|| x === 0x26C5
-		|| x === 0x26CE
-		|| x === 0x26D4
-		|| x === 0x26EA
-		|| x === 0x26F2
-		|| x === 0x26F3
-		|| x === 0x26F5
-		|| x === 0x26FA
-		|| x === 0x26FD
-		|| x === 0x2705
-		|| x === 0x270A
-		|| x === 0x270B
-		|| x === 0x2728
-		|| x === 0x274C
-		|| x === 0x274E
-		|| x >= 0x2753 && x <= 0x2755
-		|| x === 0x2757
-		|| x >= 0x2795 && x <= 0x2797
-		|| x === 0x27B0
-		|| x === 0x27BF
-		|| x === 0x2B1B
-		|| x === 0x2B1C
-		|| x === 0x2B50
-		|| x === 0x2B55
-		|| x >= 0x2E80 && x <= 0x2E99
-		|| x >= 0x2E9B && x <= 0x2EF3
-		|| x >= 0x2F00 && x <= 0x2FD5
-		|| x >= 0x2FF0 && x <= 0x2FFF
-		|| x >= 0x3001 && x <= 0x303E
-		|| x >= 0x3041 && x <= 0x3096
-		|| x >= 0x3099 && x <= 0x30FF
-		|| x >= 0x3105 && x <= 0x312F
-		|| x >= 0x3131 && x <= 0x318E
-		|| x >= 0x3190 && x <= 0x31E5
-		|| x >= 0x31EF && x <= 0x321E
-		|| x >= 0x3220 && x <= 0x3247
-		|| x >= 0x3250 && x <= 0xA48C
-		|| x >= 0xA490 && x <= 0xA4C6
-		|| x >= 0xA960 && x <= 0xA97C
-		|| x >= 0xAC00 && x <= 0xD7A3
-		|| x >= 0xF900 && x <= 0xFAFF
-		|| x >= 0xFE10 && x <= 0xFE19
-		|| x >= 0xFE30 && x <= 0xFE52
-		|| x >= 0xFE54 && x <= 0xFE66
-		|| x >= 0xFE68 && x <= 0xFE6B
-		|| x >= 0x16FE0 && x <= 0x16FE4
-		|| x === 0x16FF0
-		|| x === 0x16FF1
-		|| x >= 0x17000 && x <= 0x187F7
-		|| x >= 0x18800 && x <= 0x18CD5
-		|| x >= 0x18CFF && x <= 0x18D08
-		|| x >= 0x1AFF0 && x <= 0x1AFF3
-		|| x >= 0x1AFF5 && x <= 0x1AFFB
-		|| x === 0x1AFFD
-		|| x === 0x1AFFE
-		|| x >= 0x1B000 && x <= 0x1B122
-		|| x === 0x1B132
-		|| x >= 0x1B150 && x <= 0x1B152
-		|| x === 0x1B155
-		|| x >= 0x1B164 && x <= 0x1B167
-		|| x >= 0x1B170 && x <= 0x1B2FB
-		|| x >= 0x1D300 && x <= 0x1D356
-		|| x >= 0x1D360 && x <= 0x1D376
-		|| x === 0x1F004
-		|| x === 0x1F0CF
-		|| x === 0x1F18E
-		|| x >= 0x1F191 && x <= 0x1F19A
-		|| x >= 0x1F200 && x <= 0x1F202
-		|| x >= 0x1F210 && x <= 0x1F23B
-		|| x >= 0x1F240 && x <= 0x1F248
-		|| x === 0x1F250
-		|| x === 0x1F251
-		|| x >= 0x1F260 && x <= 0x1F265
-		|| x >= 0x1F300 && x <= 0x1F320
-		|| x >= 0x1F32D && x <= 0x1F335
-		|| x >= 0x1F337 && x <= 0x1F37C
-		|| x >= 0x1F37E && x <= 0x1F393
-		|| x >= 0x1F3A0 && x <= 0x1F3CA
-		|| x >= 0x1F3CF && x <= 0x1F3D3
-		|| x >= 0x1F3E0 && x <= 0x1F3F0
-		|| x === 0x1F3F4
-		|| x >= 0x1F3F8 && x <= 0x1F43E
-		|| x === 0x1F440
-		|| x >= 0x1F442 && x <= 0x1F4FC
-		|| x >= 0x1F4FF && x <= 0x1F53D
-		|| x >= 0x1F54B && x <= 0x1F54E
-		|| x >= 0x1F550 && x <= 0x1F567
-		|| x === 0x1F57A
-		|| x === 0x1F595
-		|| x === 0x1F596
-		|| x === 0x1F5A4
-		|| x >= 0x1F5FB && x <= 0x1F64F
-		|| x >= 0x1F680 && x <= 0x1F6C5
-		|| x === 0x1F6CC
-		|| x >= 0x1F6D0 && x <= 0x1F6D2
-		|| x >= 0x1F6D5 && x <= 0x1F6D7
-		|| x >= 0x1F6DC && x <= 0x1F6DF
-		|| x === 0x1F6EB
-		|| x === 0x1F6EC
-		|| x >= 0x1F6F4 && x <= 0x1F6FC
-		|| x >= 0x1F7E0 && x <= 0x1F7EB
-		|| x === 0x1F7F0
-		|| x >= 0x1F90C && x <= 0x1F93A
-		|| x >= 0x1F93C && x <= 0x1F945
-		|| x >= 0x1F947 && x <= 0x1F9FF
-		|| x >= 0x1FA70 && x <= 0x1FA7C
-		|| x >= 0x1FA80 && x <= 0x1FA89
-		|| x >= 0x1FA8F && x <= 0x1FAC6
-		|| x >= 0x1FACE && x <= 0x1FADC
-		|| x >= 0x1FADF && x <= 0x1FAE9
-		|| x >= 0x1FAF0 && x <= 0x1FAF8
-		|| x >= 0x20000 && x <= 0x2FFFD
-		|| x >= 0x30000 && x <= 0x3FFFD;
-}
+	return utilities_isInRange(ambiguousRanges, codePoint);
+};
 
-function lookup_getCategory(x) {
-	if (isAmbiguous(x)) return 'ambiguous';
+const isFullWidth = codePoint => {
+	if (
+		codePoint < fullwidthMinimalCodePoint
+		|| codePoint > fullwidthMaximumCodePoint
+	) {
+		return false;
+	}
 
-	if (lookup_isFullWidth(x)) return 'fullwidth';
+	return utilities_isInRange(fullwidthRanges, codePoint);
+};
+
+const isHalfWidth = codePoint => {
+	if (
+		codePoint < halfwidthMinimalCodePoint
+		|| codePoint > halfwidthMaximumCodePoint
+	) {
+		return false;
+	}
+
+	return isInRange(halfwidthRanges, codePoint);
+};
+
+const isNarrow = codePoint => {
+	if (
+		codePoint < narrowMinimalCodePoint
+		|| codePoint > narrowMaximumCodePoint
+	) {
+		return false;
+	}
+
+	return isInRange(narrowRanges, codePoint);
+};
+
+const isWide = codePoint => {
+	if (
+		codePoint >= wideFastPathStart
+		&& codePoint <= wideFastPathEnd
+	) {
+		return true;
+	}
 
 	if (
-		x === 0x20A9
-		|| x >= 0xFF61 && x <= 0xFFBE
-		|| x >= 0xFFC2 && x <= 0xFFC7
-		|| x >= 0xFFCA && x <= 0xFFCF
-		|| x >= 0xFFD2 && x <= 0xFFD7
-		|| x >= 0xFFDA && x <= 0xFFDC
-		|| x >= 0xFFE8 && x <= 0xFFEE
+		codePoint < wideMinimalCodePoint
+		|| codePoint > wideMaximumCodePoint
 	) {
+		return false;
+	}
+
+	return utilities_isInRange(wideRanges, codePoint);
+};
+
+function lookup_getCategory(codePoint) {
+	if (isAmbiguous(codePoint)) {
+		return 'ambiguous';
+	}
+
+	if (isFullWidth(codePoint)) {
+		return 'fullwidth';
+	}
+
+	if (isHalfWidth(codePoint)) {
 		return 'halfwidth';
 	}
 
-	if (
-		x >= 0x20 && x <= 0x7E
-		|| x === 0xA2
-		|| x === 0xA3
-		|| x === 0xA5
-		|| x === 0xA6
-		|| x === 0xAC
-		|| x === 0xAF
-		|| x >= 0x27E6 && x <= 0x27ED
-		|| x === 0x2985
-		|| x === 0x2986
-	) {
+	if (isNarrow(codePoint)) {
 		return 'narrow';
 	}
 
-	if (lookup_isWide(x)) return 'wide';
+	if (isWide(codePoint)) {
+		return 'wide';
+	}
 
 	return 'neutral';
 }
 
-
-
-;// CONCATENATED MODULE: ./node_modules/.pnpm/get-east-asian-width@1.3.0/node_modules/get-east-asian-width/index.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/index.js
 
 
 function validate(codePoint) {
@@ -89353,8 +88501,8 @@ function eastAsianWidth(codePoint, {ambiguousAsWide = false} = {}) {
 	validate(codePoint);
 
 	if (
-		lookup_isFullWidth(codePoint)
-		|| lookup_isWide(codePoint)
+		isFullWidth(codePoint)
+		|| isWide(codePoint)
 		|| (ambiguousAsWide && isAmbiguous(codePoint))
 	) {
 		return 2;
@@ -89363,11 +88511,10 @@ function eastAsianWidth(codePoint, {ambiguousAsWide = false} = {}) {
 	return 1;
 }
 
-// For Prettier. This doesn't count "ambiguous" characters or check for valid input.
-// https://github.com/sindresorhus/get-east-asian-width/pull/6
-const _isNarrowWidth = codePoint => !(isFullWidth(codePoint) || isWide(codePoint));
+// Private exports for https://github.com/sindresorhus/is-fullwidth-code-point
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/string-width@8.1.0/node_modules/string-width/index.js
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/string-width@8.2.1/node_modules/string-width/index.js
 
 
 
@@ -89377,19 +88524,45 @@ Logic:
 - Width rules:
 	1. Skip non-printing clusters (Default_Ignorable, Control, pure Mark, lone Surrogates). Tabs are ignored by design.
 	2. RGI emoji clusters (\p{RGI_Emoji}) are double-width.
-	3. Otherwise use East Asian Width of the cluster’s first visible code point, and add widths for trailing Halfwidth/Fullwidth Forms within the same cluster (e.g., dakuten/handakuten/prolonged sound mark).
+	3. Minimally-qualified/unqualified emoji clusters (ZWJ sequences with 2+ Extended_Pictographic, or keycap sequences) are double-width.
+	4. Hangul jamo collapse each standard modern Hangul L+V or L+V+T syllable piece to width 2.
+	   Unmatched repeated leading/vowel/trailing jamo stay additive because that matches how the terminals we target render them.
+	5. Otherwise use East Asian Width of the cluster's first visible code point, and add widths for trailing Halfwidth/Fullwidth Forms within the same cluster (e.g., dakuten/handakuten/prolonged sound mark).
 */
 
 const segmenter = new Intl.Segmenter();
 
 // Whole-cluster zero-width
-const zeroWidthClusterRegex = /^(?:\p{Default_Ignorable_Code_Point}|\p{Control}|\p{Mark}|\p{Surrogate})+$/v;
+const zeroWidthClusterRegex = /^(?:\p{Default_Ignorable_Code_Point}|\p{Control}|\p{Format}|\p{Mark}|\p{Surrogate})+$/v;
 
 // Pick the base scalar if the cluster starts with Prepend/Format/Marks
 const leadingNonPrintingRegex = /^[\p{Default_Ignorable_Code_Point}\p{Control}\p{Format}\p{Mark}\p{Surrogate}]+/v;
 
 // RGI emoji sequences
 const rgiEmojiRegex = /^\p{RGI_Emoji}$/v;
+
+// Detect minimally-qualified/unqualified emoji sequences (missing VS16 but still render as double-width)
+const unqualifiedKeycapRegex = /^[\d#*]\u20E3$/;
+const extendedPictographicRegex = /\p{Extended_Pictographic}/gu;
+
+function isDoubleWidthNonRgiEmojiSequence(segment) {
+	// Real emoji clusters are < 30 chars; guard against pathological input
+	if (segment.length > 50) {
+		return false;
+	}
+
+	if (unqualifiedKeycapRegex.test(segment)) {
+		return true;
+	}
+
+	// ZWJ sequences with 2+ Extended_Pictographic
+	if (segment.includes('\u200D')) {
+		const pictographics = segment.match(extendedPictographicRegex);
+		return pictographics !== null && pictographics.length >= 2;
+	}
+
+	return false;
+}
 
 function baseVisible(segment) {
 	return segment.replace(leadingNonPrintingRegex, '');
@@ -89399,13 +88572,88 @@ function isZeroWidthCluster(segment) {
 	return zeroWidthClusterRegex.test(segment);
 }
 
-function trailingHalfwidthWidth(segment, eastAsianWidthOptions) {
-	let extra = 0;
-	if (segment.length > 1) {
-		for (const char of segment.slice(1)) {
-			if (char >= '\uFF00' && char <= '\uFFEF') {
-				extra += eastAsianWidth(char.codePointAt(0), eastAsianWidthOptions);
+function isHangulLeadingJamo(codePoint) {
+	return (codePoint >= 0x11_00 && codePoint <= 0x11_5F)
+		|| (codePoint >= 0xA9_60 && codePoint <= 0xA9_7C);
+}
+
+function isHangulVowelJamo(codePoint) {
+	return (codePoint >= 0x11_60 && codePoint <= 0x11_A7)
+		|| (codePoint >= 0xD7_B0 && codePoint <= 0xD7_C6);
+}
+
+function isHangulTrailingJamo(codePoint) {
+	return (codePoint >= 0x11_A8 && codePoint <= 0x11_FF)
+		|| (codePoint >= 0xD7_CB && codePoint <= 0xD7_FB);
+}
+
+function isHangulJamo(codePoint) {
+	return isHangulLeadingJamo(codePoint)
+		|| isHangulVowelJamo(codePoint)
+		|| isHangulTrailingJamo(codePoint);
+}
+
+function hangulClusterWidth(visibleSegment, eastAsianWidthOptions) {
+	const codePoints = [];
+
+	for (const character of visibleSegment) {
+		if (zeroWidthClusterRegex.test(character)) {
+			continue;
+		}
+
+		codePoints.push(character.codePointAt(0));
+	}
+
+	if (codePoints.length === 0) {
+		return undefined;
+	}
+
+	let width = 0;
+
+	for (let index = 0; index < codePoints.length; index++) {
+		const codePoint = codePoints[index];
+		if (!isHangulJamo(codePoint)) {
+			if (width === 0) {
+				return undefined;
 			}
+
+			// Mixed cluster (e.g., L + precomposed syllable): use EAW for non-jamo remainder
+			for (let remaining = index; remaining < codePoints.length; remaining++) {
+				width += eastAsianWidth(codePoints[remaining], eastAsianWidthOptions);
+			}
+
+			return width;
+		}
+
+		// Modern Hangul L+V(+T) shapes as one syllable block. Unmatched jamo stay additive:
+		// U+1100 U+1100 U+1161 => U+1100 + (U+1100 U+1161) => 2 + 2.
+		if (
+			isHangulLeadingJamo(codePoint)
+			&& isHangulVowelJamo(codePoints[index + 1])
+		) {
+			width += 2;
+			index += isHangulTrailingJamo(codePoints[index + 2]) ? 2 : 1;
+			continue;
+		}
+
+		width += eastAsianWidth(codePoint, eastAsianWidthOptions);
+	}
+
+	return width;
+}
+
+function trailingHalfwidthWidth(visibleSegment, eastAsianWidthOptions) {
+	let extra = 0;
+	let first = true;
+
+	for (const character of visibleSegment) {
+		if (first) {
+			first = false;
+			continue;
+		}
+
+		if (character >= '\uFF00' && character <= '\uFFEF') {
+			extra += eastAsianWidth(character.codePointAt(0), eastAsianWidthOptions);
 		}
 	}
 
@@ -89424,12 +88672,18 @@ function stringWidth(input, options = {}) {
 
 	let string = input;
 
-	if (!countAnsiEscapeCodes) {
+	// Avoid calling stripAnsi when there are no ANSI escape sequences (ESC = 0x1B, CSI = 0x9B)
+	if (!countAnsiEscapeCodes && (string.includes('\u001B') || string.includes('\u009B'))) {
 		string = stripAnsi(string);
 	}
 
 	if (string.length === 0) {
 		return 0;
+	}
+
+	// Fast path: printable ASCII (0x20–0x7E) needs no segmenter, regex, or EAW lookup — width equals length.
+	if (/^[\u0020-\u007E]*$/.test(string)) {
+		return string.length;
 	}
 
 	let width = 0;
@@ -89442,23 +88696,30 @@ function stringWidth(input, options = {}) {
 		}
 
 		// Emoji width logic
-		if (rgiEmojiRegex.test(segment)) {
+		if (rgiEmojiRegex.test(segment) || isDoubleWidthNonRgiEmojiSequence(segment)) {
 			width += 2;
 			continue;
 		}
 
+		const visibleSegment = baseVisible(segment);
+		const hangulWidth = hangulClusterWidth(visibleSegment, eastAsianWidthOptions);
+		if (hangulWidth !== undefined) {
+			width += hangulWidth;
+			continue;
+		}
+
 		// Everything else: EAW of the cluster’s first visible scalar
-		const codePoint = baseVisible(segment).codePointAt(0);
+		const codePoint = visibleSegment.codePointAt(0);
 		width += eastAsianWidth(codePoint, eastAsianWidthOptions);
 
 		// Add width for trailing Halfwidth and Fullwidth Forms (e.g., ﾞ, ﾟ, ｰ)
-		width += trailingHalfwidthWidth(segment, eastAsianWidthOptions);
+		width += trailingHalfwidthWidth(visibleSegment, eastAsianWidthOptions);
 	}
 
 	return width;
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/md060.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/md060.mjs
 // @ts-check
 
 
@@ -89468,6 +88729,7 @@ function stringWidth(input, options = {}) {
 /** @typedef {import("micromark-extension-gfm-table")} */
 /** @typedef {import("markdownlint").MicromarkToken} MicromarkToken */
 /** @typedef {import("markdownlint").RuleOnErrorInfo} RuleOnErrorInfo */
+/** @typedef {import("markdownlint").RuleOnErrorFixInfo} RuleOnErrorFixInfo */
 
 /**
  * Adds a RuleOnErrorInfo object to a list of RuleOnErrorInfo objects.
@@ -89476,12 +88738,14 @@ function stringWidth(input, options = {}) {
  * @param {number} lineNumber Line number.
  * @param {number} column Column number.
  * @param {string} detail Detail message.
+ * @param {RuleOnErrorFixInfo} [fixInfo] Fix information.
  */
-function md060_addError(errors, lineNumber, column, detail) {
+function md060_addError(errors, lineNumber, column, detail, fixInfo) {
   errors.push({
     lineNumber,
     detail,
-    "range": [ column, 1 ]
+    "range": [ column, 1 ],
+    fixInfo
   });
 }
 
@@ -89584,11 +88848,29 @@ function checkStyleAligned(lines, rows, detail) {
               if (previous) {
                 if (previous.type === "whitespace") {
                   if (previous.text.length !== 1) {
-                    md060_addError(errorsIfCompact, startLine, startColumn, "Table pipe has extra space to the left for style \"compact\"");
+                    md060_addError(
+                      errorsIfCompact,
+                      startLine,
+                      startColumn,
+                      "Table pipe has extra space to the left for style \"compact\"",
+                      { "editColumn": previous.startColumn, "deleteCount": previous.text.length - 1 }
+                    );
                   }
-                  md060_addError(errorsIfTight, startLine, startColumn, "Table pipe has space to the left for style \"tight\"");
+                  md060_addError(
+                    errorsIfTight,
+                    startLine,
+                    startColumn,
+                    "Table pipe has space to the left for style \"tight\"",
+                    { "editColumn": previous.startColumn, "deleteCount": previous.text.length }
+                  );
                 } else {
-                  md060_addError(errorsIfCompact, startLine, startColumn, "Table pipe is missing space to the left for style \"compact\"");
+                  md060_addError(
+                    errorsIfCompact,
+                    startLine,
+                    startColumn,
+                    "Table pipe is missing space to the left for style \"compact\"",
+                    { "editColumn": previous.endColumn, "insertText": " " }
+                  );
                 }
               }
               const next = tokensOfInterest[i + 1];
@@ -89596,12 +88878,30 @@ function checkStyleAligned(lines, rows, detail) {
                 if (next.type === "whitespace") {
                   if (next.endColumn !== row.endColumn) {
                     if (next.text.length !== 1) {
-                      md060_addError(errorsIfCompact, startLine, startColumn, "Table pipe has extra space to the right for style \"compact\"");
+                      md060_addError(
+                        errorsIfCompact,
+                        startLine,
+                        startColumn,
+                        "Table pipe has extra space to the right for style \"compact\"",
+                        { "editColumn": next.startColumn, "deleteCount": next.text.length - 1 }
+                      );
                     }
-                    md060_addError(errorsIfTight, startLine, startColumn, "Table pipe has space to the right for style \"tight\"");
+                    md060_addError(
+                      errorsIfTight,
+                      startLine,
+                      startColumn,
+                      "Table pipe has space to the right for style \"tight\"",
+                      { "editColumn": next.startColumn, "deleteCount": next.text.length }
+                    );
                   }
                 } else {
-                  md060_addError(errorsIfCompact, startLine, startColumn, "Table pipe is missing space to the right for style \"compact\"");
+                  md060_addError(
+                    errorsIfCompact,
+                    startLine,
+                    startColumn,
+                    "Table pipe is missing space to the right for style \"compact\"",
+                    { "editColumn": next.startColumn, "insertText": " " }
+                  );
                 }
               }
             }
@@ -89630,7 +88930,7 @@ function checkStyleAligned(lines, rows, detail) {
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/rules.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/rules.mjs
 // @ts-check
 
 
@@ -89754,7 +89054,7 @@ for (const rule of rules) {
 }
 /* harmony default export */ const lib_rules = (rules);
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/parse-configuration.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/parse-configuration.mjs
 // @ts-check
 
 /**
@@ -89803,7 +89103,7 @@ function parse_configuration_parseConfiguration(name, content, parsers) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/markdownlint.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/markdownlint.mjs
 // @ts-check
 
 // @ts-ignore
@@ -89844,7 +89144,7 @@ function validateRuleList(ruleList, synchronous) {
       const value = rule[property];
       if (!result &&
         (!value || !Array.isArray(value) || (value.length === 0) ||
-         !value.every(helpers_helpers.isString) || value.some(helpers_helpers.isEmptyString))) {
+         !value.every(helpers_helpers/* isString */.Kg) || value.some(helpers_helpers/* isEmptyString */.jw))) {
         result = newError(property, value);
       }
     }
@@ -89871,7 +89171,7 @@ function validateRuleList(ruleList, synchronous) {
     if (
       !result &&
       rule.information &&
-      !helpers_helpers.isUrl(rule.information)
+      !helpers_helpers/* isUrl */.gU(rule.information)
     ) {
       result = newError("information", rule.information);
     }
@@ -89911,81 +89211,6 @@ function validateRuleList(ruleList, synchronous) {
 }
 
 /**
- * Creates a LintResults instance with toString for pretty display.
- *
- * @param {Rule[]} ruleList List of rules.
- * @returns {LintResults} New LintResults instance.
- */
-function newResults(ruleList) {
-  /**
-   * Returns the string representation of a LintResults instance.
-   *
-   * @param {boolean} useAlias True if rule alias should be used instead of name.
-   * @returns {string} String representation of the instance.
-   * @this {LintResults}
-   */
-  function toString(useAlias) {
-    // eslint-disable-next-line consistent-this, unicorn/no-this-assignment
-    const lintResults = this;
-    /** @type {Object.<string, Rule> | null} */
-    let ruleNameToRule = null;
-    const results = [];
-    const keys = Object.keys(lintResults);
-    keys.sort();
-    for (const file of keys) {
-      const fileResults = lintResults[file];
-      if (Array.isArray(fileResults)) {
-        for (const result of fileResults) {
-          const ruleMoniker = result.ruleNames ?
-            result.ruleNames.join("/") :
-            // @ts-ignore
-            (result.ruleName + "/" + result.ruleAlias);
-          results.push(
-            file + ": " +
-            result.lineNumber + ": " +
-            ruleMoniker + " " +
-            result.ruleDescription +
-            (result.errorDetail ?
-              " [" + result.errorDetail + "]" :
-              "") +
-            (result.errorContext ?
-              " [Context: \"" + result.errorContext + "\"]" :
-              ""));
-        }
-      } else {
-        if (!ruleNameToRule) {
-          ruleNameToRule = {};
-          for (const rule of ruleList) {
-            const ruleName = rule.names[0].toUpperCase();
-            ruleNameToRule[ruleName] = rule;
-          }
-        }
-        for (const [ ruleName, ruleResults ] of Object.entries(fileResults)) {
-          const rule = ruleNameToRule[ruleName.toUpperCase()];
-          for (const lineNumber of ruleResults) {
-            // @ts-ignore
-            const nameIndex = Math.min(useAlias ? 1 : 0, rule.names.length - 1);
-            const result =
-              file + ": " +
-              lineNumber + ": " +
-              // @ts-ignore
-              rule.names[nameIndex] + " " +
-              // @ts-ignore
-              rule.description;
-            results.push(result);
-          }
-        }
-      }
-    }
-    return results.join("\n");
-  }
-  const lintResults = {};
-  Object.defineProperty(lintResults, "toString", { "value": toString });
-  // @ts-ignore
-  return lintResults;
-}
-
-/**
  * Result object for removeFrontMatter.
  *
  * @typedef {Object} RemoveFrontMatterResult
@@ -90008,7 +89233,7 @@ function removeFrontMatter(content, frontMatter) {
     if (frontMatterMatch && !frontMatterMatch.index) {
       const contentMatched = frontMatterMatch[0];
       content = content.slice(contentMatched.length);
-      frontMatterLines = contentMatched.split(helpers_helpers.newLineRe);
+      frontMatterLines = contentMatched.split(helpers_helpers/* newLineRe */.Or);
       if ((frontMatterLines.length > 0) &&
           (frontMatterLines[frontMatterLines.length - 1] === "")) {
         frontMatterLines.length--;
@@ -90079,6 +89304,7 @@ function getEffectiveConfig(ruleList, config, aliasToRuleNames) {
   let ruleDefaultEnable = true;
   /** @type {"error" | "warning"} */
   let ruleDefaultSeverity = "error";
+  // eslint-disable-next-line unicorn/no-unused-array-method-return
   Object.entries(config).every(([ key, value ]) => {
     if (key.toUpperCase() === "DEFAULT") {
       ruleDefaultEnable = !!value;
@@ -90183,7 +89409,7 @@ function getEnabledRulesPerLineNumber(
     for (const [ lineIndex, line ] of input.entries()) {
       if (!noInlineConfig) {
         let match = null;
-        while ((match = helpers_helpers.inlineCommentStartRe.exec(line))) {
+        while ((match = helpers_helpers/* inlineCommentStartRe */.q5.exec(line))) {
           const action = match[2].toUpperCase();
           const startIndex = match.index + match[1].length;
           const endIndex = line.indexOf("-->", startIndex);
@@ -90328,7 +89554,7 @@ function lintContent(
   const { effectiveConfig, enabledRulesPerLineNumber, enabledRuleList, rulesSeverity } =
     getEnabledRulesPerLineNumber(
       ruleList,
-      content.split(helpers_helpers.newLineRe),
+      content.split(helpers_helpers/* newLineRe */.Or),
       frontMatterLines,
       noInlineConfig,
       config,
@@ -90348,9 +89574,9 @@ function lintContent(
     [];
   // Hide the content of HTML comments from rules
   const preClearedContent = content;
-  content = helpers_helpers.clearHtmlCommentText(content);
+  content = helpers_helpers/* clearHtmlCommentText */.X6(content);
   // Parse content into lines and get markdown-it tokens
-  const lines = content.split(helpers_helpers.newLineRe);
+  const lines = content.split(helpers_helpers/* newLineRe */.Or);
   // Function to run after fetching markdown-it tokens (when needed)
   const lintContentInternal = (/** @type {MarkdownItToken[]} */ markdownitTokens) => {
     // Create (frozen) parameters for rules
@@ -90380,7 +89606,7 @@ function lintContent(
     initialize({
       ...paramsBase,
       "parsers": parsersMicromark,
-      "config": null
+      "config": {}
     });
     // Function to run for each rule
     /** @type {LintError[]} */
@@ -90418,7 +89644,7 @@ function lintContent(
       // eslint-disable-next-line jsdoc/require-jsdoc
       function onError(/** @type {RuleOnErrorInfo} */ errorInfo) {
         if (!errorInfo ||
-          !helpers_helpers.isNumber(errorInfo.lineNumber) ||
+          !helpers_helpers/* isNumber */.Et(errorInfo.lineNumber) ||
           (errorInfo.lineNumber < 1) ||
           (errorInfo.lineNumber > lines.length)) {
           throwError("lineNumber");
@@ -90428,23 +89654,23 @@ function lintContent(
           return;
         }
         if (errorInfo.detail &&
-          !helpers_helpers.isString(errorInfo.detail)) {
+          !helpers_helpers/* isString */.Kg(errorInfo.detail)) {
           throwError("detail");
         }
         if (errorInfo.context &&
-          !helpers_helpers.isString(errorInfo.context)) {
+          !helpers_helpers/* isString */.Kg(errorInfo.context)) {
           throwError("context");
         }
         if (errorInfo.information &&
-          !helpers_helpers.isUrl(errorInfo.information)) {
+          !helpers_helpers/* isUrl */.gU(errorInfo.information)) {
           throwError("information");
         }
         if (errorInfo.range &&
           (!Array.isArray(errorInfo.range) ||
             (errorInfo.range.length !== 2) ||
-            !helpers_helpers.isNumber(errorInfo.range[0]) ||
+            !helpers_helpers/* isNumber */.Et(errorInfo.range[0]) ||
             (errorInfo.range[0] < 1) ||
-            !helpers_helpers.isNumber(errorInfo.range[1]) ||
+            !helpers_helpers/* isNumber */.Et(errorInfo.range[1]) ||
             (errorInfo.range[1] < 1) ||
             ((errorInfo.range[0] + errorInfo.range[1] - 1) >
             lines[errorInfo.lineNumber - 1].length))) {
@@ -90453,11 +89679,11 @@ function lintContent(
         const fixInfo = errorInfo.fixInfo;
         const cleanFixInfo = {};
         if (fixInfo) {
-          if (!helpers_helpers.isObject(fixInfo)) {
+          if (!helpers_helpers/* isObject */.Gv(fixInfo)) {
             throwError("fixInfo");
           }
           if (fixInfo.lineNumber !== undefined) {
-            if ((!helpers_helpers.isNumber(fixInfo.lineNumber) ||
+            if ((!helpers_helpers/* isNumber */.Et(fixInfo.lineNumber) ||
               (fixInfo.lineNumber < 1) ||
               (fixInfo.lineNumber > lines.length))) {
               throwError("fixInfo.lineNumber");
@@ -90467,7 +89693,7 @@ function lintContent(
           }
           const effectiveLineNumber = fixInfo.lineNumber || errorInfo.lineNumber;
           if (fixInfo.editColumn !== undefined) {
-            if ((!helpers_helpers.isNumber(fixInfo.editColumn) ||
+            if ((!helpers_helpers/* isNumber */.Et(fixInfo.editColumn) ||
               (fixInfo.editColumn < 1) ||
               (fixInfo.editColumn >
                 lines[effectiveLineNumber - 1].length + 1))) {
@@ -90476,7 +89702,7 @@ function lintContent(
             cleanFixInfo.editColumn = fixInfo.editColumn;
           }
           if (fixInfo.deleteCount !== undefined) {
-            if ((!helpers_helpers.isNumber(fixInfo.deleteCount) ||
+            if ((!helpers_helpers/* isNumber */.Et(fixInfo.deleteCount) ||
               (fixInfo.deleteCount < -1) ||
               (fixInfo.deleteCount >
                 lines[effectiveLineNumber - 1].length))) {
@@ -90485,7 +89711,7 @@ function lintContent(
             cleanFixInfo.deleteCount = fixInfo.deleteCount;
           }
           if (fixInfo.insertText !== undefined) {
-            if (!helpers_helpers.isString(fixInfo.insertText)) {
+            if (!helpers_helpers/* isString */.Kg(fixInfo.insertText)) {
               throwError("fixInfo.insertText");
             }
             cleanFixInfo.insertText = fixInfo.insertText;
@@ -90497,8 +89723,8 @@ function lintContent(
           "ruleNames": rule.names,
           "ruleDescription": rule.description,
           "ruleInformation": information ? information.href : null,
-          "errorDetail": errorInfo.detail?.replace(helpers_helpers.newLineRe, " ") || null,
-          "errorContext": errorInfo.context?.replace(helpers_helpers.newLineRe, " ") || null,
+          "errorDetail": errorInfo.detail?.replace(helpers_helpers/* newLineRe */.Or, " ") || null,
+          "errorContext": errorInfo.context?.replace(helpers_helpers/* newLineRe */.Or, " ") || null,
           "errorRange": errorInfo.range ? [ ...errorInfo.range ] : null,
           "fixInfo": fixInfo ? cleanFixInfo : null,
           // @ts-ignore
@@ -90573,7 +89799,7 @@ function lintContent(
     // Need to call into markdown-it and lintContentInternal asynchronously
     Promise.all([
       // eslint-disable-next-line no-inline-comments
-      Promise.resolve(/* import() eager */).then(__nccwpck_require__.t.bind(__nccwpck_require__, 8491, 19)),
+      Promise.resolve(/* import() eager */).then(__nccwpck_require__.t.bind(__nccwpck_require__, 4482, 19)),
       // eslint-disable-next-line no-promise-executor-return
       new Promise((resolve) => resolve(markdownItFactory()))
     ]).then(([ markdownitCjs, markdownIt ]) => {
@@ -90659,10 +89885,10 @@ function lintInput(options, synchronous, callback) {
     [ options.customRules || [] ]
       .flat()
       .map((rule) => ({
-        "names": helpers_helpers.cloneIfArray(rule.names),
+        "names": helpers_helpers/* cloneIfArray */.YW(rule.names),
         "description": rule.description,
-        "information": helpers_helpers.cloneIfUrl(rule.information),
-        "tags": helpers_helpers.cloneIfArray(rule.tags),
+        "information": helpers_helpers/* cloneIfUrl */.c0(rule.information),
+        "tags": helpers_helpers/* cloneIfArray */.YW(rule.tags),
         "parser": rule.parser,
         "asynchronous": rule.asynchronous,
         "function": rule.function
@@ -90686,13 +89912,10 @@ function lintInput(options, synchronous, callback) {
   const config = options.config || { "default": true };
   const configParsers = options.configParsers || undefined;
   const frontMatter = (options.frontMatter === undefined) ?
-    helpers_helpers.frontMatterRe :
+    helpers_helpers/* frontMatterRe */.Q9 :
     options.frontMatter;
   const handleRuleFailures = !!options.handleRuleFailures;
   const noInlineConfig = !!options.noInlineConfig;
-  // @ts-ignore
-  // eslint-disable-next-line dot-notation
-  const resultVersion = (options["resultVersion"] === undefined) ? 3 : options["resultVersion"];
   const markdownItFactory =
     options.markdownItFactory ||
     (() => { throw new Error("The option 'markdownItFactory' was required (due to the option 'customRules' including a rule requiring the 'markdown-it' parser), but 'markdownItFactory' was not set."); });
@@ -90700,7 +89923,7 @@ function lintInput(options, synchronous, callback) {
   // @ts-ignore
   const fs = options.fs || node_imports_node_fs;
   const aliasToRuleNames = mapAliasToRuleNames(ruleList);
-  const results = newResults(ruleList);
+  const results = {};
   let done = false;
   let concurrency = 0;
   // eslint-disable-next-line jsdoc/require-jsdoc
@@ -90758,18 +89981,12 @@ function lintInput(options, synchronous, callback) {
         lintWorkerCallback
       );
     } else if (concurrency === 0) {
-      // Finish
+      // Finished, sort keys for consistency
       done = true;
-      // Deprecated: Convert results to specified resultVersion
-      let convertedResults = results;
-      if (resultVersion === 0) {
-        convertedResults = helpers_helpers.convertToResultVersion0(results);
-      } else if (resultVersion === 1) {
-        convertedResults = helpers_helpers.convertToResultVersion1(results);
-      } else if (resultVersion === 2) {
-        convertedResults = helpers_helpers.convertToResultVersion2(results);
-      }
-      return callback(null, convertedResults);
+      const sortedEntries = Object.entries(results);
+      sortedEntries.sort(([ a ], [ b ]) => a.localeCompare(b));
+      const sortedResults = Object.fromEntries(sortedEntries);
+      return callback(null, sortedResults);
     }
     return null;
   }
@@ -91236,24 +90453,37 @@ function getVersion() {
  */
 
 /**
- * markdown-it token.
+ * markdown-it base token.
  *
- * @typedef {Object} MarkdownItToken
- * @property {string[][]} attrs HTML attributes.
+ * @typedef {Object} MarkdownItBaseToken
+ * @property {string[][] | null} attrs HTML attributes.
  * @property {boolean} block Block-level token.
- * @property {MarkdownItToken[]} children Child nodes.
+ * @property {MarkdownItBaseToken[] | null} children Child nodes.
  * @property {string} content Tag contents.
  * @property {boolean} hidden Ignore element.
  * @property {string} info Fence info.
  * @property {number} level Nesting level.
- * @property {number[]} map Beginning/ending line numbers.
+ * @property {number[] | null} map Beginning/ending line numbers.
  * @property {string} markup Markup text.
  * @property {Object} meta Arbitrary data.
  * @property {number} nesting Level change.
  * @property {string} tag HTML tag name.
  * @property {string} type Token type.
+ */
+
+/**
+ * markdown-it extended token.
+ *
+ * @typedef {Object} MarkdownItExtendedToken
+ * @property {MarkdownItExtendedToken[] | null} children Child nodes.
  * @property {number} lineNumber Line number (1-based).
  * @property {string} line Line content.
+ */
+
+/**
+ * markdown-it token.
+ *
+ * @typedef {MarkdownItBaseToken & MarkdownItExtendedToken} MarkdownItToken
  */
 
 /** @typedef {import("micromark-util-types").TokenType} MicromarkTokenType */
@@ -91321,7 +90551,7 @@ function getVersion() {
  * @callback MarkdownItParse
  * @param {string} src Source string.
  * @param {Object} env Environment sandbox.
- * @returns {import("markdown-it").Token[]} Tokens.
+ * @returns {MarkdownItBaseToken[]} Tokens.
  */
 
 /**
@@ -91434,12 +90664,6 @@ function getVersion() {
  */
 
 /**
- * Rule configuration object.
- *
- * @typedef {boolean | Object} RuleConfiguration Rule configuration.
- */
-
-/**
  * Parses a configuration string and returns a configuration object.
  *
  * @callback ConfigurationParser
@@ -91465,7 +90689,15 @@ function getVersion() {
  * @returns {void}
  */
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.40.0/node_modules/markdownlint/lib/exports-sync.mjs
+/* eslint-disable jsdoc/reject-any-type */
+
+/**
+ * Rule configuration object.
+ *
+ * @typedef {boolean | any} RuleConfiguration Rule configuration.
+ */
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/markdownlint@0.41.0/node_modules/markdownlint/lib/exports-sync.mjs
 // @ts-check
 
 
@@ -91550,8 +90782,10 @@ const ruleDescriptions = {
 
 
 
+
 const allRules = [
     commentMeaningful,
+    prAutomationDetected,
     prBranchNonDefault,
     prBodyDescriptive,
     prLinkedIssue,
@@ -91703,20 +90937,88 @@ async function runOctoGuideRules({ auth, entity: entityInput, settings, }) {
     return { actor, entity, reports };
 }
 
-;// CONCATENATED MODULE: ./src/index.ts
+// EXTERNAL MODULE: ./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js
+var lodash = __nccwpck_require__(7132);
+var lodash_default = /*#__PURE__*/__nccwpck_require__.n(lodash);
+;// CONCATENATED MODULE: ./src/action/groupBy.ts
+
+// I promise this works.
+// eslint-disable-next-line @typescript-eslint/unbound-method
+const { groupBy } = (lodash_default());
+
+
+;// CONCATENATED MODULE: ./src/reporters/formatReportAsMarkdown.ts
+function formatReportAsMarkdown(report, explanation) {
+    const secondaryLines = (report.data.secondary ?? []).flatMap((line) => line.split("\n"));
+    const middle = secondaryLines.length
+        ? [
+            /^\w/.test(secondaryLines[0]) ? " " : "\n\n",
+            secondaryLines.join("\n"),
+            /^\w/.test(secondaryLines[secondaryLines.length - 1]) ? " " : "\n\n",
+        ]
+        : [" "];
+    const suffix = [
+        explanation ? `${explanation.join(" ")} ` : "",
+        report.data.suggestion.join("\n"),
+    ];
+    return [report.data.primary, ...middle, ...suffix].join("");
+}
+
+;// CONCATENATED MODULE: ./src/reporters/cliReporter.ts
+
+
+
 /**
- * The {@link https://www.npmjs.com/package/octoguide | octoguide} package
- * to use the API is the same as the {@link https://octo.guide/cli | standalone CLI}
- * and its code is directly used by the {@link https://octo.guide/get-started#installation | GitHub Action}.
+ * Formats a rule report as used by the standalone CLI.
  *
- * For installation instruction see
- * {@link https://octo.guide/docs/installation | Installing the OctoGuide Package}.
- * @module
+ * If reports is empty, it will log a happy message.
+ * Otherwise it will pretty-print the reports, grouped by rule.
+ * @param reports Rule reports as returned by `runOctoGuideRules`
+ * @returns Formatted string for CLI output
+ * @example
+ * import { cliReporter, runOctoGuideRules } from "octoguide";
+ *
+ * const { reports } = await runOctoGuideRules({
+ *   entity: "https://github.com/OctoGuide/bot/issues/19",
+ * });
+ *
+ * console.log(cliReporter(reports));
  */
-
-
-
-
+function cliReporter(reports) {
+    if (!reports.length) {
+        return `Found ${(0,external_node_util_.styleText)("green", "0")} reports. Great! ✅`;
+    }
+    const byRule = groupBy(reports, (report) => report.about.name);
+    const lines = [""];
+    for (const ruleReports of Object.values(byRule)) {
+        const { about } = ruleReports[0];
+        lines.push([
+            (0,external_node_util_.styleText)("blue", "["),
+            (0,external_node_util_.styleText)("cyanBright", about.name),
+            (0,external_node_util_.styleText)("blue", "] "),
+            (0,external_node_util_.styleText)("yellow", about.description),
+        ].join(""));
+        if (ruleReports.length > 1) {
+            lines.push([
+                about.explanation.join(" "),
+                "\n\n",
+                ruleReports
+                    .map((report) => formatReportAsMarkdown(report))
+                    .join("\n\n"),
+            ].join(""));
+        }
+        else {
+            lines.push([
+                ruleReports
+                    .map((report) => formatReportAsMarkdown(report, about.explanation))
+                    .join("\n\n"),
+            ].join(""));
+        }
+        lines.push("");
+    }
+    lines.push(`Found ${(0,external_node_util_.styleText)("red", String(reports.length))} issue${reports.length > 1 ? "s" : ""}.\n`);
+    return lines.join("\n");
+}
 
 ;// CONCATENATED MODULE: ./src/action/collection/collectAuth.ts
 
@@ -91982,10 +91284,10 @@ function collectTarget(payload) {
     return { target, url };
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/marked@17.0.0/node_modules/marked/lib/marked.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/marked@18.0.0/node_modules/marked/lib/marked.esm.js
 /**
- * marked v17.0.0 - a markdown parser
- * Copyright (c) 2018-2025, MarkedJS. (MIT License)
+ * marked v18.0.0 - a markdown parser
+ * Copyright (c) 2018-2026, MarkedJS. (MIT License)
  * Copyright (c) 2011-2018, Christopher Jeffrey. (MIT License)
  * https://github.com/markedjs/marked
  */
@@ -91995,48 +91297,53 @@ function collectTarget(payload) {
  * The code in this file is generated from files in ./src/
  */
 
-function L(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}var T=L();function G(l){T=l}var C={exec:()=>null};function k(l,e=""){let t=typeof l=="string"?l:l.source,n={replace:(r,i)=>{let s=typeof i=="string"?i:i.source;return s=s.replace(m.caret,"$1"),t=t.replace(r,s),n},getRegex:()=>new RegExp(t,e)};return n}var xe=(()=>{try{return!!new RegExp("(?<=1)(?<!1)")}catch{return!1}})(),m={codeRemoveIndent:/^(?: {1,4}| {0,3}\t)/gm,outputLinkReplace:/\\([\[\]])/g,indentCodeCompensation:/^(\s+)(?:```)/,beginningSpace:/^\s+/,endingHash:/#$/,startingSpaceChar:/^ /,endingSpaceChar:/ $/,nonSpaceChar:/[^ ]/,newLineCharGlobal:/\n/g,tabCharGlobal:/\t/g,multipleSpaceGlobal:/\s+/g,blankLine:/^[ \t]*$/,doubleBlankLine:/\n[ \t]*\n[ \t]*$/,blockquoteStart:/^ {0,3}>/,blockquoteSetextReplace:/\n {0,3}((?:=+|-+) *)(?=\n|$)/g,blockquoteSetextReplace2:/^ {0,3}>[ \t]?/gm,listReplaceTabs:/^\t+/,listReplaceNesting:/^ {1,4}(?=( {4})*[^ ])/g,listIsTask:/^\[[ xX]\] /,listReplaceTask:/^\[[ xX]\] +/,listTaskCheckbox:/\[[ xX]\]/,anyLine:/\n.*\n/,hrefBrackets:/^<(.*)>$/,tableDelimiter:/[:|]/,tableAlignChars:/^\||\| *$/g,tableRowBlankLine:/\n[ \t]*$/,tableAlignRight:/^ *-+: *$/,tableAlignCenter:/^ *:-+: *$/,tableAlignLeft:/^ *:-+ *$/,startATag:/^<a /i,endATag:/^<\/a>/i,startPreScriptTag:/^<(pre|code|kbd|script)(\s|>)/i,endPreScriptTag:/^<\/(pre|code|kbd|script)(\s|>)/i,startAngleBracket:/^</,endAngleBracket:/>$/,pedanticHrefTitle:/^([^'"]*[^\s])\s+(['"])(.*)\2/,unicodeAlphaNumeric:/[\p{L}\p{N}]/u,escapeTest:/[&<>"']/,escapeReplace:/[&<>"']/g,escapeTestNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,escapeReplaceNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/g,unescapeTest:/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig,caret:/(^|[^\[])\^/g,percentDecode:/%25/g,findPipe:/\|/g,splitPipe:/ \|/,slashPipe:/\\\|/g,carriageReturn:/\r\n|\r/g,spaceLine:/^ +$/gm,notSpaceStart:/^\S*/,endingNewline:/\n$/,listItemRegex:l=>new RegExp(`^( {0,3}${l})((?:[	 ][^\\n]*)?(?:\\n|$))`),nextBulletRegex:l=>new RegExp(`^ {0,${Math.min(3,l-1)}}(?:[*+-]|\\d{1,9}[.)])((?:[ 	][^\\n]*)?(?:\\n|$))`),hrRegex:l=>new RegExp(`^ {0,${Math.min(3,l-1)}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`),fencesBeginRegex:l=>new RegExp(`^ {0,${Math.min(3,l-1)}}(?:\`\`\`|~~~)`),headingBeginRegex:l=>new RegExp(`^ {0,${Math.min(3,l-1)}}#`),htmlBeginRegex:l=>new RegExp(`^ {0,${Math.min(3,l-1)}}<(?:[a-z].*>|!--)`,"i")},be=/^(?:[ \t]*(?:\n|$))+/,Re=/^((?: {4}| {0,3}\t)[^\n]+(?:\n(?:[ \t]*(?:\n|$))*)?)+/,Te=/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,E=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,Oe=/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,F=/(?:[*+-]|\d{1,9}[.)])/,se=/^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |blockCode|fences|blockquote|heading|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,ie=k(se).replace(/bull/g,F).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/\|table/g,"").getRegex(),we=k(se).replace(/bull/g,F).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/table/g,/ {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),j=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,ye=/^[^\n]+/,Q=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\])+/,Pe=k(/^ {0,3}\[(label)\]: *(?:\n[ \t]*)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n[ \t]*)?| *\n[ \t]*)(title))? *(?:\n+|$)/).replace("label",Q).replace("title",/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),Se=k(/^( {0,3}bull)([ \t][^\n]+?)?(?:\n|$)/).replace(/bull/g,F).getRegex(),v="address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul",U=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,$e=k("^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))","i").replace("comment",U).replace("tag",v).replace("attribute",/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),oe=k(j).replace("hr",E).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("|table","").replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),_e=k(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph",oe).getRegex(),K={blockquote:_e,code:Re,def:Pe,fences:Te,heading:Oe,hr:E,html:$e,lheading:ie,list:Se,newline:be,paragraph:oe,table:C,text:ye},ne=k("^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)").replace("hr",E).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("blockquote"," {0,3}>").replace("code","(?: {4}| {0,3}	)[^\\n]").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),Le={...K,lheading:we,table:ne,paragraph:k(j).replace("hr",E).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("table",ne).replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex()},Me={...K,html:k(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace("comment",U).replace(/tag/g,"(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:C,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:k(j).replace("hr",E).replace("heading",` *#{1,6} *[^
-]`).replace("lheading",ie).replace("|table","").replace("blockquote"," {0,3}>").replace("|fences","").replace("|list","").replace("|html","").replace("|tag","").getRegex()},ze=/^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,Ae=/^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,ae=/^( {2,}|\\)\n(?!\s*$)/,Ce=/^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,D=/[\p{P}\p{S}]/u,W=/[\s\p{P}\p{S}]/u,le=/[^\s\p{P}\p{S}]/u,Ee=k(/^((?![*_])punctSpace)/,"u").replace(/punctSpace/g,W).getRegex(),ue=/(?!~)[\p{P}\p{S}]/u,Ie=/(?!~)[\s\p{P}\p{S}]/u,Be=/(?:[^\s\p{P}\p{S}]|~)/u,qe=k(/link|precode-code|html/,"g").replace("link",/\[(?:[^\[\]`]|(?<a>`+)[^`]+\k<a>(?!`))*?\]\((?:\\[\s\S]|[^\\\(\)]|\((?:\\[\s\S]|[^\\\(\)])*\))*\)/).replace("precode-",xe?"(?<!`)()":"(^^|[^`])").replace("code",/(?<b>`+)[^`]+\k<b>(?!`)/).replace("html",/<(?! )[^<>]*?>/).getRegex(),pe=/^(?:\*+(?:((?!\*)punct)|[^\s*]))|^_+(?:((?!_)punct)|([^\s_]))/,ve=k(pe,"u").replace(/punct/g,D).getRegex(),De=k(pe,"u").replace(/punct/g,ue).getRegex(),ce="^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)punct(\\*+)(?=[\\s]|$)|notPunctSpace(\\*+)(?!\\*)(?=punctSpace|$)|(?!\\*)punctSpace(\\*+)(?=notPunctSpace)|[\\s](\\*+)(?!\\*)(?=punct)|(?!\\*)punct(\\*+)(?!\\*)(?=punct)|notPunctSpace(\\*+)(?=notPunctSpace)",He=k(ce,"gu").replace(/notPunctSpace/g,le).replace(/punctSpace/g,W).replace(/punct/g,D).getRegex(),Ze=k(ce,"gu").replace(/notPunctSpace/g,Be).replace(/punctSpace/g,Ie).replace(/punct/g,ue).getRegex(),Ge=k("^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)punctSpace(_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)","gu").replace(/notPunctSpace/g,le).replace(/punctSpace/g,W).replace(/punct/g,D).getRegex(),Ne=k(/\\(punct)/,"gu").replace(/punct/g,D).getRegex(),Fe=k(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace("scheme",/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace("email",/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),je=k(U).replace("(?:-->|$)","-->").getRegex(),Qe=k("^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment",je).replace("attribute",/\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),q=/(?:\[(?:\\[\s\S]|[^\[\]\\])*\]|\\[\s\S]|`+[^`]*?`+(?!`)|[^\[\]\\`])*?/,Ue=k(/^!?\[(label)\]\(\s*(href)(?:(?:[ \t]*(?:\n[ \t]*)?)(title))?\s*\)/).replace("label",q).replace("href",/<(?:\\.|[^\n<>\\])+>|[^ \t\n\x00-\x1f]*/).replace("title",/"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex(),he=k(/^!?\[(label)\]\[(ref)\]/).replace("label",q).replace("ref",Q).getRegex(),ke=k(/^!?\[(ref)\](?:\[\])?/).replace("ref",Q).getRegex(),Ke=k("reflink|nolink(?!\\()","g").replace("reflink",he).replace("nolink",ke).getRegex(),re=/[hH][tT][tT][pP][sS]?|[fF][tT][pP]/,X={_backpedal:C,anyPunctuation:Ne,autolink:Fe,blockSkip:qe,br:ae,code:Ae,del:C,emStrongLDelim:ve,emStrongRDelimAst:He,emStrongRDelimUnd:Ge,escape:ze,link:Ue,nolink:ke,punctuation:Ee,reflink:he,reflinkSearch:Ke,tag:Qe,text:Ce,url:C},We={...X,link:k(/^!?\[(label)\]\((.*?)\)/).replace("label",q).getRegex(),reflink:k(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace("label",q).getRegex()},N={...X,emStrongRDelimAst:Ze,emStrongLDelim:De,url:k(/^((?:protocol):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace("protocol",re).replace("email",/[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/).getRegex(),_backpedal:/(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,del:/^(~~?)(?=[^\s~])((?:\\[\s\S]|[^\\])*?(?:\\[\s\S]|[^\s~\\]))\1(?=[^~]|$)/,text:k(/^([`~]+|[^`~])(?:(?= {2,}\n)|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)|[\s\S]*?(?:(?=[\\<!\[`*~_]|\b_|protocol:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)))/).replace("protocol",re).getRegex()},Xe={...N,br:k(ae).replace("{2,}","*").getRegex(),text:k(N.text).replace("\\b_","\\b_| {2,}\\n").replace(/\{2,\}/g,"*").getRegex()},I={normal:K,gfm:Le,pedantic:Me},M={normal:X,gfm:N,breaks:Xe,pedantic:We};var Je={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},de=l=>Je[l];function w(l,e){if(e){if(m.escapeTest.test(l))return l.replace(m.escapeReplace,de)}else if(m.escapeTestNoEncode.test(l))return l.replace(m.escapeReplaceNoEncode,de);return l}function J(l){try{l=encodeURI(l).replace(m.percentDecode,"%")}catch{return null}return l}function V(l,e){let t=l.replace(m.findPipe,(i,s,a)=>{let o=!1,u=s;for(;--u>=0&&a[u]==="\\";)o=!o;return o?"|":" |"}),n=t.split(m.splitPipe),r=0;if(n[0].trim()||n.shift(),n.length>0&&!n.at(-1)?.trim()&&n.pop(),e)if(n.length>e)n.splice(e);else for(;n.length<e;)n.push("");for(;r<n.length;r++)n[r]=n[r].trim().replace(m.slashPipe,"|");return n}function z(l,e,t){let n=l.length;if(n===0)return"";let r=0;for(;r<n;){let i=l.charAt(n-r-1);if(i===e&&!t)r++;else if(i!==e&&t)r++;else break}return l.slice(0,n-r)}function ge(l,e){if(l.indexOf(e[1])===-1)return-1;let t=0;for(let n=0;n<l.length;n++)if(l[n]==="\\")n++;else if(l[n]===e[0])t++;else if(l[n]===e[1]&&(t--,t<0))return n;return t>0?-2:-1}function fe(l,e,t,n,r){let i=e.href,s=e.title||null,a=l[1].replace(r.other.outputLinkReplace,"$1");n.state.inLink=!0;let o={type:l[0].charAt(0)==="!"?"image":"link",raw:t,href:i,title:s,text:a,tokens:n.inlineTokens(a)};return n.state.inLink=!1,o}function Ve(l,e,t){let n=l.match(t.other.indentCodeCompensation);if(n===null)return e;let r=n[1];return e.split(`
+function z(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}var T=z();function G(u){T=u}var marked_esm_={exec:()=>null};function k(u,e=""){let t=typeof u=="string"?u:u.source,n={replace:(r,i)=>{let s=typeof i=="string"?i:i.source;return s=s.replace(m.caret,"$1"),t=t.replace(r,s),n},getRegex:()=>new RegExp(t,e)};return n}var Re=(()=>{try{return!!new RegExp("(?<=1)(?<!1)")}catch{return!1}})(),m={codeRemoveIndent:/^(?: {1,4}| {0,3}\t)/gm,outputLinkReplace:/\\([\[\]])/g,indentCodeCompensation:/^(\s+)(?:```)/,beginningSpace:/^\s+/,endingHash:/#$/,startingSpaceChar:/^ /,endingSpaceChar:/ $/,nonSpaceChar:/[^ ]/,newLineCharGlobal:/\n/g,tabCharGlobal:/\t/g,multipleSpaceGlobal:/\s+/g,blankLine:/^[ \t]*$/,doubleBlankLine:/\n[ \t]*\n[ \t]*$/,blockquoteStart:/^ {0,3}>/,blockquoteSetextReplace:/\n {0,3}((?:=+|-+) *)(?=\n|$)/g,blockquoteSetextReplace2:/^ {0,3}>[ \t]?/gm,listReplaceNesting:/^ {1,4}(?=( {4})*[^ ])/g,listIsTask:/^\[[ xX]\] +\S/,listReplaceTask:/^\[[ xX]\] +/,listTaskCheckbox:/\[[ xX]\]/,anyLine:/\n.*\n/,hrefBrackets:/^<(.*)>$/,tableDelimiter:/[:|]/,tableAlignChars:/^\||\| *$/g,tableRowBlankLine:/\n[ \t]*$/,tableAlignRight:/^ *-+: *$/,tableAlignCenter:/^ *:-+: *$/,tableAlignLeft:/^ *:-+ *$/,startATag:/^<a /i,endATag:/^<\/a>/i,startPreScriptTag:/^<(pre|code|kbd|script)(\s|>)/i,endPreScriptTag:/^<\/(pre|code|kbd|script)(\s|>)/i,startAngleBracket:/^</,endAngleBracket:/>$/,pedanticHrefTitle:/^([^'"]*[^\s])\s+(['"])(.*)\2/,unicodeAlphaNumeric:/[\p{L}\p{N}]/u,escapeTest:/[&<>"']/,escapeReplace:/[&<>"']/g,escapeTestNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,escapeReplaceNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/g,caret:/(^|[^\[])\^/g,percentDecode:/%25/g,findPipe:/\|/g,splitPipe:/ \|/,slashPipe:/\\\|/g,carriageReturn:/\r\n|\r/g,spaceLine:/^ +$/gm,notSpaceStart:/^\S*/,endingNewline:/\n$/,listItemRegex:u=>new RegExp(`^( {0,3}${u})((?:[	 ][^\\n]*)?(?:\\n|$))`),nextBulletRegex:u=>new RegExp(`^ {0,${Math.min(3,u-1)}}(?:[*+-]|\\d{1,9}[.)])((?:[ 	][^\\n]*)?(?:\\n|$))`),hrRegex:u=>new RegExp(`^ {0,${Math.min(3,u-1)}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`),fencesBeginRegex:u=>new RegExp(`^ {0,${Math.min(3,u-1)}}(?:\`\`\`|~~~)`),headingBeginRegex:u=>new RegExp(`^ {0,${Math.min(3,u-1)}}#`),htmlBeginRegex:u=>new RegExp(`^ {0,${Math.min(3,u-1)}}<(?:[a-z].*>|!--)`,"i"),blockquoteBeginRegex:u=>new RegExp(`^ {0,${Math.min(3,u-1)}}>`)},Te=/^(?:[ \t]*(?:\n|$))+/,Oe=/^((?: {4}| {0,3}\t)[^\n]+(?:\n(?:[ \t]*(?:\n|$))*)?)+/,we=/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,C=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,ye=/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,Q=/ {0,3}(?:[*+-]|\d{1,9}[.)])/,ie=/^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |blockCode|fences|blockquote|heading|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,oe=k(ie).replace(/bull/g,Q).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/\|table/g,"").getRegex(),Pe=k(ie).replace(/bull/g,Q).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/table/g,/ {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),j=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,Se=/^[^\n]+/,F=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\])+/,$e=k(/^ {0,3}\[(label)\]: *(?:\n[ \t]*)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n[ \t]*)?| *\n[ \t]*)(title))? *(?:\n+|$)/).replace("label",F).replace("title",/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),Le=k(/^(bull)([ \t][^\n]+?)?(?:\n|$)/).replace(/bull/g,Q).getRegex(),v="address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul",U=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,_e=k("^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))","i").replace("comment",U).replace("tag",v).replace("attribute",/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),ae=k(j).replace("hr",C).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("|table","").replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)])[ \\t]").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),Me=k(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph",ae).getRegex(),K={blockquote:Me,code:Oe,def:$e,fences:we,heading:ye,hr:C,html:_e,lheading:oe,list:Le,newline:Te,paragraph:ae,table:marked_esm_,text:Se},re=k("^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)").replace("hr",C).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("blockquote"," {0,3}>").replace("code","(?: {4}| {0,3}	)[^\\n]").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)])[ \\t]").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),ze={...K,lheading:Pe,table:re,paragraph:k(j).replace("hr",C).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("table",re).replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)])[ \\t]").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex()},Ee={...K,html:k(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace("comment",U).replace(/tag/g,"(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:marked_esm_,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:k(j).replace("hr",C).replace("heading",` *#{1,6} *[^
+]`).replace("lheading",oe).replace("|table","").replace("blockquote"," {0,3}>").replace("|fences","").replace("|list","").replace("|html","").replace("|tag","").getRegex()},Ie=/^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,Ae=/^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,le=/^( {2,}|\\)\n(?!\s*$)/,Ce=/^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,E=/[\p{P}\p{S}]/u,H=/[\s\p{P}\p{S}]/u,W=/[^\s\p{P}\p{S}]/u,Be=k(/^((?![*_])punctSpace)/,"u").replace(/punctSpace/g,H).getRegex(),ue=/(?!~)[\p{P}\p{S}]/u,De=/(?!~)[\s\p{P}\p{S}]/u,qe=/(?:[^\s\p{P}\p{S}]|~)/u,ve=k(/link|precode-code|html/,"g").replace("link",/\[(?:[^\[\]`]|(?<a>`+)[^`]+\k<a>(?!`))*?\]\((?:\\[\s\S]|[^\\\(\)]|\((?:\\[\s\S]|[^\\\(\)])*\))*\)/).replace("precode-",Re?"(?<!`)()":"(^^|[^`])").replace("code",/(?<b>`+)[^`]+\k<b>(?!`)/).replace("html",/<(?! )[^<>]*?>/).getRegex(),pe=/^(?:\*+(?:((?!\*)punct)|([^\s*]))?)|^_+(?:((?!_)punct)|([^\s_]))?/,He=k(pe,"u").replace(/punct/g,E).getRegex(),Ze=k(pe,"u").replace(/punct/g,ue).getRegex(),ce="^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)punct(\\*+)(?=[\\s]|$)|notPunctSpace(\\*+)(?!\\*)(?=punctSpace|$)|(?!\\*)punctSpace(\\*+)(?=notPunctSpace)|[\\s](\\*+)(?!\\*)(?=punct)|(?!\\*)punct(\\*+)(?!\\*)(?=punct)|notPunctSpace(\\*+)(?=notPunctSpace)",Ge=k(ce,"gu").replace(/notPunctSpace/g,W).replace(/punctSpace/g,H).replace(/punct/g,E).getRegex(),Ne=k(ce,"gu").replace(/notPunctSpace/g,qe).replace(/punctSpace/g,De).replace(/punct/g,ue).getRegex(),Qe=k("^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)punctSpace(_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)","gu").replace(/notPunctSpace/g,W).replace(/punctSpace/g,H).replace(/punct/g,E).getRegex(),je=k(/^~~?(?:((?!~)punct)|[^\s~])/,"u").replace(/punct/g,E).getRegex(),Fe="^[^~]+(?=[^~])|(?!~)punct(~~?)(?=[\\s]|$)|notPunctSpace(~~?)(?!~)(?=punctSpace|$)|(?!~)punctSpace(~~?)(?=notPunctSpace)|[\\s](~~?)(?!~)(?=punct)|(?!~)punct(~~?)(?!~)(?=punct)|notPunctSpace(~~?)(?=notPunctSpace)",Ue=k(Fe,"gu").replace(/notPunctSpace/g,W).replace(/punctSpace/g,H).replace(/punct/g,E).getRegex(),Ke=k(/\\(punct)/,"gu").replace(/punct/g,E).getRegex(),We=k(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace("scheme",/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace("email",/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),Xe=k(U).replace("(?:-->|$)","-->").getRegex(),Je=k("^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment",Xe).replace("attribute",/\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),q=/(?:\[(?:\\[\s\S]|[^\[\]\\])*\]|\\[\s\S]|`+(?!`)[^`]*?`+(?!`)|``+(?=\])|[^\[\]\\`])*?/,Ve=k(/^!?\[(label)\]\(\s*(href)(?:(?:[ \t]+(?:\n[ \t]*)?|\n[ \t]*)(title))?\s*\)/).replace("label",q).replace("href",/<(?:\\.|[^\n<>\\])+>|[^ \t\n\x00-\x1f]*/).replace("title",/"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex(),he=k(/^!?\[(label)\]\[(ref)\]/).replace("label",q).replace("ref",F).getRegex(),ke=k(/^!?\[(ref)\](?:\[\])?/).replace("ref",F).getRegex(),Ye=k("reflink|nolink(?!\\()","g").replace("reflink",he).replace("nolink",ke).getRegex(),se=/[hH][tT][tT][pP][sS]?|[fF][tT][pP]/,X={_backpedal:marked_esm_,anyPunctuation:Ke,autolink:We,blockSkip:ve,br:le,code:Ae,del:marked_esm_,delLDelim:marked_esm_,delRDelim:marked_esm_,emStrongLDelim:He,emStrongRDelimAst:Ge,emStrongRDelimUnd:Qe,escape:Ie,link:Ve,nolink:ke,punctuation:Be,reflink:he,reflinkSearch:Ye,tag:Je,text:Ce,url:marked_esm_},et={...X,link:k(/^!?\[(label)\]\((.*?)\)/).replace("label",q).getRegex(),reflink:k(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace("label",q).getRegex()},N={...X,emStrongRDelimAst:Ne,emStrongLDelim:Ze,delLDelim:je,delRDelim:Ue,url:k(/^((?:protocol):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace("protocol",se).replace("email",/[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/).getRegex(),_backpedal:/(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,del:/^(~~?)(?=[^\s~])((?:\\[\s\S]|[^\\])*?(?:\\[\s\S]|[^\s~\\]))\1(?=[^~]|$)/,text:k(/^([`~]+|[^`~])(?:(?= {2,}\n)|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)|[\s\S]*?(?:(?=[\\<!\[`*~_]|\b_|protocol:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)))/).replace("protocol",se).getRegex()},tt={...N,br:k(le).replace("{2,}","*").getRegex(),text:k(N.text).replace("\\b_","\\b_| {2,}\\n").replace(/\{2,\}/g,"*").getRegex()},B={normal:K,gfm:ze,pedantic:Ee},I={normal:X,gfm:N,breaks:tt,pedantic:et};var nt={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},de=u=>nt[u];function O(u,e){if(e){if(m.escapeTest.test(u))return u.replace(m.escapeReplace,de)}else if(m.escapeTestNoEncode.test(u))return u.replace(m.escapeReplaceNoEncode,de);return u}function J(u){try{u=encodeURI(u).replace(m.percentDecode,"%")}catch{return null}return u}function V(u,e){let t=u.replace(m.findPipe,(i,s,a)=>{let o=!1,l=s;for(;--l>=0&&a[l]==="\\";)o=!o;return o?"|":" |"}),n=t.split(m.splitPipe),r=0;if(n[0].trim()||n.shift(),n.length>0&&!n.at(-1)?.trim()&&n.pop(),e)if(n.length>e)n.splice(e);else for(;n.length<e;)n.push("");for(;r<n.length;r++)n[r]=n[r].trim().replace(m.slashPipe,"|");return n}function $(u,e,t){let n=u.length;if(n===0)return"";let r=0;for(;r<n;){let i=u.charAt(n-r-1);if(i===e&&!t)r++;else if(i!==e&&t)r++;else break}return u.slice(0,n-r)}function Y(u){let e=u.split(`
+`),t=e.length-1;for(;t>=0&&!e[t].trim();)t--;return e.length-t<=2?u:e.slice(0,t+1).join(`
+`)}function ge(u,e){if(u.indexOf(e[1])===-1)return-1;let t=0;for(let n=0;n<u.length;n++)if(u[n]==="\\")n++;else if(u[n]===e[0])t++;else if(u[n]===e[1]&&(t--,t<0))return n;return t>0?-2:-1}function fe(u,e=0){let t=e,n="";for(let r of u)if(r==="	"){let i=4-t%4;n+=" ".repeat(i),t+=i}else n+=r,t++;return n}function me(u,e,t,n,r){let i=e.href,s=e.title||null,a=u[1].replace(r.other.outputLinkReplace,"$1");n.state.inLink=!0;let o={type:u[0].charAt(0)==="!"?"image":"link",raw:t,href:i,title:s,text:a,tokens:n.inlineTokens(a)};return n.state.inLink=!1,o}function rt(u,e,t){let n=u.match(t.other.indentCodeCompensation);if(n===null)return e;let r=n[1];return e.split(`
 `).map(i=>{let s=i.match(t.other.beginningSpace);if(s===null)return i;let[a]=s;return a.length>=r.length?i.slice(r.length):i}).join(`
-`)}var y=class{options;rules;lexer;constructor(e){this.options=e||T}space(e){let t=this.rules.block.newline.exec(e);if(t&&t[0].length>0)return{type:"space",raw:t[0]}}code(e){let t=this.rules.block.code.exec(e);if(t){let n=t[0].replace(this.rules.other.codeRemoveIndent,"");return{type:"code",raw:t[0],codeBlockStyle:"indented",text:this.options.pedantic?n:z(n,`
-`)}}}fences(e){let t=this.rules.block.fences.exec(e);if(t){let n=t[0],r=Ve(n,t[3]||"",this.rules);return{type:"code",raw:n,lang:t[2]?t[2].trim().replace(this.rules.inline.anyPunctuation,"$1"):t[2],text:r}}}heading(e){let t=this.rules.block.heading.exec(e);if(t){let n=t[2].trim();if(this.rules.other.endingHash.test(n)){let r=z(n,"#");(this.options.pedantic||!r||this.rules.other.endingSpaceChar.test(r))&&(n=r.trim())}return{type:"heading",raw:t[0],depth:t[1].length,text:n,tokens:this.lexer.inline(n)}}}hr(e){let t=this.rules.block.hr.exec(e);if(t)return{type:"hr",raw:z(t[0],`
-`)}}blockquote(e){let t=this.rules.block.blockquote.exec(e);if(t){let n=z(t[0],`
+`)}var w=class{options;rules;lexer;constructor(e){this.options=e||T}space(e){let t=this.rules.block.newline.exec(e);if(t&&t[0].length>0)return{type:"space",raw:t[0]}}code(e){let t=this.rules.block.code.exec(e);if(t){let n=this.options.pedantic?t[0]:Y(t[0]),r=n.replace(this.rules.other.codeRemoveIndent,"");return{type:"code",raw:n,codeBlockStyle:"indented",text:r}}}fences(e){let t=this.rules.block.fences.exec(e);if(t){let n=t[0],r=rt(n,t[3]||"",this.rules);return{type:"code",raw:n,lang:t[2]?t[2].trim().replace(this.rules.inline.anyPunctuation,"$1"):t[2],text:r}}}heading(e){let t=this.rules.block.heading.exec(e);if(t){let n=t[2].trim();if(this.rules.other.endingHash.test(n)){let r=$(n,"#");(this.options.pedantic||!r||this.rules.other.endingSpaceChar.test(r))&&(n=r.trim())}return{type:"heading",raw:$(t[0],`
+`),depth:t[1].length,text:n,tokens:this.lexer.inline(n)}}}hr(e){let t=this.rules.block.hr.exec(e);if(t)return{type:"hr",raw:$(t[0],`
+`)}}blockquote(e){let t=this.rules.block.blockquote.exec(e);if(t){let n=$(t[0],`
 `).split(`
-`),r="",i="",s=[];for(;n.length>0;){let a=!1,o=[],u;for(u=0;u<n.length;u++)if(this.rules.other.blockquoteStart.test(n[u]))o.push(n[u]),a=!0;else if(!a)o.push(n[u]);else break;n=n.slice(u);let p=o.join(`
+`),r="",i="",s=[];for(;n.length>0;){let a=!1,o=[],l;for(l=0;l<n.length;l++)if(this.rules.other.blockquoteStart.test(n[l]))o.push(n[l]),a=!0;else if(!a)o.push(n[l]);else break;n=n.slice(l);let p=o.join(`
 `),c=p.replace(this.rules.other.blockquoteSetextReplace,`
     $1`).replace(this.rules.other.blockquoteSetextReplace2,"");r=r?`${r}
 ${p}`:p,i=i?`${i}
-${c}`:c;let g=this.lexer.state.top;if(this.lexer.state.top=!0,this.lexer.blockTokens(c,s,!0),this.lexer.state.top=g,n.length===0)break;let h=s.at(-1);if(h?.type==="code")break;if(h?.type==="blockquote"){let R=h,f=R.raw+`
+${c}`:c;let d=this.lexer.state.top;if(this.lexer.state.top=!0,this.lexer.blockTokens(c,s,!0),this.lexer.state.top=d,n.length===0)break;let h=s.at(-1);if(h?.type==="code")break;if(h?.type==="blockquote"){let R=h,f=R.raw+`
 `+n.join(`
-`),O=this.blockquote(f);s[s.length-1]=O,r=r.substring(0,r.length-R.raw.length)+O.raw,i=i.substring(0,i.length-R.text.length)+O.text;break}else if(h?.type==="list"){let R=h,f=R.raw+`
+`),S=this.blockquote(f);s[s.length-1]=S,r=r.substring(0,r.length-R.raw.length)+S.raw,i=i.substring(0,i.length-R.text.length)+S.text;break}else if(h?.type==="list"){let R=h,f=R.raw+`
 `+n.join(`
-`),O=this.list(f);s[s.length-1]=O,r=r.substring(0,r.length-h.raw.length)+O.raw,i=i.substring(0,i.length-R.raw.length)+O.raw,n=f.substring(s.at(-1).raw.length).split(`
-`);continue}}return{type:"blockquote",raw:r,tokens:s,text:i}}}list(e){let t=this.rules.block.list.exec(e);if(t){let n=t[1].trim(),r=n.length>1,i={type:"list",raw:"",ordered:r,start:r?+n.slice(0,-1):"",loose:!1,items:[]};n=r?`\\d{1,9}\\${n.slice(-1)}`:`\\${n}`,this.options.pedantic&&(n=r?n:"[*+-]");let s=this.rules.other.listItemRegex(n),a=!1;for(;e;){let u=!1,p="",c="";if(!(t=s.exec(e))||this.rules.block.hr.test(e))break;p=t[0],e=e.substring(p.length);let g=t[2].split(`
-`,1)[0].replace(this.rules.other.listReplaceTabs,H=>" ".repeat(3*H.length)),h=e.split(`
-`,1)[0],R=!g.trim(),f=0;if(this.options.pedantic?(f=2,c=g.trimStart()):R?f=t[1].length+1:(f=t[2].search(this.rules.other.nonSpaceChar),f=f>4?1:f,c=g.slice(f),f+=t[1].length),R&&this.rules.other.blankLine.test(h)&&(p+=h+`
-`,e=e.substring(h.length+1),u=!0),!u){let H=this.rules.other.nextBulletRegex(f),Y=this.rules.other.hrRegex(f),ee=this.rules.other.fencesBeginRegex(f),te=this.rules.other.headingBeginRegex(f),me=this.rules.other.htmlBeginRegex(f);for(;e;){let Z=e.split(`
-`,1)[0],A;if(h=Z,this.options.pedantic?(h=h.replace(this.rules.other.listReplaceNesting,"  "),A=h):A=h.replace(this.rules.other.tabCharGlobal,"    "),ee.test(h)||te.test(h)||me.test(h)||H.test(h)||Y.test(h))break;if(A.search(this.rules.other.nonSpaceChar)>=f||!h.trim())c+=`
-`+A.slice(f);else{if(R||g.replace(this.rules.other.tabCharGlobal,"    ").search(this.rules.other.nonSpaceChar)>=4||ee.test(g)||te.test(g)||Y.test(g))break;c+=`
-`+h}!R&&!h.trim()&&(R=!0),p+=Z+`
-`,e=e.substring(Z.length+1),g=A.slice(f)}}i.loose||(a?i.loose=!0:this.rules.other.doubleBlankLine.test(p)&&(a=!0));let O=null;this.options.gfm&&(O=this.rules.other.listIsTask.exec(c),O&&(c=c.replace(this.rules.other.listReplaceTask,""))),i.items.push({type:"list_item",raw:p,task:!!O,loose:!1,text:c,tokens:[]}),i.raw+=p}let o=i.items.at(-1);if(o)o.raw=o.raw.trimEnd(),o.text=o.text.trimEnd();else return;i.raw=i.raw.trimEnd();for(let u of i.items){if(this.lexer.state.top=!1,u.tokens=this.lexer.blockTokens(u.text,[]),u.task){let p=this.rules.other.listTaskCheckbox.exec(u.raw);if(p){let c={type:"checkbox",raw:p[0]+" ",checked:p[0]!=="[ ]"};u.checked=c.checked,i.loose?u.tokens[0]&&["paragraph","text"].includes(u.tokens[0].type)&&"tokens"in u.tokens[0]&&u.tokens[0].tokens?(u.tokens[0].raw=c.raw+u.tokens[0].raw,u.tokens[0].text=c.raw+u.tokens[0].text,u.tokens[0].tokens.unshift(c)):u.tokens.unshift({type:"paragraph",raw:c.raw,text:c.raw,tokens:[c]}):u.tokens.unshift(c)}}if(!i.loose){let p=u.tokens.filter(g=>g.type==="space"),c=p.length>0&&p.some(g=>this.rules.other.anyLine.test(g.raw));i.loose=c}}if(i.loose)for(let u of i.items){u.loose=!0;for(let p of u.tokens)p.type==="text"&&(p.type="paragraph")}return i}}html(e){let t=this.rules.block.html.exec(e);if(t)return{type:"html",block:!0,raw:t[0],pre:t[1]==="pre"||t[1]==="script"||t[1]==="style",text:t[0]}}def(e){let t=this.rules.block.def.exec(e);if(t){let n=t[1].toLowerCase().replace(this.rules.other.multipleSpaceGlobal," "),r=t[2]?t[2].replace(this.rules.other.hrefBrackets,"$1").replace(this.rules.inline.anyPunctuation,"$1"):"",i=t[3]?t[3].substring(1,t[3].length-1).replace(this.rules.inline.anyPunctuation,"$1"):t[3];return{type:"def",tag:n,raw:t[0],href:r,title:i}}}table(e){let t=this.rules.block.table.exec(e);if(!t||!this.rules.other.tableDelimiter.test(t[2]))return;let n=V(t[1]),r=t[2].replace(this.rules.other.tableAlignChars,"").split("|"),i=t[3]?.trim()?t[3].replace(this.rules.other.tableRowBlankLine,"").split(`
-`):[],s={type:"table",raw:t[0],header:[],align:[],rows:[]};if(n.length===r.length){for(let a of r)this.rules.other.tableAlignRight.test(a)?s.align.push("right"):this.rules.other.tableAlignCenter.test(a)?s.align.push("center"):this.rules.other.tableAlignLeft.test(a)?s.align.push("left"):s.align.push(null);for(let a=0;a<n.length;a++)s.header.push({text:n[a],tokens:this.lexer.inline(n[a]),header:!0,align:s.align[a]});for(let a of i)s.rows.push(V(a,s.header.length).map((o,u)=>({text:o,tokens:this.lexer.inline(o),header:!1,align:s.align[u]})));return s}}lheading(e){let t=this.rules.block.lheading.exec(e);if(t)return{type:"heading",raw:t[0],depth:t[2].charAt(0)==="="?1:2,text:t[1],tokens:this.lexer.inline(t[1])}}paragraph(e){let t=this.rules.block.paragraph.exec(e);if(t){let n=t[1].charAt(t[1].length-1)===`
-`?t[1].slice(0,-1):t[1];return{type:"paragraph",raw:t[0],text:n,tokens:this.lexer.inline(n)}}}text(e){let t=this.rules.block.text.exec(e);if(t)return{type:"text",raw:t[0],text:t[0],tokens:this.lexer.inline(t[0])}}escape(e){let t=this.rules.inline.escape.exec(e);if(t)return{type:"escape",raw:t[0],text:t[1]}}tag(e){let t=this.rules.inline.tag.exec(e);if(t)return!this.lexer.state.inLink&&this.rules.other.startATag.test(t[0])?this.lexer.state.inLink=!0:this.lexer.state.inLink&&this.rules.other.endATag.test(t[0])&&(this.lexer.state.inLink=!1),!this.lexer.state.inRawBlock&&this.rules.other.startPreScriptTag.test(t[0])?this.lexer.state.inRawBlock=!0:this.lexer.state.inRawBlock&&this.rules.other.endPreScriptTag.test(t[0])&&(this.lexer.state.inRawBlock=!1),{type:"html",raw:t[0],inLink:this.lexer.state.inLink,inRawBlock:this.lexer.state.inRawBlock,block:!1,text:t[0]}}link(e){let t=this.rules.inline.link.exec(e);if(t){let n=t[2].trim();if(!this.options.pedantic&&this.rules.other.startAngleBracket.test(n)){if(!this.rules.other.endAngleBracket.test(n))return;let s=z(n.slice(0,-1),"\\");if((n.length-s.length)%2===0)return}else{let s=ge(t[2],"()");if(s===-2)return;if(s>-1){let o=(t[0].indexOf("!")===0?5:4)+t[1].length+s;t[2]=t[2].substring(0,s),t[0]=t[0].substring(0,o).trim(),t[3]=""}}let r=t[2],i="";if(this.options.pedantic){let s=this.rules.other.pedanticHrefTitle.exec(r);s&&(r=s[1],i=s[3])}else i=t[3]?t[3].slice(1,-1):"";return r=r.trim(),this.rules.other.startAngleBracket.test(r)&&(this.options.pedantic&&!this.rules.other.endAngleBracket.test(n)?r=r.slice(1):r=r.slice(1,-1)),fe(t,{href:r&&r.replace(this.rules.inline.anyPunctuation,"$1"),title:i&&i.replace(this.rules.inline.anyPunctuation,"$1")},t[0],this.lexer,this.rules)}}reflink(e,t){let n;if((n=this.rules.inline.reflink.exec(e))||(n=this.rules.inline.nolink.exec(e))){let r=(n[2]||n[1]).replace(this.rules.other.multipleSpaceGlobal," "),i=t[r.toLowerCase()];if(!i){let s=n[0].charAt(0);return{type:"text",raw:s,text:s}}return fe(n,i,n[0],this.lexer,this.rules)}}emStrong(e,t,n=""){let r=this.rules.inline.emStrongLDelim.exec(e);if(!r||r[3]&&n.match(this.rules.other.unicodeAlphaNumeric))return;if(!(r[1]||r[2]||"")||!n||this.rules.inline.punctuation.exec(n)){let s=[...r[0]].length-1,a,o,u=s,p=0,c=r[0][0]==="*"?this.rules.inline.emStrongRDelimAst:this.rules.inline.emStrongRDelimUnd;for(c.lastIndex=0,t=t.slice(-1*e.length+s);(r=c.exec(t))!=null;){if(a=r[1]||r[2]||r[3]||r[4]||r[5]||r[6],!a)continue;if(o=[...a].length,r[3]||r[4]){u+=o;continue}else if((r[5]||r[6])&&s%3&&!((s+o)%3)){p+=o;continue}if(u-=o,u>0)continue;o=Math.min(o,o+u+p);let g=[...r[0]][0].length,h=e.slice(0,s+r.index+g+o);if(Math.min(s,o)%2){let f=h.slice(1,-1);return{type:"em",raw:h,text:f,tokens:this.lexer.inlineTokens(f)}}let R=h.slice(2,-2);return{type:"strong",raw:h,text:R,tokens:this.lexer.inlineTokens(R)}}}}codespan(e){let t=this.rules.inline.code.exec(e);if(t){let n=t[2].replace(this.rules.other.newLineCharGlobal," "),r=this.rules.other.nonSpaceChar.test(n),i=this.rules.other.startingSpaceChar.test(n)&&this.rules.other.endingSpaceChar.test(n);return r&&i&&(n=n.substring(1,n.length-1)),{type:"codespan",raw:t[0],text:n}}}br(e){let t=this.rules.inline.br.exec(e);if(t)return{type:"br",raw:t[0]}}del(e){let t=this.rules.inline.del.exec(e);if(t)return{type:"del",raw:t[0],text:t[2],tokens:this.lexer.inlineTokens(t[2])}}autolink(e){let t=this.rules.inline.autolink.exec(e);if(t){let n,r;return t[2]==="@"?(n=t[1],r="mailto:"+n):(n=t[1],r=n),{type:"link",raw:t[0],text:n,href:r,tokens:[{type:"text",raw:n,text:n}]}}}url(e){let t;if(t=this.rules.inline.url.exec(e)){let n,r;if(t[2]==="@")n=t[0],r="mailto:"+n;else{let i;do i=t[0],t[0]=this.rules.inline._backpedal.exec(t[0])?.[0]??"";while(i!==t[0]);n=t[0],t[1]==="www."?r="http://"+t[0]:r=t[0]}return{type:"link",raw:t[0],text:n,href:r,tokens:[{type:"text",raw:n,text:n}]}}}inlineText(e){let t=this.rules.inline.text.exec(e);if(t){let n=this.lexer.state.inRawBlock;return{type:"text",raw:t[0],text:t[0],escaped:n}}}};var x=class l{tokens;options;state;tokenizer;inlineQueue;constructor(e){this.tokens=[],this.tokens.links=Object.create(null),this.options=e||T,this.options.tokenizer=this.options.tokenizer||new y,this.tokenizer=this.options.tokenizer,this.tokenizer.options=this.options,this.tokenizer.lexer=this,this.inlineQueue=[],this.state={inLink:!1,inRawBlock:!1,top:!0};let t={other:m,block:I.normal,inline:M.normal};this.options.pedantic?(t.block=I.pedantic,t.inline=M.pedantic):this.options.gfm&&(t.block=I.gfm,this.options.breaks?t.inline=M.breaks:t.inline=M.gfm),this.tokenizer.rules=t}static get rules(){return{block:I,inline:M}}static lex(e,t){return new l(t).lex(e)}static lexInline(e,t){return new l(t).inlineTokens(e)}lex(e){e=e.replace(m.carriageReturn,`
-`),this.blockTokens(e,this.tokens);for(let t=0;t<this.inlineQueue.length;t++){let n=this.inlineQueue[t];this.inlineTokens(n.src,n.tokens)}return this.inlineQueue=[],this.tokens}blockTokens(e,t=[],n=!1){for(this.options.pedantic&&(e=e.replace(m.tabCharGlobal,"    ").replace(m.spaceLine,""));e;){let r;if(this.options.extensions?.block?.some(s=>(r=s.call({lexer:this},e,t))?(e=e.substring(r.raw.length),t.push(r),!0):!1))continue;if(r=this.tokenizer.space(e)){e=e.substring(r.raw.length);let s=t.at(-1);r.raw.length===1&&s!==void 0?s.raw+=`
+`),S=this.list(f);s[s.length-1]=S,r=r.substring(0,r.length-h.raw.length)+S.raw,i=i.substring(0,i.length-R.raw.length)+S.raw,n=f.substring(s.at(-1).raw.length).split(`
+`);continue}}return{type:"blockquote",raw:r,tokens:s,text:i}}}list(e){let t=this.rules.block.list.exec(e);if(t){let n=t[1].trim(),r=n.length>1,i={type:"list",raw:"",ordered:r,start:r?+n.slice(0,-1):"",loose:!1,items:[]};n=r?`\\d{1,9}\\${n.slice(-1)}`:`\\${n}`,this.options.pedantic&&(n=r?n:"[*+-]");let s=this.rules.other.listItemRegex(n),a=!1;for(;e;){let l=!1,p="",c="";if(!(t=s.exec(e))||this.rules.block.hr.test(e))break;p=t[0],e=e.substring(p.length);let d=fe(t[2].split(`
+`,1)[0],t[1].length),h=e.split(`
+`,1)[0],R=!d.trim(),f=0;if(this.options.pedantic?(f=2,c=d.trimStart()):R?f=t[1].length+1:(f=d.search(this.rules.other.nonSpaceChar),f=f>4?1:f,c=d.slice(f),f+=t[1].length),R&&this.rules.other.blankLine.test(h)&&(p+=h+`
+`,e=e.substring(h.length+1),l=!0),!l){let S=this.rules.other.nextBulletRegex(f),ee=this.rules.other.hrRegex(f),te=this.rules.other.fencesBeginRegex(f),ne=this.rules.other.headingBeginRegex(f),xe=this.rules.other.htmlBeginRegex(f),be=this.rules.other.blockquoteBeginRegex(f);for(;e;){let Z=e.split(`
+`,1)[0],A;if(h=Z,this.options.pedantic?(h=h.replace(this.rules.other.listReplaceNesting,"  "),A=h):A=h.replace(this.rules.other.tabCharGlobal,"    "),te.test(h)||ne.test(h)||xe.test(h)||be.test(h)||S.test(h)||ee.test(h))break;if(A.search(this.rules.other.nonSpaceChar)>=f||!h.trim())c+=`
+`+A.slice(f);else{if(R||d.replace(this.rules.other.tabCharGlobal,"    ").search(this.rules.other.nonSpaceChar)>=4||te.test(d)||ne.test(d)||ee.test(d))break;c+=`
+`+h}R=!h.trim(),p+=Z+`
+`,e=e.substring(Z.length+1),d=A.slice(f)}}i.loose||(a?i.loose=!0:this.rules.other.doubleBlankLine.test(p)&&(a=!0)),i.items.push({type:"list_item",raw:p,task:!!this.options.gfm&&this.rules.other.listIsTask.test(c),loose:!1,text:c,tokens:[]}),i.raw+=p}let o=i.items.at(-1);if(o)o.raw=o.raw.trimEnd(),o.text=o.text.trimEnd();else return;i.raw=i.raw.trimEnd();for(let l of i.items){if(this.lexer.state.top=!1,l.tokens=this.lexer.blockTokens(l.text,[]),l.task){if(l.text=l.text.replace(this.rules.other.listReplaceTask,""),l.tokens[0]?.type==="text"||l.tokens[0]?.type==="paragraph"){l.tokens[0].raw=l.tokens[0].raw.replace(this.rules.other.listReplaceTask,""),l.tokens[0].text=l.tokens[0].text.replace(this.rules.other.listReplaceTask,"");for(let c=this.lexer.inlineQueue.length-1;c>=0;c--)if(this.rules.other.listIsTask.test(this.lexer.inlineQueue[c].src)){this.lexer.inlineQueue[c].src=this.lexer.inlineQueue[c].src.replace(this.rules.other.listReplaceTask,"");break}}let p=this.rules.other.listTaskCheckbox.exec(l.raw);if(p){let c={type:"checkbox",raw:p[0]+" ",checked:p[0]!=="[ ]"};l.checked=c.checked,i.loose?l.tokens[0]&&["paragraph","text"].includes(l.tokens[0].type)&&"tokens"in l.tokens[0]&&l.tokens[0].tokens?(l.tokens[0].raw=c.raw+l.tokens[0].raw,l.tokens[0].text=c.raw+l.tokens[0].text,l.tokens[0].tokens.unshift(c)):l.tokens.unshift({type:"paragraph",raw:c.raw,text:c.raw,tokens:[c]}):l.tokens.unshift(c)}}if(!i.loose){let p=l.tokens.filter(d=>d.type==="space"),c=p.length>0&&p.some(d=>this.rules.other.anyLine.test(d.raw));i.loose=c}}if(i.loose)for(let l of i.items){l.loose=!0;for(let p of l.tokens)p.type==="text"&&(p.type="paragraph")}return i}}html(e){let t=this.rules.block.html.exec(e);if(t){let n=Y(t[0]);return{type:"html",block:!0,raw:n,pre:t[1]==="pre"||t[1]==="script"||t[1]==="style",text:n}}}def(e){let t=this.rules.block.def.exec(e);if(t){let n=t[1].toLowerCase().replace(this.rules.other.multipleSpaceGlobal," "),r=t[2]?t[2].replace(this.rules.other.hrefBrackets,"$1").replace(this.rules.inline.anyPunctuation,"$1"):"",i=t[3]?t[3].substring(1,t[3].length-1).replace(this.rules.inline.anyPunctuation,"$1"):t[3];return{type:"def",tag:n,raw:$(t[0],`
+`),href:r,title:i}}}table(e){let t=this.rules.block.table.exec(e);if(!t||!this.rules.other.tableDelimiter.test(t[2]))return;let n=V(t[1]),r=t[2].replace(this.rules.other.tableAlignChars,"").split("|"),i=t[3]?.trim()?t[3].replace(this.rules.other.tableRowBlankLine,"").split(`
+`):[],s={type:"table",raw:$(t[0],`
+`),header:[],align:[],rows:[]};if(n.length===r.length){for(let a of r)this.rules.other.tableAlignRight.test(a)?s.align.push("right"):this.rules.other.tableAlignCenter.test(a)?s.align.push("center"):this.rules.other.tableAlignLeft.test(a)?s.align.push("left"):s.align.push(null);for(let a=0;a<n.length;a++)s.header.push({text:n[a],tokens:this.lexer.inline(n[a]),header:!0,align:s.align[a]});for(let a of i)s.rows.push(V(a,s.header.length).map((o,l)=>({text:o,tokens:this.lexer.inline(o),header:!1,align:s.align[l]})));return s}}lheading(e){let t=this.rules.block.lheading.exec(e);if(t){let n=t[1].trim();return{type:"heading",raw:$(t[0],`
+`),depth:t[2].charAt(0)==="="?1:2,text:n,tokens:this.lexer.inline(n)}}}paragraph(e){let t=this.rules.block.paragraph.exec(e);if(t){let n=t[1].charAt(t[1].length-1)===`
+`?t[1].slice(0,-1):t[1];return{type:"paragraph",raw:t[0],text:n,tokens:this.lexer.inline(n)}}}text(e){let t=this.rules.block.text.exec(e);if(t)return{type:"text",raw:t[0],text:t[0],tokens:this.lexer.inline(t[0])}}escape(e){let t=this.rules.inline.escape.exec(e);if(t)return{type:"escape",raw:t[0],text:t[1]}}tag(e){let t=this.rules.inline.tag.exec(e);if(t)return!this.lexer.state.inLink&&this.rules.other.startATag.test(t[0])?this.lexer.state.inLink=!0:this.lexer.state.inLink&&this.rules.other.endATag.test(t[0])&&(this.lexer.state.inLink=!1),!this.lexer.state.inRawBlock&&this.rules.other.startPreScriptTag.test(t[0])?this.lexer.state.inRawBlock=!0:this.lexer.state.inRawBlock&&this.rules.other.endPreScriptTag.test(t[0])&&(this.lexer.state.inRawBlock=!1),{type:"html",raw:t[0],inLink:this.lexer.state.inLink,inRawBlock:this.lexer.state.inRawBlock,block:!1,text:t[0]}}link(e){let t=this.rules.inline.link.exec(e);if(t){let n=t[2].trim();if(!this.options.pedantic&&this.rules.other.startAngleBracket.test(n)){if(!this.rules.other.endAngleBracket.test(n))return;let s=$(n.slice(0,-1),"\\");if((n.length-s.length)%2===0)return}else{let s=ge(t[2],"()");if(s===-2)return;if(s>-1){let o=(t[0].indexOf("!")===0?5:4)+t[1].length+s;t[2]=t[2].substring(0,s),t[0]=t[0].substring(0,o).trim(),t[3]=""}}let r=t[2],i="";if(this.options.pedantic){let s=this.rules.other.pedanticHrefTitle.exec(r);s&&(r=s[1],i=s[3])}else i=t[3]?t[3].slice(1,-1):"";return r=r.trim(),this.rules.other.startAngleBracket.test(r)&&(this.options.pedantic&&!this.rules.other.endAngleBracket.test(n)?r=r.slice(1):r=r.slice(1,-1)),me(t,{href:r&&r.replace(this.rules.inline.anyPunctuation,"$1"),title:i&&i.replace(this.rules.inline.anyPunctuation,"$1")},t[0],this.lexer,this.rules)}}reflink(e,t){let n;if((n=this.rules.inline.reflink.exec(e))||(n=this.rules.inline.nolink.exec(e))){let r=(n[2]||n[1]).replace(this.rules.other.multipleSpaceGlobal," "),i=t[r.toLowerCase()];if(!i){let s=n[0].charAt(0);return{type:"text",raw:s,text:s}}return me(n,i,n[0],this.lexer,this.rules)}}emStrong(e,t,n=""){let r=this.rules.inline.emStrongLDelim.exec(e);if(!r||!r[1]&&!r[2]&&!r[3]&&!r[4]||r[4]&&n.match(this.rules.other.unicodeAlphaNumeric))return;if(!(r[1]||r[3]||"")||!n||this.rules.inline.punctuation.exec(n)){let s=[...r[0]].length-1,a,o,l=s,p=0,c=r[0][0]==="*"?this.rules.inline.emStrongRDelimAst:this.rules.inline.emStrongRDelimUnd;for(c.lastIndex=0,t=t.slice(-1*e.length+s);(r=c.exec(t))!==null;){if(a=r[1]||r[2]||r[3]||r[4]||r[5]||r[6],!a)continue;if(o=[...a].length,r[3]||r[4]){l+=o;continue}else if((r[5]||r[6])&&s%3&&!((s+o)%3)){p+=o;continue}if(l-=o,l>0)continue;o=Math.min(o,o+l+p);let d=[...r[0]][0].length,h=e.slice(0,s+r.index+d+o);if(Math.min(s,o)%2){let f=h.slice(1,-1);return{type:"em",raw:h,text:f,tokens:this.lexer.inlineTokens(f)}}let R=h.slice(2,-2);return{type:"strong",raw:h,text:R,tokens:this.lexer.inlineTokens(R)}}}}codespan(e){let t=this.rules.inline.code.exec(e);if(t){let n=t[2].replace(this.rules.other.newLineCharGlobal," "),r=this.rules.other.nonSpaceChar.test(n),i=this.rules.other.startingSpaceChar.test(n)&&this.rules.other.endingSpaceChar.test(n);return r&&i&&(n=n.substring(1,n.length-1)),{type:"codespan",raw:t[0],text:n}}}br(e){let t=this.rules.inline.br.exec(e);if(t)return{type:"br",raw:t[0]}}del(e,t,n=""){let r=this.rules.inline.delLDelim.exec(e);if(!r)return;if(!(r[1]||"")||!n||this.rules.inline.punctuation.exec(n)){let s=[...r[0]].length-1,a,o,l=s,p=this.rules.inline.delRDelim;for(p.lastIndex=0,t=t.slice(-1*e.length+s);(r=p.exec(t))!==null;){if(a=r[1]||r[2]||r[3]||r[4]||r[5]||r[6],!a||(o=[...a].length,o!==s))continue;if(r[3]||r[4]){l+=o;continue}if(l-=o,l>0)continue;o=Math.min(o,o+l);let c=[...r[0]][0].length,d=e.slice(0,s+r.index+c+o),h=d.slice(s,-s);return{type:"del",raw:d,text:h,tokens:this.lexer.inlineTokens(h)}}}}autolink(e){let t=this.rules.inline.autolink.exec(e);if(t){let n,r;return t[2]==="@"?(n=t[1],r="mailto:"+n):(n=t[1],r=n),{type:"link",raw:t[0],text:n,href:r,tokens:[{type:"text",raw:n,text:n}]}}}url(e){let t;if(t=this.rules.inline.url.exec(e)){let n,r;if(t[2]==="@")n=t[0],r="mailto:"+n;else{let i;do i=t[0],t[0]=this.rules.inline._backpedal.exec(t[0])?.[0]??"";while(i!==t[0]);n=t[0],t[1]==="www."?r="http://"+t[0]:r=t[0]}return{type:"link",raw:t[0],text:n,href:r,tokens:[{type:"text",raw:n,text:n}]}}}inlineText(e){let t=this.rules.inline.text.exec(e);if(t){let n=this.lexer.state.inRawBlock;return{type:"text",raw:t[0],text:t[0],escaped:n}}}};var x=class u{tokens;options;state;inlineQueue;tokenizer;constructor(e){this.tokens=[],this.tokens.links=Object.create(null),this.options=e||T,this.options.tokenizer=this.options.tokenizer||new w,this.tokenizer=this.options.tokenizer,this.tokenizer.options=this.options,this.tokenizer.lexer=this,this.inlineQueue=[],this.state={inLink:!1,inRawBlock:!1,top:!0};let t={other:m,block:B.normal,inline:I.normal};this.options.pedantic?(t.block=B.pedantic,t.inline=I.pedantic):this.options.gfm&&(t.block=B.gfm,this.options.breaks?t.inline=I.breaks:t.inline=I.gfm),this.tokenizer.rules=t}static get rules(){return{block:B,inline:I}}static lex(e,t){return new u(t).lex(e)}static lexInline(e,t){return new u(t).inlineTokens(e)}lex(e){e=e.replace(m.carriageReturn,`
+`),this.blockTokens(e,this.tokens);for(let t=0;t<this.inlineQueue.length;t++){let n=this.inlineQueue[t];this.inlineTokens(n.src,n.tokens)}return this.inlineQueue=[],this.tokens}blockTokens(e,t=[],n=!1){for(this.tokenizer.lexer=this,this.options.pedantic&&(e=e.replace(m.tabCharGlobal,"    ").replace(m.spaceLine,""));e;){let r;if(this.options.extensions?.block?.some(s=>(r=s.call({lexer:this},e,t))?(e=e.substring(r.raw.length),t.push(r),!0):!1))continue;if(r=this.tokenizer.space(e)){e=e.substring(r.raw.length);let s=t.at(-1);r.raw.length===1&&s!==void 0?s.raw+=`
 `:t.push(r);continue}if(r=this.tokenizer.code(e)){e=e.substring(r.raw.length);let s=t.at(-1);s?.type==="paragraph"||s?.type==="text"?(s.raw+=(s.raw.endsWith(`
 `)?"":`
 `)+r.raw,s.text+=`
 `+r.text,this.inlineQueue.at(-1).src=s.text):t.push(r);continue}if(r=this.tokenizer.fences(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.heading(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.hr(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.blockquote(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.list(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.html(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.def(e)){e=e.substring(r.raw.length);let s=t.at(-1);s?.type==="paragraph"||s?.type==="text"?(s.raw+=(s.raw.endsWith(`
 `)?"":`
 `)+r.raw,s.text+=`
-`+r.raw,this.inlineQueue.at(-1).src=s.text):this.tokens.links[r.tag]||(this.tokens.links[r.tag]={href:r.href,title:r.title},t.push(r));continue}if(r=this.tokenizer.table(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.lheading(e)){e=e.substring(r.raw.length),t.push(r);continue}let i=e;if(this.options.extensions?.startBlock){let s=1/0,a=e.slice(1),o;this.options.extensions.startBlock.forEach(u=>{o=u.call({lexer:this},a),typeof o=="number"&&o>=0&&(s=Math.min(s,o))}),s<1/0&&s>=0&&(i=e.substring(0,s+1))}if(this.state.top&&(r=this.tokenizer.paragraph(i))){let s=t.at(-1);n&&s?.type==="paragraph"?(s.raw+=(s.raw.endsWith(`
+`+r.raw,this.inlineQueue.at(-1).src=s.text):this.tokens.links[r.tag]||(this.tokens.links[r.tag]={href:r.href,title:r.title},t.push(r));continue}if(r=this.tokenizer.table(e)){e=e.substring(r.raw.length),t.push(r);continue}if(r=this.tokenizer.lheading(e)){e=e.substring(r.raw.length),t.push(r);continue}let i=e;if(this.options.extensions?.startBlock){let s=1/0,a=e.slice(1),o;this.options.extensions.startBlock.forEach(l=>{o=l.call({lexer:this},a),typeof o=="number"&&o>=0&&(s=Math.min(s,o))}),s<1/0&&s>=0&&(i=e.substring(0,s+1))}if(this.state.top&&(r=this.tokenizer.paragraph(i))){let s=t.at(-1);n&&s?.type==="paragraph"?(s.raw+=(s.raw.endsWith(`
 `)?"":`
 `)+r.raw,s.text+=`
 `+r.text,this.inlineQueue.pop(),this.inlineQueue.at(-1).src=s.text):t.push(r),n=i.length!==e.length,e=e.substring(r.raw.length);continue}if(r=this.tokenizer.text(e)){e=e.substring(r.raw.length);let s=t.at(-1);s?.type==="text"?(s.raw+=(s.raw.endsWith(`
 `)?"":`
 `)+r.raw,s.text+=`
-`+r.text,this.inlineQueue.pop(),this.inlineQueue.at(-1).src=s.text):t.push(r);continue}if(e){let s="Infinite loop on byte: "+e.charCodeAt(0);if(this.options.silent){console.error(s);break}else throw new Error(s)}}return this.state.top=!0,t}inline(e,t=[]){return this.inlineQueue.push({src:e,tokens:t}),t}inlineTokens(e,t=[]){let n=e,r=null;if(this.tokens.links){let o=Object.keys(this.tokens.links);if(o.length>0)for(;(r=this.tokenizer.rules.inline.reflinkSearch.exec(n))!=null;)o.includes(r[0].slice(r[0].lastIndexOf("[")+1,-1))&&(n=n.slice(0,r.index)+"["+"a".repeat(r[0].length-2)+"]"+n.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex))}for(;(r=this.tokenizer.rules.inline.anyPunctuation.exec(n))!=null;)n=n.slice(0,r.index)+"++"+n.slice(this.tokenizer.rules.inline.anyPunctuation.lastIndex);let i;for(;(r=this.tokenizer.rules.inline.blockSkip.exec(n))!=null;)i=r[2]?r[2].length:0,n=n.slice(0,r.index+i)+"["+"a".repeat(r[0].length-i-2)+"]"+n.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);n=this.options.hooks?.emStrongMask?.call({lexer:this},n)??n;let s=!1,a="";for(;e;){s||(a=""),s=!1;let o;if(this.options.extensions?.inline?.some(p=>(o=p.call({lexer:this},e,t))?(e=e.substring(o.raw.length),t.push(o),!0):!1))continue;if(o=this.tokenizer.escape(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.tag(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.link(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.reflink(e,this.tokens.links)){e=e.substring(o.raw.length);let p=t.at(-1);o.type==="text"&&p?.type==="text"?(p.raw+=o.raw,p.text+=o.text):t.push(o);continue}if(o=this.tokenizer.emStrong(e,n,a)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.codespan(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.br(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.del(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.autolink(e)){e=e.substring(o.raw.length),t.push(o);continue}if(!this.state.inLink&&(o=this.tokenizer.url(e))){e=e.substring(o.raw.length),t.push(o);continue}let u=e;if(this.options.extensions?.startInline){let p=1/0,c=e.slice(1),g;this.options.extensions.startInline.forEach(h=>{g=h.call({lexer:this},c),typeof g=="number"&&g>=0&&(p=Math.min(p,g))}),p<1/0&&p>=0&&(u=e.substring(0,p+1))}if(o=this.tokenizer.inlineText(u)){e=e.substring(o.raw.length),o.raw.slice(-1)!=="_"&&(a=o.raw.slice(-1)),s=!0;let p=t.at(-1);p?.type==="text"?(p.raw+=o.raw,p.text+=o.text):t.push(o);continue}if(e){let p="Infinite loop on byte: "+e.charCodeAt(0);if(this.options.silent){console.error(p);break}else throw new Error(p)}}return t}};var P=class{options;parser;constructor(e){this.options=e||T}space(e){return""}code({text:e,lang:t,escaped:n}){let r=(t||"").match(m.notSpaceStart)?.[0],i=e.replace(m.endingNewline,"")+`
-`;return r?'<pre><code class="language-'+w(r)+'">'+(n?i:w(i,!0))+`</code></pre>
-`:"<pre><code>"+(n?i:w(i,!0))+`</code></pre>
+`+r.text,this.inlineQueue.pop(),this.inlineQueue.at(-1).src=s.text):t.push(r);continue}if(e){let s="Infinite loop on byte: "+e.charCodeAt(0);if(this.options.silent){console.error(s);break}else throw new Error(s)}}return this.state.top=!0,t}inline(e,t=[]){return this.inlineQueue.push({src:e,tokens:t}),t}inlineTokens(e,t=[]){this.tokenizer.lexer=this;let n=e,r=null;if(this.tokens.links){let o=Object.keys(this.tokens.links);if(o.length>0)for(;(r=this.tokenizer.rules.inline.reflinkSearch.exec(n))!==null;)o.includes(r[0].slice(r[0].lastIndexOf("[")+1,-1))&&(n=n.slice(0,r.index)+"["+"a".repeat(r[0].length-2)+"]"+n.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex))}for(;(r=this.tokenizer.rules.inline.anyPunctuation.exec(n))!==null;)n=n.slice(0,r.index)+"++"+n.slice(this.tokenizer.rules.inline.anyPunctuation.lastIndex);let i;for(;(r=this.tokenizer.rules.inline.blockSkip.exec(n))!==null;)i=r[2]?r[2].length:0,n=n.slice(0,r.index+i)+"["+"a".repeat(r[0].length-i-2)+"]"+n.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);n=this.options.hooks?.emStrongMask?.call({lexer:this},n)??n;let s=!1,a="";for(;e;){s||(a=""),s=!1;let o;if(this.options.extensions?.inline?.some(p=>(o=p.call({lexer:this},e,t))?(e=e.substring(o.raw.length),t.push(o),!0):!1))continue;if(o=this.tokenizer.escape(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.tag(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.link(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.reflink(e,this.tokens.links)){e=e.substring(o.raw.length);let p=t.at(-1);o.type==="text"&&p?.type==="text"?(p.raw+=o.raw,p.text+=o.text):t.push(o);continue}if(o=this.tokenizer.emStrong(e,n,a)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.codespan(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.br(e)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.del(e,n,a)){e=e.substring(o.raw.length),t.push(o);continue}if(o=this.tokenizer.autolink(e)){e=e.substring(o.raw.length),t.push(o);continue}if(!this.state.inLink&&(o=this.tokenizer.url(e))){e=e.substring(o.raw.length),t.push(o);continue}let l=e;if(this.options.extensions?.startInline){let p=1/0,c=e.slice(1),d;this.options.extensions.startInline.forEach(h=>{d=h.call({lexer:this},c),typeof d=="number"&&d>=0&&(p=Math.min(p,d))}),p<1/0&&p>=0&&(l=e.substring(0,p+1))}if(o=this.tokenizer.inlineText(l)){e=e.substring(o.raw.length),o.raw.slice(-1)!=="_"&&(a=o.raw.slice(-1)),s=!0;let p=t.at(-1);p?.type==="text"?(p.raw+=o.raw,p.text+=o.text):t.push(o);continue}if(e){let p="Infinite loop on byte: "+e.charCodeAt(0);if(this.options.silent){console.error(p);break}else throw new Error(p)}}return t}};var y=class{options;parser;constructor(e){this.options=e||T}space(e){return""}code({text:e,lang:t,escaped:n}){let r=(t||"").match(m.notSpaceStart)?.[0],i=e.replace(m.endingNewline,"")+`
+`;return r?'<pre><code class="language-'+O(r)+'">'+(n?i:O(i,!0))+`</code></pre>
+`:"<pre><code>"+(n?i:O(i,!0))+`</code></pre>
 `}blockquote({tokens:e}){return`<blockquote>
 ${this.parser.parse(e)}</blockquote>
 `}html({text:e}){return e}def(e){return""}heading({tokens:e,depth:t}){return`<h${t}>${this.parser.parseInline(e)}</h${t}>
@@ -92052,8 +91359,8 @@ ${this.parser.parse(e)}</blockquote>
 `}tablerow({text:e}){return`<tr>
 ${e}</tr>
 `}tablecell(e){let t=this.parser.parseInline(e.tokens),n=e.header?"th":"td";return(e.align?`<${n} align="${e.align}">`:`<${n}>`)+t+`</${n}>
-`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${w(e,!0)}</code>`}br(e){return"<br>"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=J(e);if(i===null)return r;e=i;let s='<a href="'+e+'"';return t&&(s+=' title="'+w(t)+'"'),s+=">"+r+"</a>",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=J(e);if(i===null)return w(n);e=i;let s=`<img src="${e}" alt="${n}"`;return t&&(s+=` title="${w(t)}"`),s+=">",s}text(e){return"tokens"in e&&e.tokens?this.parser.parseInline(e.tokens):"escaped"in e&&e.escaped?e.text:w(e.text)}};var $=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return""+e}image({text:e}){return""+e}br(){return""}checkbox({raw:e}){return e}};var b=class l{options;renderer;textRenderer;constructor(e){this.options=e||T,this.options.renderer=this.options.renderer||new P,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new $}static parse(e,t){return new l(t).parse(e)}static parseInline(e,t){return new l(t).parseInline(e)}parse(e){let t="";for(let n=0;n<e.length;n++){let r=e[n];if(this.options.extensions?.renderers?.[r.type]){let s=r,a=this.options.extensions.renderers[s.type].call({parser:this},s);if(a!==!1||!["space","hr","heading","code","table","blockquote","list","html","def","paragraph","text"].includes(s.type)){t+=a||"";continue}}let i=r;switch(i.type){case"space":{t+=this.renderer.space(i);break}case"hr":{t+=this.renderer.hr(i);break}case"heading":{t+=this.renderer.heading(i);break}case"code":{t+=this.renderer.code(i);break}case"table":{t+=this.renderer.table(i);break}case"blockquote":{t+=this.renderer.blockquote(i);break}case"list":{t+=this.renderer.list(i);break}case"checkbox":{t+=this.renderer.checkbox(i);break}case"html":{t+=this.renderer.html(i);break}case"def":{t+=this.renderer.def(i);break}case"paragraph":{t+=this.renderer.paragraph(i);break}case"text":{t+=this.renderer.text(i);break}default:{let s='Token with "'+i.type+'" type was not found.';if(this.options.silent)return console.error(s),"";throw new Error(s)}}}return t}parseInline(e,t=this.renderer){let n="";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let a=this.options.extensions.renderers[i.type].call({parser:this},i);if(a!==!1||!["escape","html","link","image","strong","em","codespan","br","del","text"].includes(i.type)){n+=a||"";continue}}let s=i;switch(s.type){case"escape":{n+=t.text(s);break}case"html":{n+=t.html(s);break}case"link":{n+=t.link(s);break}case"image":{n+=t.image(s);break}case"checkbox":{n+=t.checkbox(s);break}case"strong":{n+=t.strong(s);break}case"em":{n+=t.em(s);break}case"codespan":{n+=t.codespan(s);break}case"br":{n+=t.br(s);break}case"del":{n+=t.del(s);break}case"text":{n+=t.text(s);break}default:{let a='Token with "'+s.type+'" type was not found.';if(this.options.silent)return console.error(a),"";throw new Error(a)}}}return n}};var S=class{options;block;constructor(e){this.options=e||T}static passThroughHooks=new Set(["preprocess","postprocess","processAllTokens","emStrongMask"]);static passThroughHooksRespectAsync=new Set(["preprocess","postprocess","processAllTokens"]);preprocess(e){return e}postprocess(e){return e}processAllTokens(e){return e}emStrongMask(e){return e}provideLexer(){return this.block?x.lex:x.lexInline}provideParser(){return this.block?b.parse:b.parseInline}};var B=class{defaults=L();options=this.setOptions;parse=this.parseMarkdown(!0);parseInline=this.parseMarkdown(!1);Parser=b;Renderer=P;TextRenderer=$;Lexer=x;Tokenizer=y;Hooks=S;constructor(...e){this.use(...e)}walkTokens(e,t){let n=[];for(let r of e)switch(n=n.concat(t.call(this,r)),r.type){case"table":{let i=r;for(let s of i.header)n=n.concat(this.walkTokens(s.tokens,t));for(let s of i.rows)for(let a of s)n=n.concat(this.walkTokens(a.tokens,t));break}case"list":{let i=r;n=n.concat(this.walkTokens(i.items,t));break}default:{let i=r;this.defaults.extensions?.childTokens?.[i.type]?this.defaults.extensions.childTokens[i.type].forEach(s=>{let a=i[s].flat(1/0);n=n.concat(this.walkTokens(a,t))}):i.tokens&&(n=n.concat(this.walkTokens(i.tokens,t)))}}return n}use(...e){let t=this.defaults.extensions||{renderers:{},childTokens:{}};return e.forEach(n=>{let r={...n};if(r.async=this.defaults.async||r.async||!1,n.extensions&&(n.extensions.forEach(i=>{if(!i.name)throw new Error("extension name required");if("renderer"in i){let s=t.renderers[i.name];s?t.renderers[i.name]=function(...a){let o=i.renderer.apply(this,a);return o===!1&&(o=s.apply(this,a)),o}:t.renderers[i.name]=i.renderer}if("tokenizer"in i){if(!i.level||i.level!=="block"&&i.level!=="inline")throw new Error("extension level must be 'block' or 'inline'");let s=t[i.level];s?s.unshift(i.tokenizer):t[i.level]=[i.tokenizer],i.start&&(i.level==="block"?t.startBlock?t.startBlock.push(i.start):t.startBlock=[i.start]:i.level==="inline"&&(t.startInline?t.startInline.push(i.start):t.startInline=[i.start]))}"childTokens"in i&&i.childTokens&&(t.childTokens[i.name]=i.childTokens)}),r.extensions=t),n.renderer){let i=this.defaults.renderer||new P(this.defaults);for(let s in n.renderer){if(!(s in i))throw new Error(`renderer '${s}' does not exist`);if(["options","parser"].includes(s))continue;let a=s,o=n.renderer[a],u=i[a];i[a]=(...p)=>{let c=o.apply(i,p);return c===!1&&(c=u.apply(i,p)),c||""}}r.renderer=i}if(n.tokenizer){let i=this.defaults.tokenizer||new y(this.defaults);for(let s in n.tokenizer){if(!(s in i))throw new Error(`tokenizer '${s}' does not exist`);if(["options","rules","lexer"].includes(s))continue;let a=s,o=n.tokenizer[a],u=i[a];i[a]=(...p)=>{let c=o.apply(i,p);return c===!1&&(c=u.apply(i,p)),c}}r.tokenizer=i}if(n.hooks){let i=this.defaults.hooks||new S;for(let s in n.hooks){if(!(s in i))throw new Error(`hook '${s}' does not exist`);if(["options","block"].includes(s))continue;let a=s,o=n.hooks[a],u=i[a];S.passThroughHooks.has(s)?i[a]=p=>{if(this.defaults.async&&S.passThroughHooksRespectAsync.has(s))return(async()=>{let g=await o.call(i,p);return u.call(i,g)})();let c=o.call(i,p);return u.call(i,c)}:i[a]=(...p)=>{if(this.defaults.async)return(async()=>{let g=await o.apply(i,p);return g===!1&&(g=await u.apply(i,p)),g})();let c=o.apply(i,p);return c===!1&&(c=u.apply(i,p)),c}}r.hooks=i}if(n.walkTokens){let i=this.defaults.walkTokens,s=n.walkTokens;r.walkTokens=function(a){let o=[];return o.push(s.call(this,a)),i&&(o=o.concat(i.call(this,a))),o}}this.defaults={...this.defaults,...r}}),this}setOptions(e){return this.defaults={...this.defaults,...e},this}lexer(e,t){return x.lex(e,t??this.defaults)}parser(e,t){return b.parse(e,t??this.defaults)}parseMarkdown(e){return(n,r)=>{let i={...r},s={...this.defaults,...i},a=this.onError(!!s.silent,!!s.async);if(this.defaults.async===!0&&i.async===!1)return a(new Error("marked(): The async option was set to true by an extension. Remove async: false from the parse options object to return a Promise."));if(typeof n>"u"||n===null)return a(new Error("marked(): input parameter is undefined or null"));if(typeof n!="string")return a(new Error("marked(): input parameter is of type "+Object.prototype.toString.call(n)+", string expected"));if(s.hooks&&(s.hooks.options=s,s.hooks.block=e),s.async)return(async()=>{let o=s.hooks?await s.hooks.preprocess(n):n,p=await(s.hooks?await s.hooks.provideLexer():e?x.lex:x.lexInline)(o,s),c=s.hooks?await s.hooks.processAllTokens(p):p;s.walkTokens&&await Promise.all(this.walkTokens(c,s.walkTokens));let h=await(s.hooks?await s.hooks.provideParser():e?b.parse:b.parseInline)(c,s);return s.hooks?await s.hooks.postprocess(h):h})().catch(a);try{s.hooks&&(n=s.hooks.preprocess(n));let u=(s.hooks?s.hooks.provideLexer():e?x.lex:x.lexInline)(n,s);s.hooks&&(u=s.hooks.processAllTokens(u)),s.walkTokens&&this.walkTokens(u,s.walkTokens);let c=(s.hooks?s.hooks.provideParser():e?b.parse:b.parseInline)(u,s);return s.hooks&&(c=s.hooks.postprocess(c)),c}catch(o){return a(o)}}}onError(e,t){return n=>{if(n.message+=`
-Please report this to https://github.com/markedjs/marked.`,e){let r="<p>An error occurred:</p><pre>"+w(n.message+"",!0)+"</pre>";return t?Promise.resolve(r):r}if(t)return Promise.reject(n);throw n}}};var marked_esm_=new B;function d(l,e){return marked_esm_.parse(l,e)}d.options=d.setOptions=function(l){return marked_esm_.setOptions(l),d.defaults=marked_esm_.defaults,G(d.defaults),d};d.getDefaults=L;d.defaults=T;d.use=function(...l){return marked_esm_.use(...l),d.defaults=marked_esm_.defaults,G(d.defaults),d};d.walkTokens=function(l,e){return marked_esm_.walkTokens(l,e)};d.parseInline=marked_esm_.parseInline;d.Parser=b;d.parser=b.parse;d.Renderer=P;d.TextRenderer=$;d.Lexer=x;d.lexer=x.lex;d.Tokenizer=y;d.Hooks=S;d.parse=d;var Ht=d.options,Zt=d.setOptions,Gt=d.use,Nt=d.walkTokens,Ft=d.parseInline,jt=(/* unused pure expression or super */ null && (d)),Qt=b.parse,Ut=x.lex;
+`}strong({tokens:e}){return`<strong>${this.parser.parseInline(e)}</strong>`}em({tokens:e}){return`<em>${this.parser.parseInline(e)}</em>`}codespan({text:e}){return`<code>${O(e,!0)}</code>`}br(e){return"<br>"}del({tokens:e}){return`<del>${this.parser.parseInline(e)}</del>`}link({href:e,title:t,tokens:n}){let r=this.parser.parseInline(n),i=J(e);if(i===null)return r;e=i;let s='<a href="'+e+'"';return t&&(s+=' title="'+O(t)+'"'),s+=">"+r+"</a>",s}image({href:e,title:t,text:n,tokens:r}){r&&(n=this.parser.parseInline(r,this.parser.textRenderer));let i=J(e);if(i===null)return O(n);e=i;let s=`<img src="${e}" alt="${O(n)}"`;return t&&(s+=` title="${O(t)}"`),s+=">",s}text(e){return"tokens"in e&&e.tokens?this.parser.parseInline(e.tokens):"escaped"in e&&e.escaped?e.text:O(e.text)}};var L=class{strong({text:e}){return e}em({text:e}){return e}codespan({text:e}){return e}del({text:e}){return e}html({text:e}){return e}text({text:e}){return e}link({text:e}){return""+e}image({text:e}){return""+e}br(){return""}checkbox({raw:e}){return e}};var b=class u{options;renderer;textRenderer;constructor(e){this.options=e||T,this.options.renderer=this.options.renderer||new y,this.renderer=this.options.renderer,this.renderer.options=this.options,this.renderer.parser=this,this.textRenderer=new L}static parse(e,t){return new u(t).parse(e)}static parseInline(e,t){return new u(t).parseInline(e)}parse(e){this.renderer.parser=this;let t="";for(let n=0;n<e.length;n++){let r=e[n];if(this.options.extensions?.renderers?.[r.type]){let s=r,a=this.options.extensions.renderers[s.type].call({parser:this},s);if(a!==!1||!["space","hr","heading","code","table","blockquote","list","html","def","paragraph","text"].includes(s.type)){t+=a||"";continue}}let i=r;switch(i.type){case"space":{t+=this.renderer.space(i);break}case"hr":{t+=this.renderer.hr(i);break}case"heading":{t+=this.renderer.heading(i);break}case"code":{t+=this.renderer.code(i);break}case"table":{t+=this.renderer.table(i);break}case"blockquote":{t+=this.renderer.blockquote(i);break}case"list":{t+=this.renderer.list(i);break}case"checkbox":{t+=this.renderer.checkbox(i);break}case"html":{t+=this.renderer.html(i);break}case"def":{t+=this.renderer.def(i);break}case"paragraph":{t+=this.renderer.paragraph(i);break}case"text":{t+=this.renderer.text(i);break}default:{let s='Token with "'+i.type+'" type was not found.';if(this.options.silent)return console.error(s),"";throw new Error(s)}}}return t}parseInline(e,t=this.renderer){this.renderer.parser=this;let n="";for(let r=0;r<e.length;r++){let i=e[r];if(this.options.extensions?.renderers?.[i.type]){let a=this.options.extensions.renderers[i.type].call({parser:this},i);if(a!==!1||!["escape","html","link","image","strong","em","codespan","br","del","text"].includes(i.type)){n+=a||"";continue}}let s=i;switch(s.type){case"escape":{n+=t.text(s);break}case"html":{n+=t.html(s);break}case"link":{n+=t.link(s);break}case"image":{n+=t.image(s);break}case"checkbox":{n+=t.checkbox(s);break}case"strong":{n+=t.strong(s);break}case"em":{n+=t.em(s);break}case"codespan":{n+=t.codespan(s);break}case"br":{n+=t.br(s);break}case"del":{n+=t.del(s);break}case"text":{n+=t.text(s);break}default:{let a='Token with "'+s.type+'" type was not found.';if(this.options.silent)return console.error(a),"";throw new Error(a)}}}return n}};var P=class{options;block;constructor(e){this.options=e||T}static passThroughHooks=new Set(["preprocess","postprocess","processAllTokens","emStrongMask"]);static passThroughHooksRespectAsync=new Set(["preprocess","postprocess","processAllTokens"]);preprocess(e){return e}postprocess(e){return e}processAllTokens(e){return e}emStrongMask(e){return e}provideLexer(e=this.block){return e?x.lex:x.lexInline}provideParser(e=this.block){return e?b.parse:b.parseInline}};var D=class{defaults=z();options=this.setOptions;parse=this.parseMarkdown(!0);parseInline=this.parseMarkdown(!1);Parser=b;Renderer=y;TextRenderer=L;Lexer=x;Tokenizer=w;Hooks=P;constructor(...e){this.use(...e)}walkTokens(e,t){let n=[];for(let r of e)switch(n=n.concat(t.call(this,r)),r.type){case"table":{let i=r;for(let s of i.header)n=n.concat(this.walkTokens(s.tokens,t));for(let s of i.rows)for(let a of s)n=n.concat(this.walkTokens(a.tokens,t));break}case"list":{let i=r;n=n.concat(this.walkTokens(i.items,t));break}default:{let i=r;this.defaults.extensions?.childTokens?.[i.type]?this.defaults.extensions.childTokens[i.type].forEach(s=>{let a=i[s].flat(1/0);n=n.concat(this.walkTokens(a,t))}):i.tokens&&(n=n.concat(this.walkTokens(i.tokens,t)))}}return n}use(...e){let t=this.defaults.extensions||{renderers:{},childTokens:{}};return e.forEach(n=>{let r={...n};if(r.async=this.defaults.async||r.async||!1,n.extensions&&(n.extensions.forEach(i=>{if(!i.name)throw new Error("extension name required");if("renderer"in i){let s=t.renderers[i.name];s?t.renderers[i.name]=function(...a){let o=i.renderer.apply(this,a);return o===!1&&(o=s.apply(this,a)),o}:t.renderers[i.name]=i.renderer}if("tokenizer"in i){if(!i.level||i.level!=="block"&&i.level!=="inline")throw new Error("extension level must be 'block' or 'inline'");let s=t[i.level];s?s.unshift(i.tokenizer):t[i.level]=[i.tokenizer],i.start&&(i.level==="block"?t.startBlock?t.startBlock.push(i.start):t.startBlock=[i.start]:i.level==="inline"&&(t.startInline?t.startInline.push(i.start):t.startInline=[i.start]))}"childTokens"in i&&i.childTokens&&(t.childTokens[i.name]=i.childTokens)}),r.extensions=t),n.renderer){let i=this.defaults.renderer||new y(this.defaults);for(let s in n.renderer){if(!(s in i))throw new Error(`renderer '${s}' does not exist`);if(["options","parser"].includes(s))continue;let a=s,o=n.renderer[a],l=i[a];i[a]=(...p)=>{let c=o.apply(i,p);return c===!1&&(c=l.apply(i,p)),c||""}}r.renderer=i}if(n.tokenizer){let i=this.defaults.tokenizer||new w(this.defaults);for(let s in n.tokenizer){if(!(s in i))throw new Error(`tokenizer '${s}' does not exist`);if(["options","rules","lexer"].includes(s))continue;let a=s,o=n.tokenizer[a],l=i[a];i[a]=(...p)=>{let c=o.apply(i,p);return c===!1&&(c=l.apply(i,p)),c}}r.tokenizer=i}if(n.hooks){let i=this.defaults.hooks||new P;for(let s in n.hooks){if(!(s in i))throw new Error(`hook '${s}' does not exist`);if(["options","block"].includes(s))continue;let a=s,o=n.hooks[a],l=i[a];P.passThroughHooks.has(s)?i[a]=p=>{if(this.defaults.async&&P.passThroughHooksRespectAsync.has(s))return(async()=>{let d=await o.call(i,p);return l.call(i,d)})();let c=o.call(i,p);return l.call(i,c)}:i[a]=(...p)=>{if(this.defaults.async)return(async()=>{let d=await o.apply(i,p);return d===!1&&(d=await l.apply(i,p)),d})();let c=o.apply(i,p);return c===!1&&(c=l.apply(i,p)),c}}r.hooks=i}if(n.walkTokens){let i=this.defaults.walkTokens,s=n.walkTokens;r.walkTokens=function(a){let o=[];return o.push(s.call(this,a)),i&&(o=o.concat(i.call(this,a))),o}}this.defaults={...this.defaults,...r}}),this}setOptions(e){return this.defaults={...this.defaults,...e},this}lexer(e,t){return x.lex(e,t??this.defaults)}parser(e,t){return b.parse(e,t??this.defaults)}parseMarkdown(e){return(n,r)=>{let i={...r},s={...this.defaults,...i},a=this.onError(!!s.silent,!!s.async);if(this.defaults.async===!0&&i.async===!1)return a(new Error("marked(): The async option was set to true by an extension. Remove async: false from the parse options object to return a Promise."));if(typeof n>"u"||n===null)return a(new Error("marked(): input parameter is undefined or null"));if(typeof n!="string")return a(new Error("marked(): input parameter is of type "+Object.prototype.toString.call(n)+", string expected"));if(s.hooks&&(s.hooks.options=s,s.hooks.block=e),s.async)return(async()=>{let o=s.hooks?await s.hooks.preprocess(n):n,p=await(s.hooks?await s.hooks.provideLexer(e):e?x.lex:x.lexInline)(o,s),c=s.hooks?await s.hooks.processAllTokens(p):p;s.walkTokens&&await Promise.all(this.walkTokens(c,s.walkTokens));let h=await(s.hooks?await s.hooks.provideParser(e):e?b.parse:b.parseInline)(c,s);return s.hooks?await s.hooks.postprocess(h):h})().catch(a);try{s.hooks&&(n=s.hooks.preprocess(n));let l=(s.hooks?s.hooks.provideLexer(e):e?x.lex:x.lexInline)(n,s);s.hooks&&(l=s.hooks.processAllTokens(l)),s.walkTokens&&this.walkTokens(l,s.walkTokens);let c=(s.hooks?s.hooks.provideParser(e):e?b.parse:b.parseInline)(l,s);return s.hooks&&(c=s.hooks.postprocess(c)),c}catch(o){return a(o)}}}onError(e,t){return n=>{if(n.message+=`
+Please report this to https://github.com/markedjs/marked.`,e){let r="<p>An error occurred:</p><pre>"+O(n.message+"",!0)+"</pre>";return t?Promise.resolve(r):r}if(t)return Promise.reject(n);throw n}}};var M=new D;function g(u,e){return M.parse(u,e)}g.options=g.setOptions=function(u){return M.setOptions(u),g.defaults=M.defaults,G(g.defaults),g};g.getDefaults=z;g.defaults=T;g.use=function(...u){return M.use(...u),g.defaults=M.defaults,G(g.defaults),g};g.walkTokens=function(u,e){return M.walkTokens(u,e)};g.parseInline=M.parseInline;g.Parser=b;g.parser=b.parse;g.Renderer=y;g.TextRenderer=L;g.Lexer=x;g.lexer=x.lex;g.Tokenizer=w;g.Hooks=P;g.parse=g;var jt=g.options,Ft=g.setOptions,Ut=g.use,Kt=g.walkTokens,Wt=g.parseInline,Xt=(/* unused pure expression or super */ null && (g)),Jt=b.parse,Vt=x.lex;
 //# sourceMappingURL=marked.esm.js.map
 
 ;// CONCATENATED MODULE: ./src/reporters/actionReporter.ts
@@ -92062,17 +91369,17 @@ Please report this to https://github.com/markedjs/marked.`,e){let r="<p>An error
 async function actionReporter(headline, reports, summary) {
     const byRule = groupBy(reports, (report) => report.about.name);
     summary.addHeading("OctoGuide Report", 1);
-    summary.addRaw((await d.parse(headline)) + "\n\n");
+    summary.addRaw((await g.parse(headline)) + "\n\n");
     for (const ruleReports of Object.values(byRule)) {
         const { about } = ruleReports[0];
         summary.addHeading(`<a href="${about.url}">${about.name}</a>`, 2);
-        summary.addRaw(await d.parse(about.explanation.join(" ")));
+        summary.addRaw(await g.parse(about.explanation.join(" ")));
         for (const report of ruleReports) {
-            summary.addRaw(await d.parse(report.data.primary));
+            summary.addRaw(await g.parse(report.data.primary));
             if (report.data.secondary) {
-                summary.addRaw(await d.parse(report.data.secondary.join(" ")));
+                summary.addRaw(await g.parse(report.data.secondary.join(" ")));
             }
-            summary.addRaw(await d.parse(report.data.suggestion.join("\n")));
+            summary.addRaw(await g.parse(report.data.suggestion.join("\n")));
         }
     }
     summary.addSeparator();
@@ -92094,6 +91401,65 @@ function createHeadlineAsMarkdown(entity, reports) {
         reports.length > 1 ? "some concerns" : "a concern",
         " with it. Could you please take a look?",
     ].join("");
+}
+
+;// CONCATENATED MODULE: ./src/constants.ts
+const RESOLVED_BY_OCTOGUIDE = "<!-- resolved-by: OctoGuide -->";
+
+;// CONCATENATED MODULE: ./src/reporters/markdownReporter.ts
+
+
+
+/**
+ * Message displayed when all reports are resolved.
+ * @internal
+ */
+const markdownReportPassMessage = `All reports are resolved now. Thanks! ✅\n\n${RESOLVED_BY_OCTOGUIDE}`;
+/**
+ * Formats a rule report as used by the GitHub Actions Workflow.
+ *
+ * If reports is empty, it will return a happy message.
+ * Otherwise it will pretty-print the reports, grouped by rule.
+ * @param headline Headline text for the report (typically entity information)
+ * @param reports Rule reports as returned by `runOctoGuideRules`
+ * @returns Formatted markdown string for GitHub comment
+ * @example
+ * import { markdownReporter, runOctoGuideRules } from "octoguide";
+ *
+ * const { entity, reports } = await runOctoGuideRules({
+ *   entity: "https://github.com/OctoGuide/bot/issues/19",
+ * });
+ *
+ * console.log(markdownReporter(entity.data.html_url, reports));
+ */
+function markdownReporter(headline, reports) {
+    if (!reports.length) {
+        return markdownReportPassMessage;
+    }
+    const byRule = groupBy(reports, (report) => report.about.name);
+    const printedReports = Object.values(byRule).map((ruleReports) => {
+        const { about } = ruleReports[0];
+        const start = `[[**${about.name}**](${about.url})]`;
+        if (ruleReports.length > 1) {
+            return [
+                start,
+                " ",
+                about.explanation.join(" "),
+                "\n\n",
+                ruleReports
+                    .map((report) => formatReportAsMarkdown(report))
+                    .join("\n\n"),
+            ].join("");
+        }
+        return [
+            start,
+            " ",
+            ruleReports
+                .map((report) => formatReportAsMarkdown(report, about.explanation))
+                .join("\n\n"),
+        ].join("");
+    });
+    return [headline, "\n\n", printedReports.join("\n\n")].join("");
 }
 
 ;// CONCATENATED MODULE: ./src/action/comments/isRequestError.ts
@@ -92226,8 +91592,10 @@ async function unminimizeCommentIfPreviouslyResolved(actor, comment) {
 async function outputActionReports(actor, entity, reports, settings) {
     const headline = createHeadlineAsMarkdown(entity, reports);
     const reported = markdownReporter(headline, reports);
+    let commentStepSucceeded = false;
     try {
         const comment = await setCommentForReports(actor, entity, reported, settings);
+        commentStepSucceeded = true;
         info(comment
             ? `Reports comment: ${comment.url} (${comment.status})`
             : "No comment created.");
@@ -92247,6 +91615,15 @@ async function outputActionReports(actor, entity, reports, settings) {
         await actionReporter(headline, reports, summary);
         await summary.write();
         setFailed(headline);
+    }
+    if (commentStepSucceeded &&
+        reports.some((report) => report.data.action === "close")) {
+        try {
+            await actor.closeEntity();
+        }
+        catch (error) {
+            setFailed(`Failed to close entity: ${error instanceof Error ? error.message : String(error)}`);
+        }
     }
 }
 
@@ -92337,7 +91714,7 @@ async function runOctoGuideAction(context) {
 
 /***/ }),
 
-/***/ 4526:
+/***/ 8273:
 /***/ ((module) => {
 
 function webpackEmptyContext(req) {
@@ -92347,7 +91724,7 @@ function webpackEmptyContext(req) {
 }
 webpackEmptyContext.keys = () => ([]);
 webpackEmptyContext.resolve = webpackEmptyContext;
-webpackEmptyContext.id = 4526;
+webpackEmptyContext.id = 8273;
 module.exports = webpackEmptyContext;
 
 /***/ }),
@@ -92569,7 +91946,7 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("util");
 
 /***/ }),
 
-/***/ 654:
+/***/ 8388:
 /***/ ((module) => {
 
 var __webpack_unused_export__;
@@ -92746,7 +92123,7 @@ __webpack_unused_export__ = defaultContentType
 
 /***/ }),
 
-/***/ 2014:
+/***/ 468:
 /***/ ((module) => {
 
 var __webpack_unused_export__;
@@ -92923,19 +92300,20 @@ __webpack_unused_export__ = defaultContentType
 
 /***/ }),
 
-/***/ 7620:
+/***/ 3303:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
+var __webpack_unused_export__;
 // @ts-check
 
 
 
-const micromark = __nccwpck_require__(4204);
+const micromark = __nccwpck_require__(2943);
 
-const { newLineRe, nextLinesRe } = __nccwpck_require__(4782);
+const { newlineRe, nextLinesRe } = __nccwpck_require__(2235);
 
-module.exports.newLineRe = newLineRe;
-module.exports.nextLinesRe = nextLinesRe;
+module.exports.Or = newlineRe;
+module.exports.gi = nextLinesRe;
 
 /** @typedef {import("../lib/exports.mjs").RuleOnError} RuleOnError */
 /** @typedef {import("../lib/exports.mjs").RuleOnErrorFixInfo} RuleOnErrorFixInfo */
@@ -92947,28 +92325,28 @@ module.exports.nextLinesRe = nextLinesRe;
 
 // Regular expression for matching common front matter (YAML and TOML)
 // @ts-ignore
-module.exports.frontMatterRe =
+module.exports.Q9 =
   /((^---[^\S\r\n\u2028\u2029]*$[\s\S]+?^---\s*)|(^\+\+\+[^\S\r\n\u2028\u2029]*$[\s\S]+?^(\+\+\+|\.\.\.)\s*)|(^\{[^\S\r\n\u2028\u2029]*$[\s\S]+?^\}\s*))(\r\n|\r|\n|$)/m;
 
 // Regular expression for matching the start of inline disable/enable comments
 const inlineCommentStartRe =
   /(<!--\s*markdownlint-(disable|enable|capture|restore|disable-file|enable-file|disable-line|disable-next-line|configure-file))(?:\s|-->)/gi;
-module.exports.inlineCommentStartRe = inlineCommentStartRe;
+module.exports.q5 = inlineCommentStartRe;
 
 // Regular expression for identifying an HTML entity at the end of a line
-module.exports.endOfLineHtmlEntityRe =
+module.exports.oo =
   /&(?:#\d+|#[xX][\da-fA-F]+|[a-zA-Z]{2,31}|blk\d{2}|emsp1[34]|frac\d{2}|sup\d|there4);$/;
 
 // Regular expression for identifying a GitHub emoji code at the end of a line
-module.exports.endOfLineGemojiCodeRe =
+module.exports.Uj =
   /:(?:[abmovx]|[-+]1|100|1234|(?:1st|2nd|3rd)_place_medal|8ball|clock\d{1,4}|e-mail|non-potable_water|o2|t-rex|u5272|u5408|u55b6|u6307|u6708|u6709|u6e80|u7121|u7533|u7981|u7a7a|[a-z]{2,15}2?|[a-z]{1,14}(?:_[a-z\d]{1,16})+):$/;
 
 // All punctuation characters (normal and full-width)
 const allPunctuation = ".,;:!?。，；：！？";
-module.exports.allPunctuation = allPunctuation;
+module.exports.qA = allPunctuation;
 
 // All punctuation characters without question mark (normal and full-width)
-module.exports.allPunctuationNoQuestion = allPunctuation.replace(/[?？]/gu, "");
+module.exports.f4 = allPunctuation.replace(/[?？]/gu, "");
 
 /**
  * Returns true iff the input is a Number.
@@ -92979,7 +92357,7 @@ module.exports.allPunctuationNoQuestion = allPunctuation.replace(/[?？]/gu, "")
 function isNumber(obj) {
   return typeof obj === "number";
 }
-module.exports.isNumber = isNumber;
+module.exports.Et = isNumber;
 
 /**
  * Returns true iff the input is a String.
@@ -92990,7 +92368,7 @@ module.exports.isNumber = isNumber;
 function isString(obj) {
   return typeof obj === "string";
 }
-module.exports.isString = isString;
+module.exports.Kg = isString;
 
 /**
  * Returns true iff the input String is empty.
@@ -93001,7 +92379,7 @@ module.exports.isString = isString;
 function isEmptyString(str) {
   return str.length === 0;
 }
-module.exports.isEmptyString = isEmptyString;
+module.exports.jw = isEmptyString;
 
 /**
  * Returns true iff the input is an Object.
@@ -93012,7 +92390,7 @@ module.exports.isEmptyString = isEmptyString;
 function isObject(obj) {
   return !!obj && (typeof obj === "object") && !Array.isArray(obj);
 }
-module.exports.isObject = isObject;
+module.exports.Gv = isObject;
 
 /**
  * Returns true iff the input is a URL.
@@ -93023,7 +92401,7 @@ module.exports.isObject = isObject;
 function isUrl(obj) {
   return !!obj && (Object.getPrototypeOf(obj) === URL.prototype);
 }
-module.exports.isUrl = isUrl;
+module.exports.gU = isUrl;
 
 /**
  * Clones the input if it is an Array.
@@ -93034,7 +92412,7 @@ module.exports.isUrl = isUrl;
 function cloneIfArray(arr) {
   return Array.isArray(arr) ? [ ...arr ] : arr;
 }
-module.exports.cloneIfArray = cloneIfArray;
+module.exports.YW = cloneIfArray;
 
 /**
  * Clones the input if it is a URL.
@@ -93046,7 +92424,7 @@ function cloneIfUrl(url) {
   // @ts-ignore
   return isUrl(url) ? new URL(url) : url;
 }
-module.exports.cloneIfUrl = cloneIfUrl;
+module.exports.c0 = cloneIfUrl;
 
 /**
  * Gets a Regular Expression for matching the specified HTML attribute.
@@ -93054,7 +92432,7 @@ module.exports.cloneIfUrl = cloneIfUrl;
  * @param {string} name HTML attribute name.
  * @returns {RegExp} Regular Expression for matching.
  */
-module.exports.getHtmlAttributeRe = function getHtmlAttributeRe(name) {
+module.exports.Xi = function getHtmlAttributeRe(name) {
   return new RegExp(`\\s${name}\\s*=\\s*['"]?([^'"\\s>]*)`, "iu");
 };
 
@@ -93093,7 +92471,7 @@ function isBlankLine(line) {
     !removeComments(line).replace(/>/g, "").trim()
   );
 }
-module.exports.isBlankLine = isBlankLine;
+module.exports.pB = isBlankLine;
 
 // Replaces the content of properly-formatted CommonMark comments with "."
 // This preserves the line/column information for the rest of the document
@@ -93107,7 +92485,7 @@ const notCrLfRe = /[^\r\n]/g;
 const notSpaceCrLfRe = /[^ \r\n]/g;
 const trailingSpaceRe = / +[\r\n]/g;
 const replaceTrailingSpace = (/** @type {string} */ s) => s.replace(notCrLfRe, safeCommentCharacter);
-module.exports.clearHtmlCommentText = function clearHtmlCommentText(/** @type {string} */ text) {
+module.exports.X6 = function clearHtmlCommentText(/** @type {string} */ text) {
   let i = 0;
   while ((i = text.indexOf(htmlCommentBegin, i)) !== -1) {
     const j = text.indexOf(htmlCommentEnd, i + 2);
@@ -93149,7 +92527,7 @@ module.exports.clearHtmlCommentText = function clearHtmlCommentText(/** @type {s
 };
 
 // Escapes a string for use in a RegExp
-module.exports.escapeForRegExp = function escapeForRegExp(/** @type {string} */ str) {
+module.exports.If = function escapeForRegExp(/** @type {string} */ str) {
   return str.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&");
 };
 
@@ -93173,7 +92551,7 @@ function ellipsify(text, start, end) {
   }
   return text;
 }
-module.exports.ellipsify = ellipsify;
+module.exports.qq = ellipsify;
 
 /**
  * Adds a generic error object via the onError callback.
@@ -93195,7 +92573,7 @@ function addError(onError, lineNumber, detail, context, range, fixInfo) {
     fixInfo
   });
 }
-module.exports.addError = addError;
+module.exports.CN = addError;
 
 /**
  * Adds an error object with details conditionally via the onError callback.
@@ -93223,7 +92601,7 @@ function addErrorDetailIf(
       fixInfo);
   }
 }
-module.exports.addErrorDetailIf = addErrorDetailIf;
+module.exports.qC = addErrorDetailIf;
 
 /**
  * Adds an error object with context via the onError callback.
@@ -93239,10 +92617,10 @@ module.exports.addErrorDetailIf = addErrorDetailIf;
  */
 function addErrorContext(onError, lineNumber, context, start, end, range, fixInfo) {
   // Normalize new line characters so Linux and Windows trim consistently
-  context = ellipsify(context.replace(newLineRe, "\n"), start, end);
+  context = ellipsify(context.replace(newlineRe, "\n"), start, end);
   addError(onError, lineNumber, undefined, context, range, fixInfo);
 }
-module.exports.addErrorContext = addErrorContext;
+module.exports.Xr = addErrorContext;
 
 /**
  * Defines a range within a file (start line/column to end line/column, subset of MicromarkToken).
@@ -93275,7 +92653,7 @@ const positionLessThanOrEqual = (lineA, columnA, lineB, columnB) => (
  * @param {FileRange|MicromarkToken} rangeB Range B.
  * @returns {boolean} True iff the two ranges overlap.
  */
-module.exports.hasOverlap = function hasOverlap(rangeA, rangeB) {
+module.exports.UM = function hasOverlap(rangeA, rangeB) {
   const lte = positionLessThanOrEqual(rangeA.startLine, rangeA.startColumn, rangeB.startLine, rangeB.startColumn);
   const first = lte ? rangeA : rangeB;
   const second = lte ? rangeB : rangeA;
@@ -93283,7 +92661,7 @@ module.exports.hasOverlap = function hasOverlap(rangeA, rangeB) {
 };
 
 // Determines if the front matter includes a title
-module.exports.frontMatterHasTitle =
+module.exports.Fl =
   function frontMatterHasTitle(/** @type {readonly string[]} */ frontMatterLines, /** @type {string} */ frontMatterTitlePattern) {
     const ignoreFrontMatter =
       (frontMatterTitlePattern !== undefined) && !frontMatterTitlePattern;
@@ -93366,59 +92744,59 @@ function getReferenceLinkImageData(tokens) {
       case "gfmFootnoteDefinitionLabelString":
         labelPrefix = "^";
       case "definitionLabelString": // eslint-disable-line no-fallthrough
-        {
-          // definitions and definitionLineIndices
-          const reference = normalizeReference(`${labelPrefix}${token.text}`);
-          if (definitions.has(reference)) {
-            duplicateDefinitions.push([ reference, token.startLine - 1 ]);
-          } else {
-            const parent =
-              micromark.getParentOfType(token, [ "definition" ]);
-            const destinationString = parent &&
-              micromark.getDescendantsByType(parent, [ "definitionDestination", "definitionDestinationRaw", "definitionDestinationString" ])[0]?.text;
-            definitions.set(
-              reference,
-              [ token.startLine - 1, destinationString || "" ]
-            );
-          }
+      {
+        // definitions and definitionLineIndices
+        const reference = normalizeReference(`${labelPrefix}${token.text}`);
+        if (definitions.has(reference)) {
+          duplicateDefinitions.push([ reference, token.startLine - 1 ]);
+        } else {
+          const parent =
+            micromark.getParentOfType(token, [ "definition" ]);
+          const destinationString = parent &&
+            micromark.getDescendantsByType(parent, [ "definitionDestination", "definitionDestinationRaw", "definitionDestinationString" ])[0]?.text;
+          definitions.set(
+            reference,
+            [ token.startLine - 1, destinationString || "" ]
+          );
         }
         break;
+      }
       case "gfmFootnoteCall":
       case "image":
       case "link":
-        {
-          // Identify if shortcut or full/collapsed
-          let isShortcut = (token.children.length === 1);
-          const isFullOrCollapsed = (token.children.length === 2) && !token.children.some((t) => t.type === "resource");
-          const [ labelText ] = micromark.getDescendantsByType(token, [ "label", "labelText" ]);
-          const [ referenceString ] = micromark.getDescendantsByType(token, [ "reference", "referenceString" ]);
-          let label = getText(labelText);
-          // Identify if footnote
-          if (!isShortcut && !isFullOrCollapsed) {
-            const [ footnoteCallMarker, footnoteCallString ] = token.children.filter(
-              (t) => [ "gfmFootnoteCallMarker", "gfmFootnoteCallString" ].includes(t.type)
-            );
-            if (footnoteCallMarker && footnoteCallString) {
-              label = `${footnoteCallMarker.text}${footnoteCallString.text}`;
-              isShortcut = true;
-            }
-          }
-          // Track link (handle shortcuts separately due to ambiguity in "text [text] text")
-          if (isShortcut || isFullOrCollapsed) {
-            addReferenceToDictionary(token, getText(referenceString) || label, isShortcut);
+      {
+        // Identify if shortcut or full/collapsed
+        let isShortcut = (token.children.length === 1);
+        const isFullOrCollapsed = (token.children.length === 2) && !token.children.some((t) => t.type === "resource");
+        const [ labelText ] = micromark.getDescendantsByType(token, [ "label", "labelText" ]);
+        const [ referenceString ] = micromark.getDescendantsByType(token, [ "reference", "referenceString" ]);
+        let label = getText(labelText);
+        // Identify if footnote
+        if (!isShortcut && !isFullOrCollapsed) {
+          const [ footnoteCallMarker, footnoteCallString ] = token.children.filter(
+            (t) => [ "gfmFootnoteCallMarker", "gfmFootnoteCallString" ].includes(t.type)
+          );
+          if (footnoteCallMarker && footnoteCallString) {
+            label = `${footnoteCallMarker.text}${footnoteCallString.text}`;
+            isShortcut = true;
           }
         }
+        // Track link (handle shortcuts separately due to ambiguity in "text [text] text")
+        if (isShortcut || isFullOrCollapsed) {
+          addReferenceToDictionary(token, getText(referenceString) || label, isShortcut);
+        }
         break;
+      }
       case "undefinedReferenceCollapsed":
       case "undefinedReferenceFull":
       case "undefinedReferenceShortcut":
-        {
-          const undefinedReference = micromark.getDescendantsByType(token, [ "undefinedReference" ])[0];
-          const label = undefinedReference.children.map((t) => t.text).join("");
-          const isShortcut = (token.type === "undefinedReferenceShortcut");
-          addReferenceToDictionary(token, label, isShortcut);
-        }
+      {
+        const undefinedReference = micromark.getDescendantsByType(token, [ "undefinedReference" ])[0];
+        const label = undefinedReference.children.map((t) => t.text).join("");
+        const isShortcut = (token.type === "undefinedReferenceShortcut");
+        addReferenceToDictionary(token, label, isShortcut);
         break;
+      }
     }
   }
   return {
@@ -93429,7 +92807,7 @@ function getReferenceLinkImageData(tokens) {
     definitionLineIndices
   };
 }
-module.exports.getReferenceLinkImageData = getReferenceLinkImageData;
+module.exports.fL = getReferenceLinkImageData;
 
 /**
  * Gets the most common line ending, falling back to the platform default.
@@ -93442,7 +92820,7 @@ function getPreferredLineEnding(input, os) {
   let cr = 0;
   let lf = 0;
   let crlf = 0;
-  const endings = input.match(newLineRe) || [];
+  const endings = input.match(newlineRe) || [];
   for (const ending of endings) {
     // eslint-disable-next-line default-case
     switch (ending) {
@@ -93469,7 +92847,7 @@ function getPreferredLineEnding(input, os) {
   }
   return preferredLineEnding;
 }
-module.exports.getPreferredLineEnding = getPreferredLineEnding;
+__webpack_unused_export__ = getPreferredLineEnding;
 
 /**
  * Expands a path with a tilde to an absolute path.
@@ -93482,7 +92860,7 @@ function expandTildePath(file, os) {
   const homedir = os && os.homedir && os.homedir();
   return homedir ? file.replace(/^~($|\/|\\)/, `${homedir}$1`) : file;
 }
-module.exports.expandTildePath = expandTildePath;
+__webpack_unused_export__ = expandTildePath;
 
 /** @typedef {import("../lib/markdownlint.mjs").LintError[]} LintErrors */
 /** @typedef {import("../lib/markdownlint.mjs").LintResults} LintResults */
@@ -93558,7 +92936,6 @@ function convertLintErrorsVersion2To0(errors) {
 function copyAndTransformResults(results, transform) {
   /** @type {Object.<string, LintErrors>} */
   const newResults = {};
-  Object.defineProperty(newResults, "toString", { "value": results.toString });
   for (const key of Object.keys(results)) {
     const arr = results[key].map((r) => ({ ...r }));
     newResults[key] = transform(arr);
@@ -93573,7 +92950,7 @@ function copyAndTransformResults(results, transform) {
  * @param {LintResults} results Lint results (v3).
  * @returns {LintResults} Lint results (v0).
  */
-module.exports.convertToResultVersion0 = function convertToResultVersion0(results) {
+__webpack_unused_export__ = function convertToResultVersion0(results) {
   return copyAndTransformResults(results, (r) => convertLintErrorsVersion2To0(convertLintErrorsVersion3To2(r)));
 };
 
@@ -93583,7 +92960,7 @@ module.exports.convertToResultVersion0 = function convertToResultVersion0(result
  * @param {LintResults} results Lint results (v3).
  * @returns {LintResults} Lint results (v1).
  */
-module.exports.convertToResultVersion1 = function convertToResultVersion1(results) {
+__webpack_unused_export__ = function convertToResultVersion1(results) {
   return copyAndTransformResults(results, (r) => convertLintErrorsVersion2To1(convertLintErrorsVersion3To2(r)));
 };
 
@@ -93593,7 +92970,7 @@ module.exports.convertToResultVersion1 = function convertToResultVersion1(result
  * @param {LintResults} results Lint results (v3).
  * @returns {LintResults} Lint results (v2).
  */
-module.exports.convertToResultVersion2 = function convertToResultVersion2(results) {
+__webpack_unused_export__ = function convertToResultVersion2(results) {
   return copyAndTransformResults(results, convertLintErrorsVersion3To2);
 };
 
@@ -93603,7 +92980,7 @@ module.exports.convertToResultVersion2 = function convertToResultVersion2(result
  * @param {LintResults|undefined} lintResults Lint results.
  * @returns {string[]} Lint error strings.
  */
-module.exports.formatLintResults = function formatLintResults(lintResults) {
+__webpack_unused_export__ = function formatLintResults(lintResults) {
   const results = [];
   const entries = Object.entries(lintResults || {});
   entries.sort((a, b) => a[0].localeCompare(b[0]));
@@ -93626,14 +93003,14 @@ module.exports.formatLintResults = function formatLintResults(lintResults) {
 
 /***/ }),
 
-/***/ 4204:
+/***/ 2943:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // @ts-check
 
 
 
-const { flatTokensSymbol, htmlFlowSymbol, newLineRe } = __nccwpck_require__(4782);
+const { flatTokensSymbol, htmlFlowSymbol, newlineRe } = __nccwpck_require__(2235);
 
 // eslint-disable-next-line jsdoc/valid-types
 /** @typedef {import("micromark-util-types", { with: { "resolution-mode": "import" } }).TokenType} TokenType */
@@ -93783,7 +93160,6 @@ function getBlockQuotePrefixText(tokens, lineNumber, count = 1) {
     .map((prefix) => prefix.text)
     .join("")
     .trimEnd()
-    // eslint-disable-next-line unicorn/prefer-spread
     .concat("\n")
     .repeat(count);
 };
@@ -93855,7 +93231,7 @@ function getHeadingText(heading) {
     .flatMap((descendant) => descendant.children.filter((child) => child.type !== "htmlText"))
     .map((data) => data.text)
     .join("")
-    .replace(newLineRe, " ");
+    .replace(newlineRe, " ");
 }
 
 /**
@@ -93916,7 +93292,9 @@ function isDocfxTab(heading) {
   // See https://dotnet.github.io/docfx/docs/markdown.html?tabs=linux%2Cdotnet#tabs
   if (heading?.type === "atxHeading") {
     const headingTexts = getDescendantsByType(heading, [ "atxHeadingText" ]);
+    // eslint-disable-next-line unicorn/better-dom-traversing
     if ((headingTexts.length === 1) && (headingTexts[0].children.length === 1) && (headingTexts[0].children[0].type === "link")) {
+      // eslint-disable-next-line unicorn/better-dom-traversing
       const resourceDestinationStrings = filterByTypes(headingTexts[0].children[0].children, [ "resourceDestinationString" ]);
       return (resourceDestinationStrings.length === 1) && docfxTabSyntaxRe.test(resourceDestinationStrings[0].text);
     }
@@ -93964,7 +93342,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4782:
+/***/ 2235:
 /***/ ((module) => {
 
 // @ts-check
@@ -93979,7 +93357,7 @@ module.exports.htmlFlowSymbol = Symbol("html-flow");
 
 // Regular expression for matching common newline characters
 // See NEWLINES_RE in markdown-it/lib/rules_core/normalize.js
-module.exports.newLineRe = /\r\n?|\n/g;
+module.exports.newlineRe = /\r\n?|\n/g;
 
 // Regular expression for matching next lines
 module.exports.nextLinesRe = /[\r\n][\s\S]*$/;
@@ -93987,7 +93365,7 @@ module.exports.nextLinesRe = /[\r\n][\s\S]*$/;
 
 /***/ }),
 
-/***/ 2551:
+/***/ 6592:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // @ts-check
@@ -94002,7 +93380,7 @@ module.exports.nextLinesRe = /[\r\n][\s\S]*$/;
  * @returns {any} Exported module content.
  */
 function requireMarkdownItCjs() {
-  return __nccwpck_require__(8491);
+  return __nccwpck_require__(4482);
 }
 
 module.exports = {
@@ -94012,17 +93390,18 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8491:
+/***/ 4482:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // @ts-check
 
 
 
-const { newLineRe } = __nccwpck_require__(7620);
+const { newlineRe } = __nccwpck_require__(2235);
 
 // @ts-expect-error https://github.com/microsoft/TypeScript/issues/52529
 /** @typedef {import("markdownlint").MarkdownIt} MarkdownIt */
+/** @typedef {import("markdownlint").MarkdownItBaseToken} MarkdownItBaseToken */
 /** @typedef {import("markdownlint").MarkdownItToken} MarkdownItToken */
 /** @typedef {import("markdownlint").Plugin} Plugin */
 
@@ -94051,7 +93430,7 @@ function forEachInlineCodeSpan(input, handler) {
     backticksLengthAndIndex.push([ match[0].length, match.index ]);
   }
   const newLinesIndex = [];
-  while ((match = newLineRe.exec(input)) !== null) {
+  while ((match = newlineRe.exec(input)) !== null) {
     newLinesIndex.push(match.index);
   }
   let lineIndex = 0;
@@ -94064,12 +93443,12 @@ function forEachInlineCodeSpan(input, handler) {
         const [ endLength, endIndex ] = backticksLengthAndIndex[j];
         if (startLength === endLength) {
           for (; k < newLinesIndex.length; k++) {
-            const newLineIndex = newLinesIndex[k];
-            if (startIndex < newLineIndex) {
+            const newlineIndex = newLinesIndex[k];
+            if (startIndex < newlineIndex) {
               break;
             }
             lineIndex++;
-            lineStartIndex = newLineIndex + 1;
+            lineStartIndex = newlineIndex + 1;
           }
           const columnIndex = startIndex - lineStartIndex + startLength;
           handler(
@@ -94114,7 +93493,7 @@ function freezeToken(token) {
 /**
  * Annotate tokens with line/lineNumber and freeze them.
  *
- * @param {import("markdown-it").Token[]} tokens Array of markdown-it tokens.
+ * @param {MarkdownItBaseToken[]} tokens Array of markdown-it tokens.
  * @param {string[]} lines Lines of Markdown content.
  * @returns {void}
  */
@@ -94148,7 +93527,7 @@ function annotateAndFreezeTokens(tokens, lines) {
       const codeSpanExtraLines = [];
       if (token.children.some((child) => child.type === "code_inline")) {
         forEachInlineCodeSpan(token.content, (code) => {
-          codeSpanExtraLines.push(code.split(newLineRe).length - 1);
+          codeSpanExtraLines.push(code.split(newlineRe).length - 1);
         });
       }
       let lineNumber = token.lineNumber;
@@ -94189,17 +93568,17 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8594:
+/***/ 9067:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // @ts-check
 
 
 
-// @ts-ignore
-// eslint-disable-next-line camelcase, no-inline-comments, no-undef
-const nativeRequire = (typeof __WEBPACK_EXTERNAL_createRequire(import.meta.url) === "undefined") ? __nccwpck_require__(4526) : /* c8 ignore next */ __WEBPACK_EXTERNAL_createRequire(import.meta.url);
 // Captures the native require implementation (even under webpack).
+// @ts-ignore
+// eslint-disable-next-line no-underscore-dangle
+const nativeRequire = globalThis.__non_webpack_require__ ?? __nccwpck_require__(8273);
 
 /**
  * @typedef RequireResolveOptions
@@ -94248,7 +93627,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 369:
+/***/ 2439:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 
@@ -94317,9 +93696,9 @@ class Context {
 }
 //# sourceMappingURL=context.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/@actions+http-client@3.0.2/node_modules/@actions/http-client/lib/index.js
-var lib = __nccwpck_require__(2965);
+var lib = __nccwpck_require__(4647);
 // EXTERNAL MODULE: ./node_modules/.pnpm/undici@6.23.0/node_modules/undici/index.js
-var undici = __nccwpck_require__(1103);
+var undici = __nccwpck_require__(5065);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.0.0/node_modules/@actions/github/lib/internal/utils.js
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -94361,7 +93740,7 @@ function getApiBaseUrl() {
 }
 //# sourceMappingURL=utils.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/universal-user-agent@7.0.2/node_modules/universal-user-agent/index.js
-var universal_user_agent = __nccwpck_require__(1542);
+var universal_user_agent = __nccwpck_require__(7515);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/before-after-hook@4.0.0/node_modules/before-after-hook/lib/register.js
 // @ts-check
 
@@ -94854,7 +94233,7 @@ var endpoint = withDefaults(null, DEFAULTS);
 
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/fast-content-type-parse@3.0.0/node_modules/fast-content-type-parse/index.js
-var fast_content_type_parse = __nccwpck_require__(2014);
+var fast_content_type_parse = __nccwpck_require__(468);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/@octokit+request-error@7.1.0/node_modules/@octokit/request-error/dist-src/index.js
 class RequestError extends Error {
   name;
@@ -98334,7 +97713,7 @@ function getOctokit(token, options, ...additionalPlugins) {
 
 /***/ }),
 
-/***/ 1542:
+/***/ 7515:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
@@ -98550,6 +97929,6 @@ function getUserAgent() {
 /******/ // startup
 /******/ // Load entry module and return exports
 /******/ // This entry module used 'module' so it can't be inlined
-/******/ var __webpack_exports__ = __nccwpck_require__(2548);
+/******/ var __webpack_exports__ = __nccwpck_require__(6250);
 /******/ __webpack_exports__ = await __webpack_exports__;
 /******/ 

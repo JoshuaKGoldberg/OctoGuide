@@ -172,3 +172,24 @@ export const getStartedIncludeFirstTimers = `jobs:
         with:
           github-token: \${{ secrets.GITHUB_TOKEN }}
 +          include-associations: "FIRST_TIMER,FIRST_TIME_CONTRIBUTOR"`;
+
+export const getRuleDefaultOptions = (
+	ruleName: string,
+	defaultOptions: object,
+) => {
+	const rules = JSON.stringify({ [ruleName]: defaultOptions }, null, 2)
+		.split("\n")
+		.map((line) => `+            ${line}`)
+		.join("\n");
+
+	return `jobs:
+  octoguide:
+    if: \${{ !endsWith(github.actor, '[bot]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: OctoGuide/bot${atVersion}
+        with:
+          github-token: \${{ secrets.GITHUB_TOKEN }}
++          rules: |
+${rules}`;
+};
