@@ -6,4 +6,5 @@
 /node_modules
 /site/.astro
 /site/node_modules
+/site/src/content/docs/generated
 *.tsbuildinfo
