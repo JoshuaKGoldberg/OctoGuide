@@ -9,6 +9,15 @@ Metadata about a rule, as used to define the rule.
 
 ## Properties
 
+### defaultOptions?
+
+> `optional` **defaultOptions**: [`RuleOptionsRaw`](/generated/api/interfaces/ruleoptionsraw/)
+
+Options the rule should run with unless overridden per-rule by users.
+These take precedence over any options users set globally for all rules.
+
+***
+
 ### description
 
 > **description**: `string`

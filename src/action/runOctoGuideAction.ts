@@ -30,7 +30,7 @@ export async function runOctoGuideAction(context: typeof github.context) {
 
 	const { actor, entity, reports } = await runOctoGuideRules({
 		auth,
-		entityInput,
+		entity: entityInput,
 		settings,
 	});
 

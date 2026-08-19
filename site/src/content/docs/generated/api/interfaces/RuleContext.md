@@ -59,6 +59,14 @@ Octokit instance that can send GitHub API calls.
 
 ***
 
+### options
+
+> **options**: [`RuleOptions`](/generated/api/interfaces/ruleoptions/)
+
+Options the rule is running with, resolved from rule and user settings.
+
+***
+
 ### report
 
 > **report**: [`RuleReporter`](/generated/api/type-aliases/rulereporter/)

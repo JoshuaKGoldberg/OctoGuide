@@ -1,25 +1,25 @@
-import { defaultIncludeAssociations } from "../action/collection/parseIncludeAssociations";
-import { RuleOptions, RuleOptionsRaw } from "../types/rules";
-
-export interface BaseOptions {
-	includeAssociations?: Set<string>;
-	includeBots?: boolean;
-}
+import type { RuleOptions, RuleOptionsRaw } from "../types/rules.js";
 
 export function mergeRuleOptions(
-	baseOptions: BaseOptions = {},
-	ruleOptions: boolean | null | RuleOptionsRaw | undefined,
+	...layers: (RuleOptionsRaw | undefined)[]
 ): RuleOptions {
-	if (!ruleOptions || typeof ruleOptions === "boolean") {
-		ruleOptions = {};
+	const merged: RuleOptionsRaw = {};
+
+	for (const layer of layers) {
+		for (const [key, value] of Object.entries(layer ?? {})) {
+			if (value !== undefined) {
+				merged[key] = value;
+			}
+		}
 	}
 
+	const includeAssociations = merged["include-associations"];
+
 	return {
-		...baseOptions,
-		...ruleOptions,
-		"include-associations": ruleOptions["include-associations"]
-			? new Set(ruleOptions["include-associations"])
-			: (baseOptions.includeAssociations ?? defaultIncludeAssociations),
-		"include-bots": ruleOptions["include-bots"] ?? baseOptions.includeBots,
+		...merged,
+		"include-associations": includeAssociations
+			? new Set(["NONE", ...includeAssociations])
+			: undefined,
+		"include-bots": merged["include-bots"] ?? true,
 	};
 }

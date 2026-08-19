@@ -35,6 +35,9 @@ For installation instruction see
 | [Rule](/generated/api/interfaces/rule/) | Defines how to analyze entities for a single best practice. |
 | [RuleAbout](/generated/api/interfaces/ruleabout/) | Metadata about a rule, as used to define the rule. |
 | [RuleContext](/generated/api/interfaces/rulecontext/) | Shared context provided to rules when they run on an entity. |
+| [RuleOptions](/generated/api/interfaces/ruleoptions/) | Options for a rule, as resolved for a run. |
+| [RuleOptionsRaw](/generated/api/interfaces/ruleoptionsraw/) | Options for a rule, as provided in rule and user settings. |
+| [Settings](/generated/api/interfaces/settings/) | - |
 
 ## Type Aliases
 

@@ -13,7 +13,7 @@ import type { RuleReportData } from "./reports.js";
 /**
  * Defines how to analyze entities for a single best practice.
  */
-export interface Rule<About extends RuleAboutWithUrl = RuleAboutWithUrl> {
+export interface Rule<About extends RuleAbout = RuleAbout> {
 	/**
 	 * Metadata about the rule.
 	 */
@@ -44,7 +44,10 @@ export interface Rule<About extends RuleAboutWithUrl = RuleAboutWithUrl> {
  * Metadata about a rule, as used to define the rule.
  */
 export interface RuleAbout {
-	// TODO: make a type? describe?
+	/**
+	 * Options the rule should run with unless overridden per-rule by users.
+	 * These take precedence over any options users set globally for all rules.
+	 */
 	defaultOptions?: RuleOptionsRaw;
 
 	/**
@@ -88,32 +91,49 @@ export interface RuleContext {
 	octokit: Octokit;
 
 	/**
+	 * Options the rule is running with, resolved from rule and user settings.
+	 */
+	options: RuleOptions;
+
+	/**
 	 * Registers a new violation.
 	 */
 	report: RuleReporter;
-
-	/**
-	 * Processed options for any rule that may be provided by the user.
-	 */
-	options?: RuleOptions;
 }
 
 /**
- * Options for any rule that as provided by the user.
- */
-export interface RuleOptionsRaw {
-	[i: string]: unknown;
-	"include-associations"?: string[];
-	"include-bots"?: boolean;
-}
-
-/**
- * Processed options for any rule that may be provided by the user.
+ * Options for a rule, as resolved for a run.
  */
 export interface RuleOptions {
-	[i: string]: unknown;
-	"include-associations": Set<string>;
+	[key: string]: unknown;
+
+	/**
+	 * Author associations of entities the rule runs on, or `undefined` for all.
+	 */
+	"include-associations"?: Set<string>;
+
+	/**
+	 * Whether the rule runs on entities created by bots.
+	 */
 	"include-bots": boolean;
+}
+
+/**
+ * Options for a rule, as provided in rule and user settings.
+ */
+export interface RuleOptionsRaw {
+	[key: string]: unknown;
+
+	/**
+	 * Author associations of entities the rule runs on.
+	 * `"NONE"` is always included.
+	 */
+	"include-associations"?: string[];
+
+	/**
+	 * Whether the rule runs on entities created by bots.
+	 */
+	"include-bots"?: boolean;
 }
 
 /**

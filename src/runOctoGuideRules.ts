@@ -9,6 +9,7 @@ import type { Settings } from "./types/settings.js";
 
 import { createActor } from "./actors/createActor.js";
 import { isRuleSkippedForEntity } from "./execution/isRuleSkippedForEntity.js";
+import { resolveRules } from "./execution/resolveRules.js";
 import { runRuleOnEntity } from "./execution/runRuleOnEntity.js";
 
 /**
@@ -47,12 +48,12 @@ export interface RunOctoGuideRulesOptions {
 	 * - A string URL (e.g., `"https://github.com/owner/repo/issues/123"`) - will fetch entity data via GitHub API
 	 * - An `Entity` object with pre-fetched data - avoids additional API calls when data is already available
 	 */
-	entityInput: Entity | string;
+	entity: Entity | string;
 
 	/**
-	 * Settings for the run, including rules to enable.
+	 * Settings for the run, including which rules to run and their options.
 	 */
-	settings: Settings;
+	settings?: Settings;
 }
 
 /**
@@ -100,7 +101,7 @@ export interface RunOctoGuideRulesResult {
  */
 export async function runOctoGuideRules({
 	auth,
-	entityInput,
+	entity: entityInput,
 	settings,
 }: RunOctoGuideRulesOptions): Promise<RunOctoGuideRulesResult> {
 	// TODO: There's no need to create a full *writing* actor here;
@@ -139,7 +140,12 @@ export async function runOctoGuideRules({
 	const reports: RuleReport[] = [];
 
 	await Promise.all(
-		Object.values(settings.rules).map(async ({ options, rule }) => {
+		resolveRules(settings).map(async ({ options, rule }) => {
+			if (isRuleSkippedForEntity(entity, options)) {
+				core.debug(`Skipping rule for entity: ${rule.about.name}`);
+				return;
+			}
+
 			const context: RuleContext = {
 				locator,
 				octokit,
@@ -152,9 +158,7 @@ export async function runOctoGuideRules({
 				},
 			};
 
-			if (!isRuleSkippedForEntity(entity, options)) {
-				await runRuleOnEntity(context, rule, entity);
-			}
+			await runRuleOnEntity(context, rule, entity);
 		}),
 	);
 

@@ -3798,7 +3798,7 @@ public
 
 #### author\_association
 
-> **author\_association**: `"COLLABORATOR"` \| `"CONTRIBUTOR"` \| `"FIRST_TIMER"` \| `"FIRST_TIME_CONTRIBUTOR"` \| `"MANNEQUIN"` \| `"MEMBER"` \| `"NONE"` \| `"OWNER"`
+> **author\_association**: `"COLLABORATOR"` \| `"CONTRIBUTOR"` \| `"FIRST_TIME_CONTRIBUTOR"` \| `"FIRST_TIMER"` \| `"MEMBER"` \| `"OWNER"` \| `"MANNEQUIN"` \| `"NONE"`
 
 #### auto\_merge
 

@@ -55,6 +55,6 @@ GitHub entity to run rules on. Can be either:
 
 ### settings?
 
-> `optional` **settings**: `Settings`
+> `optional` **settings**: [`Settings`](/generated/api/interfaces/settings/)
 
-Settings for the run, including rules to enable.
+Settings for the run, including which rules to run and their options.

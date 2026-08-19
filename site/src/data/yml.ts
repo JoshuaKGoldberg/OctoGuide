@@ -2,16 +2,6 @@ import { version } from "./package.js";
 
 const atVersion = `@${version}`;
 
-// TODO: move somewhere better???
-export const allAssociations = [
-	"FIRST_TIMER",
-	"FIRST_TIME_CONTRIBUTOR",
-	"CONTRIBUTOR",
-	"COLLABORATOR",
-	"MEMBER",
-	"OWNER",
-];
-
 export const getStartedBase = `jobs:
   octoguide:
     if: \${{ !endsWith(github.actor, '[bot]') }}
@@ -128,6 +118,21 @@ export const getStartedRuleNone = `jobs:
 +              "text-image-alt-text": true,
 +            }`;
 
+export const getStartedRuleOptions = `jobs:
+  octoguide:
+    if: \${{ !endsWith(github.actor, '[bot]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: OctoGuide/bot${atVersion}
+        with:
+          github-token: \${{ secrets.GITHUB_TOKEN }}
++          rules: |
++            {
++              "text-image-alt-text": {
++                "include-associations": ["FIRST_TIMER", "FIRST_TIME_CONTRIBUTOR"]
++              }
++            }`;
+
 export const getStartedIncludeBots = `jobs:
   octoguide:
     if: \${{ !endsWith(github.actor, '[bot]') }}
@@ -156,7 +161,7 @@ export const getStartedIncludeCollaborators = `jobs:
       - uses: OctoGuide/bot${atVersion}
         with:
           github-token: \${{ secrets.GITHUB_TOKEN }}
-+          include-associations: "${allAssociations.join(",")}"`;
++          include-associations: "FIRST_TIMER,FIRST_TIME_CONTRIBUTOR,CONTRIBUTOR,COLLABORATOR,MEMBER,OWNER"`;
 
 export const getStartedIncludeFirstTimers = `jobs:
   octoguide:
