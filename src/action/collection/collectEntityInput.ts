@@ -2,9 +2,9 @@ import type * as github from "@actions/github";
 
 import { parseCommentId, parseEntityUrl } from "../../actors/parseEntity.js";
 import {
+	CommentAbleEntityType,
 	CommentEntity,
 	DiscussionEntity,
-	Entity,
 	EntityData,
 	IssueEntity,
 	PullRequestEntity,
@@ -24,35 +24,13 @@ export function collectEntityInput(
 	const urlNumber = parseInt(urlNumberStr, 10);
 
 	const commentId = parseCommentId(url);
-	const isCommentEntity = !!commentId;
+	const parentType = parseParentType(urlType);
 
-	const entityType: Entity["type"] = isCommentEntity
-		? "comment"
-		: (() => {
-				switch (urlType) {
-					case "discussions":
-						return "discussion";
-					case "issues":
-						return "issue";
-					default:
-						return "pull_request";
-				}
-			})();
+	const entityOrParentNumber = getEntityNumber(!!commentId, payload, urlNumber);
 
-	const entityOrParentNumber = getEntityNumber(
-		isCommentEntity,
-		payload,
-		urlNumber,
-	);
-
-	return createEntityInput(
-		isCommentEntity,
-		commentId,
-		target,
-		entityOrParentNumber,
-		urlType,
-		entityType,
-	);
+	return commentId
+		? createCommentEntity(commentId, target, entityOrParentNumber, parentType)
+		: createNonCommentEntity(target, entityOrParentNumber, parentType);
 }
 
 /**
@@ -90,65 +68,31 @@ function getEntityNumber(
 }
 
 /**
- * Creates an Entity object from the parsed URL and payload data.
+ * Creates a CommentEntity from the parsed URL and payload data.
  *
  * Note: Type assertions are necessary because GitHub webhook payloads don't
  * distinguish between different entity types at the type level. The payload.comment,
  * payload.issue, etc. fields can contain various entity types, and we determine
  * the correct type at runtime based on URL parsing and entity metadata.
- * @param isComment Whether this is a comment entity
- * @param commentId The comment ID (if applicable)
- * @param target The target entity data from the payload
- * @param entityNumber The entity or parent number
- * @param urlType The type extracted from the URL (discussions/issues/pull)
- * @param entityType The resolved entity type
- * @returns The constructed Entity object
- */
-function createEntityInput(
-	isComment: boolean,
-	commentId: string | undefined,
-	target: EntityData,
-	entityNumber: number,
-	urlType: string,
-	entityType: Entity["type"],
-): CommentEntity | DiscussionEntity | IssueEntity | PullRequestEntity {
-	return isComment
-		? createCommentEntity(commentId, target, entityNumber, urlType)
-		: createNonCommentEntity(target, entityNumber, entityType);
-}
-
-/**
- * Creates a CommentEntity from the parsed URL and payload data.
  * @param commentId Unique identifier for the comment extracted from the URL
  * @param target Raw payload data containing the comment's html_url and other properties
  * @param parentNumber Numeric identifier of the parent discussion, issue, or pull request
- * @param urlType URL segment that determines the parent entity type (discussions/issues/pull)
+ * @param parentType Type of the discussion, issue, or pull request the comment is on
  * @returns A CommentEntity with the appropriate parent type
- * @throws Error if commentId is missing or target data is invalid
+ * @throws Error if target data is invalid
  */
 function createCommentEntity(
-	commentId: string | undefined,
+	commentId: string,
 	target: EntityData,
 	parentNumber: number,
-	urlType: string,
+	parentType: CommentAbleEntityType,
 ): CommentEntity {
-	if (!commentId) {
-		throw new Error("Comment ID is missing for comment entity.");
-	}
-
 	if (!isCommentData(target)) {
 		throw new Error(
 			`Invalid comment data structure. Expected object with html_url property. ` +
 				`Received: ${JSON.stringify(target)}`,
 		);
 	}
-
-	const parentType =
-		urlType === "discussions"
-			? ("discussion" as const)
-			: urlType === "issues"
-				? ("issue" as const)
-				: ("pull_request" as const);
 
 	return {
 		commentId: +commentId,
@@ -170,7 +114,7 @@ function createCommentEntity(
 function createNonCommentEntity(
 	target: EntityData,
 	number: number,
-	entityType: Entity["type"],
+	entityType: CommentAbleEntityType,
 ): DiscussionEntity | IssueEntity | PullRequestEntity {
 	if (entityType === "discussion") {
 		if (!isDiscussionData(target)) {
@@ -283,4 +227,20 @@ function isIssueLikeData(
 		"html_url" in data &&
 		typeof data.html_url === "string"
 	);
+}
+
+/**
+ * Determines which entity type a URL's path segment refers to.
+ * @param urlType The type extracted from the URL (discussions/issues/pull)
+ * @returns The corresponding entity type
+ */
+function parseParentType(urlType: string): CommentAbleEntityType {
+	switch (urlType) {
+		case "discussions":
+			return "discussion";
+		case "issues":
+			return "issue";
+		default:
+			return "pull_request";
+	}
 }
