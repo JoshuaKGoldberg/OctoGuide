@@ -78,6 +78,14 @@ describe("resolveRules", () => {
 		);
 	});
 
+	it("keeps bots included for pr-automation-detected when global options exclude bots", () => {
+		const actual = resolveRuleOptions("pr-automation-detected", {
+			options: { "include-bots": false },
+		});
+
+		expect(actual?.["include-bots"]).toBe(true);
+	});
+
 	it("prefers per-rule options over a rule's default options", () => {
 		const actual = resolveRuleOptions("text-image-alt-text", {
 			rules: { "text-image-alt-text": { "include-associations": ["MEMBER"] } },
