@@ -10,6 +10,9 @@ const AUTOMATION_LABEL_TARGETS = new Set([
 export const prAutomationDetected = defineRule({
 	about: {
 		config: "recommended",
+		defaultOptions: {
+			"include-bots": true,
+		},
 		description: "PRs labeled as automated or AI-generated should be closed.",
 		explanation: [
 			'Pull requests labeled as automated (e.g. "automation-signal")or AI-generated (e.g. "ai slop") indicate contributions that were not meaningfully authored by a human.',
