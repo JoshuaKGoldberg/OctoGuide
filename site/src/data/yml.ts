@@ -120,7 +120,7 @@ export const getStartedRuleNone = `jobs:
 
 export const getStartedRuleOptions = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -135,7 +135,7 @@ export const getStartedRuleOptions = `jobs:
 
 export const getStartedIncludeBots = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -184,7 +184,6 @@ export const getRuleDefaultOptions = (
 
 	return `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
