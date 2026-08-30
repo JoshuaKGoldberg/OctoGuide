@@ -4,7 +4,6 @@ const atVersion = `@${version}`;
 
 export const getStartedBase = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -35,7 +34,6 @@ permissions:
 export const getStartedStrict = `
 jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -46,7 +44,6 @@ jobs:
 export const getStartedNone = `
 jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -57,7 +54,6 @@ jobs:
 
 export const getStartedHeader = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -67,7 +63,6 @@ export const getStartedHeader = `jobs:
 
 export const getStartedFooter = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot@v0
@@ -77,7 +72,6 @@ export const getStartedFooter = `jobs:
 
 export const getStartedRuleDisable = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -90,7 +84,6 @@ export const getStartedRuleDisable = `jobs:
 
 export const getStartedRuleEnable = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -104,7 +97,6 @@ export const getStartedRuleEnable = `jobs:
 
 export const getStartedRuleNone = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -145,7 +137,6 @@ export const getStartedIncludeBots = `jobs:
 
 export const getStartedIncludeAssociationsDefault = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -155,7 +146,6 @@ export const getStartedIncludeAssociationsDefault = `jobs:
 
 export const getStartedIncludeCollaborators = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
@@ -165,7 +155,6 @@ export const getStartedIncludeCollaborators = `jobs:
 
 export const getStartedIncludeFirstTimers = `jobs:
   octoguide:
-    if: \${{ !endsWith(github.actor, '[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: OctoGuide/bot${atVersion}
