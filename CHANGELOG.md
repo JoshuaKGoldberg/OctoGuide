@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.22.0](https://github.com/octoguide/bot/compare/0.21.10...0.22.0) (2026-03-11)
+
 ## [0.21.10](https://github.com/octoguide/bot/compare/0.21.9...0.21.10) (2026-03-07)
 
 ### Bug Fixes
